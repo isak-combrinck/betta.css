@@ -244,6 +244,23 @@ details {
 /*-------------------------------------*/
 
 /*---------------------------------------
+  Tooltip
+---------------------------------------*/
+.tooltip>.tooltip-text {
+}
+
+.tooltip:hover>.tooltip-text {
+	display: block;
+	position: absolute;
+	padding: 0.15rem 0.25rem;
+	text-align: left;
+	font-size: 0.8rem;
+	z-index: 8;
+}
+
+/*-------------------------------------*/
+
+/*---------------------------------------
   Banner type stuff
 ---------------------------------------*/
 .betta-banner {
