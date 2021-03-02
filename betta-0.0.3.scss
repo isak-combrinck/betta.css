@@ -225,36 +225,9 @@ hr {
 }
 */
 
-/*
-.small-link {
-	position: relative;
+form>a {
 	font-size: $font-small;
 }
-
-.small-link::after {
-	content: '';
-	opacity: 0;
-	display: block;
-	position: absolute;
-	left: -0.25rem;
-	right: -0.25rem;
-	margin-top: -0.45rem;
-	border-bottom: 0.5rem solid $color-secondary;
-	z-index: -1;
-	transition: $transition-default;
-}
-
-.small-link:hover::after {
-	content: '';
-	opacity: 1;
-	display: block;
-	position: absolute;
-	left: -0.25rem;
-	right: -0.25rem;
-	margin-top: -0.45rem;
-	border-bottom: 0.5rem solid $color-secondary;
-	z-index: -1;
-}*/
 
 details>summary {
 	outline: none;
