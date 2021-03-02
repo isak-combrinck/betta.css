@@ -260,16 +260,22 @@ details {
 /*---------------------------------------
   Tooltip
 ---------------------------------------*/
-.tooltip>.tooltip-text {
-}
-
-.tooltip:hover>.tooltip-text {
-	display: block;
+.tooltip>span.tooltip-text {
+	opacity: 0;
 	position: absolute;
-	padding: 0.15rem 0.25rem;
+	height: auto;
+	width: auto;
+	padding: 0.25rem 0.5rem;
 	text-align: left;
 	font-size: $font-small;
+	line-height: 1rem;
 	z-index: 8;
+	transition-delay: 1s !important;
+	transition-property: opacity;
+}
+
+.tooltip:hover>span.tooltip-text {
+	opacity: 1;
 }
 
 /*-------------------------------------*/
