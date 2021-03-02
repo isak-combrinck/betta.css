@@ -21,6 +21,18 @@ $color-accent: #f5f5f5 !default;
 $color-background: #ffffff !default;
 $color-active: #eeeeee !default;
 
+/*---------------------------------------
+  Shady stuff
+---------------------------------------*/
+/* level 0 */
+$shadow-level-0: 0 0 0 0 rgba(0,0,0,0.2);
+
+/* level 1 */
+$shadow-level-1: 0 1px 3px 1px rgba(0,0,0,0.2);
+
+/* level 2 */
+$shadow-level-2: 0 2px 6px 1px rgba(0,0,0,0.2);
+
 
 /*-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
     Default HTML
@@ -232,26 +244,6 @@ details {
 /*-------------------------------------*/
 
 /*---------------------------------------
-  Shady stuff
----------------------------------------*/
-/* level 0 */
-button:active:enabled {
-	box-shadow: 0 0 0 0 rgba(0,0,0,0.2);
-}
-
-/* level 1 */
-button,
-.betta-banner {
-	box-shadow: 0 1px 3px 1px rgba(0,0,0,0.2);
-}
-
-/* level 2 */
-.photo>img,
-.lightbox .middle .caption {
-	box-shadow: 0 2px 6px 1px rgba(0,0,0,0.2);
-}
-
-/*---------------------------------------
   Banner type stuff
 ---------------------------------------*/
 .betta-banner {
@@ -261,6 +253,7 @@ button,
 	right: 0;
 	text-align: center;
 	z-index: 10;
+	box-shadow: $shadow-level-1;
 	background: #fff;
 }
 
@@ -432,7 +425,7 @@ body>nav ul li button {
 
 @media (hover: hover) {
 	body>nav ul li a:hover {
-		background: #f5f5f5;
+		background: $color-accent;
 	}
 	body>nav ul li a.active:hover {
 		background: $color-secondary;
@@ -536,6 +529,7 @@ button {
   	user-select: none;
 	padding: 0.25rem 1rem;
 	border-radius: 2rem;
+	box-shadow: $shadow-level-1;
 	background: #ffffff;
 	transition: 0.2s;
 }
@@ -557,6 +551,7 @@ button.dark {
 }
 
 button:active:enabled {
+	box-shadow: $shadow-level-0;
 	background: #e5e5e5;
 }
 
@@ -706,6 +701,7 @@ button.dark:active:enabled {
 
 .photo>img {
 	width: 100%;
+	box-shadow: $shadow-level-2;
 	background: #f5f5f5;
 	border-radius: 0.25rem;
 }
@@ -742,6 +738,47 @@ button.dark:active:enabled {
         padding-bottom: 1.25rem;
     }
 }
+/*-------------------------------------*/
+
+/*---------------------------------------
+	Feed
+---------------------------------------*/
+.feed {
+	max-width: 30rem;
+	margin: 0 auto;
+}
+
+.feed>article>a {
+	display: block;
+	padding: 1rem;
+	margin-top: 2rem;
+	border-radius: 0.25rem;
+	border-color: $color-main;
+	transition: 0.2s;
+	box-shadow: $shadow-level-1;
+}
+
+@media(hover: hover) {
+	.feed>article>a:hover
+	{
+		background: $color-accent;
+	}
+}
+
+.feed>article>a:active
+{
+	background: $color-active;
+	box-shadow: $shadow-level-0;
+}
+
+.feed>article>a>h3 {
+	margin: 0;
+}
+
+.feed>article>a>p {
+	margin-bottom: 0;
+}
+
 /*-------------------------------------*/
 
 /*---------------------------------------
@@ -1062,6 +1099,7 @@ Flip Card
 	width: auto;
 	padding: 0.5rem 1rem;
 	border-radius: 0.25rem;
+	box-shadow: $shadow-level-2;
 	background: #fff;
 }
 
