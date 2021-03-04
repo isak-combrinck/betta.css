@@ -527,6 +527,8 @@ body>nav ul li a:active {
 	}
 
 	body>nav>ul>li {
+		display: block;
+		text-align: left;
 		margin-bottom: 0.75rem;
 	}
 
