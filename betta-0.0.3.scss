@@ -477,6 +477,10 @@ body>nav ul li a:active {
     display: block;
     text-align: left;
 }
+
+.sidebar + main {
+	margin-left: 17rem;
+}
 /*-------------------*/
 
 #menu-button {
@@ -502,6 +506,10 @@ body>nav ul li a:active {
 }
 
 @media (max-width: 800px) {
+	.sidebar + main {
+		margin-left: auto;
+	}
+
 	body>nav,
 	.sidebar {
 		display: none;
