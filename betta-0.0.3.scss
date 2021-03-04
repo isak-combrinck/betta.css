@@ -422,10 +422,6 @@ body>nav {
 	box-shadow: 0 2px 6px 1px rgba(0,0,0,0.2);
 }
 
-body>nav>button {
-    display: none;
-}
-
 body>nav ul {
 	padding: 0;
 	margin: 0;
@@ -440,9 +436,11 @@ body>nav ul li {
 
 body>nav ul li a {
 	display: inline-block;
-	padding: 0.25rem 0.25rem;
+	padding: 0.25rem 0.75rem;
 	border-radius: 2rem;
 	vertical-align: middle;
+	text-transform: uppercase;
+	font-weight: 700;
 }
 
 body>nav ul li a .material-icons-round,
@@ -461,6 +459,37 @@ body>nav ul li button {
 	z-index: 99;
 }
 
+body>nav ul li a:active {
+	background: $color-active;
+	transition: 0.1s;
+}
+
+/*-------------------*/
+.sidebar {
+    bottom: 0;
+	width: 17rem;
+    padding: 1rem;
+}
+
+.sidebar>ul>li {
+    display: block;
+    text-align: left;
+}
+/*-------------------*/
+
+#menu-button {
+    display: none;
+	position: fixed;
+	top: 1rem;
+	left: 1rem;
+	box-shadow: $shadow-level-2;
+	z-index: 100;
+}
+
+#menu-button:active {
+	box-shadow: $shadow-level-0;
+}
+
 @media (hover: hover) {
 	body>nav ul li a:hover {
 		background: $color-accent;
@@ -470,20 +499,31 @@ body>nav ul li button {
   	}
 }
 
-@media (max-width: 480px) {
-	body>nav ul {
-		//display: none;
+@media (max-width: 800px) {
+	body>nav,
+	.sidebar {
+		display: block;
+		padding-top: 6rem;
+		padding-left: 2rem;
+		width: auto;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+
+	body>nav>ul>li {
+		margin-bottom: 0.75rem;
+	}
+
+	body>nav>ul>li>a {
+		font-size: 1.25rem;
+		line-height: 1.75rem;
+		letter-spacing: 0.05rem;
 	}
   
-	body>nav button {
-		//display: block;
+	#menu-button {
+		display: block;
 	}
-}
-
-/*not working*/
-body>nav ul li a:active {
-	background: $color-active;
-	transition: 0.1s;
 }
 
 /*-------------------------------------*/
@@ -599,6 +639,7 @@ button.dark:active:enabled {
 
 .icon-button {
 	padding: 0.5rem;
+	border-radius: 2rem;
 }
 
 .icon-button.filled .material-icons-round {
