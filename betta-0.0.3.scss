@@ -78,7 +78,7 @@ i {
 }
 
 i, img, picture, button, button>span, .click-plane, details>summary,
-nav>ul, nav>ul>li, nav>ul>li>a {
+nav>ul, nav>ul>li, nav>ul>li>a, article>a {
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 	-webkit-tap-highlight-color: transparent;
 	-webkit-touch-callout: none;
@@ -570,7 +570,6 @@ body>nav.back {
 }
 
 body>nav.back ul li {
-	display: block;
 }
 
 body>nav.back ul li a {
@@ -594,10 +593,7 @@ body>nav.back ul li a .material-icons-round {
 
 @media (max-width: 800px) {
 	body>nav.back {
-		//top: 0;
-		//left: 0;
-		//right: 0;
-		//box-shadow: 1px 0 5px #212121 !important;
+		display: block;
 	}
 
 	body>nav.back ul li {
