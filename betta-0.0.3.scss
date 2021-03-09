@@ -411,6 +411,7 @@ img.round {
 
 /*---------------------------------------
 	Main Navigation Menu
+	Back Button
 ---------------------------------------*/
 body>nav {
 	position: fixed;
@@ -438,7 +439,6 @@ body>nav ul li {
 
 body>nav ul li a {
 	display: inline-block;
-	padding: 0.25rem 0.75rem;
 	border-radius: 2rem;
 	vertical-align: middle;
 	text-transform: uppercase;
@@ -483,7 +483,8 @@ body>nav ul li a:active {
 }
 /*-------------------*/
 
-#menu-button {
+#menu-button,
+#back-button {
     display: none;
 	position: fixed;
 	top: 1rem;
@@ -492,7 +493,12 @@ body>nav ul li a:active {
 	z-index: 10;
 }
 
-#menu-button:active {
+#back-button {
+    display: block;
+}
+
+#menu-button:active,
+#back-button:active {
 	box-shadow: $shadow-level-0;
 }
 
@@ -548,58 +554,6 @@ body>nav ul li a:active {
 	transition: 0.1s;
 }
 
-/*-------------------------------------*/
-
-/*---------------------------------------
-	Back Navigation Menu
----------------------------------------*/
-body>nav.back {
-	width: auto;
-	top: 0.5rem;
-	left: 1.25rem;
-	text-align: left;
-	box-shadow: none;
-	background: #ffffff;
-
-	@media (max-width: 800px) {
-		top: 0 !important;
-		left: 0 !important;
-		right: 0 !important;
-		box-shadow: 0 2px 6px 1px rgba(0,0,0,0.2) !important;
-	}
-}
-
-body>nav.back ul li {
-}
-
-body>nav.back ul li a {
-	opacity: 0.3;
-	transition: 0.3s;
-
-}
-
-@media (hover: hover) {
-	body>nav.back ul li a:hover {
-		opacity: 1;
-	}
-}
-
-body>nav.back ul li a .material-icons-round {
-	width: 1.5rem;
-	font-size: 3rem;
-	margin-left: -0.75rem;
-	margin-right: 0.75rem;
-}
-
-@media (max-width: 800px) {
-	body>nav.back {
-		display: block;
-	}
-
-	body>nav.back ul li {
-		display: inline-block;
-	}
-}
 /*-------------------------------------*/
 
 /*---------------------------------------
