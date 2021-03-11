@@ -449,8 +449,12 @@ body>nav ul li a .material-icons-round,
 body>nav ul li a .text {
 	display: block;
 	height: 1.5rem;
-	padding: 0.25rem 0.75rem;
+	padding: 0.5rem;
 	line-height: 1.5rem;
+}
+
+body>nav ul li a .text {
+	padding: 0.25rem 0.75rem;
 }
 
 body>nav ul li a.active {
