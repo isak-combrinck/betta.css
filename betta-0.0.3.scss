@@ -37,6 +37,7 @@ $shadow-level-2: 0 2px 6px 1px rgba(0,0,0,0.2);
   Font sizing
 ---------------------------------------*/
 $font-small: 0.8rem;
+$line-height: 1.6rem;
 
 /*---------------------------------------
   Transitions
@@ -127,7 +128,7 @@ p, li, textarea, option, input, select, button {
 }
 
 p, li, input, textarea {
-  	line-height: 1.6rem;
+  	line-height: $line-height;
 }
 
 p {
@@ -190,14 +191,14 @@ h4 {
 
 h5 {
 	font-size: 1rem;
-	line-height: 1.6rem;
+	line-height: $line-height;
 	letter-spacing: 0.05rem;
 	margin-top: 1.6rem;
 }
 
 h6 {
 	font-size: 1rem;
-	line-height: 1.6rem;
+	line-height: $line-height;
 	letter-spacing: 0.05rem;
 	text-transform: uppercase;
 	margin-top: 1.6rem;
@@ -406,6 +407,14 @@ img {
 
 img.round {
 	border-radius: 50%;
+}
+/*-------------------------------------*/
+
+/*---------------------------------------
+	Forms
+---------------------------------------*/
+form button {
+	margin-top: $line-height;
 }
 /*-------------------------------------*/
 
