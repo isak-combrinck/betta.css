@@ -449,7 +449,7 @@ body>nav ul li a .material-icons-round,
 body>nav ul li a .text {
 	display: block;
 	height: 1.5rem;
-	padding: 0.5rem;
+	padding: 0.25rem 0.75rem;
 	line-height: 1.5rem;
 }
 
@@ -483,18 +483,22 @@ body>nav ul li a:active {
 }
 /*-------------------*/
 
-#menu-button,
-#back-button {
+#menu-button {
     display: none;
 	position: fixed;
-	top: 1rem;
-	left: 1rem;
+	right: 1rem;
+	bottom: 1rem;
 	box-shadow: $shadow-level-2;
 	z-index: 10;
 }
 
 #back-button {
     display: block;
+	position: fixed;
+	top: 1rem;
+	left: 1rem;
+	box-shadow: $shadow-level-2;
+	z-index: 10;
 }
 
 #menu-button:active,
@@ -519,12 +523,12 @@ body>nav ul li a:active {
 	body>nav,
 	.sidebar {
 		display: none;
-		padding-top: 7rem;
-		padding-left: 3rem;
+		padding: 5rem 3rem;
 		width: auto;
 		left: 0;
 		right: 0;
 		bottom: 0;
+		overflow-y: scroll;
 	}
 
 	body>nav.show,
@@ -591,7 +595,7 @@ button.dark {
 @media(hover:hover) {
 	button:hover:enabled {
 		cursor: pointer;
-		background: #eeeeee;
+		background: $color-accent;
 		transition: 0.2s;
 	}
 
@@ -602,7 +606,7 @@ button.dark {
 
 button:active:enabled {
 	box-shadow: $shadow-level-0;
-	background: #e5e5e5;
+	background: $color-active;
 }
 
 button.dark:active:enabled {
@@ -640,7 +644,7 @@ button.dark:active:enabled {
 	color: #ffffff;
 }
 
-@media(max-width: 600px) {
+@media(max-width: 800px) {
 	.icon-button {
 		padding: 0.75rem;
 	}
