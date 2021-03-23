@@ -601,6 +601,11 @@ button {
 	transition: 0.2s;
 }
 
+button:disabled {
+	box-shadow: none;
+	background-color: $color-accent;
+}
+
 button.dark {
 	background: #212121;
 }
@@ -738,6 +743,10 @@ button.dark:active:enabled {
 	vertical-align: top;
 }
 
+.inline-split.right {
+	text-align: left;
+}
+
 @media(max-width: 600px) {
 	.inline-split {
 		display: block;
@@ -812,7 +821,7 @@ button.dark:active:enabled {
 	Feed
 ---------------------------------------*/
 .feed {
-	max-width: 30rem;
+	max-width: 35rem;
 	margin: 0 auto;
 }
 
