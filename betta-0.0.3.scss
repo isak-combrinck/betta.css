@@ -5,10 +5,14 @@ A collection of CSS styles.
 
 V 0.0.3 (early alpha)
 
+NOTE: only compile this file.
+E.g. sass --watch betta-0.0.3.scss betta-0.0.3.css
+
 ### Deprecated
 - #page, use main instead
 ---------------------------------------*/
 
+@import 'normalize';
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap');
 
 /*---------------------------------------
