@@ -1026,6 +1026,10 @@ button.dark:active:enabled {
   visibility: hidden;
 }
 
+.betta_hidden {
+  display: none;
+}
+
 .click-plane {
   position: absolute;
   top: 0;
