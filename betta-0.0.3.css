@@ -726,12 +726,26 @@ img.round {
 /*---------------------------------------
 	Forms
 ---------------------------------------*/
+form label,
 form button {
+  vertical-align: middle;
+  text-align: left;
+}
+
+form button[type=submit] {
   margin-top: 1.6rem;
+}
+
+form button.show {
+  display: inline-block;
 }
 
 form button[type=button] .material-icons-round {
   font-size: 1rem;
+}
+
+form input[type=file] {
+  display: none;
 }
 
 /*-------------------------------------*/
