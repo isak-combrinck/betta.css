@@ -730,6 +730,10 @@ form button {
   margin-top: 1.6rem;
 }
 
+form button[type=button] .material-icons-round {
+  font-size: 1rem;
+}
+
 /*-------------------------------------*/
 /*---------------------------------------
 	Main Navigation Menu

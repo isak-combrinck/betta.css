@@ -420,6 +420,11 @@ img.round {
 form button {
 	margin-top: $line-height;
 }
+
+// Make all buttons of type button small on forms
+form button[type="button"] .material-icons-round {
+    font-size: 1rem;
+}
 /*-------------------------------------*/
 
 /*---------------------------------------
