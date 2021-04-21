@@ -818,6 +818,15 @@ button.dark:active:enabled {
 	border-radius: 0.25rem;
 }
 
+.gallery-item>.content>.click-plane.caption {
+    background: $color-background;
+    opacity: 0.85;
+}
+
+.gallery-item>.content>.click-plane.caption>p {
+    padding: 0 1rem;
+}
+
 @media (max-width: 800px) {
     #gallery {
         padding-bottom: 0rem;
@@ -826,14 +835,6 @@ button.dark:active:enabled {
     .gallery-item {
         width: 100%;
         padding: 0 0 2rem 0;
-    }
-
-    .photo>img {
-        box-shadow: none;
-    }
-
-    .gallery-item>.content>.click-plane {
-        display: none;
     }
 }
 
