@@ -690,11 +690,11 @@ button.dark:active:enabled {
 }
 
 @media(max-width: 800px) {
-	.icon-button {
+	body>.icon-button {
 		padding: 0.75rem;
 	}
 
-	.icon-button .material-icons-round {
+	body>.icon-button .material-icons-round {
 		font-size: 2.5rem;
 	}
 }
