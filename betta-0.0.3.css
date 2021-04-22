@@ -622,6 +622,26 @@ details {
   border-color: transparent transparent #212121 transparent;
 }
 
+@media (max-width: 800px) {
+  .tooltip > span.tooltip-text {
+    visibility: visible;
+    opacity: 1;
+    top: 0;
+    bottom: 0;
+    left: 3rem;
+    right: auto;
+    padding: 0.5rem 0.5rem;
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.6rem;
+    background-color: #ffffff;
+    color: #212121;
+  }
+
+  .tooltip > span.tooltip-text::after {
+    display: none;
+  }
+}
 /*-------------------------------------*/
 /*---------------------------------------
   Banner type stuff
