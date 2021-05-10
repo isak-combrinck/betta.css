@@ -825,6 +825,12 @@ button.dark:active:enabled {
 	font-style: italic;
 }
 
+/* Used to set preferred break points, which will occur
+between lines */
+.line {
+    display: inline-block;
+}
+
 .right {
 	text-align: right;
 }
