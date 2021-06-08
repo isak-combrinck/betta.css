@@ -1191,7 +1191,8 @@ between lines
 /*---------------------------------------
 	Gallery
 ---------------------------------------*/
-#gallery {
+#gallery,
+.gallery {
   margin: 0 auto;
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -1231,7 +1232,8 @@ between lines
 }
 
 @media (max-width: 800px) {
-  #gallery {
+  #gallery,
+.gallery {
     padding-bottom: 0rem;
   }
 
@@ -1241,7 +1243,8 @@ between lines
   }
 }
 @media (max-width: 480px) {
-  #gallery {
+  #gallery,
+.gallery {
     padding-bottom: 0.75rem;
   }
 
