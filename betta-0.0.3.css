@@ -456,6 +456,10 @@ p {
   margin-bottom: 1.6rem;
 }
 
+p.small {
+  font-size: 0.8rem;
+}
+
 p > a {
   border-bottom-style: solid;
   border-bottom-width: 1px;
