@@ -641,7 +641,7 @@ body>nav ul li a:active {
 #back-button {
     display: block;
 	position: fixed;
-	bottom: 1rem;
+	top: 1rem;
 	left: 1rem;
 	box-shadow: $shadow-level-2;
 	z-index: 10;
@@ -662,6 +662,11 @@ body>nav ul li a:active {
 }
 
 @media (max-width: 800px) {
+    #back-button {
+        top: auto;
+        bottom: 1rem;
+    }
+
 	.sidebar + main {
 		margin-left: auto;
 	}
