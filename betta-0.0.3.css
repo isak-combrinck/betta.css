@@ -460,6 +460,15 @@ p.small {
   font-size: 0.8rem;
 }
 
+ul.indent {
+  margin-top: 0;
+  padding-left: 1rem;
+}
+
+ul.plain li {
+  list-style: none;
+}
+
 p > a {
   border-bottom-style: solid;
   border-bottom-width: 1px;
@@ -937,7 +946,7 @@ body > nav ul li a:active {
 #back-button {
   display: block;
   position: fixed;
-  top: 1rem;
+  bottom: 1rem;
   left: 1rem;
   box-shadow: 0 2px 6px 1px rgba(0, 0, 0, 0.2);
   z-index: 10;
@@ -1638,5 +1647,24 @@ Flip Card
 }
 
 /*-------------------------------------*/
+/*---------------------------------------
+	Version
+---------------------------------------*/
+p.version {
+  position: fixed;
+  right: 0.5rem;
+  bottom: 70vh;
+  width: 70vh;
+  -webkit-transform: rotate(-90deg);
+  -webkit-transform-origin: right bottom;
+  -moz-transform: rotate(-90deg);
+  -moz-transform-origin: right bottom;
+  -ms-transform: rotate(-90deg);
+  -ms-transform-origin: right bottom;
+  -o-transform: rotate(-90deg);
+  -o-transform-origin: right bottom;
+  transform: rotate(-90deg);
+  transform-origin: right bottom;
+}
 
 /*# sourceMappingURL=betta-0.0.3.css.map */
