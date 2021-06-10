@@ -15,7 +15,7 @@ E.g. sass --watch betta-0.0.3.scss betta-0.0.3.css
 ---------------------------------------*/
 
 @import 'normalize';
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap');
 
 /*---------------------------------------
 	Colors
@@ -77,7 +77,7 @@ button, ul, li, a, p {
 }
 
 body, textarea, option, input, select, button {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 
 i {
@@ -1389,7 +1389,6 @@ between lines
 /*---------------------------------------
 	Version
 ---------------------------------------*/
-
 p.version {
     position: fixed;
     right: 0.5rem;
@@ -1408,3 +1407,58 @@ p.version {
     transform: rotate(-90deg);
     transform-origin: right bottom;
 }
+/*-------------------------------------*/
+
+/*---------------------------------------
+	Notification
+---------------------------------------*/
+#notification {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 101;
+}
+
+#notification .buttons,
+#notification .content {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#notification.show {
+    display: block;
+}
+
+#notification .buttons {
+	width: 20%;
+}
+
+#notification .content {
+	width: 80%;
+}
+
+#notification .message {
+	width: 20rem;
+	align-content: right;
+	margin: 1rem;
+	padding: 1rem;
+	float: right;
+	border: solid 1px;
+	border-color: rgb(129, 120, 106);
+	border-radius: 1rem;
+	word-wrap: break-word;
+	background-color: #FF3737;
+}
+
+#cancel-notification {
+	display: none;
+	margin-bottom: 1rem;
+}
+
+#cancel-notification.show {
+	display: block;
+}
+/*-------------------------------------*/
