@@ -1,8 +1,8 @@
 # betta.css
 
-CSS repo of the Betta library. For use as a submodule in git projects.
+*A project by Isak and Dahman.*
 
-A project by 😎 & 🤓.
+CSS repo of the Betta library. For use as a submodule in git projects.
 
 ## Open Source Licenses
 
