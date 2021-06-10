@@ -2,6 +2,8 @@
 
 CSS repo of the Betta library. For use as a submodule in git projects.
 
+A project by 😎 & 🤓.
+
 ## Open Source Licenses
 
 We use the following open source libraries and are happy to provide you with a copy of their licenses.
