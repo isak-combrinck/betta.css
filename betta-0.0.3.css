@@ -983,6 +983,11 @@ body > nav ul li a:active {
     margin-left: auto;
   }
 
+  body > nav > ul {
+    position: absolute;
+    bottom: 5rem;
+  }
+
   body > nav,
 .sidebar {
     display: none;
