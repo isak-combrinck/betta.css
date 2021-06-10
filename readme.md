@@ -2,7 +2,11 @@
 
 *A project by Isak and Dahman.*
 
-CSS repo of the Betta library. For use as a submodule in git projects.
+CSS repo of the Betta library for use as a git submodule.
+
+## Version 0.0.3
+
+The Betta library is currently under early development. Use in production at your own risk.
 
 ## Open Source Licenses
 
