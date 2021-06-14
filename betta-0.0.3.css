@@ -387,6 +387,13 @@ main {
   margin: 0 auto;
 }
 
+@media (max-width: 800px) {
+  #page,
+main {
+    padding: 0 2rem 6rem 2rem;
+    overflow-x: hidden;
+  }
+}
 body, nav, main, div, article, section,
 button, ul, li, a, p {
   box-sizing: border-box;

@@ -71,6 +71,15 @@ main {
 	margin: 0 auto;
 }
 
+// Use tooltip as menu text in mobile menu
+@media(max-width: 800px) {
+    #page,
+    main {
+        padding: 0 2rem 6rem 2rem;
+        overflow-x: hidden;
+    }
+}
+
 body, nav, main, div, article, section,
 button, ul, li, a, p {
 	box-sizing: border-box;
