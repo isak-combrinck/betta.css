@@ -71,7 +71,6 @@ main {
 	margin: 0 auto;
 }
 
-// Use tooltip as menu text in mobile menu
 @media(max-width: 800px) {
     #page,
     main {
@@ -1420,6 +1419,12 @@ p.version {
     -o-transform-origin: right bottom;
     transform: rotate(-90deg);
     transform-origin: right bottom;
+}
+
+@media(max-width: 800px) {
+    p.version {
+        display: none;
+    }
 }
 /*-------------------------------------*/
 

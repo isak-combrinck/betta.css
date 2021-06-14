@@ -1713,6 +1713,11 @@ p.version {
   transform-origin: right bottom;
 }
 
+@media (max-width: 800px) {
+  p.version {
+    display: none;
+  }
+}
 /*-------------------------------------*/
 /*---------------------------------------
 	Notification
