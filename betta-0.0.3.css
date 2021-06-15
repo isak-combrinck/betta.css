@@ -361,6 +361,7 @@ template {
 /* level 0 */
 /* level 1 */
 /* level 2 */
+/* level 2 inversed */
 /*---------------------------------------
   Font sizing
 ---------------------------------------*/
@@ -679,7 +680,7 @@ details {
 }
 
 @media (max-width: 800px) {
-  .tooltip > span.tooltip-text {
+  nav .tooltip > span.tooltip-text {
     visibility: visible;
     opacity: 1;
     top: 0;
@@ -694,8 +695,12 @@ details {
     color: #212121;
   }
 
-  .tooltip > span.tooltip-text::after {
+  nav .tooltip > span.tooltip-text::after {
     display: none;
+  }
+
+  nav.toolbar .tooltip > span.tooltip-text {
+    visibility: hidden;
   }
 }
 /*-------------------------------------*/
@@ -1024,6 +1029,25 @@ body > nav ul li a:active {
 
   #menu-button {
     display: block;
+  }
+
+  /* Display menu as toolbar */
+  body > nav.toolbar {
+    display: block;
+    top: auto;
+    padding: 0.25rem 0 0.5rem 0;
+    box-shadow: 0 -2px 6px 1px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+  }
+
+  body > nav.toolbar > ul {
+    position: static;
+  }
+
+  body > nav.toolbar > ul > li {
+    display: inline-block;
+    text-align: left;
+    margin-bottom: 0rem;
   }
 }
 body > nav ul li a:active {

@@ -38,6 +38,9 @@ $shadow-level-1: 0 1px 3px 1px rgba(0,0,0,0.2);
 /* level 2 */
 $shadow-level-2: 0 2px 6px 1px rgba(0,0,0,0.2);
 
+/* level 2 inversed */
+$shadow-level-2-i: 0 -2px 6px 1px rgba(0,0,0,0.2);
+
 /*---------------------------------------
   Font sizing
 ---------------------------------------*/
@@ -366,7 +369,7 @@ details {
 
 // Use tooltip as menu text in mobile menu
 @media(max-width: 800px) {
-    .tooltip>span.tooltip-text {
+    nav .tooltip>span.tooltip-text {
         visibility: visible;
         opacity: 1;
         top: 0;
@@ -381,8 +384,12 @@ details {
         color: $color-main;
     }
 
-    .tooltip>span.tooltip-text::after {
+    nav .tooltip>span.tooltip-text::after {
         display: none;
+    }
+
+    nav.toolbar .tooltip>span.tooltip-text {
+        visibility: hidden;
     }
 }
 /*-------------------------------------*/
@@ -571,7 +578,7 @@ body>nav {
 	overflow: show;
 	z-index: 10;
 	background: $color-background;
-	box-shadow: 0 2px 6px 1px rgba(0,0,0,0.2);
+	box-shadow: $shadow-level-2;
 }
 
 body>nav ul {
@@ -717,6 +724,25 @@ body>nav ul li a:active {
   
 	#menu-button {
 		display: block;
+	}
+
+    /* Display menu as toolbar */
+    body>nav.toolbar {
+        display: block;
+        top: auto;
+		padding: 0.25rem 0 0.5rem 0;
+        box-shadow: $shadow-level-2-i;
+        overflow: hidden;
+    }
+
+    body>nav.toolbar>ul {
+		position: static;
+	}
+
+    body>nav.toolbar>ul>li {
+		display: inline-block;
+		text-align: left;
+		margin-bottom: 0rem;
 	}
 }
 
