@@ -20,7 +20,6 @@ E.g. sass --watch betta-0.0.3.scss betta-0.0.3.css
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -397,10 +396,6 @@ main {
 body, nav, main, div, article, section,
 button, ul, li, a, p {
   box-sizing: border-box;
-}
-
-body, textarea, option, input, select, button {
-  font-family: "Roboto", sans-serif;
 }
 
 i {

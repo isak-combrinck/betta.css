@@ -15,7 +15,6 @@ E.g. sass --watch betta-0.0.3.scss betta-0.0.3.css
 ---------------------------------------*/
 
 @import 'normalize';
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap');
 
 /*---------------------------------------
 	Colors
@@ -82,10 +81,6 @@ main {
 body, nav, main, div, article, section,
 button, ul, li, a, p {
 	box-sizing: border-box;
-}
-
-body, textarea, option, input, select, button {
-	font-family: 'Roboto', sans-serif;
 }
 
 i {
