@@ -641,6 +641,8 @@ body>nav ul li a:active {
 	position: fixed;
 	right: 1rem;
 	bottom: 1rem;
+    width: 4rem;
+    height: 4rem;
 	box-shadow: $shadow-level-2;
 	z-index: 11;
 }
@@ -650,6 +652,8 @@ body>nav ul li a:active {
 	position: fixed;
 	top: 1rem;
 	left: 1rem;
+    width: 4rem;
+    height: 4rem;
 	box-shadow: $shadow-level-2;
 	z-index: 10;
 }
@@ -824,7 +828,7 @@ button.dark:active:enabled {
 	body>.icon-button .material-icons-round {
 		font-size: 2.5rem;
 	}
-    
+
     .icon-button .material-icons-round.custom-icon img{
         height: 2.5rem;
     }
