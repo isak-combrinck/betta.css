@@ -1112,6 +1112,10 @@ button.dark:active:enabled {
   font-size: 1.8rem;
 }
 
+.icon-button .material-icons-round.custom-icon {
+  font-size: 1rem;
+}
+
 .icon-button.dark .material-icons-round {
   color: #ffffff;
 }
