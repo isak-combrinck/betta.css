@@ -659,8 +659,8 @@ body>nav ul li a:active {
 	position: fixed;
 	top: 1rem;
 	left: 1rem;
-    width: 4rem;
-    height: 4rem;
+    width: 2.5rem;
+    height: 2.5rem;
 	box-shadow: $shadow-level-2;
 	z-index: 10;
 }
@@ -683,6 +683,8 @@ body>nav ul li a:active {
     #back-button {
         top: auto;
         bottom: 1rem;
+        width: 4rem;
+        height: 4rem;
     }
 
 	.sidebar + main {
