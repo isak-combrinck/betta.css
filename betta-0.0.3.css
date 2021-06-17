@@ -844,7 +844,7 @@ img.round {
 ---------------------------------------*/
 form {
   margin: 0;
-  padding: 1.6rem 0;
+  padding-bottom: 1.6rem;
 }
 
 form label,
