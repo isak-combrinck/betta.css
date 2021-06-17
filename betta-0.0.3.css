@@ -1233,11 +1233,16 @@ between lines
   cursor: pointer;
 }
 
-.inline-single {
+.inline-single,
+.inline-split {
   box-sizing: border-box;
   display: inline-block;
+  padding: 0 1rem 1rem 1rem;
+  vertical-align: top;
+}
+
+.inline-single {
   width: 100%;
-  padding: 0 1rem;
 }
 
 .inline-single label {
@@ -1247,11 +1252,7 @@ between lines
 }
 
 .inline-split {
-  box-sizing: border-box;
-  display: inline-block;
   width: 50%;
-  padding: 0 1rem 1rem 1rem;
-  vertical-align: top;
 }
 
 .inline-split.left {
