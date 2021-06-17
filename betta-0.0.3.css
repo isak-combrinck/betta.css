@@ -857,6 +857,10 @@ form button[type=submit] {
   margin-top: 1.6rem;
 }
 
+form .inline-single button[type=submit] {
+  margin-top: 0.5rem;
+}
+
 form button.show {
   display: inline-block;
 }
@@ -1246,13 +1250,20 @@ between lines
 }
 
 .inline-single label {
-  margin-bottom: 0.5rem;
   display: inline-block;
-  margin-right: 1.5%;
+  margin-bottom: 0.5rem;
 }
 
 .inline-split {
   width: 50%;
+}
+
+.inline-split input,
+.inline-split select,
+.inline-split label {
+  display: block;
+  margin-bottom: 0.5rem;
+  width: 100%;
 }
 
 .inline-split.left {
