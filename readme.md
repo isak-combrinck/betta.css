@@ -8,6 +8,8 @@ CSS repo of the Betta library for use as a git submodule.
 
 The Betta library is currently under early development. Use in production at your own risk.
 
+No documentation is provided at the moment.
+
 ## Open Source Licenses
 
 We use the following open source libraries and are happy to provide you with a copy of their licenses.
