@@ -12,6 +12,8 @@ E.g. sass --watch betta-0.0.3.scss betta-0.0.3.css
 
 ### Deprecated
 - #page, use main instead
+- .material-icons-round, use .icon instead
+- .custom-icon, use .icon instead
 ---------------------------------------*/
 
 @import 'normalize';
@@ -523,16 +525,6 @@ img.round {
 /*-------------------------------------*/
 
 /*---------------------------------------
-	Custom Icon Replacements for
-    Material Icons
----------------------------------------*/
-.material-icons-round.custom-icon>img {
-    height: 1.5rem;
-	color: $color-main;
-}
-/*-------------------------------------*/
-
-/*---------------------------------------
 	Forms
 ---------------------------------------*/
 form {
@@ -769,6 +761,29 @@ footer {
 /*-------------------------------------*/
 
 /*---------------------------------------
+	Custom Icon Replacements for
+    Material Icons
+---------------------------------------*/
+.material-icons-round.custom-icon>img { /* deprecated */
+    height: 1.5rem;
+	color: $color-main;
+}
+
+span.icon {
+    height: 1.5rem;
+    width: 1.5rem;
+    line-height: 0rem;
+}
+
+span.icon>img {
+    height: 1.5rem;
+    width: 1.5rem;
+    line-height: 0rem;
+	color: $color-main;
+}
+/*-------------------------------------*/
+
+/*---------------------------------------
 	Buttons
 ---------------------------------------*/
 button {
@@ -822,12 +837,14 @@ button.dark:active:enabled {
 	border-radius: 2rem;
 }
 
-.icon-button.filled .material-icons-round {
+.icon-button.filled .material-icons-round, /* deprecated */
+.icon-button.filled .icon {
 	color: #212121;
 }
 
 .icon-button.filled:disabled,
-.icon-button.filled:disabled .material-icons-round {
+.icon-button.filled:disabled .material-icons-round, /* deprecated */
+.icon-button.filled:disabled .icon {
 	color: #757575;
 }
 
@@ -838,31 +855,36 @@ button.dark:active:enabled {
 	padding-right: 0.5rem;
 }
 
-.icon-button .material-icons-round {
+.icon-button .material-icons-round, /* deprecated */
+.icon-button>.icon {
 	vertical-align: middle;
 	color: #212121;
 	font-size: 1.8rem;
 }
 
-.icon-button .material-icons-round.custom-icon{
+.icon-button .material-icons-round.custom-icon, /* deprecated */
+.icon-button>.icon {
 	font-size: 1rem;
 }
 
-.icon-button.dark .material-icons-round {
+.icon-button.dark .material-icons-round { /* deprecated */
 	color: #ffffff;
 }
 
 @media(max-width: 800px) {
-	body>.icon-button {
+	.icon-button {
 		padding: 0.75rem;
 	}
 
-	body>.icon-button .material-icons-round {
+	body>.icon-button .material-icons-round, /* deprecated */
+    .icon-button>.icon {
 		font-size: 2.5rem;
 	}
 
-    .icon-button .material-icons-round.custom-icon img{
+    .icon-button .material-icons-round.custom-icon img, /* deprecated */
+    .icon-button>.icon>img {
         height: 2.5rem;
+        width: 2.5rem;
     }
 }
 
@@ -873,9 +895,9 @@ button.dark:active:enabled {
 }
 
 .sliding-button>.content {
-	width: 0rem;
-	height: 1.4rem;
-	margin-bottom: -0.3rem;
+    height: 1.5rem;
+	width: 0;
+	margin-bottom: -0.75rem;
 	overflow: hidden;
 	display: inline-block;
 	transition: 0.2s;
