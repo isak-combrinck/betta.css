@@ -844,7 +844,7 @@ img.round {
 ---------------------------------------*/
 form {
   margin: 0;
-  padding: 1.6rem 0;
+  padding-bottom: 1.6rem;
 }
 
 form label,
@@ -855,6 +855,10 @@ form button {
 
 form button[type=submit] {
   margin-top: 1.6rem;
+}
+
+form .inline-single button[type=submit] {
+  margin-top: 0.5rem;
 }
 
 form button.show {
@@ -1233,26 +1237,33 @@ between lines
   cursor: pointer;
 }
 
-.inline-single {
-  box-sizing: border-box;
-  display: inline-block;
-  width: 100%;
-  padding: 0 1rem;
-}
-
-.inline-single label {
-  margin-left: -0.5rem;
-  margin-bottom: 0.5rem;
-  display: inline-block;
-  margin-right: 1.5%;
-}
-
+.inline-single,
 .inline-split {
   box-sizing: border-box;
   display: inline-block;
-  width: 50%;
   padding: 0 1rem 1rem 1rem;
   vertical-align: top;
+}
+
+.inline-single {
+  width: 100%;
+}
+
+.inline-single label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+.inline-split {
+  width: 50%;
+}
+
+.inline-split input,
+.inline-split select,
+.inline-split label {
+  display: block;
+  margin-bottom: 0.5rem;
+  width: 100%;
 }
 
 .inline-split.left {
