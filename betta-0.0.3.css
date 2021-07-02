@@ -397,7 +397,7 @@ main {
   }
 }
 body, nav, main, div, article, section,
-button, ul, li, a, p {
+header, button, ul, li, a, p, img {
   box-sizing: border-box;
 }
 
