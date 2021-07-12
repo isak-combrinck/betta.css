@@ -1287,7 +1287,8 @@ between lines
 }
 
 .inline-single,
-.inline-split {
+.inline-split,
+.inline-ternate {
   box-sizing: border-box;
   display: inline-block;
   padding: 0 1rem 1rem 1rem;
@@ -1320,14 +1321,15 @@ between lines
   vertical-align: bottom;
 }
 
+.inline-ternate {
+  width: 33.333333%;
+}
+
 @media (max-width: 600px) {
-  .inline-split {
+  .inline-split,
+.inline-ternate {
     display: block;
     width: 100%;
-  }
-
-  .inline-split {
-    padding-bottom: 1rem;
   }
 }
 /*---------------------------------------
