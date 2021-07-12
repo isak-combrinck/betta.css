@@ -1244,6 +1244,10 @@ button.dark:active:enabled {
   text-align: center;
 }
 
+.align-right {
+  text-align: right;
+}
+
 .italic {
   font-style: italic;
 }
@@ -1254,10 +1258,6 @@ between lines
 */
 .line {
   display: inline-block;
-}
-
-.right {
-  text-align: right;
 }
 
 .no-scroll {
@@ -1313,15 +1313,6 @@ between lines
   display: block;
   margin-bottom: 0.5rem;
   width: 100%;
-}
-
-.inline-split.left {
-  padding-right: 1rem;
-}
-
-.inline-split.right {
-  padding-left: 1rem;
-  text-align: left;
 }
 
 .inline-split .material-icons-round,
@@ -1721,7 +1712,6 @@ between lines
   width: 4rem;
   right: 0;
   padding: 1rem;
-  text-align: right;
 }
 
 #close, #caption {
