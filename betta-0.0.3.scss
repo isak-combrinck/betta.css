@@ -334,10 +334,12 @@ header.hero img {
 }
 
 header.hero>h1 {
-    font-size: 7rem;
-    padding-bottom: 6rem;
+    font-size: 6rem;
+    padding-bottom: 7rem;
     font-style: italic;
     letter-spacing: 0.35rem;
+    text-transform: uppercase;
+    text-shadow: -2px -2px 2px rgba(0,0,0,0.2);
 }
 /*-------------------------------------*/
 
@@ -692,6 +694,7 @@ body>nav ul li a:active {
     bottom: 0;
 	width: 12rem;
     padding: 1rem;
+    box-shadow: none;
 }
 
 .sidebar>ul>li {
@@ -826,7 +829,7 @@ body>nav ul li a:active {
 	Footer
 ---------------------------------------*/
 footer {
-	padding: 2rem 0 3rem 0;
+	padding: 5rem 0 0 0;
 	text-align: center;
 }
 /*-------------------------------------*/
