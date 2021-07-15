@@ -418,6 +418,11 @@ nav > ul, nav > ul > li, nav > ul > li > a, article > a {
 }
 
 article {
+  width: 100%;
+  margin: 0 auto;
+}
+
+article.narrow {
   max-width: 30rem;
   margin: 0 auto;
 }
@@ -853,6 +858,10 @@ img {
 
 img.round {
   border-radius: 50%;
+}
+
+.betta_image {
+  background: yellow;
 }
 
 /*-------------------------------------*/
