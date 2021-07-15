@@ -418,13 +418,13 @@ nav > ul, nav > ul > li, nav > ul > li > a, article > a {
 }
 
 article {
-  width: 100%;
+  max-width: 30rem;
   margin: 0 auto;
 }
 
-article.narrow {
-  max-width: 30rem;
-  margin: 0 auto;
+article.full {
+  width: 100%;
+  max-width: 100%;
 }
 
 ul {
@@ -623,6 +623,31 @@ details > summary > p {
 details {
   margin-bottom: 1.6rem;
   border-bottom: 0.7rem solid #e0e0e0;
+}
+
+/*-------------------------------------*/
+/*---------------------------------------
+	header
+---------------------------------------*/
+header {
+  width: 100%;
+  margin: 0 auto;
+}
+
+header.hero {
+  text-align: center;
+}
+
+header.hero img {
+  width: 100%;
+  padding: 0 1rem;
+}
+
+header.hero > h1 {
+  font-size: 7rem;
+  padding-bottom: 6rem;
+  font-style: italic;
+  letter-spacing: 0.35rem;
 }
 
 /*-------------------------------------*/
@@ -860,10 +885,6 @@ img.round {
   border-radius: 50%;
 }
 
-.betta_image {
-  background: yellow;
-}
-
 /*-------------------------------------*/
 /*---------------------------------------
 	Forms
@@ -973,8 +994,13 @@ body > nav ul li a:active {
   text-align: left;
 }
 
+@media (min-width: 800px) {
+  .sidebar {
+    width: 5rem;
+  }
+}
 .sidebar + main {
-  margin-left: 17rem;
+  margin-left: auto;
 }
 
 /*-------------------*/
