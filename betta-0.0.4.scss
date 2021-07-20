@@ -71,8 +71,7 @@ main {
 }
 
 main {
-	max-width: 55rem;
-	margin: 0 auto;
+	max-width: 100%;
 }
 
 @media(max-width: 800px) {
@@ -105,13 +104,15 @@ nav>ul, nav>ul>li, nav>ul>li>a, article>a {
 }
 
 article {
+    width: 100%;
     max-width: 30rem;
 	margin: 0 auto;
 }
 
-article.full {
+article.wide {
     width: 100%;
-    max-width: 100%;
+	max-width: 55rem;
+	margin: 0 auto;
 }
 
 ul {
@@ -265,6 +266,7 @@ hr {
 	border: none;
 	border-style: solid;
 	border-width: 1px;
+    color: $color-secondary;
 }
 
 /*
@@ -459,6 +461,17 @@ header.hero>h1 {
     nav.toolbar .tooltip>span.tooltip-text {
         visibility: hidden;
     }
+}
+
+// Display tooltip to right on sidebar
+.sidebar .tooltip>span.tooltip-text {
+    top: 0.5rem;
+    left: 3rem;
+    right: -9rem;
+}
+
+.sidebar .tooltip>span.tooltip-text::after {
+    display: none;
 }
 /*-------------------------------------*/
 
@@ -1196,6 +1209,90 @@ between lines
 
 .feed>article>a>p {
 	margin-bottom: 0;
+}
+/*-------------------------------------*/
+
+/*---------------------------------------
+	Link Card
+---------------------------------------*/
+a.card {
+	display: block;
+	padding: 0;
+	margin-top: 1rem;
+	border-color: $color-secondary;
+	transition: 0.2s;
+    border-radius: 0.25rem;
+    box-shadow: $shadow-level-2;
+}
+
+a.card .betta_image img {
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+@media(hover: hover) {
+	a.card:hover
+	{
+        background: $color-accent;
+        cursor: pointer;
+	}
+}
+
+a.card:active
+{
+	background: $color-active;
+    box-shadow: $shadow-level-0;
+}
+
+a.card p {
+    margin-top: 0.5rem;
+    padding: 0 2rem 2rem 2rem;
+}
+
+a.card h2,
+a.card h3,
+a.card h4 {
+    margin-top: 1.5rem;
+    padding: 0 2rem;
+}
+
+a.card h2,
+a.card h3,
+a.card h4 {
+	font-size: 1.6rem;
+	line-height: 2.15rem;
+	letter-spacing: 0.05rem;
+	margin-top: 2.15rem;
+}
+/*-------------------------------------*/
+
+/*---------------------------------------
+	Contact Card
+---------------------------------------*/
+.card.contact {
+
+	display: inline-block;
+	vertical-align: top;
+	height: 20rem;
+	width: 15rem;
+	margin: 0.9rem;
+    padding: 1rem;
+    border-radius: 0.25rem;
+    background: #ffffff;
+}
+
+.card.contact .picture {
+    width: 13rem;
+    height: 13rem;
+    background: #f5f5f5;
+    overflow: hidden;
+
+}
+
+.card.contact p{
+	margin-top: 0.5rem;
 }
 /*-------------------------------------*/
 
