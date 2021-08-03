@@ -634,6 +634,7 @@ details {
 header {
   width: 100%;
   margin: 0 auto;
+  padding-top: 3rem;
 }
 
 header.hero {
@@ -947,31 +948,45 @@ form input[type=file] {
 	Main Navigation Menu
 	Back Button
 ---------------------------------------*/
-body > nav {
-  position: fixed;
-  top: 0;
-  width: 100%;
+#betta_menu {
+  position: absolute;
+  left: 0;
+  right: 0;
   text-align: center;
   transition: 0.3s;
   overflow: show;
   z-index: 10;
   background: #ffffff;
+}
+
+.menu-spacer {
+  display: block;
+  padding-top: 2.5rem;
+}
+
+/*-------------------*/
+/* Stick Menu        */
+/*-------------------*/
+#betta_menu.stick {
+  position: fixed;
+  top: 0;
   box-shadow: 0 2px 6px 1px rgba(0, 0, 0, 0.2);
 }
 
-body > nav ul {
+/*-------------------*/
+#betta_menu ul {
   padding: 0;
   margin: 0;
   text-align: center;
 }
 
-body > nav ul li {
+#betta_menu ul li {
   display: inline-block;
   margin: 0.25rem;
   list-style: none;
 }
 
-body > nav ul li a {
+#betta_menu ul li a {
   display: inline-block;
   border-radius: 2rem;
   vertical-align: middle;
@@ -979,31 +994,33 @@ body > nav ul li a {
   font-weight: 700;
 }
 
-body > nav ul li a .material-icons-round,
-body > nav ul li a .text {
+#betta_menu ul li a .material-icons-round,
+#betta_menu ul li a .text {
   display: block;
   height: 1.5rem;
   padding: 0.5rem;
   line-height: 1.5rem;
 }
 
-body > nav ul li a .text {
+#betta_menu ul li a .text {
   padding: 0.25rem 0.75rem;
 }
 
-body > nav ul li a.active {
+#betta_menu ul li a.active {
   background: #e0e0e0;
 }
 
-body > nav ul li button {
+#betta_menu ul li button {
   z-index: 99;
 }
 
-body > nav ul li a:active {
+#betta_menu ul li a:active {
   background: #eeeeee;
   transition: 0.1s;
 }
 
+/*-------------------*/
+/* Sidebar Menu      */
 /*-------------------*/
 .sidebar {
   bottom: 0;
@@ -1027,7 +1044,7 @@ body > nav ul li a:active {
 }
 
 /*-------------------*/
-#menu-button {
+#betta_menu-button {
   display: none;
   position: fixed;
   right: 1rem;
@@ -1049,17 +1066,17 @@ body > nav ul li a:active {
   z-index: 10;
 }
 
-#menu-button:active,
+#betta_menu-button:active,
 #back-button:active {
   box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2);
 }
 
 @media (hover: hover) {
-  body > nav ul li a:hover {
+  #betta_menu ul li a:hover {
     background: #f5f5f5;
   }
 
-  body > nav ul li a.active:hover {
+  #betta_menu ul li a.active:hover {
     background: #e0e0e0;
   }
 }
@@ -1075,12 +1092,12 @@ body > nav ul li a:active {
     margin-left: auto;
   }
 
-  body > nav > ul {
+  #betta_menu > ul {
     position: absolute;
     bottom: 5rem;
   }
 
-  body > nav,
+  #betta_menu,
 .sidebar {
     display: none;
     padding: 5rem 3rem;
@@ -1091,29 +1108,29 @@ body > nav ul li a:active {
     overflow-y: scroll;
   }
 
-  body > nav.show,
+  #betta_menu.show,
 .sidebar.show {
     display: block;
   }
 
-  body > nav > ul > li {
+  #betta_menu > ul > li {
     display: block;
     text-align: left;
     margin-bottom: 0.75rem;
   }
 
-  body > nav > ul > li > a {
+  #betta_menu > ul > li > a {
     font-size: 1.25rem;
     line-height: 1.75rem;
     letter-spacing: 0.05rem;
   }
 
-  #menu-button {
+  #betta_menu-button {
     display: block;
   }
 
   /* Display menu as toolbar */
-  body > nav.toolbar {
+  #betta_menu.toolbar {
     display: block;
     top: auto;
     padding: 0.25rem 0 0.5rem 0;
@@ -1121,17 +1138,17 @@ body > nav ul li a:active {
     overflow: hidden;
   }
 
-  body > nav.toolbar > ul {
+  #betta_menu.toolbar > ul {
     position: static;
   }
 
-  body > nav.toolbar > ul > li {
+  #betta_menu.toolbar > ul > li {
     display: inline-block;
     text-align: left;
     margin-bottom: 0rem;
   }
 }
-body > nav ul li a:active {
+#betta_menu ul li a:active {
   background: #eeeeee;
   transition: 0.1s;
 }
@@ -1537,6 +1554,79 @@ a.card h4 {
 a.card h2,
 a.card h3,
 a.card h4 {
+  font-size: 1.6rem;
+  line-height: 2.15rem;
+  letter-spacing: 0.05rem;
+  margin-top: 2.15rem;
+}
+
+/*-------------------------------------*/
+/*---------------------------------------
+	Link Card Double
+---------------------------------------*/
+a.card-double {
+  display: block;
+  padding: 0;
+  margin-top: 1rem;
+  border-color: #e0e0e0;
+  transition: 0.2s;
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 6px 1px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+a.card-double .betta_image,
+a.card-double .content {
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+}
+
+a.card-double .betta_image img {
+  margin-bottom: -3px;
+  border-radius: 0;
+}
+
+a.card-double .content {
+  max-height: 100%;
+  padding: 4rem 3rem 0 3rem;
+}
+
+@media (hover: hover) {
+  a.card-double:hover {
+    background: #f5f5f5;
+    cursor: pointer;
+  }
+}
+a.card-double:active {
+  background: #eeeeee;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2);
+}
+
+a.card p {
+  margin-top: 0.5rem;
+  padding: 0 2rem 2rem 2rem;
+}
+
+a.card-double h2,
+a.card-double h3,
+a.card-double h4 {
+  text-align: center;
+  margin-top: 1.5rem;
+  padding: 0 0 1rem 0;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+a.card-double:hover h2,
+a.card-double:hover h3,
+a.card-double:hover h4 {
+  border-bottom: 2px solid #212121;
+  transition: 0.1s;
+}
+
+a.card-double h2,
+a.card-double h3,
+a.card-double h4 {
   font-size: 1.6rem;
   line-height: 2.15rem;
   letter-spacing: 0.05rem;
