@@ -1245,7 +1245,14 @@ a.card {
     box-shadow: $shadow-level-2;
 }
 
+a.card .betta_image {
+    height: 17rem;
+    width: 25.5rem;
+}
+
 a.card .betta_image img {
+    height: 100%;
+    width: 100%;
     border-top-left-radius: 0.25rem;
     border-top-right-radius: 0.25rem;
     border-bottom-left-radius: 0;
