@@ -1256,6 +1256,7 @@ between lines
 	Link Card
 ---------------------------------------*/
 a.card {
+    position: relative;
 	display: block;
 	padding: 0;
 	margin-top: 1rem;
@@ -1280,11 +1281,39 @@ a.card .betta_image img {
     border-bottom-right-radius: 0;
 }
 
+/* Cover card */
+a.card.cover .betta_image img,
+a.card.cover .betta_image {
+    border-radius: 0.25rem;
+}
+
+a.card.cover .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 0.25rem;
+}
+
+a.card.cover .content h2 {
+    width: auto;
+    margin: 6.5rem 4rem 0 4rem;
+    padding: 1rem;
+    text-align: center;
+    background:rgba(255, 255, 255, 0.75);
+    transition: 0.1s;
+}
+
 @media(hover: hover) {
 	a.card:hover
 	{
         background: $color-accent;
         cursor: pointer;
+	}
+
+    a.card.cover:hover .content h2
+	{
 	}
 }
 
