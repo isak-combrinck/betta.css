@@ -335,7 +335,7 @@ header.hero {
 
 header.hero img {
     width: 100%;
-    padding: 0 1rem;
+    padding: 0 2rem;
 }
 
 header.hero>h1 {
@@ -606,15 +606,35 @@ img.round {
 }
 
 .betta_image {
-    background: $color-accent;
 }
 
 .betta_image>div {
+    position: relative;
 
 }
 
 .betta_image>div img {
+    margin-bottom: -3px;
+    border-radius: 0;
 }
+
+.betta_image .name {
+    position: absolute;
+    left: 0;
+    bottom: -1rem;
+
+    -webkit-transform: rotate(-90deg);
+    -webkit-transform-origin: right bottom;
+    -moz-transform: rotate(-90deg);
+    -moz-transform-origin: right bottom;
+    -ms-transform: rotate(-90deg);
+    -ms-transform-origin: right bottom;
+    -o-transform: rotate(-90deg);
+    -o-transform-origin: right bottom;
+    transform: rotate(-90deg);
+    transform-origin: left bottom;
+}
+
 /*-------------------------------------*/
 
 /*---------------------------------------
@@ -1248,6 +1268,7 @@ a.card {
 a.card .betta_image {
     height: 17rem;
     width: 25.5rem;
+    background: $color-accent;
 }
 
 a.card .betta_image img {
@@ -1317,6 +1338,10 @@ a.card-double .content {
     width: 50%;
     display: inline-block;
     vertical-align: top;
+}
+
+a.card-double .betta_image {
+    background: $color-accent;
 }
 
 a.card-double .betta_image img {
