@@ -488,8 +488,7 @@ h2 > a,
 h3 > a,
 h4 > a,
 h5 > a,
-h6 > a,
-li > a {
+h6 > a {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-color: #e0e0e0;
@@ -510,8 +509,7 @@ h2 > a:hover,
 h3 > a:hover,
 h4 > a:hover,
 h5 > a:hover,
-h6 > a:hover,
-li > a:hover {
+h6 > a:hover {
   border-color: #212121;
 }
 
@@ -917,6 +915,10 @@ img.round {
 .betta_image > div img {
   margin-bottom: -3px;
   border-radius: 0;
+}
+
+.betta_image > div img.round {
+  border-radius: 50%;
 }
 
 .betta_image .name {
