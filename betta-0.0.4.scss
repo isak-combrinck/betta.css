@@ -1438,10 +1438,11 @@ a.card-double h4 {
 	vertical-align: top;
 	height: 20rem;
 	width: 15rem;
-	margin: 0.9rem;
+    margin: 1.5rem;
     padding: 1rem;
     border-radius: 0.25rem;
-    background: #ffffff;
+    background: $color-background;
+    box-shadow: $shadow-level-2;
 }
 
 .card.contact .picture {

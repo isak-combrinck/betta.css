@@ -1711,10 +1711,11 @@ a.card-double h4 {
   vertical-align: top;
   height: 20rem;
   width: 15rem;
-  margin: 0.9rem;
+  margin: 1.5rem;
   padding: 1rem;
   border-radius: 0.25rem;
   background: #ffffff;
+  box-shadow: 0 2px 6px 1px rgba(0, 0, 0, 0.2);
 }
 
 .card.contact .picture {
