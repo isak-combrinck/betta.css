@@ -1410,13 +1410,13 @@ a.card-double h4 {
     text-align: center;
     margin-top: 1.5rem;
     padding: 0 0 1rem 0;
-    border-bottom: 2px solid #e0e0e0;
+    border-bottom: 3px solid #e0e0e0;
 }
 
 a.card-double:hover h2,
 a.card-double:hover h3,
 a.card-double:hover h4 {
-    border-bottom: 2px solid #212121;
+    border-bottom: 3px solid #212121;
     transition: 0.1s;
 }
 
@@ -1436,25 +1436,26 @@ a.card-double h4 {
 .card.contact {
 	display: inline-block;
 	vertical-align: top;
-	height: 20rem;
-	width: 15rem;
-    margin: 1.5rem;
-    padding: 1rem;
-    border-radius: 0.25rem;
-    background: $color-background;
-    box-shadow: $shadow-level-2;
+	height: 30rem;
+	width: 25rem;
+    margin: 1.25rem 0.75rem 0 0.75rem;
 }
 
 .card.contact .picture {
-    width: 13rem;
-    height: 13rem;
+	width: 25rem;
+	height: 25rem;
     background: #f5f5f5;
     overflow: hidden;
 
 }
 
-.card.contact p{
-	margin-top: 0.5rem;
+.card.contact p {
+    position: relative;
+    width: 15rem;
+    padding: 0.5rem;
+    margin: -2rem auto 0 auto;
+    background: #f5f5f5;
+    z-index: 2;
 }
 /*-------------------------------------*/
 
