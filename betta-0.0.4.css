@@ -1262,6 +1262,10 @@ span.icon.big > img {
   padding: 1rem;
 }
 
+p > .icon {
+  vertical-align: bottom;
+}
+
 /*-------------------------------------*/
 /*---------------------------------------
 	Buttons
@@ -1589,9 +1593,11 @@ between lines
 ---------------------------------------*/
 a.card {
   position: relative;
-  display: block;
+  display: inline-block;
+  width: 25.5rem;
   padding: 0;
   margin-top: 1rem;
+  margin: 1rem;
   border-color: #e0e0e0;
   transition: 0.2s;
   border-radius: 0.25rem;
@@ -1645,6 +1651,7 @@ a.card.cover h4 {
   line-height: 1.75rem;
   letter-spacing: 0.05rem;
   margin-top: 1.75rem;
+  border: none;
 }
 
 @media (hover: hover) {
@@ -1668,22 +1675,39 @@ a.card:active {
 a.card p {
   margin-top: 0.5rem;
   padding: 0 2rem 2rem 2rem;
+  text-align: left;
 }
 
 a.card h2,
 a.card h3,
 a.card h4 {
-  margin-top: 1.5rem;
-  padding: 0 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 a.card h2,
 a.card h3,
-a.card h4 {
+a.card h4,
+a.card-double h2,
+a.card-double h3,
+a.card-double h4 {
+  padding: 0 0 1rem 0;
+  margin-top: 2.15rem;
+  border-bottom: 3px solid #e0e0e0;
   font-size: 1.6rem;
   line-height: 2.15rem;
   letter-spacing: 0.05rem;
-  margin-top: 2.15rem;
+  text-align: center;
+}
+
+a.card:hover h2,
+a.card:hover h3,
+a.card:hover h4,
+a.card-double:hover h2,
+a.card-double:hover h3,
+a.card-double:hover h4 {
+  border-bottom: 3px solid #212121;
+  transition: 0.1s;
 }
 
 /*-------------------------------------*/
@@ -1736,36 +1760,6 @@ a.card-double .content {
 a.card-double:active {
   background: #eeeeee;
   box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2);
-}
-
-a.card p {
-  margin-top: 0.5rem;
-  padding: 0 2rem 2rem 2rem;
-}
-
-a.card-double h2,
-a.card-double h3,
-a.card-double h4 {
-  text-align: center;
-  margin-top: 1.5rem;
-  padding: 0 0 1rem 0;
-  border-bottom: 3px solid #e0e0e0;
-}
-
-a.card-double:hover h2,
-a.card-double:hover h3,
-a.card-double:hover h4 {
-  border-bottom: 3px solid #212121;
-  transition: 0.1s;
-}
-
-a.card-double h2,
-a.card-double h3,
-a.card-double h4 {
-  font-size: 1.6rem;
-  line-height: 2.15rem;
-  letter-spacing: 0.05rem;
-  margin-top: 2.15rem;
 }
 
 /*-------------------------------------*/
