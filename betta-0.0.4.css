@@ -952,7 +952,7 @@ img.round {
 }
 
 .betta_image.slideshow .selectors span:hover {
-  cursor: pointer;
+  cursor: default;
 }
 
 /*-------------------------------------*/
