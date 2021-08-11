@@ -1749,6 +1749,20 @@ a.card-double h4 {
   z-index: 2;
 }
 
+.card.contact .email {
+  position: absolute;
+  top: 0.75rem;
+  right: -1.25rem;
+  border-bottom: none;
+}
+
+.card.contact .phone {
+  position: absolute;
+  top: 0.75rem;
+  left: -1.25rem;
+  border-bottom: none;
+}
+
 /*-------------------------------------*/
 /*---------------------------------------
 	Card
