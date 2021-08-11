@@ -941,6 +941,22 @@ img.round {
 
 /*-------------------------------------*/
 /*---------------------------------------
+	Slideshow
+---------------------------------------*/
+.betta_image.slideshow .selectors span {
+  font-size: 1.5rem;
+}
+
+.betta_image.slideshow .selectors:hover {
+  cursor: default;
+}
+
+.betta_image.slideshow .selectors span:hover {
+  cursor: pointer;
+}
+
+/*-------------------------------------*/
+/*---------------------------------------
 	Forms
 ---------------------------------------*/
 form {

@@ -610,7 +610,6 @@ img.round {
 
 .betta_image>div {
     position: relative;
-
 }
 
 .betta_image>div img {
@@ -638,7 +637,23 @@ img.round {
     transform: rotate(-90deg);
     transform-origin: left bottom;
 }
+/*-------------------------------------*/
 
+/*---------------------------------------
+	Slideshow
+---------------------------------------*/
+
+.betta_image.slideshow .selectors span{
+    font-size: 1.5rem;
+}
+
+.betta_image.slideshow .selectors:hover{
+    cursor: default;
+}
+
+.betta_image.slideshow .selectors span:hover{
+    cursor: pointer;
+}
 /*-------------------------------------*/
 
 /*---------------------------------------
