@@ -921,6 +921,21 @@ span.icon>img {
     line-height: 0rem;
 	color: $color-main;
 }
+
+span.icon.big {
+    height: 4rem;
+    width: 4rem;
+    line-height: 0rem;
+}
+
+span.icon.big>img {
+    height: 4rem;
+    width: 4rem;
+    line-height: 0rem;
+    background: $color-active;
+    border-radius: 50%;
+    padding: 1rem;
+}
 /*-------------------------------------*/
 
 /*---------------------------------------

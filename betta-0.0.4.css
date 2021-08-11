@@ -1217,6 +1217,21 @@ span.icon > img {
   color: #212121;
 }
 
+span.icon.big {
+  height: 4rem;
+  width: 4rem;
+  line-height: 0rem;
+}
+
+span.icon.big > img {
+  height: 4rem;
+  width: 4rem;
+  line-height: 0rem;
+  background: #eeeeee;
+  border-radius: 50%;
+  padding: 1rem;
+}
+
 /*-------------------------------------*/
 /*---------------------------------------
 	Buttons
