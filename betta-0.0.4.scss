@@ -1385,6 +1385,12 @@ a.card.cover h4 {
     bottom: 1.5rem;
     right: 1.5rem;
 	}
+
+    a.card.cover:hover h2,
+    a.card.cover:hover h3,
+    a.card.cover:hover h4 {
+        border: none;
+    }
 }
 
 a.card:active
