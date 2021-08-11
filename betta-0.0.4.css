@@ -943,6 +943,20 @@ img.round {
 /*---------------------------------------
 	Slideshow
 ---------------------------------------*/
+#crossfade {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 1;
+  transition: 1.5s;
+}
+
+#crossfade.hidden {
+  opacity: 0;
+}
+
 .betta_image.slideshow .selectors span {
   font-size: 1.5rem;
 }
