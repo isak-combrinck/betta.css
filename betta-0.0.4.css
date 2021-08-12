@@ -1105,51 +1105,6 @@ form input[type=file] {
 }
 
 /*-------------------*/
-#betta_menu-button {
-  display: none;
-  position: fixed;
-  right: calc(50vw - 2rem);
-  bottom: 1rem;
-  width: 4rem;
-  height: 4rem;
-  box-shadow: 0 2px 6px 1px rgba(0, 0, 0, 0.2);
-  z-index: 11;
-}
-
-#betta_home-button {
-  position: fixed;
-  top: 1.25rem;
-  left: 1.25rem;
-  width: 3rem;
-  height: 3rem;
-  z-index: 11;
-}
-
-#betta_home-button button {
-  width: 3rem;
-  height: 3rem;
-}
-
-#betta_home-button img {
-  height: auto;
-}
-
-#back-button {
-  display: block;
-  position: fixed;
-  top: 1rem;
-  left: 1rem;
-  width: 2.5rem;
-  height: 2.5rem;
-  box-shadow: 0 2px 6px 1px rgba(0, 0, 0, 0.2);
-  z-index: 10;
-}
-
-#betta_menu-button:active,
-#back-button:active {
-  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2);
-}
-
 @media (hover: hover) {
   #betta_menu ul li a:hover {
     background: #f5f5f5;
@@ -1160,20 +1115,13 @@ form input[type=file] {
   }
 }
 @media (max-width: 800px) {
-  #back-button {
-    top: auto;
-    bottom: 1rem;
-    width: 4rem;
-    height: 4rem;
-  }
-
   .sidebar + main {
     margin-left: auto;
   }
 
   #betta_menu > ul {
     position: absolute;
-    bottom: 5rem;
+    bottom: 6rem;
   }
 
   #betta_menu,
@@ -1181,6 +1129,7 @@ form input[type=file] {
     display: none;
     padding: 5rem 3rem;
     width: auto;
+    top: 0;
     left: 0;
     right: 0;
     bottom: 0;
@@ -1202,15 +1151,6 @@ form input[type=file] {
     font-size: 1.25rem;
     line-height: 1.75rem;
     letter-spacing: 0.05rem;
-  }
-
-  #betta_menu-button {
-    display: block;
-  }
-
-  #betta_home-button {
-    top: auto;
-    bottom: 1.5rem;
   }
 
   /* Display menu as toolbar */
@@ -1237,6 +1177,57 @@ form input[type=file] {
   transition: 0.1s;
 }
 
+/*-------------------------------------*/
+/*---------------------------------------
+    Home Button
+	Menu Button
+	Back Button
+---------------------------------------*/
+#betta_home-button,
+#betta_back-button {
+  position: fixed;
+  top: 1.25rem;
+  left: 1.25rem;
+  width: 3rem;
+  height: 3rem;
+  z-index: 10;
+}
+
+#betta_menu-button {
+  display: none;
+  position: fixed;
+  z-index: 11;
+}
+
+#betta_home-button button,
+#betta_back-button button {
+  width: 100%;
+  height: 100%;
+}
+
+#betta_home-button img {
+  height: auto;
+}
+
+@media (max-width: 800px) {
+  #betta_menu-button,
+#betta_back-button {
+    top: auto;
+    bottom: 1rem;
+    left: calc(50vw - 2rem);
+    width: 4rem;
+    height: 4rem;
+  }
+
+  #betta_menu-button {
+    display: block;
+  }
+
+  #betta_home-button {
+    top: auto;
+    bottom: 1.5rem;
+  }
+}
 /*-------------------------------------*/
 /*---------------------------------------
 	Footer
