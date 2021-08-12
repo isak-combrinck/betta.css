@@ -265,10 +265,7 @@ h6 {
 }
 
 hr {
-	border: none;
-	border-style: solid;
-	border-width: 1px;
-    color: $color-secondary;
+    border: 2px solid $color-secondary;
 }
 
 /*
@@ -939,8 +936,11 @@ form input[type="file"] {
 	Footer
 ---------------------------------------*/
 footer {
-	padding: 5rem 0 0 0;
 	text-align: center;
+}
+
+footer p {
+	margin: 0;
 }
 /*-------------------------------------*/
 
