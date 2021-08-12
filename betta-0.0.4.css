@@ -1108,12 +1108,30 @@ form input[type=file] {
 #betta_menu-button {
   display: none;
   position: fixed;
-  right: 1rem;
+  right: calc(50vw - 2rem);
   bottom: 1rem;
   width: 4rem;
   height: 4rem;
   box-shadow: 0 2px 6px 1px rgba(0, 0, 0, 0.2);
   z-index: 11;
+}
+
+#betta_home-button {
+  position: fixed;
+  top: 1.25rem;
+  left: 1.25rem;
+  width: 3rem;
+  height: 3rem;
+  z-index: 11;
+}
+
+#betta_home-button button {
+  width: 3rem;
+  height: 3rem;
+}
+
+#betta_home-button img {
+  height: auto;
 }
 
 #back-button {
@@ -1188,6 +1206,11 @@ form input[type=file] {
 
   #betta_menu-button {
     display: block;
+  }
+
+  #betta_home-button {
+    top: auto;
+    bottom: 1.5rem;
   }
 
   /* Display menu as toolbar */
