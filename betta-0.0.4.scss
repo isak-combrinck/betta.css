@@ -939,8 +939,17 @@ footer {
 	text-align: center;
 }
 
-footer p {
+footer p a {
 	margin: 0;
+    color: #90A4AE;
+    font-weight: bold;
+    border: none;
+    transition: 0.3s;
+}
+
+footer p a:hover {
+    color: #607D8B;
+    transition: 0.3s;
 }
 /*-------------------------------------*/
 
