@@ -1536,7 +1536,7 @@ a.card-double:active
 
 }
 
-.card.contact p {
+.card.contact .content {
     position: relative;
     width: 15rem;
     padding: 0.5rem;
@@ -1545,11 +1545,8 @@ a.card-double:active
     z-index: 2;
 }
 
-.card.contact .email {
-    position: absolute;
-    top: 0.75rem;
-    right: -1.25rem;
-    border-bottom: none;
+.card.contact .content p {
+    margin: 0;
 }
 
 .card.contact .phone {
@@ -1557,7 +1554,44 @@ a.card-double:active
     top: 0.75rem;
     left: -1.25rem;
     border-bottom: none;
+    z-index: 1;
 }
+
+.card.contact .email {
+    position: absolute;
+    top: 0.75rem;
+    right: -1.25rem;
+    border-bottom: none;
+    z-index: 1;
+}
+
+.card.contact .phone:hover + .phone-number,
+.card.contact .email:hover + .email-address {
+    display: block;
+}
+
+.card.contact .phone-number,
+.card.contact .email-address {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding-top: 1.3rem;
+    background-color: $color-accent;
+}
+
+.card.contact .phone-number:hover,
+.card.contact .email-address:hover {
+    display: block;
+}
+
+.card.contact .phone-number:hover + .phone,
+.card.contact .email-address:hover + .email {
+    background-color: $color-accent;
+}
+
 /*-------------------------------------*/
 
 /*---------------------------------------
