@@ -578,7 +578,9 @@ h6 {
 }
 
 hr {
-  border: 2px solid #e0e0e0;
+  border: none;
+  height: 3px;
+  background: #e0e0e0;
 }
 
 /*
