@@ -265,7 +265,9 @@ h6 {
 }
 
 hr {
-    border: 2px solid $color-secondary;
+    border: none;
+    height: 3px;
+    background: $color-secondary;
 }
 
 /*
