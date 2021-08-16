@@ -604,9 +604,6 @@ img.round {
 	border-radius: 50%;
 }
 
-.betta_image {
-}
-
 .betta_image>div {
     position: relative;
 }
@@ -635,6 +632,34 @@ img.round {
     -o-transform-origin: right bottom;
     transform: rotate(-90deg);
     transform-origin: left bottom;
+}
+/*-------------------------------------*/
+
+/*---------------------------------------
+	Image Strip
+---------------------------------------*/
+.betta_image-strip {
+    height: 20rem;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    white-space: nowrap;
+    scrollbar-width: 0;
+}
+
+.betta_image-strip #back {
+    left: calc(50vw - (55rem / 2) - 4rem);
+    margin-top: 8rem;
+}
+
+.betta_image-strip #forward {
+    right: calc(50vw - (55rem / 2) - 4rem);
+    margin-top: 8rem;
+}
+
+.betta_image-strip .betta_image {
+    display: inline-block;
+    width: calc(50% - 2rem);
+    margin: 1rem;
 }
 /*-------------------------------------*/
 
