@@ -1457,6 +1457,11 @@ a.card p {
     padding: 0 2rem 2rem 2rem;
     text-align: left;
 }
+a.card p.small {
+    margin-top: -2rem;
+    padding: 0 2rem;
+    text-align: left;
+}
 
 a.card h2,
 a.card h3,

@@ -1740,6 +1740,12 @@ a.card p {
   text-align: left;
 }
 
+a.card p.small {
+  margin-top: -2rem;
+  padding: 0 2rem;
+  text-align: left;
+}
+
 a.card h2,
 a.card h3,
 a.card h4 {
