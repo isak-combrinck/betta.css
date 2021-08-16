@@ -1110,24 +1110,26 @@ form input[type=file] {
 /*-------------------*/
 /* Sidebar Menu      */
 /*-------------------*/
-.sidebar {
+#betta_menu.sidebar {
+  position: fixed;
+  top: 0;
   bottom: 0;
   width: 12rem;
   padding: 1rem;
   box-shadow: none;
 }
 
-.sidebar > ul > li {
+#betta_menu.sidebar > ul > li {
   display: block;
   text-align: left;
 }
 
 @media (min-width: 800px) {
-  .sidebar {
+  #betta_menu.sidebar {
     width: 5rem;
   }
 }
-.sidebar + main {
+#betta_menu.sidebar + main {
   margin-left: auto;
 }
 
