@@ -953,11 +953,13 @@ img.round {
 .betta_image-strip #back {
   left: calc(50vw - (55rem / 2) - 4rem);
   margin-top: 8rem;
+  z-index: 5;
 }
 
 .betta_image-strip #forward {
   right: calc(50vw - (55rem / 2) - 4rem);
   margin-top: 8rem;
+  z-index: 5;
 }
 
 .betta_image-strip .betta_image {
