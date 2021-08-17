@@ -885,6 +885,8 @@ form input[type="file"] {
 
     /* Display menu as toolbar */
     #betta_menu.toolbar {
+        position: fixed;
+        bottom: 0;
         display: block;
         top: auto;
 		padding: 0.25rem 0 0.5rem 0;
