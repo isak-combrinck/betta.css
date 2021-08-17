@@ -985,7 +985,10 @@ img.round {
 }
 
 .betta_image.slideshow .selectors span {
+  position: relative;
+  display: inline-block;
   font-size: 1.5rem;
+  z-index: 5;
 }
 
 .betta_image.slideshow .selectors:hover {
@@ -993,7 +996,7 @@ img.round {
 }
 
 .betta_image.slideshow .selectors span:hover {
-  cursor: default;
+  cursor: pointer;
 }
 
 /*-------------------------------------*/
