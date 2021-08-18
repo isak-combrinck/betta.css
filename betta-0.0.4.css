@@ -14,6 +14,8 @@ E.g. sass --watch betta-0.0.4.scss betta-0.0.4.css
 - #page, use main instead
 - .material-icons-round, use .icon instead
 - .custom-icon, use .icon instead
+
+TEMP is used to denote properties that need to be changed
 ---------------------------------------*/
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -795,7 +797,7 @@ header.hero > h1 {
   text-align: center;
   z-index: 10;
   box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.2);
-  background: #fff;
+  background: #ffffff;
 }
 
 .betta-banner > p {
@@ -1274,6 +1276,7 @@ footer {
 footer p a {
   margin: 0;
   color: #90A4AE;
+  /* TEMP */
   font-weight: bold;
   border: none;
   transition: 0.2s;
@@ -1281,6 +1284,7 @@ footer p a {
 
 footer p a:hover {
   color: #607D8B;
+  /* TEMP */
 }
 
 /*-------------------------------------*/
@@ -1364,6 +1368,7 @@ button.dark {
 
   button.dark:hover:enabled {
     background: #616161;
+    /* TEMP */
   }
 }
 button:active:enabled {
@@ -1373,6 +1378,7 @@ button:active:enabled {
 
 button.dark:active:enabled {
   background: #424242;
+  /* TEMP */
 }
 
 .icon-button {
@@ -1389,6 +1395,7 @@ button.dark:active:enabled {
 .icon-button.filled:disabled .material-icons-round,
 .icon-button.filled:disabled .icon {
   color: #757575;
+  /* TEMP */
 }
 
 .icon-button .text {
@@ -2078,7 +2085,7 @@ a.card-double:active {
   padding: 0.5rem 1rem;
   border-radius: 0.25rem;
   box-shadow: 0 2px 6px 1px rgba(0, 0, 0, 0.2);
-  background: #fff;
+  background: #ffffff;
 }
 
 .lightbox .middle .caption.open {
@@ -2154,6 +2161,7 @@ p.version {
   border-radius: 1rem;
   word-wrap: break-word;
   background-color: #FF3737;
+  /* TEMP */
 }
 
 #cancel-notification {

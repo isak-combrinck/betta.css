@@ -14,6 +14,8 @@ E.g. sass --watch betta-0.0.4.scss betta-0.0.4.css
 - #page, use main instead
 - .material-icons-round, use .icon instead
 - .custom-icon, use .icon instead
+
+TEMP is used to denote properties that need to be changed
 ---------------------------------------*/
 
 @import 'normalize';
@@ -131,7 +133,7 @@ li {
 	Typographical Elements
 ---------------------------------------*/
 h1, h2, h3, h4, h5, h6, p, a, li, textarea, option, input, select, button {
-	color: #212121;
+	color: $color-main;
 }
 
 a {
@@ -489,7 +491,7 @@ header.hero>h1 {
 	text-align: center;
 	z-index: 10;
 	box-shadow: $shadow-level-1;
-	background: #fff;
+	background: $color-background;
 }
 
 .betta-banner>p {
@@ -978,14 +980,14 @@ footer {
 
 footer p a {
 	margin: 0;
-    color: #90A4AE;
+    color: #90A4AE; /* TEMP */
     font-weight: bold;
     border: none;
     transition: $transition-default;
 }
 
 footer p a:hover {
-    color: #607D8B;
+    color: #607D8B; /* TEMP */
 }
 /*-------------------------------------*/
 
@@ -1046,7 +1048,7 @@ button {
 	padding: 0.25rem 1rem;
 	border-radius: 2rem;
 	box-shadow: $shadow-level-1;
-	background: #ffffff;
+	background: $color-background;
 	transition: $transition-default;
 }
 
@@ -1056,7 +1058,7 @@ button:disabled {
 }
 
 button.dark {
-	background: #212121;
+	background: $color-main;
 }
 
 @media(hover:hover) {
@@ -1067,7 +1069,7 @@ button.dark {
 	}
 
 	button.dark:hover:enabled {
-		background: #616161;
+		background: #616161; /* TEMP */
 	}
 }
 
@@ -1077,7 +1079,7 @@ button:active:enabled {
 }
 
 button.dark:active:enabled {
-	background: #424242;
+	background: #424242; /* TEMP */
 }
 
 .icon-button {
@@ -1087,13 +1089,13 @@ button.dark:active:enabled {
 
 .icon-button.filled .material-icons-round, /* deprecated */
 .icon-button.filled .icon {
-	color: #212121;
+	color: $color-main;
 }
 
 .icon-button.filled:disabled,
 .icon-button.filled:disabled .material-icons-round, /* deprecated */
 .icon-button.filled:disabled .icon {
-	color: #757575;
+	color: #757575; /* TEMP */
 }
 
 .icon-button .text {
@@ -1106,7 +1108,7 @@ button.dark:active:enabled {
 .icon-button .material-icons-round, /* deprecated */
 .icon-button>.icon {
 	vertical-align: middle;
-	color: #212121;
+	color: $color-main;
 	font-size: 1.8rem;
 }
 
@@ -1116,7 +1118,7 @@ button.dark:active:enabled {
 }
 
 .icon-button.dark .material-icons-round { /* deprecated */
-	color: #ffffff;
+	color: $color-background;
 }
 
 @media(max-width: 800px) {
@@ -1281,7 +1283,7 @@ between lines
 .photo>img {
 	width: 100%;
 	box-shadow: $shadow-level-2;
-	background: #f5f5f5;
+	background: $color-accent;
 	border-radius: 0.25rem;
 }
 
@@ -1490,7 +1492,7 @@ a.card-double h3,
 a.card-double h4 {
     padding: 0 0 1rem 0;
 	margin-top: 2.15rem;
-    border-bottom: 3px solid #e0e0e0;
+    border-bottom: 3px solid $color-secondary;
 	font-size: 1.6rem;
 	line-height: 2.15rem;
 	letter-spacing: 0.05rem;
@@ -1504,7 +1506,7 @@ a.card:hover h4,
 a.card-double:hover h2,
 a.card-double:hover h3,
 a.card-double:hover h4 {
-    border-bottom: 3px solid #212121;
+    border-bottom: 3px solid $color-main;
 }
 /*-------------------------------------*/
 
@@ -1582,7 +1584,7 @@ a.card-double:active
 .card.contact .picture {
 	width: 25rem;
 	height: 25rem;
-    background: #f5f5f5;
+    background: $color-accent;
     overflow: hidden;
 
 }
@@ -1709,7 +1711,7 @@ a.card-double:active
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background:#ffffff;
+	background: $color-background;
 	z-index: 100;
 }
 
@@ -1802,7 +1804,7 @@ a.card-double:active
 	padding: 0.5rem 1rem;
 	border-radius: 0.25rem;
 	box-shadow: $shadow-level-2;
-	background: #fff;
+	background: $color-background;
 }
 
 .lightbox .middle .caption.open {
@@ -1880,7 +1882,7 @@ p.version {
 	border-color: rgb(129, 120, 106);
 	border-radius: 1rem;
 	word-wrap: break-word;
-	background-color: #FF3737;
+	background-color: #FF3737; /* TEMP */
 }
 
 #cancel-notification {
