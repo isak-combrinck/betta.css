@@ -52,7 +52,9 @@ $line-height: 1.6rem;
 /*---------------------------------------
   Transitions
 ---------------------------------------*/
+$transition-fast: 0.1s;
 $transition-default: 0.2s;
+$transition-slow: 0.3s;
 
 
 /*-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
@@ -208,12 +210,11 @@ p>a.icon {
 
 p>a.icon>img {
 	width: 2rem;
-	transition: 0.3s;
+	transition: $transition-default;
 }
 
 p>a.icon:hover>img {
 	opacity: 0.8;
-	transition: 0.1s;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -572,7 +573,7 @@ header.hero>h1 {
 		opacity: 0;
 		-webkit-backdrop-filter: blur(0);
 		backdrop-filter: blur(0);
-		transition: 0.2s;
+		transition: $transition-default;
 	}
 
 	.betta_action-menu>.blur-pane.show {
@@ -746,10 +747,10 @@ form input[type="file"] {
     left: 0;
     right: 0;
 	text-align: center;
-	transition: 0.3s;
 	overflow: show;
 	z-index: 10;
 	background: $color-background;
+	transition: $transition-slow;
 }
 
 .menu-spacer {
@@ -980,12 +981,11 @@ footer p a {
     color: #90A4AE;
     font-weight: bold;
     border: none;
-    transition: 0.3s;
+    transition: $transition-default;
 }
 
 footer p a:hover {
     color: #607D8B;
-    transition: 0.3s;
 }
 /*-------------------------------------*/
 
@@ -1047,7 +1047,7 @@ button {
 	border-radius: 2rem;
 	box-shadow: $shadow-level-1;
 	background: #ffffff;
-	transition: 0.2s;
+	transition: $transition-default;
 }
 
 button:disabled {
@@ -1063,7 +1063,7 @@ button.dark {
 	button:hover:enabled {
 		cursor: pointer;
 		background: $color-accent;
-		transition: 0.2s;
+		transition: $transition-default;
 	}
 
 	button.dark:hover:enabled {
@@ -1148,13 +1148,13 @@ button.dark:active:enabled {
 	margin-bottom: -0.75rem;
 	overflow: hidden;
 	display: inline-block;
-	transition: 0.2s;
+	transition: $transition-default;
 }
 
 .sliding-button:hover>.content {
 	width: 12rem;
 	display: inline-block;
-	transition: 0.2s;
+	transition: $transition-default;
 }
 
 /*-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
@@ -1336,7 +1336,7 @@ between lines
 	margin-top: 2rem;
 	//border-radius: 0.25rem;
 	border-color: $color-main;
-	transition: 0.2s;
+	transition: $transition-default;
 	//box-shadow: $shadow-level-1;
     border: 2px solid $color-active;
 }
@@ -1377,7 +1377,7 @@ a.card {
 	border-color: $color-secondary;
     border-radius: 0.25rem;
     box-shadow: $shadow-level-2;
-	transition: 0.2s;
+	transition: $transition-default;
 }
 
 a.card .betta_image {
@@ -1393,7 +1393,7 @@ a.card .betta_image img {
     border-top-right-radius: 0.25rem;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
-	transition: 0.2s;
+	transition: $transition-default;
 }
 
 /* Cover card */
@@ -1409,7 +1409,7 @@ a.card.cover .content {
     bottom: 1rem;
     right: 1rem;
     border: 2px solid $color-background;
-    transition: 0.2s;
+    transition: $transition-default;
 }
 
 a.card.cover .content h3 {
@@ -1419,7 +1419,7 @@ a.card.cover .content h3 {
     padding: 0.5rem 1rem;
     text-align: center;
     background: $color-background;
-    transition: 0.2s;
+    transition: $transition-default;
 }
 
 a.card.cover h2,
@@ -1495,7 +1495,7 @@ a.card-double h4 {
 	line-height: 2.15rem;
 	letter-spacing: 0.05rem;
     text-align: center;
-    transition: 0.2s;
+    transition: $transition-default;
 }
 
 a.card:hover h2,
@@ -1521,7 +1521,7 @@ a.card-double {
     border-radius: 0.25rem;
     box-shadow: $shadow-level-2;
     overflow: hidden;
-    transition: 0.2s;
+    transition: $transition-default;
 }
 
 a.card-double .betta_image,
@@ -1541,7 +1541,7 @@ a.card-double .betta_image img {
     width: 27.5rem;
     margin-bottom: -3px;
     border-radius: 0;
-    transition: 0.2s;
+    transition: $transition-default;
 }
 
 a.card-double .content {
