@@ -1661,9 +1661,9 @@ a.card {
   margin-top: 1rem;
   margin: 1rem;
   border-color: #e0e0e0;
-  transition: 0.2s;
   border-radius: 0.25rem;
   box-shadow: 0 2px 6px 1px rgba(0, 0, 0, 0.2);
+  transition: 0.2s;
 }
 
 a.card .betta_image {
@@ -1679,6 +1679,7 @@ a.card .betta_image img {
   border-top-right-radius: 0.25rem;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
+  transition: 0.2s;
 }
 
 /* Cover card */
@@ -1694,7 +1695,7 @@ a.card.cover .content {
   bottom: 1rem;
   right: 1rem;
   border: 2px solid #ffffff;
-  transition: 0.1s;
+  transition: 0.2s;
 }
 
 a.card.cover .content h3 {
@@ -1704,7 +1705,7 @@ a.card.cover .content h3 {
   padding: 0.5rem 1rem;
   text-align: center;
   background: #ffffff;
-  transition: 0.1s;
+  transition: 0.2s;
 }
 
 a.card.cover h2,
@@ -1734,6 +1735,10 @@ a.card.cover h4 {
 a.card.cover:hover h3,
 a.card.cover:hover h4 {
     border: none;
+  }
+
+  a.card:hover .betta_image img {
+    opacity: 0.9;
   }
 }
 a.card:active {
@@ -1773,6 +1778,7 @@ a.card-double h4 {
   line-height: 2.15rem;
   letter-spacing: 0.05rem;
   text-align: center;
+  transition: 0.2s;
 }
 
 a.card:hover h2,
@@ -1782,7 +1788,6 @@ a.card-double:hover h2,
 a.card-double:hover h3,
 a.card-double:hover h4 {
   border-bottom: 3px solid #212121;
-  transition: 0.1s;
 }
 
 /*-------------------------------------*/
@@ -1796,10 +1801,10 @@ a.card-double {
   padding: 0;
   margin-top: 1rem;
   border-color: #e0e0e0;
-  transition: 0.2s;
   border-radius: 0.25rem;
   box-shadow: 0 2px 6px 1px rgba(0, 0, 0, 0.2);
   overflow: hidden;
+  transition: 0.2s;
 }
 
 a.card-double .betta_image,
@@ -1819,6 +1824,7 @@ a.card-double .betta_image img {
   width: 27.5rem;
   margin-bottom: -3px;
   border-radius: 0;
+  transition: 0.2s;
 }
 
 a.card-double .content {
@@ -1830,6 +1836,10 @@ a.card-double .content {
   a.card-double:hover {
     background: #f5f5f5;
     cursor: pointer;
+  }
+
+  a.card-double:hover .betta_image img {
+    opacity: 0.9;
   }
 }
 a.card-double:active {
