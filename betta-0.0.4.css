@@ -1675,10 +1675,10 @@ a.card .betta_image {
   height: 17rem;
   width: 25.5rem;
   background: #f5f5f5;
+  overflow: hidden;
 }
 
 a.card .betta_image img {
-  height: 100%;
   width: 100%;
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
