@@ -1685,6 +1685,7 @@ a.card .betta_image img {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
   transition: 0.2s;
+  image-orientation: none;
 }
 
 /* Cover card */
