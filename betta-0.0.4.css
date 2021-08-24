@@ -449,6 +449,7 @@ h1, h2, h3, h4, h5, h6, p, a, li, textarea, option, input, select, button {
 
 a {
   text-decoration: none;
+  transition: 0.2s;
 }
 
 em {
@@ -1275,16 +1276,6 @@ footer {
 
 footer p a {
   margin: 0;
-  color: #90A4AE;
-  /* TEMP */
-  font-weight: bold;
-  border: none;
-  transition: 0.2s;
-}
-
-footer p a:hover {
-  color: #607D8B;
-  /* TEMP */
 }
 
 /*-------------------------------------*/
