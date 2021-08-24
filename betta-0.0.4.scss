@@ -1431,50 +1431,24 @@ a.card.cover .content {
     transition: $transition-default;
 }
 
-a.card.cover .content h3 {
-    display: inline-block;
-    width: auto;
-    margin: 12rem auto 0 auto;
-    padding: 0.5rem 1rem;
-    text-align: center;
-    background: $color-background;
-    transition: $transition-default;
-}
-
 a.card.cover h2,
 a.card.cover h3,
 a.card.cover h4 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    width: auto;
+    margin: 0 auto 0 auto;
+    padding: 0.5rem 1rem;
+    text-align: center;
 	font-size: 1.25rem;
 	line-height: 1.75rem;
 	letter-spacing: 0.05rem;
-	margin-top: 1.75rem;
     border: none;
-}
-
-@media(hover: hover) {
-	a.card:hover
-	{
-        background: $color-accent;
-        cursor: pointer;
-	}
-
-    a.card.cover:hover .content
-	{
-    top: 1.5rem;
-    left: 1.5rem;
-    bottom: 1.5rem;
-    right: 1.5rem;
-	}
-
-    a.card.cover:hover h2,
-    a.card.cover:hover h3,
-    a.card.cover:hover h4 {
-        border: none;
-    }
-
-    a.card:hover .betta_image img {
-        opacity: 0.9;
-    }
+    background: $color-background;
+    transition: $transition-default;
 }
 
 a.card:active
@@ -1518,13 +1492,42 @@ a.card-double h4 {
     transition: $transition-default;
 }
 
-a.card:hover h2,
-a.card:hover h3,
-a.card:hover h4,
-a.card-double:hover h2,
-a.card-double:hover h3,
-a.card-double:hover h4 {
-    border-bottom: 3px solid $color-main;
+@media(hover: hover) {
+    a.card:hover h2,
+    a.card:hover h3,
+    a.card:hover h4,
+    a.card-double:hover h2,
+    a.card-double:hover h3,
+    a.card-double:hover h4 {
+        border-bottom: 3px solid $color-main;
+    }
+
+	a.card:hover
+	{
+        background: $color-accent;
+        cursor: pointer;
+	}
+
+    a.card.cover:hover .content
+	{
+    top: 1.5rem;
+    left: 1.5rem;
+    bottom: 1.5rem;
+    right: 1.5rem;
+	}
+
+    a.card.cover:hover h2,
+    a.card.cover:hover h3,
+    a.card.cover:hover h4 {
+        bottom: -1rem;
+        left: -1rem;
+        right: -1rem;
+        border: none;
+    }
+
+    a.card:hover .betta_image img {
+        opacity: 0.9;
+    }
 }
 
 @media(max-width: 800px) {
@@ -1559,6 +1562,14 @@ a.card-double:hover h4 {
     a.card-double h3,
     a.card-double h4 {
         margin-top: 1.25rem;
+    }
+
+    a.card.cover h2,
+    a.card.cover h3,
+    a.card.cover h4 {
+        font-size: 1rem;
+        line-height: $line-height;
+        //margin-top: 1.75rem;
     }
 }
 /*-------------------------------------*/
