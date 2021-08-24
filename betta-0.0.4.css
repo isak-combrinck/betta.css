@@ -663,7 +663,6 @@ header.hero > h1 {
     font-size: 4rem;
     letter-spacing: 0.15rem;
     line-height: 5rem;
-    padding-bottom: 3rem;
   }
 }
 /*-------------------------------------*/
@@ -1013,6 +1012,11 @@ img.round {
   cursor: pointer;
 }
 
+@media (max-width: 800px) {
+  .betta_image.slideshow {
+    display: none;
+  }
+}
 /*-------------------------------------*/
 /*---------------------------------------
 	Forms
@@ -1806,7 +1810,7 @@ a.card-double {
   width: 55rem;
   height: 27.5rem;
   padding: 0;
-  margin-top: 1rem;
+  margin-top: 3rem;
   border-color: #e0e0e0;
   border-radius: 0.25rem;
   box-shadow: 0 2px 6px 1px rgba(0, 0, 0, 0.2);
@@ -1854,6 +1858,11 @@ a.card-double:active {
   box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2);
 }
 
+@media (max-width: 800px) {
+  a.card-double {
+    margin-top: 2rem;
+  }
+}
 /*-------------------------------------*/
 /*---------------------------------------
 	Contact Card
