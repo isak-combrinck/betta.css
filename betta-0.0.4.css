@@ -397,6 +397,12 @@ main {
     overflow-x: hidden;
   }
 }
+@media (max-width: 600px) {
+  #page,
+main {
+    padding: 0 1rem 1rem 1rem;
+  }
+}
 body, nav, main, div, article, section,
 header, button, ul, li, a, p, img {
   box-sizing: border-box;
@@ -1801,6 +1807,40 @@ a.card-double:hover h4 {
   border-bottom: 3px solid #212121;
 }
 
+@media (max-width: 800px) {
+  a.card {
+    width: 100%;
+    padding: 0;
+    margin: 1rem 0 0 0;
+  }
+
+  a.card .betta_image {
+    height: auto;
+    width: 100%;
+  }
+
+  a.card p {
+    margin-top: 0;
+    padding: 0 1rem;
+    text-align: left;
+  }
+
+  a.card h2,
+a.card h3,
+a.card h4 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  a.card h2,
+a.card h3,
+a.card h4,
+a.card-double h2,
+a.card-double h3,
+a.card-double h4 {
+    margin-top: 1.25rem;
+  }
+}
 /*-------------------------------------*/
 /*---------------------------------------
 	Link Card Double
@@ -1860,7 +1900,25 @@ a.card-double:active {
 
 @media (max-width: 800px) {
   a.card-double {
+    height: auto;
+    width: 100%;
     margin-top: 2rem;
+  }
+
+  a.card-double .betta_image img {
+    height: auto;
+    width: 100%;
+  }
+
+  a.card-double .betta_image,
+a.card-double .content {
+    height: auto;
+    width: 100%;
+    display: block;
+  }
+
+  a.card-double .content {
+    padding: 0 1rem;
   }
 }
 /*-------------------------------------*/
