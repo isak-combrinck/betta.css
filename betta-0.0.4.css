@@ -1987,13 +1987,13 @@ a.card-double .content {
   display: inline-block;
   vertical-align: top;
   width: 25rem;
+  max-width: calc(100% - 1.5rem);
   margin: 1.25rem 0.75rem 0 0.75rem;
 }
 
 .card.contact .picture {
   width: 25rem;
-  height: 25rem;
-  background: #f5f5f5;
+  max-width: 100%;
   overflow: hidden;
 }
 
@@ -2011,7 +2011,7 @@ a.card-double .content {
 
 .card.contact .phone {
   position: absolute;
-  top: -1.25rem;
+  top: -1.5rem;
   left: -1.25rem;
   border-bottom: none;
   z-index: 1;
@@ -2019,7 +2019,7 @@ a.card-double .content {
 
 .card.contact .email {
   position: absolute;
-  top: -1.25rem;
+  top: -1.5rem;
   right: -1.25rem;
   border-bottom: none;
   z-index: 1;
@@ -2052,6 +2052,17 @@ a.card-double .content {
   background-color: #ffffff;
 }
 
+@media (max-width: 800px) {
+  .card.contact .phone {
+    top: -2rem;
+    left: -2.25rem;
+  }
+
+  .card.contact .email {
+    top: -2rem;
+    right: -2.25rem;
+  }
+}
 /*-------------------------------------*/
 /*---------------------------------------
 	Flip Card
