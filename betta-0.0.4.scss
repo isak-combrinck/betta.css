@@ -1688,6 +1688,8 @@ a.card-double:active
 
 @media(max-width: 800px) {
     a.card-double {
+        display: flex;
+        flex-direction: column;
         height: auto;
         width: 100%;
         margin-top: 2rem;
@@ -1705,7 +1707,12 @@ a.card-double:active
         display: block;
     }
 
+    .card-double .betta_image {
+        order: 1;
+    }
+
     a.card-double .content {
+        order: 2;
         padding: 0 1rem;
     }
 }
