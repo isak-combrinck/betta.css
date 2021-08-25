@@ -408,8 +408,19 @@ main {
     padding: 0 1rem 1rem 1rem;
   }
 }
-body, nav, main, div, article, section,
-header, button, ul, li, a, p, img {
+body,
+nav,
+main,
+div,
+article,
+section,
+header,
+button,
+ul,
+li,
+a,
+p,
+img {
   box-sizing: border-box;
 }
 
@@ -417,8 +428,17 @@ i {
   vertical-align: top;
 }
 
-i, img, picture, button, button > span, .click-plane, details > summary,
-nav > ul, nav > ul > li, nav > ul > li > a, article > a {
+i,
+img,
+picture,
+button,
+button > span,
+.click-plane,
+details > summary,
+nav > ul,
+nav > ul > li,
+nav > ul > li > a,
+article > a {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
@@ -454,7 +474,20 @@ li {
 /*---------------------------------------
 	Typographical Elements
 ---------------------------------------*/
-h1, h2, h3, h4, h5, h6, p, a, li, textarea, option, input, select, button {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+li,
+textarea,
+option,
+input,
+select,
+button {
   color: #212121;
 }
 
@@ -469,12 +502,21 @@ em {
   letter-spacing: 0.05rem;
 }
 
-p, li, textarea, option, input, select, button {
+p,
+li,
+textarea,
+option,
+input,
+select,
+button {
   font-size: 1rem;
   letter-spacing: 0.025rem;
 }
 
-p, li, input, textarea {
+p,
+li,
+input,
+textarea {
   line-height: 1.6rem;
 }
 
@@ -542,7 +584,12 @@ p > a.icon:hover > img {
   opacity: 0.8;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-bottom: 0;
 }
 
@@ -962,13 +1009,15 @@ img.round {
   scrollbar-width: 0;
 }
 
-.betta_image-strip .back, .betta_image-strip .forward {
+.betta_image-strip .back,
+.betta_image-strip .forward {
   z-index: 99;
   position: absolute;
   margin-top: 45vh;
 }
 
-.betta_image-strip .back:disabled, .betta_image-strip .forward:disabled {
+.betta_image-strip .back:disabled,
+.betta_image-strip .forward:disabled {
   display: none;
 }
 
@@ -2175,7 +2224,8 @@ a.card-double .content {
   padding: 1rem;
 }
 
-#close, #caption {
+#close,
+#caption {
   z-index: 99;
   position: absolute;
   display: block;
@@ -2185,13 +2235,15 @@ a.card-double .content {
   margin-top: 4rem;
 }
 
-#back, #forward {
+#back,
+#forward {
   z-index: 99;
   position: absolute;
   margin-top: 45vh;
 }
 
-#back:disabled, #forward:disabled {
+#back:disabled,
+#forward:disabled {
   display: none;
 }
 
@@ -2304,7 +2356,7 @@ p.version {
   border-color: #81786a;
   border-radius: 1rem;
   word-wrap: break-word;
-  background-color: #FF3737;
+  background-color: #ff3737;
   /* TEMP */
 }
 

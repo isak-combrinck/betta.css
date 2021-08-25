@@ -19,7 +19,7 @@ E.g. sass --watch betta-0.0.4.scss betta-0.0.4.css
 TEMP is used to denote properties that need to be changed
 ---------------------------------------*/
 
-@import 'normalize';
+@import "normalize";
 
 /*---------------------------------------
 	Colors
@@ -35,16 +35,16 @@ $color-active: #eeeeee !default;
   Shady stuff
 ---------------------------------------*/
 /* level 0 */
-$shadow-level-0: 0 0 0 0 rgba(0,0,0,0.2);
+$shadow-level-0: 0 0 0 0 rgba(0, 0, 0, 0.2);
 
 /* level 1 */
-$shadow-level-1: 0 1px 3px 1px rgba(0,0,0,0.2);
+$shadow-level-1: 0 1px 3px 1px rgba(0, 0, 0, 0.2);
 
 /* level 2 */
-$shadow-level-2: 0 2px 6px 1px rgba(0,0,0,0.2);
+$shadow-level-2: 0 2px 6px 1px rgba(0, 0, 0, 0.2);
 
 /* level 2 inversed */
-$shadow-level-2-i: 0 -2px 6px 1px rgba(0,0,0,0.2);
+$shadow-level-2-i: 0 -2px 6px 1px rgba(0, 0, 0, 0.2);
 
 /*---------------------------------------
   Font sizing
@@ -60,7 +60,6 @@ $transition-fast: 0.1s;
 $transition-default: 0.2s;
 $transition-slow: 0.3s;
 
-
 /*-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
     Default HTML
 -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-*/
@@ -72,81 +71,114 @@ body {
 
 #page,
 main {
-	padding: 3rem 2rem;
-	overflow-x: hidden;
+  padding: 3rem 2rem;
+  overflow-x: hidden;
 }
 
 main {
-	max-width: 100%;
+  max-width: 100%;
 }
 
-@media(max-width: 800px) {
-    #page,
-    main {
-        padding: 0 2rem 1rem 2rem;
-        overflow-x: hidden;
-    }
+@media (max-width: 800px) {
+  #page,
+  main {
+    padding: 0 2rem 1rem 2rem;
+    overflow-x: hidden;
+  }
 
-    body {
-        padding-bottom: 5rem;
-    }
+  body {
+    padding-bottom: 5rem;
+  }
 }
 
-@media(max-width: 600px) {
-    #page,
-    main {
-        padding: 0 1rem 1rem 1rem;
-    }
+@media (max-width: 600px) {
+  #page,
+  main {
+    padding: 0 1rem 1rem 1rem;
+  }
 }
 
-body, nav, main, div, article, section,
-header, button, ul, li, a, p, img {
-	box-sizing: border-box;
+body,
+nav,
+main,
+div,
+article,
+section,
+header,
+button,
+ul,
+li,
+a,
+p,
+img {
+  box-sizing: border-box;
 }
 
 i {
-	vertical-align: top;
+  vertical-align: top;
 }
 
-i, img, picture, button, button>span, .click-plane, details>summary,
-nav>ul, nav>ul>li, nav>ul>li>a, article>a {
-	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-	-webkit-tap-highlight-color: transparent;
-	-webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+i,
+img,
+picture,
+button,
+button > span,
+.click-plane,
+details > summary,
+nav > ul,
+nav > ul > li,
+nav > ul > li > a,
+article > a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 article {
-    width: 100%;
-    max-width: 30rem;
-	margin: 0 auto;
+  width: 100%;
+  max-width: 30rem;
+  margin: 0 auto;
 }
 
 article.wide {
-    width: 100%;
-	max-width: 55rem;
-	margin: 0 auto;
+  width: 100%;
+  max-width: 55rem;
+  margin: 0 auto;
 }
 
 ul {
-	margin-top: 1.6rem;
-	margin-bottom: 1.6rem;
-	padding-left: 2rem;
+  margin-top: 1.6rem;
+  margin-bottom: 1.6rem;
+  padding-left: 2rem;
 }
 
 li {
-	list-style-type: disc;
+  list-style-type: disc;
 }
 
 /*---------------------------------------
 	Typographical Elements
 ---------------------------------------*/
-h1, h2, h3, h4, h5, h6, p, a, li, textarea, option, input, select, button {
-	color: $color-main;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+li,
+textarea,
+option,
+input,
+select,
+button {
+  color: $color-main;
 }
 
 a {
@@ -160,131 +192,145 @@ em {
   letter-spacing: 0.05rem;
 }
 
-p, li, textarea, option, input, select, button {
-  	font-size: 1rem;
-	letter-spacing: 0.025rem;
+p,
+li,
+textarea,
+option,
+input,
+select,
+button {
+  font-size: 1rem;
+  letter-spacing: 0.025rem;
 }
 
-p, li, input, textarea {
-  	line-height: $line-height;
+p,
+li,
+input,
+textarea {
+  line-height: $line-height;
 }
 
 p {
-	margin-top: 1.6rem;
-	margin-bottom: 1.6rem;
+  margin-top: 1.6rem;
+  margin-bottom: 1.6rem;
 }
 
 p.small {
-    font-size: $font-small;
+  font-size: $font-small;
 }
 
 ul.indent {
-    margin-top: 0;
-    padding-left: 1rem;
+  margin-top: 0;
+  padding-left: 1rem;
 }
 
 ul.plain li {
-    list-style: none;
+  list-style: none;
 }
 
-p>a,
-h1>a,
-h2>a,
-h3>a,
-h4>a,
-h5>a,
-h6>a,
-li.link>a {
-	border-bottom-style: solid;
-	border-bottom-width: 2px;
-	border-color: $color-secondary;
+p > a,
+h1 > a,
+h2 > a,
+h3 > a,
+h4 > a,
+h5 > a,
+h6 > a,
+li.link > a {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-color: $color-secondary;
 }
 
-h1>a,
-h2>a,
-h3>a,
-h4>a,
-h5>a,
-h6>a {
-	border-bottom-width: 4px;
+h1 > a,
+h2 > a,
+h3 > a,
+h4 > a,
+h5 > a,
+h6 > a {
+  border-bottom-width: 4px;
 }
 
-p>a:hover,
-h1>a:hover,
-h2>a:hover,
-h3>a:hover,
-h4>a:hover,
-h5>a:hover,
-h6>a:hover,
-li.link:hover>a {
-	border-color: $color-main;
+p > a:hover,
+h1 > a:hover,
+h2 > a:hover,
+h3 > a:hover,
+h4 > a:hover,
+h5 > a:hover,
+h6 > a:hover,
+li.link:hover > a {
+  border-color: $color-main;
 }
 
-p>a.icon {
-	border: none;
+p > a.icon {
+  border: none;
 }
 
-p>a.icon>img {
-	width: 2rem;
-	transition: $transition-default;
+p > a.icon > img {
+  width: 2rem;
+  transition: $transition-default;
 }
 
-p>a.icon:hover>img {
-	opacity: 0.8;
+p > a.icon:hover > img {
+  opacity: 0.8;
 }
 
-h1, h2, h3, h4, h5, h6 {
-	margin-bottom: 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0;
 }
 
 h1 {
-	font-size: 2.5rem;
-	line-height: 3.2rem;
-	letter-spacing: 0.1rem;
-	margin-top: 3.2rem;
+  font-size: 2.5rem;
+  line-height: 3.2rem;
+  letter-spacing: 0.1rem;
+  margin-top: 3.2rem;
 }
 
 h2 {
-	font-size: 2rem;
-	line-height: 2.75rem;
-	letter-spacing: 0.075rem;
-	margin-top: 2.5rem;
-	margin-bottom: 0.8rem
+  font-size: 2rem;
+  line-height: 2.75rem;
+  letter-spacing: 0.075rem;
+  margin-top: 2.5rem;
+  margin-bottom: 0.8rem;
 }
 
 h3 {
-	font-size: 1.6rem;
-	line-height: 2.15rem;
-	letter-spacing: 0.05rem;
-	margin-top: 2.15rem;
+  font-size: 1.6rem;
+  line-height: 2.15rem;
+  letter-spacing: 0.05rem;
+  margin-top: 2.15rem;
 }
 
 h4 {
-	font-size: 1.25rem;
-	line-height: 1.75rem;
-	letter-spacing: 0.05rem;
-	margin-top: 1.75rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  letter-spacing: 0.05rem;
+  margin-top: 1.75rem;
 }
 
 h5 {
-	font-size: 1rem;
-	line-height: $line-height;
-	letter-spacing: 0.05rem;
-	margin-top: 1.6rem;
+  font-size: 1rem;
+  line-height: $line-height;
+  letter-spacing: 0.05rem;
+  margin-top: 1.6rem;
 }
 
 h6 {
-	font-size: 1rem;
-	line-height: $line-height;
-	letter-spacing: 0.05rem;
-	text-transform: uppercase;
-	margin-top: 1.6rem;
+  font-size: 1rem;
+  line-height: $line-height;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+  margin-top: 1.6rem;
 }
 
 hr {
-    border: none;
-    height: 3px;
-    background: $color-secondary;
+  border: none;
+  height: 3px;
+  background: $color-secondary;
 }
 
 /*
@@ -304,34 +350,33 @@ hr {
 }
 */
 
-form>a {
-	font-size: $font-small;
+form > a {
+  font-size: $font-small;
 }
 
-details>summary {
-	outline: none;
-	cursor: pointer;
-	margin-bottom: -0.75rem;
+details > summary {
+  outline: none;
+  cursor: pointer;
+  margin-bottom: -0.75rem;
 }
 
-
-details>summary>h1,
-details>summary>h2,
-details>summary>h3,
-details>summary>h4,
-details>summary>h5,
-details>summary>h6,
-details>summary>p {
-	display: inline-block;
+details > summary > h1,
+details > summary > h2,
+details > summary > h3,
+details > summary > h4,
+details > summary > h5,
+details > summary > h6,
+details > summary > p {
+  display: inline-block;
 }
 
-details>summary>p {
-	margin-bottom: 0;
+details > summary > p {
+  margin-bottom: 0;
 }
 
 details {
-	margin-bottom: 1.6rem;
-	border-bottom: 0.7rem solid $color-secondary;
+  margin-bottom: 1.6rem;
+  border-bottom: 0.7rem solid $color-secondary;
 }
 
 /*-------------------------------------*/
@@ -340,35 +385,35 @@ details {
 	header
 ---------------------------------------*/
 header {
-    width: 100%;
-    margin: 0 auto;
-    padding-top: 3rem;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 3rem;
 }
 
 header.hero {
-    text-align: center;
+  text-align: center;
 }
 
 header.hero img {
-    width: 100%;
-    padding: 0 2rem;
+  width: 100%;
+  padding: 0 2rem;
 }
 
-header.hero>h1 {
-    font-size: 6rem;
-    padding-bottom: 7rem;
-    font-style: italic;
-    letter-spacing: 0.35rem;
-    text-transform: uppercase;
-    text-shadow: -2px -2px 2px rgba(0,0,0,0.2);
+header.hero > h1 {
+  font-size: 6rem;
+  padding-bottom: 7rem;
+  font-style: italic;
+  letter-spacing: 0.35rem;
+  text-transform: uppercase;
+  text-shadow: -2px -2px 2px rgba(0, 0, 0, 0.2);
 }
 
 @media (max-width: 800px) {
-    header.hero>h1 {
-        font-size: 4rem;
-        letter-spacing: 0.15rem;
-        line-height: 5rem;
-    }
+  header.hero > h1 {
+    font-size: 4rem;
+    letter-spacing: 0.15rem;
+    line-height: 5rem;
+  }
 }
 /*-------------------------------------*/
 
@@ -376,120 +421,124 @@ header.hero>h1 {
 	Loader
 ---------------------------------------*/
 #loader {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background: $color-accent;
-    z-index: 101;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: $color-accent;
+  z-index: 101;
 }
 
 #loader.show {
-    display: block;
+  display: block;
 }
 
 #spinner {
-    position: absolute;
-    top: calc(50vh - 2.5rem);
-    left: calc(50vw - 2.5rem);
-    border: 16px solid $color-secondary;
-    border-top: 16px solid $color-main; 
-    border-radius: 50%;
-    width: 5rem;
-    height: 5rem;
-    animation: spin 2s linear infinite;
+  position: absolute;
+  top: calc(50vh - 2.5rem);
+  left: calc(50vw - 2.5rem);
+  border: 16px solid $color-secondary;
+  border-top: 16px solid $color-main;
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
   }
-  
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+  100% {
+    transform: rotate(360deg);
   }
+}
 /*-------------------------------------*/
 
 /*---------------------------------------
   Tooltip
 ---------------------------------------*/
 .tooltip {
-    position: relative;
-    display: inline-block;
+  position: relative;
+  display: inline-block;
 }
 
-.tooltip>span.tooltip-text {
-	visibility: hidden;
-	opacity: 0;
-	position: absolute;
-	height: auto;
-	width: auto;
-    top: 2.75rem;
-    left: -3rem;
-    right: -3rem;
-	padding: 0.25rem 0.5rem;
-	border-radius: 0.75rem;
-	text-align: center;
-	font-size: $font-small;
-	line-height: 1rem;
-	z-index: 8;
-    background-color: $color-main;
-    color: $color-active;
-	transition-delay: 0s;
+.tooltip > span.tooltip-text {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  height: auto;
+  width: auto;
+  top: 2.75rem;
+  left: -3rem;
+  right: -3rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.75rem;
+  text-align: center;
+  font-size: $font-small;
+  line-height: 1rem;
+  z-index: 8;
+  background-color: $color-main;
+  color: $color-active;
+  transition-delay: 0s;
 }
 
-.tooltip:hover>span.tooltip-text {
-	visibility: visible;
-	opacity: 1;
-    transition: opacity 0.2s;
-	transition-delay: 1s;
+.tooltip:hover > span.tooltip-text {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.2s;
+  transition-delay: 1s;
 }
 
 // Arrow at top of tooltip
-.tooltip>span.tooltip-text::after {
-    content: " ";
-    position: absolute;
-    bottom: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: transparent transparent $color-main transparent;
+.tooltip > span.tooltip-text::after {
+  content: " ";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent $color-main transparent;
 }
 
 // Use tooltip as menu text in mobile menu
-@media(max-width: 800px) {
-    nav .tooltip>span.tooltip-text {
-        visibility: visible;
-        opacity: 1;
-        top: 0;
-        bottom: 0;
-        left: 3rem;
-        right: auto;
-        padding: 0.5rem 0.5rem;
-        text-align: left;
-        font-size: 1rem;
-        line-height: $line-height;
-        background-color: $color-background;
-        color: $color-main;
-    }
+@media (max-width: 800px) {
+  nav .tooltip > span.tooltip-text {
+    visibility: visible;
+    opacity: 1;
+    top: 0;
+    bottom: 0;
+    left: 3rem;
+    right: auto;
+    padding: 0.5rem 0.5rem;
+    text-align: left;
+    font-size: 1rem;
+    line-height: $line-height;
+    background-color: $color-background;
+    color: $color-main;
+  }
 
-    nav .tooltip>span.tooltip-text::after {
-        display: none;
-    }
+  nav .tooltip > span.tooltip-text::after {
+    display: none;
+  }
 
-    nav.toolbar .tooltip>span.tooltip-text {
-        visibility: hidden;
-    }
+  nav.toolbar .tooltip > span.tooltip-text {
+    visibility: hidden;
+  }
 }
 
 // Display tooltip to right on sidebar
-.sidebar .tooltip>span.tooltip-text {
-    top: 0.5rem;
-    left: 3rem;
-    right: -9rem;
+.sidebar .tooltip > span.tooltip-text {
+  top: 0.5rem;
+  left: 3rem;
+  right: -9rem;
 }
 
-.sidebar .tooltip>span.tooltip-text::after {
-    display: none;
+.sidebar .tooltip > span.tooltip-text::after {
+  display: none;
 }
 /*-------------------------------------*/
 
@@ -497,29 +546,29 @@ header.hero>h1 {
   Banner type stuff
 ---------------------------------------*/
 .betta-banner {
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	text-align: center;
-	z-index: 10;
-	box-shadow: $shadow-level-1;
-	background: $color-background;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 10;
+  box-shadow: $shadow-level-1;
+  background: $color-background;
 }
 
-.betta-banner>p {
-	margin: 0.35rem;
+.betta-banner > p {
+  margin: 0.35rem;
 }
 
 .betta-support {
-	position: fixed;
-	bottom: 1rem;
-	left: 1rem;
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
 }
 
-.betta-support>button {
-	display: block;
-	margin-top: 1rem;
+.betta-support > button {
+  display: block;
+  margin-top: 1rem;
 }
 /*-------------------------------------*/
 
@@ -528,76 +577,76 @@ header.hero>h1 {
     DEPRECATED
 ---------------------------------------*/
 .betta_action-menu {
-	position: fixed;
-	bottom: 40vh;
-	right: 1rem;
-	z-index: 10;
+  position: fixed;
+  bottom: 40vh;
+  right: 1rem;
+  z-index: 10;
 }
 
 .betta_action-menu button {
-	position: relative;
-	display: block;
-	margin-bottom: 1rem;
+  position: relative;
+  display: block;
+  margin-bottom: 1rem;
 }
 
-.betta_action-menu>button {
-	display: none;
+.betta_action-menu > button {
+  display: none;
 }
 
-.betta_action-menu>.content {
-	display: block;
+.betta_action-menu > .content {
+  display: block;
 }
 
-.betta_action-menu>.blur-pane {
-	display: none;
-	position: fixed;
-	top: 0;
-	right: 0;
-	bottom: -5rem;
-	left: 0;
-	background: rgba(255,255,255,0.75);
-	-webkit-backdrop-filter: blur(1rem);
-	backdrop-filter: blur(1rem);
+.betta_action-menu > .blur-pane {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: -5rem;
+  left: 0;
+  background: rgba(255, 255, 255, 0.75);
+  -webkit-backdrop-filter: blur(1rem);
+  backdrop-filter: blur(1rem);
 }
 
-@media(min-width: 801px) {
-	.betta_action-menu>.content {
-		display: block !important;
-	}
+@media (min-width: 801px) {
+  .betta_action-menu > .content {
+    display: block !important;
+  }
 }
 
-@media(max-width: 800px) {
-	.betta_action-menu {
-		bottom: 0;
-	}
+@media (max-width: 800px) {
+  .betta_action-menu {
+    bottom: 0;
+  }
 
-	.betta_action-menu>button {
-		display: block;
-	}
+  .betta_action-menu > button {
+    display: block;
+  }
 
-	.betta_action-menu>.content {
-		display: none;
-	}
+  .betta_action-menu > .content {
+    display: none;
+  }
 
-	.betta_action-menu>.content.show {
-		display: block;
-	}
+  .betta_action-menu > .content.show {
+    display: block;
+  }
 
-	.betta_action-menu>.blur-pane {
-		display: block;
-		visibility: hidden;
-		opacity: 0;
-		-webkit-backdrop-filter: blur(0);
-		backdrop-filter: blur(0);
-		transition: $transition-default;
-	}
+  .betta_action-menu > .blur-pane {
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-backdrop-filter: blur(0);
+    backdrop-filter: blur(0);
+    transition: $transition-default;
+  }
 
-	.betta_action-menu>.blur-pane.show {
-		visibility: visible;
-  		opacity: 1;
-		-webkit-backdrop-filter: blur(1rem);
-		backdrop-filter: blur(1rem);
-	}
+  .betta_action-menu > .blur-pane.show {
+    visibility: visible;
+    opacity: 1;
+    -webkit-backdrop-filter: blur(1rem);
+    backdrop-filter: blur(1rem);
+  }
 }
 
 /*-------------------------------------*/
@@ -605,8 +654,8 @@ header.hero>h1 {
 /*---------------------------------------
   Pictures 
 ---------------------------------------*/
-picture>img {
-	width: 100%;
+picture > img {
+  width: 100%;
 }
 /*-------------------------------------*/
 
@@ -614,41 +663,41 @@ picture>img {
 	Images
 ---------------------------------------*/
 img {
-	max-width: 100%;
+  max-width: 100%;
 }
 
 img.round {
-	border-radius: 50%;
+  border-radius: 50%;
 }
 
-.betta_image>div {
-    position: relative;
+.betta_image > div {
+  position: relative;
 }
 
-.betta_image>div img {
-    margin-bottom: -3px;
-    border-radius: 0;
+.betta_image > div img {
+  margin-bottom: -3px;
+  border-radius: 0;
 }
 
-.betta_image>div img.round {
-	border-radius: 50%;
+.betta_image > div img.round {
+  border-radius: 50%;
 }
 
 .betta_image .name {
-    position: absolute;
-    left: 0;
-    bottom: -1rem;
+  position: absolute;
+  left: 0;
+  bottom: -1rem;
 
-    -webkit-transform: rotate(-90deg);
-    -webkit-transform-origin: right bottom;
-    -moz-transform: rotate(-90deg);
-    -moz-transform-origin: right bottom;
-    -ms-transform: rotate(-90deg);
-    -ms-transform-origin: right bottom;
-    -o-transform: rotate(-90deg);
-    -o-transform-origin: right bottom;
-    transform: rotate(-90deg);
-    transform-origin: left bottom;
+  -webkit-transform: rotate(-90deg);
+  -webkit-transform-origin: right bottom;
+  -moz-transform: rotate(-90deg);
+  -moz-transform-origin: right bottom;
+  -ms-transform: rotate(-90deg);
+  -ms-transform-origin: right bottom;
+  -o-transform: rotate(-90deg);
+  -o-transform-origin: right bottom;
+  transform: rotate(-90deg);
+  transform-origin: left bottom;
 }
 /*-------------------------------------*/
 
@@ -656,60 +705,62 @@ img.round {
 	Image Strip
 ---------------------------------------*/
 .betta_image-strip {
-    overflow-x: hidden;
-    overflow-y: hidden;
-    white-space: nowrap;
-    scrollbar-width: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  white-space: nowrap;
+  scrollbar-width: 0;
 }
 
-.betta_image-strip .back, .betta_image-strip .forward {
-	z-index: 99;
-	position: absolute;
-	margin-top: 45vh;
+.betta_image-strip .back,
+.betta_image-strip .forward {
+  z-index: 99;
+  position: absolute;
+  margin-top: 45vh;
 }
 
-.betta_image-strip .back:disabled, .betta_image-strip .forward:disabled {
-	display: none;
+.betta_image-strip .back:disabled,
+.betta_image-strip .forward:disabled {
+  display: none;
 }
 
 .betta_image-strip .back {
-    left: calc(50vw - (55rem / 2) - 1rem);
-    margin-top: 8rem;
-    z-index: 5;
+  left: calc(50vw - (55rem / 2) - 1rem);
+  margin-top: 8rem;
+  z-index: 5;
 }
 
 .betta_image-strip .forward {
-    right: calc(50vw - (55rem / 2) - 1rem);
-    margin-top: 8rem;
-    z-index: 5;
+  right: calc(50vw - (55rem / 2) - 1rem);
+  margin-top: 8rem;
+  z-index: 5;
 }
 
 .betta_image-strip .betta_image {
-    display: inline-block;
-    width: calc(50% - 2rem);
-    margin: 1rem;
+  display: inline-block;
+  width: calc(50% - 2rem);
+  margin: 1rem;
 }
 
-@media(max-width: 1000px) {
-    .betta_image-strip .back {
-        left: 1rem;
-    }
-    
-    .betta_image-strip .forward {
-        right: 1rem;
-    }
+@media (max-width: 1000px) {
+  .betta_image-strip .back {
+    left: 1rem;
+  }
+
+  .betta_image-strip .forward {
+    right: 1rem;
+  }
 }
 
-@media(max-width: 800px) {
-    .betta_image-strip .back ,
-    .betta_image-strip .forward {
-        margin-top: -1rem;
-    }
+@media (max-width: 800px) {
+  .betta_image-strip .back,
+  .betta_image-strip .forward {
+    margin-top: -1rem;
+  }
 
-    .betta_image-strip .betta_image {
-        width: calc(100% - 2rem);
-        margin: 0 1rem;
-    }
+  .betta_image-strip .betta_image {
+    width: calc(100% - 2rem);
+    margin: 0 1rem;
+  }
 }
 /*-------------------------------------*/
 
@@ -718,39 +769,38 @@ img.round {
 ---------------------------------------*/
 
 #crossfade {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    opacity: 1;
-    transition: 1.5s;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 1;
+  transition: 1.5s;
 }
 
 #crossfade.hidden {
-    opacity: 0;
+  opacity: 0;
 }
 
-
 .betta_image.slideshow .selectors span {
-    position: relative;
-    display: inline-block;
-    font-size: 1.5rem;
-    z-index: 5;
+  position: relative;
+  display: inline-block;
+  font-size: 1.5rem;
+  z-index: 5;
 }
 
 .betta_image.slideshow .selectors:hover {
-    cursor: default;
+  cursor: default;
 }
 
 .betta_image.slideshow .selectors span:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
-@media(max-width: 800px) {
-    .betta_image.slideshow {
-        display: none;
-    }
+@media (max-width: 800px) {
+  .betta_image.slideshow {
+    display: none;
+  }
 }
 
 /*-------------------------------------*/
@@ -759,36 +809,36 @@ img.round {
 	Forms
 ---------------------------------------*/
 form {
-    margin: 0;
-    padding-bottom: $line-height;
+  margin: 0;
+  padding-bottom: $line-height;
 }
 
 form label,
 form button {
-    vertical-align: middle;
-    text-align: left;
+  vertical-align: middle;
+  text-align: left;
 }
 
 form button[type="submit"] {
-	margin-top: $line-height;
+  margin-top: $line-height;
 }
 
 form .inline-single button[type="submit"] {
-	margin-top: 0.5rem;
+  margin-top: 0.5rem;
 }
 
 form button.show {
-    display: inline-block;
+  display: inline-block;
 }
 
 // Make all buttons of type button small on forms
 form button[type="button"] .material-icons-round {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
 // Hide file input fields
 form input[type="file"] {
-    display: none;
+  display: none;
 }
 /*-------------------------------------*/
 
@@ -797,177 +847,177 @@ form input[type="file"] {
 	Back Button
 ---------------------------------------*/
 #betta_menu {
-	position: absolute;
-    left: 0;
-    right: 0;
-	text-align: center;
-	overflow: show;
-	z-index: 10;
-	background: $color-background;
-	transition: $transition-slow;
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+  overflow: show;
+  z-index: 10;
+  background: $color-background;
+  transition: $transition-slow;
 }
 
 .menu-spacer {
-    display: block;
-    padding-top: 2.5rem;
+  display: block;
+  padding-top: 2.5rem;
 }
 
 /*-------------------*/
 /* Stick Menu        */
 /*-------------------*/
 #betta_menu.stick {
-	position: fixed;
-    top: 0;
-	box-shadow: $shadow-level-2;
+  position: fixed;
+  top: 0;
+  box-shadow: $shadow-level-2;
 }
 /*-------------------*/
 
 #betta_menu ul {
-	padding: 0;
-	margin: 0;
-  	text-align: center;
+  padding: 0;
+  margin: 0;
+  text-align: center;
 }
 
 #betta_menu ul li {
-  	display: inline-block;
-  	margin: 0.25rem;
-	list-style: none;
+  display: inline-block;
+  margin: 0.25rem;
+  list-style: none;
 }
 
 #betta_menu ul li a {
-	display: inline-block;
-	border-radius: 2rem;
-	vertical-align: middle;
-	text-transform: uppercase;
-	font-weight: 700;
+  display: inline-block;
+  border-radius: 2rem;
+  vertical-align: middle;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 #betta_menu ul li a .material-icons-round,
 #betta_menu ul li a .text {
-	display: block;
-	height: 1.5rem;
-	padding: 0.5rem;
-	line-height: 1.5rem;
+  display: block;
+  height: 1.5rem;
+  padding: 0.5rem;
+  line-height: 1.5rem;
 }
 
 #betta_menu ul li a .text {
-	padding: 0.25rem 0.75rem;
+  padding: 0.25rem 0.75rem;
 }
 
 #betta_menu ul li a.active {
-  	background: $color-secondary;
+  background: $color-secondary;
 }
 
 #betta_menu ul li button {
-	z-index: 99;
+  z-index: 99;
 }
 
 #betta_menu ul li a:active {
-	background: $color-active;
-	transition: 0.1s;
+  background: $color-active;
+  transition: 0.1s;
 }
 
 /*-------------------*/
 /* Sidebar Menu      */
 /*-------------------*/
 #betta_menu.sidebar {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-	width: 12rem;
-    padding: 1rem;
-    box-shadow: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 12rem;
+  padding: 1rem;
+  box-shadow: none;
 }
 
-#betta_menu.sidebar>ul>li {
-    display: block;
-    text-align: left;
+#betta_menu.sidebar > ul > li {
+  display: block;
+  text-align: left;
 }
 
 @media (min-width: 800px) {
-    #betta_menu.sidebar {
-        width: 5rem;
-    }
+  #betta_menu.sidebar {
+    width: 5rem;
+  }
 }
 
 #betta_menu.sidebar + main {
-	margin-left: auto;
+  margin-left: auto;
 }
 /*-------------------*/
 
 @media (hover: hover) {
-	#betta_menu ul li a:hover {
-		background: $color-accent;
-	}
-	#betta_menu ul li a.active:hover {
-		background: $color-secondary;
-  	}
+  #betta_menu ul li a:hover {
+    background: $color-accent;
+  }
+  #betta_menu ul li a.active:hover {
+    background: $color-secondary;
+  }
 }
 
 @media (max-width: 800px) {
-	.sidebar + main {
-		margin-left: auto;
-	}
+  .sidebar + main {
+    margin-left: auto;
+  }
 
-    #betta_menu>ul {
-		position: absolute;
-        bottom: 6rem;
-	}
+  #betta_menu > ul {
+    position: absolute;
+    bottom: 6rem;
+  }
 
-	#betta_menu,
-	.sidebar {
-		display: none;
-		padding: 5rem 3rem;
-		width: auto;
-        top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		overflow-y: scroll;
-	}
+  #betta_menu,
+  .sidebar {
+    display: none;
+    padding: 5rem 3rem;
+    width: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-y: scroll;
+  }
 
-	#betta_menu.show,
-	.sidebar.show {
-		display: block;
-	}
+  #betta_menu.show,
+  .sidebar.show {
+    display: block;
+  }
 
-	#betta_menu>ul>li {
-		display: block;
-		text-align: left;
-		margin-bottom: 0.75rem;
-	}
+  #betta_menu > ul > li {
+    display: block;
+    text-align: left;
+    margin-bottom: 0.75rem;
+  }
 
-	#betta_menu>ul>li>a {
-		font-size: 1.25rem;
-		line-height: 1.75rem;
-		letter-spacing: 0.05rem;
-	}
+  #betta_menu > ul > li > a {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    letter-spacing: 0.05rem;
+  }
 
-    /* Display menu as toolbar */
-    #betta_menu.toolbar {
-        position: fixed;
-        bottom: 0;
-        display: block;
-        top: auto;
-		padding: 0.25rem 0 0.5rem 0;
-        box-shadow: $shadow-level-2-i;
-        overflow: hidden;
-    }
+  /* Display menu as toolbar */
+  #betta_menu.toolbar {
+    position: fixed;
+    bottom: 0;
+    display: block;
+    top: auto;
+    padding: 0.25rem 0 0.5rem 0;
+    box-shadow: $shadow-level-2-i;
+    overflow: hidden;
+  }
 
-    #betta_menu.toolbar>ul {
-		position: static;
-	}
+  #betta_menu.toolbar > ul {
+    position: static;
+  }
 
-    #betta_menu.toolbar>ul>li {
-		display: inline-block;
-		text-align: left;
-		margin-bottom: 0rem;
-	}
+  #betta_menu.toolbar > ul > li {
+    display: inline-block;
+    text-align: left;
+    margin-bottom: 0rem;
+  }
 }
 
 #betta_menu ul li a:active {
-	background: $color-active;
-	transition: 0.1s;
+  background: $color-active;
+  transition: 0.1s;
 }
 /*-------------------------------------*/
 
@@ -978,49 +1028,49 @@ form input[type="file"] {
 ---------------------------------------*/
 #betta_home-button,
 #betta_back-button {
-	position: fixed;
-	top: 1.25rem;
-	left: 1.25rem;
-    width: 3rem;
-    height: 3rem;
-	z-index: 15;
+  position: fixed;
+  top: 1.25rem;
+  left: 1.25rem;
+  width: 3rem;
+  height: 3rem;
+  z-index: 15;
 }
 
 #betta_menu-button {
-    display: none;
-	position: fixed;
-	z-index: 11;
+  display: none;
+  position: fixed;
+  z-index: 11;
 }
 
 #betta_home-button button,
 #betta_back-button button {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 #betta_home-button img {
-    height: auto;
+  height: auto;
 }
 
 @media (max-width: 800px) {
-    #betta_menu-button,
-    #betta_back-button {
-        top: auto;
-        bottom: 1rem;
-        left: calc(50vw - 2rem);
-        width: 4rem;
-        height: 4rem;
-    }
-  
-	#betta_menu-button {
-		display: block;
-	}
+  #betta_menu-button,
+  #betta_back-button {
+    top: auto;
+    bottom: 1rem;
+    left: calc(50vw - 2rem);
+    width: 4rem;
+    height: 4rem;
+  }
 
-    #betta_home-button {
-        top: auto;
-        bottom: 0.75rem;
-        left: calc(50vw - 6rem) !important;
-    }
+  #betta_menu-button {
+    display: block;
+  }
+
+  #betta_home-button {
+    top: auto;
+    bottom: 0.75rem;
+    left: calc(50vw - 6rem) !important;
+  }
 }
 /*-------------------------------------*/
 
@@ -1028,11 +1078,11 @@ form input[type="file"] {
 	Footer
 ---------------------------------------*/
 footer {
-	text-align: center;
+  text-align: center;
 }
 
 footer p a {
-	margin: 0;
+  margin: 0;
 }
 /*-------------------------------------*/
 
@@ -1040,41 +1090,42 @@ footer p a {
 	Custom Icon Replacements for
     Material Icons
 ---------------------------------------*/
-.material-icons-round.custom-icon>img { /* deprecated */
-    height: 1.5rem;
-	color: $color-main;
+.material-icons-round.custom-icon > img {
+  /* deprecated */
+  height: 1.5rem;
+  color: $color-main;
 }
 
 span.icon {
-    height: 1.5rem;
-    width: 1.5rem;
-    line-height: 0rem;
+  height: 1.5rem;
+  width: 1.5rem;
+  line-height: 0rem;
 }
 
-span.icon>img {
-    height: 1.5rem;
-    width: 1.5rem;
-    line-height: 0rem;
-	color: $color-main;
+span.icon > img {
+  height: 1.5rem;
+  width: 1.5rem;
+  line-height: 0rem;
+  color: $color-main;
 }
 
 span.icon.big {
-    height: 4rem;
-    width: 4rem;
-    line-height: 0rem;
+  height: 4rem;
+  width: 4rem;
+  line-height: 0rem;
 }
 
-span.icon.big>img {
-    height: 4rem;
-    width: 4rem;
-    line-height: 0rem;
-    background: $color-active;
-    border-radius: 50%;
-    padding: 1rem;
+span.icon.big > img {
+  height: 4rem;
+  width: 4rem;
+  line-height: 0rem;
+  background: $color-active;
+  border-radius: 50%;
+  padding: 1rem;
 }
 
-p>.icon {
-    vertical-align: bottom;
+p > .icon {
+  vertical-align: bottom;
 }
 /*-------------------------------------*/
 
@@ -1082,126 +1133,127 @@ p>.icon {
 	Buttons
 ---------------------------------------*/
 button {
-    vertical-align: top;
-    text-align: center;
-    border: none;
-    outline: none;
-	-webkit-user-select: none;
-  	-moz-user-select: none;
-  	-ms-user-select: none;
-  	user-select: none;
-	padding: 0.25rem 1rem;
-	border-radius: 2rem;
-	box-shadow: $shadow-level-1;
-	background: $color-background;
-	transition: $transition-default;
+  vertical-align: top;
+  text-align: center;
+  border: none;
+  outline: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding: 0.25rem 1rem;
+  border-radius: 2rem;
+  box-shadow: $shadow-level-1;
+  background: $color-background;
+  transition: $transition-default;
 }
 
 button:disabled {
-	box-shadow: none;
-	background-color: $color-accent;
+  box-shadow: none;
+  background-color: $color-accent;
 }
 
 button.dark {
-	background: $color-main;
+  background: $color-main;
 }
 
-@media(hover:hover) {
-	button:hover:enabled {
-		cursor: pointer;
-		background: $color-accent;
-		transition: $transition-default;
-	}
+@media (hover: hover) {
+  button:hover:enabled {
+    cursor: pointer;
+    background: $color-accent;
+    transition: $transition-default;
+  }
 
-	button.dark:hover:enabled {
-		background: #616161; /* TEMP */
-	}
+  button.dark:hover:enabled {
+    background: #616161; /* TEMP */
+  }
 }
 
 button:active:enabled {
-	box-shadow: $shadow-level-0;
-	background: $color-active;
+  box-shadow: $shadow-level-0;
+  background: $color-active;
 }
 
 button.dark:active:enabled {
-	background: #424242; /* TEMP */
+  background: #424242; /* TEMP */
 }
 
 .icon-button {
-	padding: 0.5rem;
-	border-radius: 2rem;
+  padding: 0.5rem;
+  border-radius: 2rem;
 }
 
 .icon-button.filled .material-icons-round, /* deprecated */
 .icon-button.filled .icon {
-	color: $color-main;
+  color: $color-main;
 }
 
 .icon-button.filled:disabled,
 .icon-button.filled:disabled .material-icons-round, /* deprecated */
 .icon-button.filled:disabled .icon {
-	color: #757575; /* TEMP */
+  color: #757575; /* TEMP */
 }
 
 .icon-button .text {
-	height: 100%;
-	vertical-align: middle;
-	padding-left: 0.5rem;
-	padding-right: 0.5rem;
+  height: 100%;
+  vertical-align: middle;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .icon-button .material-icons-round, /* deprecated */
 .icon-button>.icon {
-	vertical-align: middle;
-	color: $color-main;
-	font-size: 1.8rem;
+  vertical-align: middle;
+  color: $color-main;
+  font-size: 1.8rem;
 }
 
 .icon-button .material-icons-round.custom-icon, /* deprecated */
 .icon-button>.icon {
-	font-size: 1rem;
+  font-size: 1rem;
 }
 
-.icon-button.dark .material-icons-round { /* deprecated */
-	color: $color-background;
+.icon-button.dark .material-icons-round {
+  /* deprecated */
+  color: $color-background;
 }
 
-@media(max-width: 800px) {
-	.icon-button {
-		padding: 0.75rem;
-	}
+@media (max-width: 800px) {
+  .icon-button {
+    padding: 0.75rem;
+  }
 
-	body>.icon-button .material-icons-round, /* deprecated */
+  body>.icon-button .material-icons-round, /* deprecated */
     .icon-button>.icon {
-		font-size: 2.5rem;
-	}
+    font-size: 2.5rem;
+  }
 
-    .icon-button .material-icons-round.custom-icon img, /* deprecated */
+  .icon-button .material-icons-round.custom-icon img, /* deprecated */
     .icon-button>.icon>img {
-        height: 2.5rem;
-        width: 2.5rem;
-    }
+    height: 2.5rem;
+    width: 2.5rem;
+  }
 }
 
 .sliding-button {
-	display: inline-block;
-	margin: auto;
-	margin-right: 0;
+  display: inline-block;
+  margin: auto;
+  margin-right: 0;
 }
 
-.sliding-button>.content {
-    height: 1.5rem;
-	width: 0;
-	margin-bottom: -0.75rem;
-	overflow: hidden;
-	display: inline-block;
-	transition: $transition-default;
+.sliding-button > .content {
+  height: 1.5rem;
+  width: 0;
+  margin-bottom: -0.75rem;
+  overflow: hidden;
+  display: inline-block;
+  transition: $transition-default;
 }
 
-.sliding-button:hover>.content {
-	width: 12rem;
-	display: inline-block;
-	transition: $transition-default;
+.sliding-button:hover > .content {
+  width: 12rem;
+  display: inline-block;
+  transition: $transition-default;
 }
 
 /*-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
@@ -1209,15 +1261,15 @@ button.dark:active:enabled {
 -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-*/
 
 .center {
-	text-align: center;
+  text-align: center;
 }
 
 .align-right {
-	text-align: right;
+  text-align: right;
 }
 
 .italic {
-	font-style: italic;
+  font-style: italic;
 }
 
 /* 
@@ -1225,108 +1277,108 @@ Used to set preferred break points, which will occur
 between lines
 */
 .line {
-    display: inline-block;
+  display: inline-block;
 }
 
 .no-scroll {
-	overflow: hidden
+  overflow: hidden;
 }
 
-@media(max-width: 800px) {
-	.no-scroll-mobile {
-		overflow: hidden
-	}
+@media (max-width: 800px) {
+  .no-scroll-mobile {
+    overflow: hidden;
+  }
 }
 
 .hidden {
-	visibility: hidden;
+  visibility: hidden;
 }
 
 .betta_hidden {
-    display: none;
+  display: none;
 }
 
 .betta_spacer-half {
-    display: block;
-    height: $half-line-height;
+  display: block;
+  height: $half-line-height;
 }
 
 .click-plane {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  cursor: pointer;
 }
 
 .inline-single,
 .inline-split,
 .inline-ternate {
-	box-sizing: border-box;
-	display: inline-block;
-	padding: 0 1rem 1rem 1rem;
-	vertical-align: top;
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 0 1rem 1rem 1rem;
+  vertical-align: top;
 }
 
 .inline-single {
-	width: 100%;
+  width: 100%;
 }
 
 .inline-single label {
-	display: inline-block;
-	margin-bottom: 0.5rem;
+  display: inline-block;
+  margin-bottom: 0.5rem;
 }
 
 .inline-split {
-	width: 50%;
+  width: 50%;
 }
 
 .inline-split input,
 .inline-split select,
 .inline-split label {
-	display: block;
-	margin-bottom: 0.5rem;
-	width: 100%;
+  display: block;
+  margin-bottom: 0.5rem;
+  width: 100%;
 }
 
 .inline-split .material-icons-round,
 .inline-single .material-icons-round {
-	vertical-align: bottom;
+  vertical-align: bottom;
 }
 
 .inline-ternate {
-    width: 33.333333%
+  width: 33.333333%;
 }
 
-@media(max-width: 600px) {
-	.inline-split,
-    .inline-ternate {
-		display: block;
-		width: 100%;
-	}
+@media (max-width: 600px) {
+  .inline-split,
+  .inline-ternate {
+    display: block;
+    width: 100%;
+  }
 }
 
 /*---------------------------------------
 	Overlapping Text Box
 ---------------------------------------*/
 .betta_overlap-top {
-    position: relative;
-    margin-top: -5rem;
-    z-index: 2;
-    padding: 1rem 2rem;
-    background: #f5f5f5;
-    max-width: 34rem;
+  position: relative;
+  margin-top: -5rem;
+  z-index: 2;
+  padding: 1rem 2rem;
+  background: #f5f5f5;
+  max-width: 34rem;
 }
 
-@media(max-width: 800px) {
-    .betta_overlap-top {
-        position: relative;
-        margin-top: 0;
-        z-index: 0;
-        padding: 1rem;
-        background: none !important;
-    }
+@media (max-width: 800px) {
+  .betta_overlap-top {
+    position: relative;
+    margin-top: 0;
+    z-index: 0;
+    padding: 1rem;
+    background: none !important;
+  }
 }
 /*-------------------------------------*/
 
@@ -1335,65 +1387,65 @@ between lines
 ---------------------------------------*/
 #gallery,
 .gallery {
-	margin: 0 -0.5rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+  margin: 0 -0.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .gallery-item {
-	box-sizing: border-box;
-	vertical-align: top;
-	display: inline-block;
-	width: 50%;
-	margin: 0;
-	padding: 0 0.5rem 1rem 0.5rem;
+  box-sizing: border-box;
+  vertical-align: top;
+  display: inline-block;
+  width: 50%;
+  margin: 0;
+  padding: 0 0.5rem 1rem 0.5rem;
 }
 
-.gallery-item>.content {
-    position: relative;
+.gallery-item > .content {
+  position: relative;
 }
 
-.photo>img {
-	width: 100%;
-	box-shadow: $shadow-level-2;
-	background: $color-accent;
-	border-radius: 0.25rem;
+.photo > img {
+  width: 100%;
+  box-shadow: $shadow-level-2;
+  background: $color-accent;
+  border-radius: 0.25rem;
 }
 
-.gallery-item>.content>.click-plane {
-	border-radius: 0.25rem;
+.gallery-item > .content > .click-plane {
+  border-radius: 0.25rem;
 }
 
-.gallery-item>.content>.click-plane.caption {
-    background: $color-background;
-    opacity: 0.85;
+.gallery-item > .content > .click-plane.caption {
+  background: $color-background;
+  opacity: 0.85;
 }
 
-.gallery-item>.content>.click-plane.caption>p {
-    padding: 0 1rem;
+.gallery-item > .content > .click-plane.caption > p {
+  padding: 0 1rem;
 }
 
 @media (max-width: 800px) {
-    #gallery,
-    .gallery {
-        padding-bottom: 0rem;
-    }
+  #gallery,
+  .gallery {
+    padding-bottom: 0rem;
+  }
 
-    .gallery-item {
-        width: 100%;
-        padding: 0 0.5rem 2rem 0.5rem;
-    }
+  .gallery-item {
+    width: 100%;
+    padding: 0 0.5rem 2rem 0.5rem;
+  }
 }
 
 @media (max-width: 480px) {
-    #gallery,
-    .gallery {
-        padding-bottom: 0.75rem;
-    }
+  #gallery,
+  .gallery {
+    padding-bottom: 0.75rem;
+  }
 
-    .gallery-item {
-        padding-bottom: 1.25rem;
-    }
+  .gallery-item {
+    padding-bottom: 1.25rem;
+  }
 }
 /*-------------------------------------*/
 
@@ -1401,41 +1453,39 @@ between lines
 	Feed
 ---------------------------------------*/
 .feed {
-	max-width: 35rem;
-	margin: 0 auto;
+  max-width: 35rem;
+  margin: 0 auto;
 }
 
-.feed>article>a {
-	display: block;
-	padding: 1rem;
-	margin-top: 2rem;
-	//border-radius: 0.25rem;
-	border-color: $color-main;
-	transition: $transition-default;
-	//box-shadow: $shadow-level-1;
-    border: 2px solid $color-active;
+.feed > article > a {
+  display: block;
+  padding: 1rem;
+  margin-top: 2rem;
+  //border-radius: 0.25rem;
+  border-color: $color-main;
+  transition: $transition-default;
+  //box-shadow: $shadow-level-1;
+  border: 2px solid $color-active;
 }
 
-@media(hover: hover) {
-	.feed>article>a:hover
-	{
-		//background: $color-accent;
-        border-color: $color-main;
-	}
+@media (hover: hover) {
+  .feed > article > a:hover {
+    //background: $color-accent;
+    border-color: $color-main;
+  }
 }
 
-.feed>article>a:active
-{
-	background: $color-active;
-	box-shadow: $shadow-level-0;
+.feed > article > a:active {
+  background: $color-active;
+  box-shadow: $shadow-level-0;
 }
 
-.feed>article>a>h3 {
-	margin: 0;
+.feed > article > a > h3 {
+  margin: 0;
 }
 
-.feed>article>a>p {
-	margin-bottom: 0;
+.feed > article > a > p {
+  margin-bottom: 0;
 }
 /*-------------------------------------*/
 
@@ -1443,95 +1493,94 @@ between lines
 	Link Card
 ---------------------------------------*/
 a.card {
-    position: relative;
-	display: inline-block;
-    width: 25.5rem;
-    max-width: 100%;
-	padding: 0;
-	margin-top: 1rem;
-	margin: 1rem;
-	border-color: $color-secondary;
-    border-radius: 0.25rem;
-    box-shadow: $shadow-level-2;
-	transition: $transition-default;
+  position: relative;
+  display: inline-block;
+  width: 25.5rem;
+  max-width: 100%;
+  padding: 0;
+  margin-top: 1rem;
+  margin: 1rem;
+  border-color: $color-secondary;
+  border-radius: 0.25rem;
+  box-shadow: $shadow-level-2;
+  transition: $transition-default;
 }
 
 a.card .betta_image {
-    width: 25.5rem;
-    max-width: 100%;
-    background: $color-accent;
-    overflow: hidden;
+  width: 25.5rem;
+  max-width: 100%;
+  background: $color-accent;
+  overflow: hidden;
 }
 
 a.card .betta_image img {
-    width: 100%;
-    border-top-left-radius: 0.25rem;
-    border-top-right-radius: 0.25rem;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-	transition: $transition-default;
-    image-orientation: none;
+  width: 100%;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  transition: $transition-default;
+  image-orientation: none;
 }
 
 /* Cover card */
 a.card.cover .betta_image img,
 a.card.cover .betta_image {
-    border-radius: 0.25rem;
+  border-radius: 0.25rem;
 }
 
 a.card.cover .content {
-    position: absolute;
-    top: 1rem;
-    left: 1rem;
-    bottom: 1rem;
-    right: 1rem;
-    border: 2px solid $color-background;
-    transition: $transition-default;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  bottom: 1rem;
+  right: 1rem;
+  border: 2px solid $color-background;
+  transition: $transition-default;
 }
 
 a.card.cover h2,
 a.card.cover h3,
 a.card.cover h4 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    display: block;
-    width: auto;
-    margin: 0 auto 0 auto;
-    padding: 0.5rem 1rem;
-    text-align: center;
-	font-size: 1.25rem;
-	line-height: 1.75rem;
-	letter-spacing: 0.05rem;
-    border: none;
-    background: $color-background;
-    transition: $transition-default;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  width: auto;
+  margin: 0 auto 0 auto;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  letter-spacing: 0.05rem;
+  border: none;
+  background: $color-background;
+  transition: $transition-default;
 }
 
-a.card:active
-{
-	background: $color-active;
-    box-shadow: $shadow-level-0;
+a.card:active {
+  background: $color-active;
+  box-shadow: $shadow-level-0;
 }
 
 a.card p {
-    margin-top: 0.5rem;
-    padding: 0 2rem 2rem 2rem;
-    text-align: left;
+  margin-top: 0.5rem;
+  padding: 0 2rem 2rem 2rem;
+  text-align: left;
 }
 
 a.card p.small {
-    margin-top: -2rem;
-    padding: 0 2rem;
-    text-align: left;
+  margin-top: -2rem;
+  padding: 0 2rem;
+  text-align: left;
 }
 
 a.card h2,
 a.card h3,
 a.card h4 {
-    margin-left: 2rem;
-    margin-right: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 a.card h2,
@@ -1540,88 +1589,86 @@ a.card h4,
 a.card-double h2,
 a.card-double h3,
 a.card-double h4 {
-    padding: 0 0 1rem 0;
-	margin-top: 2.15rem;
-    border-bottom: 3px solid $color-secondary;
-	font-size: 1.6rem;
-	line-height: 2.15rem;
-	letter-spacing: 0.05rem;
-    text-align: center;
-    transition: $transition-default;
+  padding: 0 0 1rem 0;
+  margin-top: 2.15rem;
+  border-bottom: 3px solid $color-secondary;
+  font-size: 1.6rem;
+  line-height: 2.15rem;
+  letter-spacing: 0.05rem;
+  text-align: center;
+  transition: $transition-default;
 }
 
-@media(hover: hover) {
-    a.card:hover h2,
-    a.card:hover h3,
-    a.card:hover h4,
-    a.card-double:hover h2,
-    a.card-double:hover h3,
-    a.card-double:hover h4 {
-        border-bottom: 3px solid $color-main;
-    }
+@media (hover: hover) {
+  a.card:hover h2,
+  a.card:hover h3,
+  a.card:hover h4,
+  a.card-double:hover h2,
+  a.card-double:hover h3,
+  a.card-double:hover h4 {
+    border-bottom: 3px solid $color-main;
+  }
 
-	a.card:hover
-	{
-        background: $color-accent;
-        cursor: pointer;
-	}
+  a.card:hover {
+    background: $color-accent;
+    cursor: pointer;
+  }
 
-    a.card.cover:hover .content
-	{
+  a.card.cover:hover .content {
     top: 1.5rem;
     left: 1.5rem;
     bottom: 1.5rem;
     right: 1.5rem;
-	}
+  }
 
-    a.card.cover:hover h2,
-    a.card.cover:hover h3,
-    a.card.cover:hover h4 {
-        bottom: -1rem;
-        left: -1rem;
-        right: -1rem;
-        border: none;
-    }
+  a.card.cover:hover h2,
+  a.card.cover:hover h3,
+  a.card.cover:hover h4 {
+    bottom: -1rem;
+    left: -1rem;
+    right: -1rem;
+    border: none;
+  }
 
-    a.card:hover .betta_image img {
-        opacity: 0.9;
-    }
+  a.card:hover .betta_image img {
+    opacity: 0.9;
+  }
 }
 
-@media(max-width: 800px) {
-    a.card {
-        padding: 0;
-        margin: 1rem 0 0 0;
-    }
+@media (max-width: 800px) {
+  a.card {
+    padding: 0;
+    margin: 1rem 0 0 0;
+  }
 
-    a.card p {
-        margin-top: 0;
-        padding: 0 1rem;
-        text-align: left;
-    }
+  a.card p {
+    margin-top: 0;
+    padding: 0 1rem;
+    text-align: left;
+  }
 
-    a.card h2,
-    a.card h3,
-    a.card h4 {
-        margin-left: 1rem;
-        margin-right: 1rem;
-    }
+  a.card h2,
+  a.card h3,
+  a.card h4 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
 
-    a.card h2,
-    a.card h3,
-    a.card h4,
-    a.card-double h2,
-    a.card-double h3,
-    a.card-double h4 {
-        margin-top: 1.25rem;
-    }
+  a.card h2,
+  a.card h3,
+  a.card h4,
+  a.card-double h2,
+  a.card-double h3,
+  a.card-double h4 {
+    margin-top: 1.25rem;
+  }
 
-    a.card.cover h2,
-    a.card.cover h3,
-    a.card.cover h4 {
-        font-size: 1rem;
-        line-height: $line-height;
-    }
+  a.card.cover h2,
+  a.card.cover h3,
+  a.card.cover h4 {
+    font-size: 1rem;
+    line-height: $line-height;
+  }
 }
 /*-------------------------------------*/
 
@@ -1630,91 +1677,89 @@ a.card-double h4 {
 ---------------------------------------*/
 
 a.card-double {
-	display: block;
-    width: 55rem;
-    max-width: 100%;
-    height: 27.5rem;
-	padding: 0;
-	margin-top: 3rem;
-	border-color: $color-secondary;
-    border-radius: 0.25rem;
-    box-shadow: $shadow-level-2;
-    overflow: hidden;
-    transition: $transition-default;
+  display: block;
+  width: 55rem;
+  max-width: 100%;
+  height: 27.5rem;
+  padding: 0;
+  margin-top: 3rem;
+  border-color: $color-secondary;
+  border-radius: 0.25rem;
+  box-shadow: $shadow-level-2;
+  overflow: hidden;
+  transition: $transition-default;
 }
 
 a.card-double .betta_image,
 a.card-double .content {
-    height: 100%;
-    width: 50%;
-    display: inline-block;
-    vertical-align: top;
+  height: 100%;
+  width: 50%;
+  display: inline-block;
+  vertical-align: top;
 }
 
 a.card-double .betta_image {
-    background: $color-accent;
+  background: $color-accent;
 }
 
 a.card-double .betta_image img {
-    height: 27.5rem;
-    width: 27.5rem;
-    margin-bottom: -3px;
-    border-radius: 0;
-    transition: $transition-default;
+  height: 27.5rem;
+  width: 27.5rem;
+  margin-bottom: -3px;
+  border-radius: 0;
+  transition: $transition-default;
 }
 
 a.card-double .content {
-    max-height: 100%;
-    padding: 4rem 3rem 0 3rem;
+  max-height: 100%;
+  padding: 4rem 3rem 0 3rem;
 }
 
-@media(hover: hover) {
-	a.card-double:hover
-	{
-        background: $color-accent;
-        cursor: pointer;
-	}
+@media (hover: hover) {
+  a.card-double:hover {
+    background: $color-accent;
+    cursor: pointer;
+  }
 
-    a.card-double:hover .betta_image img {
-        opacity: 0.9;
-    }
+  a.card-double:hover .betta_image img {
+    opacity: 0.9;
+  }
 }
 
-a.card-double:active
-{
-	background: $color-active;
-    box-shadow: $shadow-level-0;
+a.card-double:active {
+  background: $color-active;
+  box-shadow: $shadow-level-0;
 }
 
-@media(max-width: 800px) {
-    a.card-double {
-        display: flex;
-        flex-direction: column;
-        height: auto;
-        width: 100%;
-        margin-top: 2rem;
-    }
+@media (max-width: 800px) {
+  a.card-double {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    margin-top: 2rem;
+  }
 
-    a.card-double .betta_image img {
-        height: auto;
-        width: 100%;
-    }
+  a.card-double .betta_image img {
+    height: auto;
+    width: 100%;
+  }
 
-    a.card-double .betta_image,
-    a.card-double .content {
-        height: auto;
-        width: 100%;
-        display: block;
-    }
+  a.card-double .betta_image,
+  a.card-double .content {
+    height: auto;
+    width: 100%;
+    display: block;
+  }
 
-    .card-double .betta_image {
-        order: 1;
-    }
+  .card-double .betta_image {
+    order: 1;
+  }
 
-    a.card-double .content {
-        order: 2;
-        padding: 0 1rem;
-    }
+  a.card-double .content {
+    order: 2;
+    padding: 0 1rem;
+  }
 }
 /*-------------------------------------*/
 
@@ -1722,84 +1767,84 @@ a.card-double:active
 	Contact Card
 ---------------------------------------*/
 .card.contact {
-	display: inline-block;
-	vertical-align: top;
-	width: 25rem;
-    max-width: calc(100% - 1.5rem);
-    margin: 1.25rem 0.75rem 0 0.75rem;
+  display: inline-block;
+  vertical-align: top;
+  width: 25rem;
+  max-width: calc(100% - 1.5rem);
+  margin: 1.25rem 0.75rem 0 0.75rem;
 }
 
 .card.contact .picture {
-	width: 25rem;
-    max-width: 100%;
-    overflow: hidden;
+  width: 25rem;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .card.contact .content {
-    position: relative;
-    width: 16rem;
-    padding: 1rem 0.5rem;
-    margin: 0 auto;
-    z-index: 2;
+  position: relative;
+  width: 16rem;
+  padding: 1rem 0.5rem;
+  margin: 0 auto;
+  z-index: 2;
 }
 
 .card.contact .content p {
-    margin: 0;
+  margin: 0;
 }
 
 .card.contact .phone {
-    position: absolute;
-    top: -1.5rem;
-    left: -1.25rem;
-    border-bottom: none;
-    z-index: 1;
+  position: absolute;
+  top: -1.5rem;
+  left: -1.25rem;
+  border-bottom: none;
+  z-index: 1;
 }
 
 .card.contact .email {
-    position: absolute;
-    top: -1.5rem;
-    right: -1.25rem;
-    border-bottom: none;
-    z-index: 1;
+  position: absolute;
+  top: -1.5rem;
+  right: -1.25rem;
+  border-bottom: none;
+  z-index: 1;
 }
 
 .card.contact .phone:hover + .phone-number,
 .card.contact .email:hover + .email-address {
-    display: block;
+  display: block;
 }
 
 .card.contact .phone-number,
 .card.contact .email-address {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    padding-top: 1.3rem;
-    background-color: $color-background;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding-top: 1.3rem;
+  background-color: $color-background;
 }
 
 .card.contact .phone-number:hover,
 .card.contact .email-address:hover {
-    display: block;
+  display: block;
 }
 
 .card.contact .phone-number:hover + .phone,
 .card.contact .email-address:hover + .email {
-    background-color: $color-background;
+  background-color: $color-background;
 }
 
-@media(max-width: 800px) {
-    .card.contact .phone {
-        top: -2rem;
-        left: -2.25rem;
-    }
-    
-    .card.contact .email {
-        top: -2rem;
-        right: -2.25rem;
-    }
+@media (max-width: 800px) {
+  .card.contact .phone {
+    top: -2rem;
+    left: -2.25rem;
+  }
+
+  .card.contact .email {
+    top: -2rem;
+    right: -2.25rem;
+  }
 }
 /*-------------------------------------*/
 
@@ -1807,53 +1852,53 @@ a.card-double:active
 	Flip Card
 ---------------------------------------*/
 .flip-card {
-	background-color: transparent;
-	perspective: 1000px;
-	vertical-align: top;
-	display: inline-block;
+  background-color: transparent;
+  perspective: 1000px;
+  vertical-align: top;
+  display: inline-block;
 }
 
-.flip-card>.card {
-	position: relative;
-	width: 100%;
-	height: 100%;
-	transition: transform 0.6s;
-	transform-style: preserve-3d;
-	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-	border-radius: 0.25rem;
+.flip-card > .card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 0.25rem;
 }
 
-.flip-card:hover>.card,
-.flip-card>.card.active {
-	transform: rotateY(180deg);
+.flip-card:hover > .card,
+.flip-card > .card.active {
+  transform: rotateY(180deg);
 }
 
-.flip-card>.card>.front,
-.flip-card>.card>.back {
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
+.flip-card > .card > .front,
+.flip-card > .card > .back {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
-.flip-card>.card>.front img {
-	width: 100%;
-	margin: 0;
-	border-radius: 0.25rem;
+.flip-card > .card > .front img {
+  width: 100%;
+  margin: 0;
+  border-radius: 0.25rem;
 }
 
-.flip-card>.card>.back {
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	transform: rotateY(180deg);
+.flip-card > .card > .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: rotateY(180deg);
 }
 
-.flip-card>.card>.back textarea {
-	height: 100%;
-	min-height: 0px;
-	margin: 0;
-	padding: 0;
+.flip-card > .card > .back textarea {
+  height: 100%;
+  min-height: 0px;
+  margin: 0;
+  padding: 0;
 }
 /*-------------------------------------*/
 
@@ -1861,110 +1906,113 @@ a.card-double:active
 	Lightbox
 ---------------------------------------*/
 .lightbox {
-	display: none;
-	position: fixed;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	background: $color-background;
-	z-index: 100;
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: $color-background;
+  z-index: 100;
 }
 
 .lightbox.open {
-	display: block;
+  display: block;
 }
 
 .lightbox .left,
 .lightbox .middle,
 .lightbox .right {
-	display: inline-block;
-	position: absolute;
-	top: 0;
-	bottom: 0;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
 }
 
 .lightbox .left {
-	width: 4rem;
-	left: 0;
-	padding: 1rem;
+  width: 4rem;
+  left: 0;
+  padding: 1rem;
 }
 
 .lightbox .middle {
-	display: table;
-	height: 100vh;
-	max-height: 100vh;
-	width: calc(100vw - 8rem);
-	left: 4rem;
-	right: 4rem;
-	text-align: center;
+  display: table;
+  height: 100vh;
+  max-height: 100vh;
+  width: calc(100vw - 8rem);
+  left: 4rem;
+  right: 4rem;
+  text-align: center;
 }
 
 .lightbox .right {
-	width: 4rem;
-	right: 0;
-	padding: 1rem;
+  width: 4rem;
+  right: 0;
+  padding: 1rem;
 }
 
-#close, #caption {
-	z-index: 99;
-	position: absolute;
-	display: block;
+#close,
+#caption {
+  z-index: 99;
+  position: absolute;
+  display: block;
 }
 
 #caption {
-	margin-top: 4rem;
+  margin-top: 4rem;
 }
 
-#back, #forward {
-	z-index: 99;
-	position: absolute;
-	margin-top: 45vh;
+#back,
+#forward {
+  z-index: 99;
+  position: absolute;
+  margin-top: 45vh;
 }
 
-#back:disabled, #forward:disabled {
-	display: none;
+#back:disabled,
+#forward:disabled {
+  display: none;
 }
 
 #back {
-	left: 1rem;
+  left: 1rem;
 }
 
 #forward {
-	right: 1rem;
+  right: 1rem;
 }
 
 .lightbox .middle .img,
 .lightbox .middle .caption {
-	width: 100%;
+  width: 100%;
 }
 
 .lightbox .middle .img {
-	display: table-cell;
-	vertical-align: middle;
-	padding: 1rem 0;
+  display: table-cell;
+  vertical-align: middle;
+  padding: 1rem 0;
 }
 
 .lightbox .middle .img img {
-	max-width: 100%;
-	max-height: calc(100vh - 2rem);
-	border-radius: 0.25rem;
+  max-width: 100%;
+  max-height: calc(100vh - 2rem);
+  border-radius: 0.25rem;
 }
 
 .lightbox .middle .caption {
-	display: none;
-	position: absolute;
-	top: 1.8rem;
-	left: 1rem;
-	width: auto;
-	padding: 0.5rem 1rem;
-	border-radius: 0.25rem;
-	box-shadow: $shadow-level-2;
-	background: $color-background;
+  display: none;
+  position: absolute;
+  top: 1.8rem;
+  left: 1rem;
+  width: auto;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  box-shadow: $shadow-level-2;
+  background: $color-background;
 }
 
 .lightbox .middle .caption.open {
-	display: block;
+  display: block;
 }
 /*-------------------------------------*/
 
@@ -1972,28 +2020,28 @@ a.card-double:active
 	Version
 ---------------------------------------*/
 p.version {
-    position: fixed;
-    right: 0.5rem;
-    //bottom: 0;
-    bottom: 70vh;
-    width: 70vh;
+  position: fixed;
+  right: 0.5rem;
+  //bottom: 0;
+  bottom: 70vh;
+  width: 70vh;
 
-    -webkit-transform: rotate(-90deg);
-    -webkit-transform-origin: right bottom;
-    -moz-transform: rotate(-90deg);
-    -moz-transform-origin: right bottom;
-    -ms-transform: rotate(-90deg);
-    -ms-transform-origin: right bottom;
-    -o-transform: rotate(-90deg);
-    -o-transform-origin: right bottom;
-    transform: rotate(-90deg);
-    transform-origin: right bottom;
+  -webkit-transform: rotate(-90deg);
+  -webkit-transform-origin: right bottom;
+  -moz-transform: rotate(-90deg);
+  -moz-transform-origin: right bottom;
+  -ms-transform: rotate(-90deg);
+  -ms-transform-origin: right bottom;
+  -o-transform: rotate(-90deg);
+  -o-transform-origin: right bottom;
+  transform: rotate(-90deg);
+  transform-origin: right bottom;
 }
 
-@media(max-width: 800px) {
-    p.version {
-        display: none;
-    }
+@media (max-width: 800px) {
+  p.version {
+    display: none;
+  }
 }
 /*-------------------------------------*/
 
@@ -2001,53 +2049,53 @@ p.version {
 	Notification
 ---------------------------------------*/
 #notification {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: 101;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 101;
 }
 
 #notification .buttons,
 #notification .content {
-	display: inline-block;
-	vertical-align: middle;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 #notification.show {
-    display: block;
+  display: block;
 }
 
 #notification .buttons {
-	width: 20%;
+  width: 20%;
 }
 
 #notification .content {
-	width: 80%;
+  width: 80%;
 }
 
 #notification .message {
-	width: 20rem;
-	align-content: right;
-	margin: 1rem;
-	padding: 1rem;
-	float: right;
-	border: solid 1px;
-	border-color: rgb(129, 120, 106);
-	border-radius: 1rem;
-	word-wrap: break-word;
-	background-color: #FF3737; /* TEMP */
+  width: 20rem;
+  align-content: right;
+  margin: 1rem;
+  padding: 1rem;
+  float: right;
+  border: solid 1px;
+  border-color: rgb(129, 120, 106);
+  border-radius: 1rem;
+  word-wrap: break-word;
+  background-color: #ff3737; /* TEMP */
 }
 
 #cancel-notification {
-	display: none;
-	margin-bottom: 1rem;
+  display: none;
+  margin-bottom: 1rem;
 }
 
 #cancel-notification.show {
-	display: block;
+  display: block;
 }
 /*-------------------------------------*/
 
@@ -2055,10 +2103,10 @@ p.version {
 	Google Maps
 ---------------------------------------*/
 .google-maps {
-    width: 100%;
-    height: 15rem;
-    border: 0;
-    border-radius: 0.25rem;
-    box-shadow: $shadow-level-2;
+  width: 100%;
+  height: 15rem;
+  border: 0;
+  border-radius: 0.25rem;
+  box-shadow: $shadow-level-2;
 }
 /*-------------------------------------*/
