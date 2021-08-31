@@ -1509,6 +1509,8 @@ a.card {
 a.card .betta_image {
   width: 25.5rem;
   max-width: 100%;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
   background: $color-accent;
   overflow: hidden;
 }
