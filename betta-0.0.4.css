@@ -1132,6 +1132,12 @@ form input[type=file] {
   display: none;
 }
 
+form textarea {
+  width: 100%;
+  max-width: 100%;
+  height: 5rem;
+}
+
 /*-------------------------------------*/
 /*---------------------------------------
 	Main Navigation Menu
