@@ -976,6 +976,7 @@ img.round {
 .betta_image > div img {
   margin-bottom: -3px;
   border-radius: 0;
+  image-orientation: none;
 }
 
 .betta_image > div img.round {
