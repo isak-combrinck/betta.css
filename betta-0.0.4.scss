@@ -439,12 +439,13 @@ header.hero > h1 {
   position: absolute;
   top: calc(50vh - 2.5rem);
   left: calc(50vw - 2.5rem);
-  border: 16px solid $color-secondary;
-  border-top: 16px solid $color-main;
+  border: 2rem solid $color-secondary;
+  border-top: 1rem solid $color-secondary;
   border-radius: 50%;
   width: 5rem;
   height: 5rem;
   animation: spin 2s linear infinite;
+  background: $color-main;
 }
 
 @keyframes spin {

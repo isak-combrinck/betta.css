@@ -746,12 +746,13 @@ header.hero > h1 {
   position: absolute;
   top: calc(50vh - 2.5rem);
   left: calc(50vw - 2.5rem);
-  border: 16px solid #e0e0e0;
-  border-top: 16px solid #212121;
+  border: 2rem solid #e0e0e0;
+  border-top: 1rem solid #e0e0e0;
   border-radius: 50%;
   width: 5rem;
   height: 5rem;
   animation: spin 2s linear infinite;
+  background: #212121;
 }
 
 @keyframes spin {
