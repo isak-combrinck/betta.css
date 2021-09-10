@@ -381,6 +381,10 @@ body {
   font-size: 16px;
 }
 
+body.dark {
+  background: #212121;
+}
+
 #page,
 main {
   padding: 3rem 2rem;
@@ -491,6 +495,23 @@ button {
   color: #212121;
 }
 
+.dark h1,
+.dark h2,
+.dark h3,
+.dark h4,
+.dark h5,
+.dark h6,
+.dark p,
+.dark a,
+.dark li,
+.dark textarea,
+.dark option,
+.dark input,
+.dark select,
+.dark button {
+  color: #ffffff;
+}
+
 a {
   text-decoration: none;
   transition: 0.2s;
@@ -569,6 +590,17 @@ h5 > a:hover,
 h6 > a:hover,
 li.link:hover > a {
   border-color: #212121;
+}
+
+.dark p > a:hover,
+.dark h1 > a:hover,
+.dark h2 > a:hover,
+.dark h3 > a:hover,
+.dark h4 > a:hover,
+.dark h5 > a:hover,
+.dark h6 > a:hover,
+.dark li.link:hover > a {
+  border-color: #ffffff;
 }
 
 p > a.icon {
