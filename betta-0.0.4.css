@@ -1455,24 +1455,28 @@ button.icon-button.simple,
 .dark button.icon-button.simple {
   background: none;
   box-shadow: none;
-  opacity: 0.4;
+  opacity: 0.5;
+}
+
+.dark button.icon-button img {
+  filter: brightness(1);
 }
 
 @media (hover: hover) {
   button.icon-button.simple:hover,
 .dark button.icon-button.simple:hover {
     background: none;
-    opacity: 0.3;
+    opacity: 1;
   }
 }
 button.icon-button.simple:active,
 .dark button.icon-button.simple:active {
-  opacity: 0.2;
+  opacity: 0.75;
 }
 
 #betta_theme-button {
   position: fixed;
-  top: -0.5rem;
+  top: -0.25rem;
   right: -0.5rem;
   width: 3rem;
   height: 3rem;
