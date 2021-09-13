@@ -1464,6 +1464,11 @@ button.icon-button.simple,
   opacity: 0.5;
 }
 
+button.icon-button.simple,
+.dark button.icon-button.simple .icon img{
+  background: none;
+}
+
 @media (hover: hover) {
   button.icon-button.simple:hover,
   .dark button.icon-button.simple:hover {
