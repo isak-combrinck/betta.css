@@ -1540,6 +1540,8 @@ span.icon > img {
 
 .dark span.icon > img {
   color: #E0E0E0;
+  background: #757575;
+  border-radius: 50%;
 }
 
 span.icon.big {

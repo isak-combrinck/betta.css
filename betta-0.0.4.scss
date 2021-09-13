@@ -1262,6 +1262,8 @@ span.icon > img {
 
 .dark span.icon > img {
   color: $dark-color-main;
+  background: $dark-color-secondary;
+  border-radius: 50%;
 }
 
 span.icon.big {
