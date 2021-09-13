@@ -420,6 +420,7 @@ body,
 nav,
 main,
 div,
+span,
 article,
 section,
 header,
@@ -1797,7 +1798,6 @@ between lines
 .inline-single,
 .inline-split,
 .inline-ternate {
-  box-sizing: border-box;
   display: inline-block;
   padding: 0 1rem 1rem 1rem;
   vertical-align: top;
@@ -1877,7 +1877,6 @@ between lines
 }
 
 .gallery-item {
-  box-sizing: border-box;
   vertical-align: top;
   display: inline-block;
   width: 50%;
@@ -2236,18 +2235,10 @@ a.card-double {
 
 a.card-double .betta_image,
 a.card-double .content {
+  display: inline-block;
   height: 100%;
   width: 50%;
-  display: inline-block;
   vertical-align: top;
-}
-
-a.card-double .betta_image {
-  width: 50%;
-}
-
-a.card-double .content {
-  width: 49.5%;
 }
 
 a.card-double .betta_image {
