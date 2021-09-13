@@ -1451,45 +1451,9 @@ form textarea {
   height: auto;
 }
 
-button.icon-button.simple,
-.dark button.icon-button.simple {
-  background: none;
-  box-shadow: none;
-  opacity: 0.5;
-}
-
-.dark button.icon-button img {
-  filter: brightness(1);
-}
-
-@media (hover: hover) {
-  button.icon-button.simple:hover,
-.dark button.icon-button.simple:hover {
-    background: none;
-    opacity: 1;
-  }
-}
-button.icon-button.simple:active,
-.dark button.icon-button.simple:active {
-  opacity: 0.75;
-}
-
 #betta_theme-button {
-  position: fixed;
-  top: -0.25rem;
-  right: -0.5rem;
   width: 3rem;
   height: 3rem;
-  z-index: 15;
-}
-
-#betta_theme-button {
-  position: fixed;
-  top: -0.25rem;
-  right: -0.5rem;
-  width: 3rem;
-  height: 3rem;
-  z-index: 15;
 }
 
 #betta_theme-light-icon,
@@ -1504,10 +1468,16 @@ button.icon-button.simple:active,
 
 @media (max-width: 800px) {
   #betta_menu-button,
-#betta_back-button {
+#betta_back-button,
+#betta_theme-button {
     top: auto;
     bottom: 1rem;
     left: calc(50vw - 2rem);
+    width: 4rem;
+    height: 4rem;
+  }
+
+  #betta_theme-button {
     width: 4rem;
     height: 4rem;
   }
@@ -1666,6 +1636,10 @@ button.dark:active:enabled {
   color: #212121;
 }
 
+.dark button.icon-button img {
+  filter: brightness(1);
+}
+
 .dark .icon-button.filled .icon {
   color: #ffffff;
 }
@@ -1744,6 +1718,26 @@ button.dark:active:enabled {
   width: 12rem;
   display: inline-block;
   transition: 0.2s;
+}
+
+/* Simple button */
+button.icon-button.simple,
+.dark button.icon-button.simple {
+  background: none;
+  box-shadow: none;
+  opacity: 0.5;
+}
+
+@media (hover: hover) {
+  button.icon-button.simple:hover,
+.dark button.icon-button.simple:hover {
+    background: none;
+    opacity: 1;
+  }
+}
+button.icon-button.simple:active,
+.dark button.icon-button.simple:active {
+  opacity: 0.75;
 }
 
 /*-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
