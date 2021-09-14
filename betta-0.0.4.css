@@ -360,6 +360,7 @@ template {
 /*---------------------------------------
 	Colors
 ---------------------------------------*/
+/* The ten levels of black saturation */
 /*---------------------------------------
   Shady stuff
 ---------------------------------------*/
@@ -383,7 +384,7 @@ body {
 }
 
 body.dark {
-  background: #212121;
+  background: #121212;
 }
 
 body.dark img {
@@ -498,7 +499,7 @@ option,
 input,
 select,
 button {
-  color: #212121;
+  color: #121212;
 }
 
 .dark h1,
@@ -586,7 +587,7 @@ li.link > a {
 .dark h5 > a,
 .dark h6 > a,
 .dark li.link > a {
-  border-color: #757575;
+  border-color: #616161;
 }
 
 h1 > a,
@@ -606,7 +607,7 @@ h4 > a:hover,
 h5 > a:hover,
 h6 > a:hover,
 li.link:hover > a {
-  border-color: #212121;
+  border-color: #121212;
 }
 
 .dark p > a:hover,
@@ -693,7 +694,7 @@ hr {
 }
 
 hr {
-  background: #757575;
+  background: #616161;
 }
 
 /*
@@ -742,7 +743,7 @@ details {
 }
 
 .dark details {
-  border-bottom-color: #757575;
+  border-bottom-color: #616161;
 }
 
 /*-------------------------------------*/
@@ -796,7 +797,7 @@ header.hero > h1 {
 }
 
 .dark #loader {
-  background: #424242;
+  background: #212121;
 }
 
 #loader.show {
@@ -813,12 +814,12 @@ header.hero > h1 {
   width: 5rem;
   height: 5rem;
   animation: spin 2s linear infinite;
-  background: #212121;
+  background: #121212;
 }
 
 .dark #spinner {
-  border-color: #757575;
-  background: #212121;
+  border-color: #616161;
+  background: #121212;
 }
 
 @keyframes spin {
@@ -853,14 +854,14 @@ header.hero > h1 {
   font-size: 0.8rem;
   line-height: 1rem;
   z-index: 8;
-  background-color: #212121;
+  background-color: #121212;
   color: #eeeeee;
   transition-delay: 0s;
 }
 
 .dark .tooltip > span.tooltip-text {
   background-color: #f5f5f5;
-  color: #616161;
+  color: #424242;
 }
 
 .tooltip:hover > span.tooltip-text {
@@ -878,7 +879,7 @@ header.hero > h1 {
   margin-left: -5px;
   border-width: 5px;
   border-style: solid;
-  border-color: transparent transparent #212121 transparent;
+  border-color: transparent transparent #121212 transparent;
 }
 
 .dark .tooltip > span.tooltip-text::after {
@@ -898,12 +899,12 @@ header.hero > h1 {
     font-size: 1rem;
     line-height: 1.6rem;
     background-color: #ffffff;
-    color: #212121;
+    color: #121212;
   }
 
   .dark nav .tooltip > span.tooltip-text {
     color: #f5f5f5;
-    background-color: #212121;
+    background-color: #121212;
   }
 
   nav .tooltip > span.tooltip-text::after {
@@ -940,8 +941,8 @@ header.hero > h1 {
 }
 
 .dark .betta-banner {
-  box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.6);
-  background: #212121;
+  box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.9);
+  background: #121212;
 }
 
 .betta-banner > p {
@@ -1169,6 +1170,11 @@ img.round {
   display: inline-block;
   font-size: 1.5rem;
   z-index: 5;
+  color: #121212;
+}
+
+.dark .betta_image.slideshow .selectors span {
+  color: #f5f5f5;
 }
 
 .betta_image.slideshow .selectors:hover {
@@ -1246,7 +1252,7 @@ form textarea {
 }
 
 .dark #betta_menu {
-  background: #212121;
+  background: #121212;
 }
 
 .menu-spacer {
@@ -1264,7 +1270,7 @@ form textarea {
 }
 
 .dark #betta_menu.stick {
-  box-shadow: 0 2px 6px 1px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 2px 6px 1px rgba(0, 0, 0, 0.9);
 }
 
 /*-------------------*/
@@ -1305,7 +1311,7 @@ form textarea {
 }
 
 .dark #betta_menu ul li a.active {
-  background: #757575;
+  background: #616161;
 }
 
 #betta_menu ul li button {
@@ -1345,7 +1351,7 @@ form textarea {
   }
 
   .dark #betta_menu ul li a:hover {
-    background: #424242;
+    background: #212121;
   }
 
   #betta_menu ul li a.active:hover {
@@ -1353,7 +1359,7 @@ form textarea {
   }
 
   .dark #betta_menu ul li a.active:hover {
-    background: #757575;
+    background: #616161;
   }
 }
 @media (max-width: 800px) {
@@ -1407,7 +1413,7 @@ form textarea {
   }
 
   .dark #betta_menu.toolbar {
-    box-shadow: 0 -2px 6px 1px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 -2px 6px 1px rgba(0, 0, 0, 0.9);
   }
 
   #betta_menu.toolbar > ul {
@@ -1426,7 +1432,7 @@ form textarea {
 }
 
 .dark #betta_menu ul li a:active {
-  background: #616161;
+  background: #424242;
 }
 
 /*-------------------------------------*/
@@ -1467,7 +1473,7 @@ form textarea {
 .dark #betta_menu-button,
 .dark #betta_home-button button,
 .dark #betta_back-button button {
-  box-shadow: 0 3px 8px 1px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 3px 8px 1px rgba(0, 0, 0, 0.9);
 }
 
 #betta_menu-button:active,
@@ -1547,7 +1553,7 @@ footer .logo {
 .material-icons-round.custom-icon > img {
   /* deprecated */
   height: 1.5rem;
-  color: #212121;
+  color: #121212;
 }
 
 span.icon {
@@ -1568,7 +1574,7 @@ span.icon > img {
 
 .dark p span.icon > img {
   border-radius: 50%;
-  background-color: #757575;
+  background-color: #616161;
 }
 
 span.icon.big {
@@ -1587,7 +1593,7 @@ span.icon.big > img {
 }
 
 .dark span.icon.big > img {
-  background: #616161;
+  background: #424242;
 }
 
 p > .icon {
@@ -1615,8 +1621,8 @@ button {
 }
 
 .dark button {
-  box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.6);
-  background: #757575;
+  box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.9);
+  background: #616161;
 }
 
 button:disabled {
@@ -1625,11 +1631,11 @@ button:disabled {
 }
 
 .dark button:disabled {
-  background-color: #424242;
+  background-color: #212121;
 }
 
 button.dark {
-  background: #212121;
+  background: #121212;
 }
 
 .dark button.dark {
@@ -1644,7 +1650,7 @@ button.dark {
   }
 
   .dark button:hover:enabled {
-    background: #616161;
+    background: #424242;
   }
 
   button.dark:hover:enabled {
@@ -1658,7 +1664,7 @@ button:active:enabled {
 }
 
 .dark button:active:enabled {
-  background: #424242;
+  background: #212121;
 }
 
 button.dark:active:enabled {
@@ -1673,7 +1679,7 @@ button.dark:active:enabled {
 
 .icon-button.filled .material-icons-round,
 .icon-button.filled .icon {
-  color: #212121;
+  color: #121212;
 }
 
 .dark button.icon-button img {
@@ -1687,12 +1693,12 @@ button.dark:active:enabled {
 .icon-button.filled:disabled,
 .icon-button.filled:disabled .material-icons-round,
 .icon-button.filled:disabled .icon {
-  color: #757575;
+  color: #616161;
 }
 
 .dark .icon-button.filled:disabled,
 .dark .icon-button.filled:disabled .icon {
-  color: #757575;
+  color: #616161;
 }
 
 .icon-button .text {
@@ -1705,7 +1711,7 @@ button.dark:active:enabled {
 .icon-button .material-icons-round,
 .icon-button > .icon {
   vertical-align: middle;
-  color: #212121;
+  color: #121212;
   font-size: 1.8rem;
 }
 
@@ -1892,7 +1898,7 @@ between lines
 }
 
 .dark .betta_overlap-top {
-  background: #424242;
+  background: #212121;
 }
 
 @media (max-width: 800px) {
@@ -1935,8 +1941,8 @@ between lines
 }
 
 .dark .photo > img {
-  box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.6);
-  background: #424242;
+  box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.9);
+  background: #212121;
 }
 
 .gallery-item > .content > .click-plane {
@@ -1949,7 +1955,7 @@ between lines
 }
 
 .dark .gallery-item > .content > .click-plane.caption {
-  background: #212121;
+  background: #121212;
 }
 
 .gallery-item > .content > .click-plane.caption > p {
@@ -1995,12 +2001,12 @@ between lines
 }
 
 .dark .feed > article > a {
-  border-color: #616161;
+  border-color: #424242;
 }
 
 @media (hover: hover) {
   .feed > article > a:hover {
-    border-color: #212121;
+    border-color: #121212;
   }
 
   .dark .feed > article > a:hover {
@@ -2013,7 +2019,7 @@ between lines
 }
 
 .dark .feed > article > a:active {
-  background: #616161;
+  background: #424242;
 }
 
 .feed > article > a > h3 {
@@ -2044,8 +2050,9 @@ a.card {
 }
 
 .dark a.card {
-  box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.6);
-  border-color: #757575;
+  box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.9);
+  border-color: #616161;
+  background-color: #212121;
 }
 
 a.card .betta_image {
@@ -2058,7 +2065,7 @@ a.card .betta_image {
 }
 
 .dark a.card .betta_image {
-  background: #424242;
+  background: #212121;
 }
 
 a.card .betta_image img {
@@ -2162,7 +2169,7 @@ a.card-double h4 {
 .dark a.card-double h2,
 .dark a.card-double h3,
 .dark a.card-double h4 {
-  border-color: #757575;
+  border-color: #616161;
 }
 
 @media (hover: hover) {
@@ -2172,7 +2179,7 @@ a.card:hover h4,
 a.card-double:hover h2,
 a.card-double:hover h3,
 a.card-double:hover h4 {
-    border-bottom: 3px solid #212121;
+    border-bottom: 3px solid #121212;
   }
 
   .dark a.card:hover h2,
@@ -2258,8 +2265,9 @@ a.card-double {
 }
 
 .dark a.card-double {
-  box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.6);
-  border-color: #757575;
+  box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.9);
+  border-color: #616161;
+  background-color: #212121;
 }
 
 a.card-double .betta_image,
@@ -2275,7 +2283,7 @@ a.card-double .betta_image {
 }
 
 .dark a.card-double .betta_image {
-  background: #424242;
+  background: #212121;
 }
 
 a.card-double .betta_image img {
@@ -2358,7 +2366,7 @@ a.card-double .content {
 }
 
 .dark .card.contact .content {
-  background: #424242;
+  background: #212121;
 }
 
 .card.contact .content p {
@@ -2407,7 +2415,7 @@ a.card-double .content {
   bottom: 0;
   right: 0;
   padding-top: 1.3rem;
-  background: #424242;
+  background: #212121;
 }
 
 .card.contact .phone-number:hover,
@@ -2422,7 +2430,7 @@ a.card-double .content {
 
 .dark .card.contact .phone-number:hover + .phone,
 .dark .card.contact .email-address:hover + .email {
-  background-color: #212121;
+  background-color: #121212;
 }
 
 @media (max-width: 800px) {
@@ -2458,7 +2466,7 @@ a.card-double .content {
 }
 
 .dark .flip-card > .card {
-  box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.9);
 }
 
 .flip-card:hover > .card,
@@ -2510,7 +2518,7 @@ a.card-double .content {
 }
 
 .dark .lightbox {
-  background: #212121;
+  background: #121212;
 }
 
 .lightbox.open {
@@ -2609,8 +2617,8 @@ a.card-double .content {
 }
 
 .dark .lightbox .middle .caption {
-  box-shadow: 0 2px 6px 1px rgba(0, 0, 0, 0.6);
-  background: #212121;
+  box-shadow: 0 2px 6px 1px rgba(0, 0, 0, 0.9);
+  background: #121212;
 }
 
 .lightbox .middle .caption.open {
@@ -2711,7 +2719,7 @@ p.version {
 }
 
 .dark .google-maps {
-  box-shadow: 0 2px 6px 1px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 2px 6px 1px rgba(0, 0, 0, 0.9);
 }
 
 /*-------------------------------------*/

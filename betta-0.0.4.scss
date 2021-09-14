@@ -25,17 +25,18 @@ TEMP is used to denote values that need to be changed
 	Colors
 ---------------------------------------*/
 
-$color-main: #212121 !default;
-$color-secondary: #e0e0e0 !default;
-$color-accent: #f5f5f5 !default;
-$color-background: #ffffff !default;
-$color-active: #eeeeee !default;
-
-$dark-color-main: #f5f5f5 !default;
-$dark-color-secondary: #757575 !default;
-$dark-color-accent: #424242 !default;
-$dark-color-background: #212121 !default;
-$dark-color-active: #616161 !default;
+/* The ten levels of black saturation */
+$color-base-0: #ffffff;
+$color-base-1: #f5f5f5;
+$color-base-2: #eeeeee;
+$color-base-3: #e0e0e0;
+$color-base-4: #bdbdbd;
+$color-base-5: #9e9e9e;
+$color-base-6: #757575;
+$color-base-7: #616161;
+$color-base-8: #424242;
+$color-base-9: #212121;
+$color-base-10: #121212;
 
 /*---------------------------------------
   Shady stuff
@@ -45,19 +46,19 @@ $shadow-level-0: 0 0 0 0 rgba(0, 0, 0, 0.2);
 
 /* level 1 */
 $shadow-level-1: 0 1px 3px 1px rgba(0, 0, 0, 0.2);
-$dark-shadow-level-1: 0 1px 3px 1px rgba(0, 0, 0, 0.6);
+$dark-shadow-level-1: 0 1px 3px 1px rgba(0, 0, 0, 0.9);
 
 /* level 2 */
 $shadow-level-2: 0 2px 6px 1px rgba(0, 0, 0, 0.2);
-$dark-shadow-level-2: 0 2px 6px 1px rgba(0, 0, 0, 0.6);
+$dark-shadow-level-2: 0 2px 6px 1px rgba(0, 0, 0, 0.9);
 
 /* level 2 inversed */
 $shadow-level-2-i: 0 -2px 6px 1px rgba(0, 0, 0, 0.2);
-$dark-shadow-level-2-i: 0 -2px 6px 1px rgba(0, 0, 0, 0.6);
+$dark-shadow-level-2-i: 0 -2px 6px 1px rgba(0, 0, 0, 0.9);
 
 /* level 3 */
 $shadow-level-3: 0 3px 8px 1px rgba(0, 0, 0, 0.2);
-$dark-shadow-level-3: 0 3px 8px 1px rgba(0, 0, 0, 0.6);
+$dark-shadow-level-3: 0 3px 8px 1px rgba(0, 0, 0, 0.9);
 
 /*---------------------------------------
   Font sizing
@@ -83,7 +84,7 @@ body {
 }
 
 body.dark {
-  background: $dark-color-background;
+  background: $color-base-10;
 }
 
 body.dark img {
@@ -200,7 +201,7 @@ option,
 input,
 select,
 button {
-  color: $color-main;
+  color: $color-base-10;
 }
 
 .dark h1,
@@ -217,7 +218,7 @@ button {
 .dark input,
 .dark select,
 .dark button {
-  color: $dark-color-main;
+  color: $color-base-1;
 }
 
 a {
@@ -277,7 +278,7 @@ h6 > a,
 li.link > a {
   border-bottom-style: solid;
   border-bottom-width: 2px;
-  border-color: $color-secondary;
+  border-color: $color-base-3;
 }
 
 .dark p > a,
@@ -288,7 +289,7 @@ li.link > a {
 .dark h5 > a,
 .dark h6 > a,
 .dark li.link > a {
-  border-color: $dark-color-secondary;
+  border-color: $color-base-7;
 }
 
 h1 > a,
@@ -308,7 +309,7 @@ h4 > a:hover,
 h5 > a:hover,
 h6 > a:hover,
 li.link:hover > a {
-  border-color: $color-main;
+  border-color: $color-base-10;
 }
 
 .dark p > a:hover,
@@ -319,7 +320,7 @@ li.link:hover > a {
 .dark h5 > a:hover,
 .dark h6 > a:hover,
 .dark li.link:hover > a {
-  border-color: $dark-color-main;
+  border-color: $color-base-1;
 }
 
 p > a.icon {
@@ -391,11 +392,11 @@ h6 {
 hr {
   border: none;
   height: 3px;
-  background: $color-secondary;
+  background: $color-base-3;
 }
 
 hr {
-  background: $dark-color-secondary;
+  background: $color-base-7;
 }
 
 /*
@@ -441,11 +442,11 @@ details > summary > p {
 
 details {
   margin-bottom: 1.6rem;
-  border-bottom: 0.7rem solid $color-secondary;
+  border-bottom: 0.7rem solid $color-base-3;
 }
 
 .dark details {
-  border-bottom-color: $dark-color-secondary;
+  border-bottom-color: $color-base-7;
 }
 
 /*-------------------------------------*/
@@ -496,12 +497,12 @@ header.hero > h1 {
   left: 0;
   bottom: 0;
   right: 0;
-  background: $color-accent;
+  background: $color-base-1;
   z-index: 101;
 }
 
 .dark #loader {
-  background: $dark-color-accent;
+  background: $color-base-9;
 }
 
 #loader.show {
@@ -512,18 +513,18 @@ header.hero > h1 {
   position: absolute;
   top: calc(50vh - 2.5rem);
   left: calc(50vw - 2.5rem);
-  border: 2rem solid $color-secondary;
-  border-top: 1rem solid $color-secondary;
+  border: 2rem solid $color-base-3;
+  border-top: 1rem solid $color-base-3;
   border-radius: 50%;
   width: 5rem;
   height: 5rem;
   animation: spin 2s linear infinite;
-  background: $color-main;
+  background: $color-base-10;
 }
 
 .dark #spinner {
-  border-color: $dark-color-secondary;
-  background: $dark-color-background;
+  border-color: $color-base-7;
+  background: $color-base-10;
 }
 
 @keyframes spin {
@@ -559,14 +560,14 @@ header.hero > h1 {
   font-size: $font-small;
   line-height: 1rem;
   z-index: 8;
-  background-color: $color-main;
-  color: $color-active;
+  background-color: $color-base-10;
+  color: $color-base-2;
   transition-delay: 0s;
 }
 
 .dark .tooltip > span.tooltip-text {
-  background-color: $dark-color-main;
-  color: $dark-color-active;
+  background-color: $color-base-1;
+  color: $color-base-8;
 }
 
 .tooltip:hover > span.tooltip-text {
@@ -585,11 +586,11 @@ header.hero > h1 {
   margin-left: -5px;
   border-width: 5px;
   border-style: solid;
-  border-color: transparent transparent $color-main transparent;
+  border-color: transparent transparent $color-base-10 transparent;
 }
 
 .dark .tooltip > span.tooltip-text::after {
-  border-color: transparent transparent $dark-color-main transparent;
+  border-color: transparent transparent $color-base-1 transparent;
 }
 
 // Use tooltip as menu text in mobile menu
@@ -605,13 +606,13 @@ header.hero > h1 {
     text-align: left;
     font-size: 1rem;
     line-height: $line-height;
-    background-color: $color-background;
-    color: $color-main;
+    background-color: $color-base-0;
+    color: $color-base-10;
   }
 
   .dark nav .tooltip > span.tooltip-text {
-    color: $dark-color-main;
-    background-color: $dark-color-background;
+    color: $color-base-1;
+    background-color: $color-base-10;
   }
 
   nav .tooltip > span.tooltip-text::after {
@@ -646,12 +647,12 @@ header.hero > h1 {
   text-align: center;
   z-index: 10;
   box-shadow: $shadow-level-1;
-  background: $color-background;
+  background: $color-base-0;
 }
 
 .dark .betta-banner {
   box-shadow: $dark-shadow-level-1;
-  background: $dark-color-background;
+  background: $color-base-10;
 }
 
 .betta-banner > p {
@@ -886,6 +887,11 @@ img.round {
   display: inline-block;
   font-size: 1.5rem;
   z-index: 5;
+  color: $color-base-10;
+}
+
+.dark .betta_image.slideshow .selectors span {
+  color: $color-base-1;
 }
 
 .betta_image.slideshow .selectors:hover {
@@ -962,12 +968,12 @@ form textarea {
   text-align: center;
   overflow: show;
   z-index: 10;
-  background: $color-background;
+  background: $color-base-0;
   transition: $transition-slow;
 }
 
 .dark #betta_menu {
-  background: $dark-color-background;
+  background: $color-base-10;
 }
 
 .menu-spacer {
@@ -1022,11 +1028,11 @@ form textarea {
 }
 
 #betta_menu ul li a.active {
-  background: $color-secondary;
+  background: $color-base-3;
 }
 
 .dark #betta_menu ul li a.active {
-  background: $dark-color-secondary;
+  background: $color-base-7;
 }
 
 #betta_menu ul li button {
@@ -1063,19 +1069,19 @@ form textarea {
 
 @media (hover: hover) {
   #betta_menu ul li a:hover {
-    background: $color-accent;
+    background: $color-base-1;
   }
 
   .dark #betta_menu ul li a:hover {
-    background: $dark-color-accent;
+    background: $color-base-9;
   }
 
   #betta_menu ul li a.active:hover {
-    background: $color-secondary;
+    background: $color-base-3;
   }
 
   .dark #betta_menu ul li a.active:hover {
-    background: $dark-color-secondary;
+    background: $color-base-7;
   }
 }
 
@@ -1145,12 +1151,12 @@ form textarea {
 }
 
 #betta_menu ul li a:active {
-  background: $color-active;
+  background: $color-base-2;
   transition: 0.1s;
 }
 
 .dark #betta_menu ul li a:active {
-  background: $dark-color-active;
+  background: $color-base-8;
 }
 /*-------------------------------------*/
 
@@ -1272,7 +1278,7 @@ footer .logo {
 .material-icons-round.custom-icon > img {
   /* deprecated */
   height: 1.5rem;
-  color: $color-main;
+  color: $color-base-10;
 }
 
 span.icon {
@@ -1293,7 +1299,7 @@ span.icon > img {
 
 .dark p span.icon > img {
   border-radius: 50%;
-  background-color: $dark-color-secondary;
+  background-color: $color-base-7;
 }
 
 span.icon.big {
@@ -1306,13 +1312,13 @@ span.icon.big > img {
   height: 4rem;
   width: 4rem;
   line-height: 0rem;
-  background: $color-active;
+  background: $color-base-2;
   border-radius: 50%;
   padding: 1rem;
 }
 
 .dark span.icon.big > img {
-  background: $dark-color-active;
+  background: $color-base-8;
 }
 
 p > .icon {
@@ -1335,41 +1341,41 @@ button {
   padding: 0.25rem 1rem;
   border-radius: 2rem;
   box-shadow: $shadow-level-1;
-  background: $color-background;
+  background: $color-base-0;
   transition: $transition-default;
 }
 
 .dark button {
   box-shadow: $dark-shadow-level-1;
-  background: $dark-color-secondary;
+  background: $color-base-7;
 }
 
 button:disabled {
   box-shadow: none;
-  background-color: $color-accent;
+  background-color: $color-base-1;
 }
 
 .dark button:disabled {
-  background-color: $dark-color-accent;
+  background-color: $color-base-9;
 }
 
 button.dark {
-  background: $color-main;
+  background: $color-base-10;
 }
 
 .dark button.dark {
-  background: $dark-color-main;
+  background: $color-base-1;
 }
 
 @media (hover: hover) {
   button:hover:enabled {
     cursor: pointer;
-    background: $color-accent;
+    background: $color-base-1;
     transition: $transition-default;
   }
 
   .dark button:hover:enabled {
-    background: $dark-color-active;
+    background: $color-base-8;
   }
 
   button.dark:hover:enabled {
@@ -1379,11 +1385,11 @@ button.dark {
 
 button:active:enabled {
   box-shadow: $shadow-level-0;
-  background: $color-active;
+  background: $color-base-2;
 }
 
 .dark button:active:enabled {
-  background: $dark-color-accent;
+  background: $color-base-9;
 }
 
 button.dark:active:enabled {
@@ -1397,7 +1403,7 @@ button.dark:active:enabled {
 
 .icon-button.filled .material-icons-round, /* deprecated */
 .icon-button.filled .icon {
-  color: $color-main;
+  color: $color-base-10;
 }
 
 .dark button.icon-button img {
@@ -1405,18 +1411,18 @@ button.dark:active:enabled {
 }
 
 .dark .icon-button.filled .icon {
-  color: $dark-color-main;
+  color: $color-base-1;
 }
 
 .icon-button.filled:disabled,
 .icon-button.filled:disabled .material-icons-round, /* deprecated */
 .icon-button.filled:disabled .icon {
-  color: $dark-color-secondary;
+  color: $color-base-7;
 }
 
 .dark .icon-button.filled:disabled,
 .dark .icon-button.filled:disabled .icon {
-  color: $dark-color-secondary;
+  color: $color-base-7;
 }
 
 .icon-button .text {
@@ -1429,12 +1435,12 @@ button.dark:active:enabled {
 .icon-button .material-icons-round, /* deprecated */
 .icon-button>.icon {
   vertical-align: middle;
-  color: $color-main;
+  color: $color-base-10;
   font-size: 1.8rem;
 }
 
 .dark .icon-button>.icon {
-  color: $dark-color-main;
+  color: $color-base-1;
 }
 
 .icon-button .material-icons-round.custom-icon, /* deprecated */
@@ -1444,7 +1450,7 @@ button.dark:active:enabled {
 
 .icon-button.dark .material-icons-round {
   /* deprecated */
-  color: $color-background;
+  color: $color-base-0;
 }
 
 @media (max-width: 800px) {
@@ -1617,12 +1623,12 @@ between lines
   margin-top: -5rem;
   z-index: 2;
   padding: 1rem 2rem;
-  background: $color-accent;
+  background: $color-base-1;
   max-width: 34rem;
 }
 
 .dark .betta_overlap-top {
-  background: $dark-color-accent;
+  background: $color-base-9;
 }
 
 @media (max-width: 800px) {
@@ -1661,13 +1667,13 @@ between lines
 .photo > img {
   width: 100%;
   box-shadow: $shadow-level-1;
-  background: $color-accent;
+  background: $color-base-1;
   border-radius: 0.25rem;
 }
 
 .dark .photo > img {
   box-shadow: $dark-shadow-level-1;
-  background: $dark-color-accent;
+  background: $color-base-9;
 }
 
 .gallery-item > .content > .click-plane {
@@ -1675,12 +1681,12 @@ between lines
 }
 
 .gallery-item > .content > .click-plane.caption {
-  background: $color-background;
+  background: $color-base-0;
   opacity: 0.85;
 }
 
 .dark .gallery-item > .content > .click-plane.caption {
-  background: $dark-color-background;
+  background: $color-base-10;
 }
 
 .gallery-item > .content > .click-plane.caption > p {
@@ -1724,30 +1730,30 @@ between lines
   padding: 1rem;
   margin-top: 2rem;
   transition: $transition-default;
-  border: 2px solid $color-active;
+  border: 2px solid $color-base-2;
 }
 
 .dark .feed > article > a {
-  border-color: $dark-color-active;
+  border-color: $color-base-8;
 }
 
 @media (hover: hover) {
   .feed > article > a:hover {
-    border-color: $color-main;
+    border-color: $color-base-10;
   }
 
   .dark .feed > article > a:hover {
-    border-color: $dark-color-main;
+    border-color: $color-base-1;
   }
 }
 
 .feed > article > a:active {
-  background: $color-active;
+  background: $color-base-2;
   box-shadow: $shadow-level-0;
 }
 
 .dark .feed > article > a:active {
-  background: $dark-color-active;
+  background: $color-base-8;
 }
 
 .feed > article > a > h3 {
@@ -1771,7 +1777,7 @@ a.card {
   padding: 0;
   margin-top: 1rem;
   margin: 1rem;
-  border-color: $color-secondary;
+  border-color: $color-base-3;
   border-radius: 0.25rem;
   box-shadow: $shadow-level-1;
   transition: $transition-default;
@@ -1779,7 +1785,8 @@ a.card {
 
 .dark a.card {
   box-shadow: $dark-shadow-level-1;
-  border-color: $dark-color-secondary;
+  border-color: $color-base-7;
+  background-color: $color-base-9;
 }
 
 a.card .betta_image {
@@ -1787,12 +1794,12 @@ a.card .betta_image {
   max-width: 100%;
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
-  background: $color-accent;
+  background: $color-base-1;
   overflow: hidden;
 }
 
 .dark a.card .betta_image {
-  background: $dark-color-accent;
+  background: $color-base-9;
 }
 
 a.card .betta_image img {
@@ -1817,12 +1824,12 @@ a.card.cover .content {
   left: 1rem;
   bottom: 1rem;
   right: 1rem;
-  border: 2px solid $color-background;
+  border: 2px solid $color-base-0;
   transition: $transition-default;
 }
 
 .dark a.card.cover .content {
-  border-color: $dark-color-background;
+  border-color: $color-base-9;
 }
 
 a.card.cover h2,
@@ -1841,14 +1848,14 @@ a.card.cover h4 {
   line-height: 1.75rem;
   letter-spacing: 0.05rem;
   border: none;
-  background: $color-background;
+  background: $color-base-0;
   transition: $transition-default;
 }
 
 .dark a.card.cover h2,
 .dark a.card.cover h3,
 .dark a.card.cover h4 {
-  background: $dark-color-background;
+  background: $color-base-9;
 }
 
 a.card:active {
@@ -1882,7 +1889,7 @@ a.card-double h3,
 a.card-double h4 {
   padding: 0 0 1rem 0;
   margin-top: 2.15rem;
-  border-bottom: 3px solid $color-secondary;
+  border-bottom: 3px solid $color-base-3;
   font-size: 1.6rem;
   line-height: 2.15rem;
   letter-spacing: 0.05rem;
@@ -1896,7 +1903,7 @@ a.card-double h4 {
 .dark a.card-double h2,
 .dark a.card-double h3,
 .dark a.card-double h4 {
-  border-color: $dark-color-secondary;
+  border-color: $color-base-7;
 }
 
 @media (hover: hover) {
@@ -1906,7 +1913,7 @@ a.card-double h4 {
   a.card-double:hover h2,
   a.card-double:hover h3,
   a.card-double:hover h4 {
-    border-bottom: 3px solid $color-main;
+    border-bottom: 3px solid $color-base-10;
   }
 
   .dark a.card:hover h2,
@@ -1915,7 +1922,7 @@ a.card-double h4 {
   .dark a.card-double:hover h2,
   .dark a.card-double:hover h3,
   .dark a.card-double:hover h4 {
-    border-bottom-color: $dark-color-main;
+    border-bottom-color: $color-base-1;
   }
 
   a.card:hover {
@@ -1987,7 +1994,7 @@ a.card-double {
   height: 27.5rem;
   padding: 0;
   margin-top: 3rem;
-  border-color: $color-secondary;
+  border-color: $color-base-3;
   border-radius: 0.25rem;
   box-shadow: $shadow-level-1;
   overflow: hidden;
@@ -1996,7 +2003,8 @@ a.card-double {
 
 .dark a.card-double {
   box-shadow: $dark-shadow-level-1;
-  border-color: $dark-color-secondary;
+  border-color: $color-base-7;
+  background-color: $color-base-9;
 }
 
 a.card-double .betta_image,
@@ -2008,11 +2016,11 @@ a.card-double .content {
 }
 
 a.card-double .betta_image {
-  background: $color-accent;
+  background: $color-base-1;
 }
 
 .dark a.card-double .betta_image {
-  background: $dark-color-accent;
+  background: $color-base-9;
 }
 
 a.card-double .betta_image img {
@@ -2093,11 +2101,11 @@ a.card-double:active {
   padding: 1rem 0.5rem;
   margin: -2.75rem auto 1rem auto;
   z-index: 2;
-  background: $color-accent;
+  background: $color-base-1;
 }
 
 .dark .card.contact .content {
-  background: $dark-color-accent;
+  background: $color-base-9;
 }
 
 .card.contact .content p {
@@ -2134,7 +2142,7 @@ a.card-double:active {
   bottom: 0;
   right: 0;
   padding-top: 1.3rem;
-  background: $color-accent;
+  background: $color-base-1;
 }
 
 .dark .card.contact .phone-number,
@@ -2146,7 +2154,7 @@ a.card-double:active {
   bottom: 0;
   right: 0;
   padding-top: 1.3rem;
-  background: $dark-color-accent;
+  background: $color-base-9;
 }
 
 .card.contact .phone-number:hover,
@@ -2156,12 +2164,12 @@ a.card-double:active {
 
 .card.contact .phone-number:hover + .phone,
 .card.contact .email-address:hover + .email {
-  background-color: $color-background;
+  background-color: $color-base-0;
 }
 
 .dark .card.contact .phone-number:hover + .phone,
 .dark .card.contact .email-address:hover + .email {
-  background-color: $dark-color-background;
+  background-color: $color-base-10;
 }
 
 @media (max-width: 800px) {
@@ -2245,12 +2253,12 @@ a.card-double:active {
   right: 0;
   bottom: 0;
   left: 0;
-  background: $color-background;
+  background: $color-base-0;
   z-index: 100;
 }
 
 .dark .lightbox {
-  background: $dark-color-background;
+  background: $color-base-10;
 }
 
 .lightbox.open {
@@ -2345,12 +2353,12 @@ a.card-double:active {
   padding: 0.5rem 1rem;
   border-radius: 0.25rem;
   box-shadow: $shadow-level-2;
-  background: $color-background;
+  background: $color-base-0;
 }
 
 .dark .lightbox .middle .caption {
   box-shadow: $dark-shadow-level-2;
-  background: $dark-color-background;
+  background: $color-base-10;
 }
 
 .lightbox .middle .caption.open {
