@@ -381,6 +381,7 @@ template {
 body {
   margin: 0;
   font-size: 16px;
+  background: #fafafa;
 }
 
 body.dark {
@@ -898,7 +899,7 @@ header.hero > h1 {
     text-align: left;
     font-size: 1rem;
     line-height: 1.6rem;
-    background-color: #ffffff;
+    background-color: #fafafa;
     color: #121212;
   }
 
@@ -937,7 +938,7 @@ header.hero > h1 {
   text-align: center;
   z-index: 10;
   box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.2);
-  background: #ffffff;
+  background: #fafafa;
 }
 
 .dark .betta-banner {
@@ -1247,7 +1248,7 @@ form textarea {
   text-align: center;
   overflow: show;
   z-index: 10;
-  background: #ffffff;
+  background: #fafafa;
   transition: 0.3s;
 }
 
@@ -1616,7 +1617,7 @@ button {
   padding: 0.25rem 1rem;
   border-radius: 2rem;
   box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.2);
-  background: #ffffff;
+  background: #fafafa;
   transition: 0.2s;
 }
 
@@ -1726,7 +1727,7 @@ button.dark:active:enabled {
 
 .icon-button.dark .material-icons-round {
   /* deprecated */
-  color: #ffffff;
+  color: #fafafa;
 }
 
 @media (max-width: 800px) {
@@ -1950,7 +1951,7 @@ between lines
 }
 
 .gallery-item > .content > .click-plane.caption {
-  background: #ffffff;
+  background: #fafafa;
   opacity: 0.85;
 }
 
@@ -2090,7 +2091,7 @@ a.card.cover .content {
   left: 1rem;
   bottom: 1rem;
   right: 1rem;
-  border: 2px solid #ffffff;
+  border: 2px solid #fafafa;
   transition: 0.2s;
 }
 
@@ -2114,7 +2115,7 @@ a.card.cover h4 {
   line-height: 1.75rem;
   letter-spacing: 0.05rem;
   border: none;
-  background: #ffffff;
+  background: #fafafa;
   transition: 0.2s;
 }
 
@@ -2425,7 +2426,7 @@ a.card-double .content {
 
 .card.contact .phone-number:hover + .phone,
 .card.contact .email-address:hover + .email {
-  background-color: #ffffff;
+  background-color: #fafafa;
 }
 
 .dark .card.contact .phone-number:hover + .phone,
@@ -2513,7 +2514,7 @@ a.card-double .content {
   right: 0;
   bottom: 0;
   left: 0;
-  background: #ffffff;
+  background: #fafafa;
   z-index: 100;
 }
 
@@ -2613,7 +2614,7 @@ a.card-double .content {
   padding: 0.5rem 1rem;
   border-radius: 0.25rem;
   box-shadow: 0 2px 6px 1px rgba(0, 0, 0, 0.2);
-  background: #ffffff;
+  background: #fafafa;
 }
 
 .dark .lightbox .middle .caption {
