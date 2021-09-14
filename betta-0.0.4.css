@@ -1533,8 +1533,10 @@ footer p a {
 }
 
 footer .logo {
-  max-width: 10rem;
-  margin: 2rem auto;
+  height: 14rem;
+  width: 14rem;
+  padding: 2rem;
+  margin: 0 auto 2rem auto;
 }
 
 /*-------------------------------------*/
