@@ -515,7 +515,7 @@ button {
 .dark input,
 .dark select,
 .dark button {
-  color: #E0E0E0;
+  color: #f5f5f5;
 }
 
 a {
@@ -617,7 +617,7 @@ li.link:hover > a {
 .dark h5 > a:hover,
 .dark h6 > a:hover,
 .dark li.link:hover > a {
-  border-color: #E0E0E0;
+  border-color: #f5f5f5;
 }
 
 p > a.icon {
@@ -859,7 +859,7 @@ header.hero > h1 {
 }
 
 .dark .tooltip > span.tooltip-text {
-  background-color: #E0E0E0;
+  background-color: #f5f5f5;
   color: #616161;
 }
 
@@ -882,7 +882,7 @@ header.hero > h1 {
 }
 
 .dark .tooltip > span.tooltip-text::after {
-  border-color: transparent transparent #E0E0E0 transparent;
+  border-color: transparent transparent #f5f5f5 transparent;
 }
 
 @media (max-width: 800px) {
@@ -902,7 +902,7 @@ header.hero > h1 {
   }
 
   .dark nav .tooltip > span.tooltip-text {
-    color: #E0E0E0;
+    color: #f5f5f5;
     background-color: #212121;
   }
 
@@ -1627,7 +1627,7 @@ button.dark {
 }
 
 .dark button.dark {
-  background: #E0E0E0;
+  background: #f5f5f5;
 }
 
 @media (hover: hover) {
@@ -1675,7 +1675,7 @@ button.dark:active:enabled {
 }
 
 .dark .icon-button.filled .icon {
-  color: #E0E0E0;
+  color: #f5f5f5;
 }
 
 .icon-button.filled:disabled,
@@ -1704,7 +1704,7 @@ button.dark:active:enabled {
 }
 
 .dark .icon-button > .icon {
-  color: #E0E0E0;
+  color: #f5f5f5;
 }
 
 .icon-button .material-icons-round.custom-icon,
@@ -1998,7 +1998,7 @@ between lines
   }
 
   .dark .feed > article > a:hover {
-    border-color: #E0E0E0;
+    border-color: #f5f5f5;
   }
 }
 .feed > article > a:active {
@@ -2175,7 +2175,7 @@ a.card-double:hover h4 {
 .dark a.card-double:hover h2,
 .dark a.card-double:hover h3,
 .dark a.card-double:hover h4 {
-    border-bottom-color: #E0E0E0;
+    border-bottom-color: #f5f5f5;
   }
 
   a.card:hover {
