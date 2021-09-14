@@ -1497,8 +1497,7 @@ form textarea {
 
 @media (max-width: 800px) {
   #betta_menu-button,
-#betta_back-button,
-#betta_theme-button {
+#betta_back-button {
     top: auto;
     bottom: 1rem;
     left: calc(50vw - 2rem);
