@@ -498,11 +498,7 @@ header.hero > h1 {
 ---------------------------------------*/
 #loader {
   display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
+  position: fixed; top: 0; left: 0; bottom: 0; right: 0;
   background: $color-base-1;
   z-index: 101;
 }
@@ -547,19 +543,16 @@ header.hero > h1 {
   Tooltip
 ---------------------------------------*/
 .tooltip {
-  position: relative;
   display: inline-block;
+  position: relative;
 }
 
 .tooltip > span.tooltip-text {
   visibility: hidden;
   opacity: 0;
-  position: absolute;
+  position: absolute; top: 2.75rem; left: -3rem; right: -3rem;
   height: auto;
   width: auto;
-  top: 2.75rem;
-  left: -3rem;
-  right: -3rem;
   padding: 0.25rem 0.5rem;
   border-radius: 0.75rem;
   text-align: center;
@@ -586,9 +579,7 @@ header.hero > h1 {
 // Arrow at top of tooltip
 .tooltip > span.tooltip-text::after {
   content: " ";
-  position: absolute;
-  bottom: 100%;
-  left: 50%;
+  position: absolute; left: 50%; bottom: 100%;
   margin-left: -5px;
   border-width: 5px;
   border-style: solid;
@@ -646,10 +637,7 @@ header.hero > h1 {
   Banner type stuff
 ---------------------------------------*/
 .betta-banner {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
+  position: fixed; top: 0; left: 0; right: 0;
   text-align: center;
   z-index: 10;
   box-shadow: $shadow-level-1;
@@ -666,9 +654,7 @@ header.hero > h1 {
 }
 
 .betta-support {
-  position: fixed;
-  bottom: 1rem;
-  left: 1rem;
+  position: fixed; left: 1rem; bottom: 1rem;
 }
 
 .betta-support > button {
@@ -682,9 +668,7 @@ header.hero > h1 {
     DEPRECATED
 ---------------------------------------*/
 .betta_action-menu {
-  position: fixed;
-  bottom: 40vh;
-  right: 1rem;
+  position: fixed; bottom: 40vh; right: 1rem;
   z-index: 10;
 }
 
@@ -704,11 +688,7 @@ header.hero > h1 {
 
 .betta_action-menu > .blur-pane {
   display: none;
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: -5rem;
-  left: 0;
+  position: fixed; top: 0; left: 0; bottom: -5rem; right: 0;
   background: rgba(255, 255, 255, 0.75);
   -webkit-backdrop-filter: blur(1rem);
   backdrop-filter: blur(1rem);
@@ -991,8 +971,7 @@ form textarea {
 /* Stick Menu        */
 /*-------------------*/
 #betta_menu.stick {
-  position: fixed;
-  top: 0;
+  position: fixed; top: 0;
   box-shadow: $shadow-level-2;
 }
 
@@ -1049,9 +1028,7 @@ form textarea {
 /* Sidebar Menu      */
 /*-------------------*/
 #betta_menu.sidebar {
-  position: fixed;
-  top: 0;
-  bottom: 0;
+  position: fixed; top: 0; bottom: 0;
   width: 12rem;
   padding: 1rem;
   box-shadow: none;
@@ -1132,10 +1109,8 @@ form textarea {
 
   /* Display menu as toolbar */
   #betta_menu.toolbar {
-    position: fixed;
-    bottom: 0;
     display: block;
-    top: auto;
+    position: fixed; top: auto; bottom: 0;
     padding: 0.25rem 0 0.5rem 0;
     box-shadow: $shadow-level-2-i;
     overflow: hidden;
@@ -1174,9 +1149,7 @@ form textarea {
 ---------------------------------------*/
 #betta_home-button,
 #betta_back-button {
-  position: fixed;
-  top: 1.25rem;
-  left: 1.25rem;
+  position: fixed; top: 1.25rem; left: 1.25rem;
   width: 3rem;
   height: 3rem;
   z-index: 15;
@@ -2257,11 +2230,7 @@ a.card-double:active {
 ---------------------------------------*/
 .lightbox {
   display: none;
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  position: fixed; top: 0; left: 0; bottom: 0; right: 0;
   background: $color-white;
   z-index: 100;
 }
@@ -2379,11 +2348,8 @@ a.card-double:active {
 	Version
 ---------------------------------------*/
 p.version {
-  position: fixed;
-  right: 0.5rem;
-  bottom: 70vh;
+  position: fixed; bottom: 70vh; right: 0.5rem;
   width: 70vh;
-
   -webkit-transform: rotate(-90deg);
   -webkit-transform-origin: right bottom;
   -moz-transform: rotate(-90deg);
@@ -2408,11 +2374,7 @@ p.version {
 ---------------------------------------*/
 #notification {
   display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
+  position: fixed; top: 0; left: 0; bottom: 0; right: 0;
   z-index: 101;
 }
 
