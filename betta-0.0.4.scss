@@ -25,7 +25,10 @@ TEMP is used to denote values that need to be changed
 	Colors
 ---------------------------------------*/
 
-/* The ten levels of black saturation */
+$color-white: #ffffff;
+$color-black: #000000;
+
+/* The ten levels of grey */
 $color-base-0: #fafafa;
 $color-base-1: #f5f5f5;
 $color-base-2: #eeeeee;
@@ -80,8 +83,7 @@ $transition-slow: 0.3s;
 
 body {
   margin: 0;
-  font-size: 16px;
-  background: $color-base-0;
+  background: $color-white;
 }
 
 body.dark {
@@ -202,7 +204,7 @@ option,
 input,
 select,
 button {
-  color: $color-base-10;
+  color: $color-black;
 }
 
 .dark h1,
@@ -310,7 +312,7 @@ h4 > a:hover,
 h5 > a:hover,
 h6 > a:hover,
 li.link:hover > a {
-  border-color: $color-base-10;
+  border-color: $color-black;
 }
 
 .dark p > a:hover,
@@ -607,8 +609,8 @@ header.hero > h1 {
     text-align: left;
     font-size: 1rem;
     line-height: $line-height;
-    background-color: $color-base-0;
-    color: $color-base-10;
+    background-color: $color-white;
+    color: $color-black;
   }
 
   .dark nav .tooltip > span.tooltip-text {
@@ -648,7 +650,7 @@ header.hero > h1 {
   text-align: center;
   z-index: 10;
   box-shadow: $shadow-level-1;
-  background: $color-base-0;
+  background: $color-white;
 }
 
 .dark .betta-banner {
@@ -888,7 +890,7 @@ img.round {
   display: inline-block;
   font-size: 1.5rem;
   z-index: 5;
-  color: $color-base-10;
+  color: $color-black;
 }
 
 .dark .betta_image.slideshow .selectors span {
@@ -969,7 +971,7 @@ form textarea {
   text-align: center;
   overflow: show;
   z-index: 10;
-  background: $color-base-0;
+  background: $color-white;
   transition: $transition-slow;
 }
 
@@ -1279,7 +1281,7 @@ footer .logo {
 .material-icons-round.custom-icon > img {
   /* deprecated */
   height: 1.5rem;
-  color: $color-base-10;
+  color: $color-black;
 }
 
 span.icon {
@@ -1342,8 +1344,10 @@ button {
   padding: 0.25rem 1rem;
   border-radius: 2rem;
   box-shadow: $shadow-level-1;
-  background: $color-base-0;
+  background: $color-white;
   transition: $transition-default;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .dark button {
@@ -1402,9 +1406,9 @@ button.dark:active:enabled {
   border-radius: 2rem;
 }
 
-.icon-button.filled .material-icons-round, /* deprecated */
-.icon-button.filled .icon {
-  color: $color-base-10;
+.icon-button.filled .material-icons-round /* deprecated */
+{
+  color: $color-black;
 }
 
 .dark button.icon-button img {
@@ -1436,7 +1440,7 @@ button.dark:active:enabled {
 .icon-button .material-icons-round, /* deprecated */
 .icon-button>.icon {
   vertical-align: middle;
-  color: $color-base-10;
+  color: $color-black;
   font-size: 1.8rem;
 }
 
@@ -1451,7 +1455,7 @@ button.dark:active:enabled {
 
 .icon-button.dark .material-icons-round {
   /* deprecated */
-  color: $color-base-0;
+  color: $color-white;
 }
 
 @media (max-width: 800px) {
@@ -1682,7 +1686,7 @@ between lines
 }
 
 .gallery-item > .content > .click-plane.caption {
-  background: $color-base-0;
+  background: $color-white;
   opacity: 0.85;
 }
 
@@ -1740,7 +1744,7 @@ between lines
 
 @media (hover: hover) {
   .feed > article > a:hover {
-    border-color: $color-base-10;
+    border-color: $color-black;
   }
 
   .dark .feed > article > a:hover {
@@ -1825,7 +1829,7 @@ a.card.cover .content {
   left: 1rem;
   bottom: 1rem;
   right: 1rem;
-  border: 2px solid $color-base-0;
+  border: 2px solid $color-white;
   transition: $transition-default;
 }
 
@@ -1849,7 +1853,7 @@ a.card.cover h4 {
   line-height: 1.75rem;
   letter-spacing: 0.05rem;
   border: none;
-  background: $color-base-0;
+  background: $color-white;
   transition: $transition-default;
 }
 
@@ -1914,7 +1918,7 @@ a.card-double h4 {
   a.card-double:hover h2,
   a.card-double:hover h3,
   a.card-double:hover h4 {
-    border-bottom: 3px solid $color-base-10;
+    border-bottom: 3px solid $color-black;
   }
 
   .dark a.card:hover h2,
@@ -2000,6 +2004,7 @@ a.card-double {
   box-shadow: $shadow-level-1;
   overflow: hidden;
   transition: $transition-default;
+  background-color: $color-base-0;
 }
 
 .dark a.card-double {
@@ -2165,7 +2170,7 @@ a.card-double:active {
 
 .card.contact .phone-number:hover + .phone,
 .card.contact .email-address:hover + .email {
-  background-color: $color-base-0;
+  background-color: $color-white;
 }
 
 .dark .card.contact .phone-number:hover + .phone,
@@ -2254,7 +2259,7 @@ a.card-double:active {
   right: 0;
   bottom: 0;
   left: 0;
-  background: $color-base-0;
+  background: $color-white;
   z-index: 100;
 }
 
@@ -2354,7 +2359,7 @@ a.card-double:active {
   padding: 0.5rem 1rem;
   border-radius: 0.25rem;
   box-shadow: $shadow-level-2;
-  background: $color-base-0;
+  background: $color-white;
 }
 
 .dark .lightbox .middle .caption {

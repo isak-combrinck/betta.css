@@ -360,7 +360,7 @@ template {
 /*---------------------------------------
 	Colors
 ---------------------------------------*/
-/* The ten levels of black saturation */
+/* The ten levels of grey */
 /*---------------------------------------
   Shady stuff
 ---------------------------------------*/
@@ -380,8 +380,7 @@ template {
 -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-*/
 body {
   margin: 0;
-  font-size: 16px;
-  background: #fafafa;
+  background: #ffffff;
 }
 
 body.dark {
@@ -500,7 +499,7 @@ option,
 input,
 select,
 button {
-  color: #121212;
+  color: #000000;
 }
 
 .dark h1,
@@ -608,7 +607,7 @@ h4 > a:hover,
 h5 > a:hover,
 h6 > a:hover,
 li.link:hover > a {
-  border-color: #121212;
+  border-color: #000000;
 }
 
 .dark p > a:hover,
@@ -899,8 +898,8 @@ header.hero > h1 {
     text-align: left;
     font-size: 1rem;
     line-height: 1.6rem;
-    background-color: #fafafa;
-    color: #121212;
+    background-color: #ffffff;
+    color: #000000;
   }
 
   .dark nav .tooltip > span.tooltip-text {
@@ -938,7 +937,7 @@ header.hero > h1 {
   text-align: center;
   z-index: 10;
   box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.2);
-  background: #fafafa;
+  background: #ffffff;
 }
 
 .dark .betta-banner {
@@ -1171,7 +1170,7 @@ img.round {
   display: inline-block;
   font-size: 1.5rem;
   z-index: 5;
-  color: #121212;
+  color: #000000;
 }
 
 .dark .betta_image.slideshow .selectors span {
@@ -1248,7 +1247,7 @@ form textarea {
   text-align: center;
   overflow: show;
   z-index: 10;
-  background: #fafafa;
+  background: #ffffff;
   transition: 0.3s;
 }
 
@@ -1554,7 +1553,7 @@ footer .logo {
 .material-icons-round.custom-icon > img {
   /* deprecated */
   height: 1.5rem;
-  color: #121212;
+  color: #000000;
 }
 
 span.icon {
@@ -1617,8 +1616,10 @@ button {
   padding: 0.25rem 1rem;
   border-radius: 2rem;
   box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.2);
-  background: #fafafa;
+  background: #ffffff;
   transition: 0.2s;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .dark button {
@@ -1678,9 +1679,8 @@ button.dark:active:enabled {
   border-radius: 2rem;
 }
 
-.icon-button.filled .material-icons-round,
-.icon-button.filled .icon {
-  color: #121212;
+.icon-button.filled .material-icons-round {
+  color: #000000;
 }
 
 .dark button.icon-button img {
@@ -1712,7 +1712,7 @@ button.dark:active:enabled {
 .icon-button .material-icons-round,
 .icon-button > .icon {
   vertical-align: middle;
-  color: #121212;
+  color: #000000;
   font-size: 1.8rem;
 }
 
@@ -1727,7 +1727,7 @@ button.dark:active:enabled {
 
 .icon-button.dark .material-icons-round {
   /* deprecated */
-  color: #fafafa;
+  color: #ffffff;
 }
 
 @media (max-width: 800px) {
@@ -1951,7 +1951,7 @@ between lines
 }
 
 .gallery-item > .content > .click-plane.caption {
-  background: #fafafa;
+  background: #ffffff;
   opacity: 0.85;
 }
 
@@ -2007,7 +2007,7 @@ between lines
 
 @media (hover: hover) {
   .feed > article > a:hover {
-    border-color: #121212;
+    border-color: #000000;
   }
 
   .dark .feed > article > a:hover {
@@ -2091,7 +2091,7 @@ a.card.cover .content {
   left: 1rem;
   bottom: 1rem;
   right: 1rem;
-  border: 2px solid #fafafa;
+  border: 2px solid #ffffff;
   transition: 0.2s;
 }
 
@@ -2115,7 +2115,7 @@ a.card.cover h4 {
   line-height: 1.75rem;
   letter-spacing: 0.05rem;
   border: none;
-  background: #fafafa;
+  background: #ffffff;
   transition: 0.2s;
 }
 
@@ -2180,7 +2180,7 @@ a.card:hover h4,
 a.card-double:hover h2,
 a.card-double:hover h3,
 a.card-double:hover h4 {
-    border-bottom: 3px solid #121212;
+    border-bottom: 3px solid #000000;
   }
 
   .dark a.card:hover h2,
@@ -2263,6 +2263,7 @@ a.card-double {
   box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   transition: 0.2s;
+  background-color: #fafafa;
 }
 
 .dark a.card-double {
@@ -2426,7 +2427,7 @@ a.card-double .content {
 
 .card.contact .phone-number:hover + .phone,
 .card.contact .email-address:hover + .email {
-  background-color: #fafafa;
+  background-color: #ffffff;
 }
 
 .dark .card.contact .phone-number:hover + .phone,
@@ -2514,7 +2515,7 @@ a.card-double .content {
   right: 0;
   bottom: 0;
   left: 0;
-  background: #fafafa;
+  background: #ffffff;
   z-index: 100;
 }
 
@@ -2614,7 +2615,7 @@ a.card-double .content {
   padding: 0.5rem 1rem;
   border-radius: 0.25rem;
   box-shadow: 0 2px 6px 1px rgba(0, 0, 0, 0.2);
-  background: #fafafa;
+  background: #ffffff;
 }
 
 .dark .lightbox .middle .caption {
