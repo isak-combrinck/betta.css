@@ -91,7 +91,7 @@ body.dark {
 }
 
 body.dark img {
-  filter: brightness(.8);
+  filter: brightness(.9);
 }
 
 #page,
@@ -453,6 +453,12 @@ details {
 
 .dark details {
   border-bottom-color: $color-base-7;
+}
+
+.dark details summary, /* Firefox */
+.dark details summary::-webkit-details-marker, /* Chrome */
+.dark details summary::marker {
+  color: $color-white;
 }
 
 /*-------------------------------------*/
@@ -2336,7 +2342,7 @@ a.card-double:active {
 
 .dark .lightbox .middle .caption {
   box-shadow: $dark-shadow-level-2;
-  background: $color-base-10;
+  background: $color-base-7;
 }
 
 .lightbox .middle .caption.open {
