@@ -94,7 +94,7 @@ body {
   background: $color-white;
 }
 
-body.dark {
+.dark {
   background: $color-base-10;
 }
 
@@ -131,20 +131,7 @@ main {
   }
 }
 
-body,
-nav,
-main,
-div,
-span,
-article,
-section,
-header,
-button,
-ul,
-li,
-a,
-p,
-img {
+* {
   box-sizing: border-box;
 }
 
@@ -952,7 +939,6 @@ legend,
 datalist,
 output,
 optgroup {
-  box-sizing: border-box;
   min-height: 2rem;
   padding: 0 0.25rem;
   border: none;
