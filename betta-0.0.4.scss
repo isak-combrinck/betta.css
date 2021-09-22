@@ -1497,6 +1497,17 @@ button.dark:active:enabled {
   color: $color-base-7;
 }
 
+.icon-button .text {
+  display: inline-block;
+  height: $line-height;
+  vertical-align: middle;
+  padding-top: 0.3rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+
+
 .icon-button .material-icons-round, /* deprecated */
 .icon-button>.icon {
   vertical-align: top;
