@@ -1408,7 +1408,7 @@ button {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  padding: 0.25rem 1rem;
+  padding: 0.5rem 1rem;
   border-radius: 2rem;
   box-shadow: $shadow-level-1;
   background: $color-white;
@@ -1503,6 +1503,8 @@ button.dark:active:enabled {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
+
+
 
 .icon-button .material-icons-round, /* deprecated */
 .icon-button>.icon {
