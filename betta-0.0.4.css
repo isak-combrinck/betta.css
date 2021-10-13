@@ -1623,6 +1623,11 @@ footer {
   text-align: center;
 }
 
+footer a,
+footer button {
+  vertical-align: middle;
+}
+
 footer p a {
   margin: 0;
 }
