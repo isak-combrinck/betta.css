@@ -2183,6 +2183,7 @@ a.card.cover .betta_image {
 
 a.card.cover .betta_image img {
   aspect-ratio: 3/2;
+  object-fit: cover;
 }
 
 a.card.cover .content {

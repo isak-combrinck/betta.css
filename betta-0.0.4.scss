@@ -1901,6 +1901,7 @@ a.card.cover .betta_image {
 
 a.card.cover .betta_image img {
   aspect-ratio: 3 / 2; // Experimental property, not yet fully supported
+  object-fit: cover; // Prevents images from being stretched
 }
 
 a.card.cover .content {
