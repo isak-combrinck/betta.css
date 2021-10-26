@@ -4,9 +4,9 @@
 
 CSS repo of the Betta library for use as a git submodule.
 
-## Version 0.0.4
+## Version 0.0.5
 
-The Betta library is currently under early development. Use in production at your own risk.
+The Betta library is currently under early development, that means it's real messy. Use in production at your own risk.
 
 No documentation is provided at the moment.
 

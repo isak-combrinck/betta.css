@@ -1,0 +1,32 @@
+#loader {
+  display: none;
+  position: fixed; top: 0; left: 0; bottom: 0; right: 0;
+  background: $color-base-1;
+  z-index: 101;
+}
+
+.dark #loader {
+  background: $color-base-9;
+}
+
+#loader.show {
+  display: block;
+}
+
+#spinner {
+  position: absolute;
+  top: calc(50vh - 2.5rem);
+  left: calc(50vw - 2.5rem);
+  border: 2rem solid $color-base-3;
+  border-top: 1rem solid $color-base-3;
+  border-radius: $radius-round;
+  width: 5rem;
+  height: 5rem;
+  animation: spin 2s linear infinite;
+  background: $color-base-10;
+}
+
+.dark #spinner {
+  border-color: $color-base-7;
+  background: $color-base-10;
+}

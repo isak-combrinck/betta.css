@@ -1,0 +1,89 @@
+.tooltip {
+  display: inline-block;
+  position: relative;
+}
+
+.tooltip > span.tooltip-text {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute; top: 2.75rem; left: -3rem; right: -3rem;
+  height: auto;
+  width: auto;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.75rem;
+  text-align: center;
+  font-size: $font-small;
+  line-height: 1rem;
+  z-index: 8;
+  background-color: $color-base-10;
+  color: $color-base-2;
+  transition-delay: 0s;
+}
+
+.dark .tooltip > span.tooltip-text {
+  background-color: $color-base-1;
+  color: $color-base-8;
+}
+
+.tooltip:hover > span.tooltip-text {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.2s;
+  transition-delay: 1s;
+}
+
+// Arrow at top of tooltip
+.tooltip > span.tooltip-text::after {
+  content: " ";
+  position: absolute; left: 50%; bottom: 100%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent $color-base-10 transparent;
+}
+
+.dark .tooltip > span.tooltip-text::after {
+  border-color: transparent transparent $color-base-1 transparent;
+}
+
+// Use tooltip as menu text in mobile menu
+@media (max-width: 800px) {
+  nav .tooltip > span.tooltip-text {
+    visibility: visible;
+    opacity: 1;
+    top: 0;
+    bottom: 0;
+    left: 3rem;
+    right: auto;
+    padding: 0.5rem 0.5rem;
+    text-align: left;
+    font-size: 1rem;
+    line-height: $line-height;
+    background-color: $color-white;
+    color: $color-black;
+  }
+
+  .dark nav .tooltip > span.tooltip-text {
+    color: $color-base-1;
+    background-color: $color-base-10;
+  }
+
+  nav .tooltip > span.tooltip-text::after {
+    display: none;
+  }
+
+  nav.toolbar .tooltip > span.tooltip-text {
+    visibility: hidden;
+  }
+}
+
+// Display tooltip to right on sidebar
+.sidebar .tooltip > span.tooltip-text {
+  top: 0.5rem;
+  left: 3rem;
+  right: -9rem;
+}
+
+.sidebar .tooltip > span.tooltip-text::after {
+  display: none;
+}

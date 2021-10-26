@@ -1,398 +1,14 @@
-/*---------------------------------------
-Betta CSS
-
-A collection of CSS styles.
-
-A project by Isak Combrinck & Dahman Ramdani.
-
-V 0.0.4 (early alpha)
-
-NOTE: only compile this file.
-E.g. sass --watch betta-0.0.4.scss betta-0.0.4.css
-
-### Deprecated
-- #page, use main instead
-- .material-icons-round, use .icon instead
-- .custom-icon, use .icon instead
-- betta_action-menu
-
-TEMP is used to denote values that need to be changed
----------------------------------------*/
-/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
-/* Document
-   ========================================================================== */
-/**
- * 1. Correct the line height in all browsers.
- * 2. Prevent adjustments of font size after orientation changes in iOS.
- */
-html {
-  line-height: 1.15;
-  /* 1 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */
-}
-
-/* Sections
-   ========================================================================== */
-/**
- * Remove the margin in all browsers.
- */
 body {
   margin: 0;
-}
-
-/**
- * Render the `main` element consistently in IE.
- */
-main {
-  display: block;
-}
-
-/**
- * Correct the font size and margin on `h1` elements within `section` and
- * `article` contexts in Chrome, Firefox, and Safari.
- */
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-
-/* Grouping content
-   ========================================================================== */
-/**
- * 1. Add the correct box sizing in Firefox.
- * 2. Show the overflow in Edge and IE.
- */
-hr {
-  box-sizing: content-box;
-  /* 1 */
-  height: 0;
-  /* 1 */
-  overflow: visible;
-  /* 2 */
-}
-
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
-pre {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
-}
-
-/* Text-level semantics
-   ========================================================================== */
-/**
- * Remove the gray background on active links in IE 10.
- */
-a {
-  background-color: transparent;
-}
-
-/**
- * 1. Remove the bottom border in Chrome 57-
- * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
- */
-abbr[title] {
-  border-bottom: none;
-  /* 1 */
-  text-decoration: underline;
-  /* 2 */
-  text-decoration: underline dotted;
-  /* 2 */
-}
-
-/**
- * Add the correct font weight in Chrome, Edge, and Safari.
- */
-b,
-strong {
-  font-weight: bolder;
-}
-
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
-code,
-kbd,
-samp {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
-}
-
-/**
- * Add the correct font size in all browsers.
- */
-small {
-  font-size: 80%;
-}
-
-/**
- * Prevent `sub` and `sup` elements from affecting the line height in
- * all browsers.
- */
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-sub {
-  bottom: -0.25em;
-}
-
-sup {
-  top: -0.5em;
-}
-
-/* Embedded content
-   ========================================================================== */
-/**
- * Remove the border on images inside links in IE 10.
- */
-img {
-  border-style: none;
-}
-
-/* Forms
-   ========================================================================== */
-/**
- * 1. Change the font styles in all browsers.
- * 2. Remove the margin in Firefox and Safari.
- */
-button,
-input,
-optgroup,
-select,
-textarea {
-  font-family: inherit;
-  /* 1 */
-  font-size: 100%;
-  /* 1 */
-  line-height: 1.15;
-  /* 1 */
-  margin: 0;
-  /* 2 */
-}
-
-/**
- * Show the overflow in IE.
- * 1. Show the overflow in Edge.
- */
-button,
-input {
-  /* 1 */
-  overflow: visible;
-}
-
-/**
- * Remove the inheritance of text transform in Edge, Firefox, and IE.
- * 1. Remove the inheritance of text transform in Firefox.
- */
-button,
-select {
-  /* 1 */
-  text-transform: none;
-}
-
-/**
- * Correct the inability to style clickable types in iOS and Safari.
- */
-button,
-[type=button],
-[type=reset],
-[type=submit] {
-  -webkit-appearance: button;
-}
-
-/**
- * Remove the inner border and padding in Firefox.
- */
-button::-moz-focus-inner,
-[type=button]::-moz-focus-inner,
-[type=reset]::-moz-focus-inner,
-[type=submit]::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-/**
- * Restore the focus styles unset by the previous rule.
- */
-button:-moz-focusring,
-[type=button]:-moz-focusring,
-[type=reset]:-moz-focusring,
-[type=submit]:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-/**
- * Correct the padding in Firefox.
- */
-fieldset {
-  padding: 0.35em 0.75em 0.625em;
-}
-
-/**
- * 1. Correct the text wrapping in Edge and IE.
- * 2. Correct the color inheritance from `fieldset` elements in IE.
- * 3. Remove the padding so developers are not caught out when they zero out
- *    `fieldset` elements in all browsers.
- */
-legend {
-  box-sizing: border-box;
-  /* 1 */
-  color: inherit;
-  /* 2 */
-  display: table;
-  /* 1 */
-  max-width: 100%;
-  /* 1 */
-  padding: 0;
-  /* 3 */
-  white-space: normal;
-  /* 1 */
-}
-
-/**
- * Add the correct vertical alignment in Chrome, Firefox, and Opera.
- */
-progress {
-  vertical-align: baseline;
-}
-
-/**
- * Remove the default vertical scrollbar in IE 10+.
- */
-textarea {
-  overflow: auto;
-}
-
-/**
- * 1. Add the correct box sizing in IE 10.
- * 2. Remove the padding in IE 10.
- */
-[type=checkbox],
-[type=radio] {
-  box-sizing: border-box;
-  /* 1 */
-  padding: 0;
-  /* 2 */
-}
-
-/**
- * Correct the cursor style of increment and decrement buttons in Chrome.
- */
-[type=number]::-webkit-inner-spin-button,
-[type=number]::-webkit-outer-spin-button {
-  height: auto;
-}
-
-/**
- * 1. Correct the odd appearance in Chrome and Safari.
- * 2. Correct the outline style in Safari.
- */
-[type=search] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  outline-offset: -2px;
-  /* 2 */
-}
-
-/**
- * Remove the inner padding in Chrome and Safari on macOS.
- */
-[type=search]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-
-/**
- * 1. Correct the inability to style clickable types in iOS and Safari.
- * 2. Change font properties to `inherit` in Safari.
- */
-::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  /* 1 */
-  font: inherit;
-  /* 2 */
-}
-
-/* Interactive
-   ========================================================================== */
-/*
- * Add the correct display in Edge, IE 10+, and Firefox.
- */
-details {
-  display: block;
-}
-
-/*
- * Add the correct display in all browsers.
- */
-summary {
-  display: list-item;
-}
-
-/* Misc
-   ========================================================================== */
-/**
- * Add the correct display in IE 10+.
- */
-template {
-  display: none;
-}
-
-/**
- * Add the correct display in IE 10.
- */
-[hidden] {
-  display: none;
-}
-
-/*---------------------------------------
-	Colors
----------------------------------------*/
-/* The ten levels of grey */
-/*---------------------------------------
-  Shady stuff
----------------------------------------*/
-/* level 0 */
-/* level 1 */
-/* level 2 */
-/* level 2 inversed */
-/* level 3 */
-/*---------------------------------------
-  Font sizing
----------------------------------------*/
-/*---------------------------------------
-  Transitions
----------------------------------------*/
-/*---------------------------------------
-  Border Radius
----------------------------------------*/
-/* Element must be square for it to work */
-/*-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-    Default HTML
--_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-*/
-body {
-  margin: 0;
-  background: #ffffff;
+  background: $color-white;
 }
 
 .dark {
-  background: #121212;
+  background: $color-base-10;
 }
 
 body.dark img {
-  filter: brightness(0.9);
+  filter: brightness(.9);
 }
 
 #page,
@@ -407,7 +23,7 @@ main {
 
 @media (max-width: 800px) {
   #page,
-main {
+  main {
     padding: 0 2rem 1rem 2rem;
     overflow-x: hidden;
   }
@@ -416,12 +32,14 @@ main {
     padding-bottom: 5rem;
   }
 }
+
 @media (max-width: 600px) {
   #page,
-main {
+  main {
     padding: 0 1rem 1rem 1rem;
   }
 }
+
 body,
 nav,
 main,
@@ -487,474 +105,19 @@ li {
 }
 
 /*---------------------------------------
-	Typographical Elements
----------------------------------------*/
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-a,
-li,
-textarea,
-option,
-input,
-select,
-button {
-  color: #000000;
-}
-
-.dark h1,
-.dark h2,
-.dark h3,
-.dark h4,
-.dark h5,
-.dark h6,
-.dark p,
-.dark a,
-.dark li,
-.dark textarea,
-.dark option,
-.dark input,
-.dark select,
-.dark button {
-  color: #f5f5f5;
-}
-
-a {
-  text-decoration: none;
-  transition: 0.2s;
-}
-
-em {
-  font-style: normal;
-  font-weight: bold;
-  letter-spacing: 0.05rem;
-}
-
-p,
-li,
-textarea,
-option,
-input,
-select,
-button {
-  font-size: 1rem;
-  letter-spacing: 0.025rem;
-}
-
-p,
-li,
-input,
-textarea {
-  line-height: 1.6rem;
-}
-
-p {
-  margin-top: 1.6rem;
-  margin-bottom: 1.6rem;
-}
-
-p.small {
-  font-size: 0.8rem;
-}
-
-ul.indent {
-  margin-top: 0;
-  padding-left: 1rem;
-}
-
-ul.plain li {
-  list-style: none;
-}
-
-p > a,
-h1 > a,
-h2 > a,
-h3 > a,
-h4 > a,
-h5 > a,
-h6 > a,
-li.link > a {
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-color: #e0e0e0;
-}
-
-.dark p > a,
-.dark h1 > a,
-.dark h2 > a,
-.dark h3 > a,
-.dark h4 > a,
-.dark h5 > a,
-.dark h6 > a,
-.dark li.link > a {
-  border-color: #616161;
-}
-
-h1 > a,
-h2 > a,
-h3 > a,
-h4 > a,
-h5 > a,
-h6 > a {
-  border-bottom-width: 4px;
-}
-
-p > a:hover,
-h1 > a:hover,
-h2 > a:hover,
-h3 > a:hover,
-h4 > a:hover,
-h5 > a:hover,
-h6 > a:hover,
-li.link:hover > a {
-  border-color: #000000;
-}
-
-.dark p > a:hover,
-.dark h1 > a:hover,
-.dark h2 > a:hover,
-.dark h3 > a:hover,
-.dark h4 > a:hover,
-.dark h5 > a:hover,
-.dark h6 > a:hover,
-.dark li.link:hover > a {
-  border-color: #f5f5f5;
-}
-
-p > a.icon {
-  border: none;
-}
-
-p > a.icon > img {
-  width: 2rem;
-  transition: 0.2s;
-}
-
-p > a.icon:hover > img {
-  opacity: 0.8;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin-bottom: 0;
-}
-
-h1 {
-  font-size: 2.5rem;
-  line-height: 3.2rem;
-  letter-spacing: 0.1rem;
-  margin-top: 3.2rem;
-}
-
-h2 {
-  font-size: 2rem;
-  line-height: 2.75rem;
-  letter-spacing: 0.1rem;
-  margin-top: 2.5rem;
-  margin-bottom: 0.8rem;
-}
-
-h3 {
-  font-size: 1.6rem;
-  line-height: 2.15rem;
-  letter-spacing: 0.05rem;
-  margin-top: 2.15rem;
-}
-
-h4 {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-  letter-spacing: 0.05rem;
-  margin-top: 1.75rem;
-}
-
-h5,
-h6 {
-  font-size: 1rem;
-  line-height: 1.6rem;
-  letter-spacing: 0.05rem;
-  margin-top: 1.6rem;
-  font-weight: bold;
-}
-
-h5 {
-  font-weight: bold;
-}
-
-h6 {
-  text-transform: uppercase;
-}
-
-hr {
-  border: none;
-  height: 3px;
-  background: #e0e0e0;
-}
-
-hr {
-  background: #616161;
-}
-
-/*
-@media(max-width: 800px) {
-  h1 {
-	  font-size: 2.25rem;
-	  line-height: 3rem;
-	  letter-spacing: 0.035rem;
-  }
-}
-
-@media(max-width: 600px) {
-  h1 {
-	  font-size: 1.75rem;
-	  line-height: 2.5rem;
-  }
-}
-*/
-form > a {
-  font-size: 0.8rem;
-}
-
-details > summary {
-  outline: none;
-  cursor: pointer;
-  margin-bottom: -0.75rem;
-}
-
-details > summary > h1,
-details > summary > h2,
-details > summary > h3,
-details > summary > h4,
-details > summary > h5,
-details > summary > h6,
-details > summary > p {
-  display: inline-block;
-}
-
-details > summary > p {
-  margin-bottom: 0;
-}
-
-details {
-  margin-bottom: 1.6rem;
-  border-bottom: 0.7rem solid #e0e0e0;
-}
-
-.dark details {
-  border-bottom-color: #616161;
-}
-
-.dark details summary,
-.dark details summary::-webkit-details-marker,
-.dark details summary::marker {
-  color: #ffffff;
-}
-
-/*-------------------------------------*/
-/*---------------------------------------
-	header
----------------------------------------*/
-header {
-  width: 100%;
-  margin: 0 auto;
-  padding-top: 3rem;
-}
-
-header.hero {
-  text-align: center;
-}
-
-header.hero img {
-  width: 100%;
-  padding: 0 2rem;
-}
-
-header.hero > h1 {
-  font-size: 6rem;
-  padding-bottom: 7rem;
-  font-style: italic;
-  letter-spacing: 0.35rem;
-  text-transform: uppercase;
-  text-shadow: -2px -2px 2px rgba(0, 0, 0, 0.2);
-}
-
-@media (max-width: 800px) {
-  header.hero > h1 {
-    font-size: 4rem;
-    letter-spacing: 0.15rem;
-    line-height: 5rem;
-  }
-}
-/*-------------------------------------*/
-/*---------------------------------------
-	Loader
----------------------------------------*/
-#loader {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background: #f5f5f5;
-  z-index: 101;
-}
-
-.dark #loader {
-  background: #212121;
-}
-
-#loader.show {
-  display: block;
-}
-
-#spinner {
-  position: absolute;
-  top: calc(50vh - 2.5rem);
-  left: calc(50vw - 2.5rem);
-  border: 2rem solid #e0e0e0;
-  border-top: 1rem solid #e0e0e0;
-  border-radius: 50%;
-  width: 5rem;
-  height: 5rem;
-  animation: spin 2s linear infinite;
-  background: #121212;
-}
-
-.dark #spinner {
-  border-color: #616161;
-  background: #121212;
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-/*-------------------------------------*/
-/*---------------------------------------
-  Tooltip
----------------------------------------*/
-.tooltip {
-  display: inline-block;
-  position: relative;
-}
-
-.tooltip > span.tooltip-text {
-  visibility: hidden;
-  opacity: 0;
-  position: absolute;
-  top: 2.75rem;
-  left: -3rem;
-  right: -3rem;
-  height: auto;
-  width: auto;
-  padding: 0.25rem 0.5rem;
-  border-radius: 0.75rem;
-  text-align: center;
-  font-size: 0.8rem;
-  line-height: 1rem;
-  z-index: 8;
-  background-color: #121212;
-  color: #eeeeee;
-  transition-delay: 0s;
-}
-
-.dark .tooltip > span.tooltip-text {
-  background-color: #f5f5f5;
-  color: #424242;
-}
-
-.tooltip:hover > span.tooltip-text {
-  visibility: visible;
-  opacity: 1;
-  transition: opacity 0.2s;
-  transition-delay: 1s;
-}
-
-.tooltip > span.tooltip-text::after {
-  content: " ";
-  position: absolute;
-  left: 50%;
-  bottom: 100%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: transparent transparent #121212 transparent;
-}
-
-.dark .tooltip > span.tooltip-text::after {
-  border-color: transparent transparent #f5f5f5 transparent;
-}
-
-@media (max-width: 800px) {
-  nav .tooltip > span.tooltip-text {
-    visibility: visible;
-    opacity: 1;
-    top: 0;
-    bottom: 0;
-    left: 3rem;
-    right: auto;
-    padding: 0.5rem 0.5rem;
-    text-align: left;
-    font-size: 1rem;
-    line-height: 1.6rem;
-    background-color: #ffffff;
-    color: #000000;
-  }
-
-  .dark nav .tooltip > span.tooltip-text {
-    color: #f5f5f5;
-    background-color: #121212;
-  }
-
-  nav .tooltip > span.tooltip-text::after {
-    display: none;
-  }
-
-  nav.toolbar .tooltip > span.tooltip-text {
-    visibility: hidden;
-  }
-}
-.sidebar .tooltip > span.tooltip-text {
-  top: 0.5rem;
-  left: 3rem;
-  right: -9rem;
-}
-
-.sidebar .tooltip > span.tooltip-text::after {
-  display: none;
-}
-
-/*-------------------------------------*/
-/*---------------------------------------
   Banner type stuff
 ---------------------------------------*/
 .betta-banner {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
+  position: fixed; top: 0; left: 0; right: 0;
   text-align: center;
   z-index: 10;
-  box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.2);
-  background: #ffffff;
+  box-shadow: $shadow-level-1;
+  background: $color-white;
 }
 
 .dark .betta-banner {
-  box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.9);
-  background: #121212;
+  box-shadow: $dark-shadow-level-1;
+  background: $color-base-10;
 }
 
 .betta-banner > p {
@@ -962,101 +125,23 @@ header.hero > h1 {
 }
 
 .betta-support {
-  position: fixed;
-  left: 1rem;
-  bottom: 1rem;
+  position: fixed; left: 1rem; bottom: 1rem;
 }
 
 .betta-support > button {
   display: block;
   margin-top: 1rem;
 }
-
 /*-------------------------------------*/
-/*---------------------------------------
-	Action Menu
-    DEPRECATED
----------------------------------------*/
-.betta_action-menu {
-  position: fixed;
-  bottom: 40vh;
-  right: 1rem;
-  z-index: 10;
-}
 
-.betta_action-menu button {
-  position: relative;
-  display: block;
-  margin-bottom: 1rem;
-}
-
-.betta_action-menu > button {
-  display: none;
-}
-
-.betta_action-menu > .content {
-  display: block;
-}
-
-.betta_action-menu > .blur-pane {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: -5rem;
-  right: 0;
-  background: rgba(255, 255, 255, 0.75);
-  -webkit-backdrop-filter: blur(1rem);
-  backdrop-filter: blur(1rem);
-}
-
-@media (min-width: 801px) {
-  .betta_action-menu > .content {
-    display: block !important;
-  }
-}
-@media (max-width: 800px) {
-  .betta_action-menu {
-    bottom: 0;
-  }
-
-  .betta_action-menu > button {
-    display: block;
-  }
-
-  .betta_action-menu > .content {
-    display: none;
-  }
-
-  .betta_action-menu > .content.show {
-    display: block;
-  }
-
-  .betta_action-menu > .blur-pane {
-    display: block;
-    visibility: hidden;
-    opacity: 0;
-    -webkit-backdrop-filter: blur(0);
-    backdrop-filter: blur(0);
-    transition: 0.2s;
-  }
-
-  .betta_action-menu > .blur-pane.show {
-    visibility: visible;
-    opacity: 1;
-    -webkit-backdrop-filter: blur(1rem);
-    backdrop-filter: blur(1rem);
-  }
-}
-/*-------------------------------------*/
 /*---------------------------------------
   Pictures 
 ---------------------------------------*/
 picture > img {
   width: 100%;
 }
-
 /*-------------------------------------*/
+
 /*---------------------------------------
 	Images
 ---------------------------------------*/
@@ -1065,7 +150,7 @@ img {
 }
 
 img.round {
-  border-radius: 50%;
+  border-radius: $radius-round;
 }
 
 .betta_image > div {
@@ -1079,13 +164,14 @@ img.round {
 }
 
 .betta_image > div img.round {
-  border-radius: 50%;
+  border-radius: $radius-round;
 }
 
 .betta_image .name {
   position: absolute;
   left: 0;
   bottom: -1rem;
+
   -webkit-transform: rotate(-90deg);
   -webkit-transform-origin: right bottom;
   -moz-transform: rotate(-90deg);
@@ -1097,8 +183,8 @@ img.round {
   transform: rotate(-90deg);
   transform-origin: left bottom;
 }
-
 /*-------------------------------------*/
+
 /*---------------------------------------
 	Image Strip
 ---------------------------------------*/
@@ -1122,13 +208,13 @@ img.round {
 }
 
 .betta_image-strip .back {
-  left: calc(50vw - 27.5rem - 1rem);
+  left: calc(50vw - (55rem / 2) - 1rem);
   margin-top: 8rem;
   z-index: 5;
 }
 
 .betta_image-strip .back {
-  left: calc(50vw - 27.5rem - 1rem);
+  left: calc(50vw - (55rem / 2) - 1rem);
   margin-top: 8rem;
   z-index: 5;
 }
@@ -1139,7 +225,7 @@ img.round {
 }
 
 .betta_image-strip .forward {
-  right: calc(50vw - 27.5rem - 1rem);
+  right: calc(50vw - (55rem / 2) - 1rem);
   margin-top: 8rem;
   z-index: 5;
 }
@@ -1159,9 +245,10 @@ img.round {
     right: 1rem;
   }
 }
+
 @media (max-width: 800px) {
   .betta_image-strip .back,
-.betta_image-strip .forward {
+  .betta_image-strip .forward {
     margin-top: -1rem;
   }
 
@@ -1171,9 +258,11 @@ img.round {
   }
 }
 /*-------------------------------------*/
+
 /*---------------------------------------
 	Slideshow
 ---------------------------------------*/
+
 #crossfade {
   position: absolute;
   top: 0;
@@ -1193,11 +282,11 @@ img.round {
   display: inline-block;
   font-size: 1.5rem;
   z-index: 5;
-  color: #000000;
+  color: $color-black;
 }
 
 .dark .betta_image.slideshow .selectors span {
-  color: #f5f5f5;
+  color: $color-base-1;
 }
 
 .betta_image.slideshow .selectors:hover {
@@ -1213,13 +302,15 @@ img.round {
     display: none;
   }
 }
+
 /*-------------------------------------*/
+
 /*---------------------------------------
 	Forms
 ---------------------------------------*/
 form {
   margin: 0;
-  padding-bottom: 1.6rem;
+  padding-bottom: $line-height;
 }
 
 /* Form elements
@@ -1236,6 +327,7 @@ option,
 optgroup {
 
 } */
+
 input,
 select,
 textarea,
@@ -1248,9 +340,9 @@ optgroup {
   min-height: 2rem;
   padding: 0 0.25rem;
   border: none;
-  border-bottom: 2px solid #9e9e9e;
-  border-top-left-radius: 0.25rem;
-  border-top-right-radius: 0.25rem;
+  border-bottom: 2px solid $color-base-5;
+  border-top-left-radius: $radius-1;
+  border-top-right-radius: $radius-1;
   background: none;
   outline: none;
 }
@@ -1263,8 +355,8 @@ legend:focus,
 datalist:focus,
 output:focus,
 optgroup:focus {
-  border-bottom-color: #000000;
-  background: #f5f5f5;
+  border-bottom-color: $color-black;
+  background: $color-base-1;
 }
 
 .dark input:focus,
@@ -1276,20 +368,20 @@ optgroup:focus {
 .dark datalist:focus,
 .dark output:focus,
 .dark optgroup:focus {
-  border-bottom-color: #ffffff;
-  background: #212121;
+  border-bottom-color: $color-white;
+  background: $color-base-9;
 }
 
 form h3 {
-  margin-bottom: 1.6rem;
+  margin-bottom: $line-height;
 }
 
 form label {
-  color: #000000;
+  color: $color-black;
 }
 
 .dark form label {
-  color: #ffffff;
+  color: $color-white;
 }
 
 form label,
@@ -1298,11 +390,11 @@ form button {
   text-align: left;
 }
 
-form button[type=submit] {
-  margin-top: 1.6rem;
+form button[type="submit"] {
+  margin-top: $line-height;
 }
 
-form .inline-single button[type=submit] {
+form .inline-single button[type="submit"] {
   margin-top: 0.5rem;
 }
 
@@ -1310,11 +402,13 @@ form button.show {
   display: inline-block;
 }
 
-form button[type=button] .material-icons-round {
+// Make all buttons of type button small on forms
+form button[type="button"] .material-icons-round {
   font-size: 1rem;
 }
 
-form input[type=file] {
+// Hide file input fields
+form input[type="file"] {
   display: none;
 }
 
@@ -1323,8 +417,8 @@ form textarea {
   max-width: 100%;
   height: 5rem;
 }
-
 /*-------------------------------------*/
+
 /*---------------------------------------
 	Main Navigation Menu
 	Back Button
@@ -1336,12 +430,12 @@ form textarea {
   text-align: center;
   overflow: show;
   z-index: 10;
-  background: #ffffff;
-  transition: 0.3s;
+  background: $color-white;
+  transition: $transition-slow;
 }
 
 .dark #betta_menu {
-  background: #121212;
+  background: $color-base-10;
 }
 
 .menu-spacer {
@@ -1353,16 +447,15 @@ form textarea {
 /* Stick Menu        */
 /*-------------------*/
 #betta_menu.stick {
-  position: fixed;
-  top: 0;
-  box-shadow: 0 2px 6px 1px rgba(0, 0, 0, 0.2);
+  position: fixed; top: 0;
+  box-shadow: $shadow-level-2;
 }
 
 .dark #betta_menu.stick {
-  box-shadow: 0 2px 6px 1px rgba(0, 0, 0, 0.9);
+  box-shadow: $dark-shadow-level-2;
 }
-
 /*-------------------*/
+
 #betta_menu ul {
   padding: 0;
   margin: 0;
@@ -1396,11 +489,11 @@ form textarea {
 }
 
 #betta_menu ul li a.active {
-  background: #e0e0e0;
+  background: $color-base-3;
 }
 
 .dark #betta_menu ul li a.active {
-  background: #616161;
+  background: $color-base-7;
 }
 
 #betta_menu ul li button {
@@ -1411,9 +504,7 @@ form textarea {
 /* Sidebar Menu      */
 /*-------------------*/
 #betta_menu.sidebar {
-  position: fixed;
-  top: 0;
-  bottom: 0;
+  position: fixed; top: 0; bottom: 0;
   width: 12rem;
   padding: 1rem;
   box-shadow: none;
@@ -1429,28 +520,30 @@ form textarea {
     width: 5rem;
   }
 }
+
 #betta_menu.sidebar + main {
   margin-left: auto;
 }
-
 /*-------------------*/
+
 @media (hover: hover) {
   #betta_menu ul li a:hover {
-    background: #f5f5f5;
+    background: $color-base-1;
   }
 
   .dark #betta_menu ul li a:hover {
-    background: #212121;
+    background: $color-base-9;
   }
 
   #betta_menu ul li a.active:hover {
-    background: #e0e0e0;
+    background: $color-base-3;
   }
 
   .dark #betta_menu ul li a.active:hover {
-    background: #616161;
+    background: $color-base-7;
   }
 }
+
 @media (max-width: 800px) {
   .sidebar + main {
     margin-left: auto;
@@ -1462,7 +555,7 @@ form textarea {
   }
 
   #betta_menu,
-.sidebar {
+  .sidebar {
     display: none;
     padding: 5rem 3rem;
     width: auto;
@@ -1474,7 +567,7 @@ form textarea {
   }
 
   #betta_menu.show,
-.sidebar.show {
+  .sidebar.show {
     display: block;
   }
 
@@ -1493,16 +586,14 @@ form textarea {
   /* Display menu as toolbar */
   #betta_menu.toolbar {
     display: block;
-    position: fixed;
-    top: auto;
-    bottom: 0;
+    position: fixed; top: auto; bottom: 0;
     padding: 0.25rem 0 0.5rem 0;
-    box-shadow: 0 -2px 6px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: $shadow-level-2-i;
     overflow: hidden;
   }
 
   .dark #betta_menu.toolbar {
-    box-shadow: 0 -2px 6px 1px rgba(0, 0, 0, 0.9);
+    box-shadow: $dark-shadow-level-2-i;
   }
 
   #betta_menu.toolbar > ul {
@@ -1515,16 +606,17 @@ form textarea {
     margin-bottom: 0rem;
   }
 }
+
 #betta_menu ul li a:active {
-  background: #eeeeee;
+  background: $color-base-2;
   transition: 0.1s;
 }
 
 .dark #betta_menu ul li a:active {
-  background: #424242;
+  background: $color-base-8;
 }
-
 /*-------------------------------------*/
+
 /*---------------------------------------
   Home Button
 	Menu Button
@@ -1533,9 +625,7 @@ form textarea {
 ---------------------------------------*/
 #betta_home-button,
 #betta_back-button {
-  position: fixed;
-  top: 1.25rem;
-  left: 1.25rem;
+  position: fixed; top: 1.25rem; left: 1.25rem;
   width: 3rem;
   height: 3rem;
   z-index: 15;
@@ -1556,19 +646,19 @@ form textarea {
 #betta_menu-button,
 #betta_home-button button,
 #betta_back-button button {
-  box-shadow: 0 3px 8px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: $shadow-level-3;
 }
 
 .dark #betta_menu-button,
 .dark #betta_home-button button,
 .dark #betta_back-button button {
-  box-shadow: 0 3px 8px 1px rgba(0, 0, 0, 0.9);
+  box-shadow: $dark-shadow-level-3;
 }
 
 #betta_menu-button:active,
 #betta_home-button:active button,
 #betta_back-button:active button {
-  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2);
+  box-shadow: $shadow-level-0;
 }
 
 #betta_home-button img {
@@ -1592,7 +682,7 @@ form textarea {
 
 @media (max-width: 800px) {
   #betta_menu-button,
-#betta_back-button {
+  #betta_back-button {
     top: auto;
     bottom: 1rem;
     left: calc(50vw - 2rem);
@@ -1616,6 +706,7 @@ form textarea {
   }
 }
 /*-------------------------------------*/
+
 /*---------------------------------------
 	Footer
 ---------------------------------------*/
@@ -1638,8 +729,8 @@ footer .logo {
   padding: 2rem;
   margin: 0 auto 2rem auto;
 }
-
 /*-------------------------------------*/
+
 /*---------------------------------------
 	Custom Icon Replacements for
     Material Icons
@@ -1647,7 +738,7 @@ footer .logo {
 .material-icons-round.custom-icon > img {
   /* deprecated */
   height: 1.5rem;
-  color: #000000;
+  color: $color-black;
 }
 
 span.icon {
@@ -1667,8 +758,8 @@ span.icon > img {
 }
 
 .dark p span.icon > img {
-  border-radius: 50%;
-  background-color: #616161;
+  border-radius: $radius-round;
+  background-color: $color-base-7;
 }
 
 span.icon.big {
@@ -1681,20 +772,20 @@ span.icon.big > img {
   height: 4rem;
   width: 4rem;
   line-height: 0rem;
-  background: #eeeeee;
-  border-radius: 50%;
+  background: $color-base-2;
+  border-radius: $radius-round;
   padding: 1rem;
 }
 
 .dark span.icon.big > img {
-  background: #424242;
+  background: $color-base-8;
 }
 
 p > .icon {
   vertical-align: bottom;
 }
-
 /*-------------------------------------*/
+
 /*---------------------------------------
 	Buttons
 ---------------------------------------*/
@@ -1709,63 +800,62 @@ button {
   user-select: none;
   padding: 0.5rem 1rem;
   border-radius: 2rem;
-  box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.2);
-  background: #ffffff;
-  transition: 0.2s;
+  box-shadow: $shadow-level-1;
+  background: $color-white;
+  transition: $transition-default;
   font-weight: 700;
   text-transform: uppercase;
 }
 
 .dark button {
-  box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.9);
-  background: #616161;
+  box-shadow: $dark-shadow-level-1;
+  background: $color-base-7;
 }
 
 button:disabled {
   box-shadow: none;
-  background-color: #f5f5f5;
+  background-color: $color-base-1;
 }
 
 .dark button:disabled {
-  background-color: #212121;
+  background-color: $color-base-9;
 }
 
 button.dark {
-  background: #121212;
+  background: $color-base-10;
 }
 
 .dark button.dark {
-  background: #f5f5f5;
+  background: $color-base-1;
 }
 
 @media (hover: hover) {
   button:hover:enabled {
     cursor: pointer;
-    background: #f5f5f5;
-    transition: 0.2s;
+    background: $color-base-1;
+    transition: $transition-default;
   }
 
   .dark button:hover:enabled {
-    background: #424242;
+    background: $color-base-8;
   }
 
   button.dark:hover:enabled {
-    background: #616161;
-    /* TEMP */
+    background: #616161; /* TEMP */
   }
 }
+
 button:active:enabled {
-  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2);
-  background: #eeeeee;
+  box-shadow: $shadow-level-0;
+  background: $color-base-2;
 }
 
 .dark button:active:enabled {
-  background: #212121;
+  background: $color-base-9;
 }
 
 button.dark:active:enabled {
-  background: #424242;
-  /* TEMP */
+  background: #424242; /* TEMP */
 }
 
 .icon-button {
@@ -1773,8 +863,9 @@ button.dark:active:enabled {
   border-radius: 2rem;
 }
 
-.icon-button.filled .material-icons-round {
-  color: #000000;
+.icon-button.filled .material-icons-round /* deprecated */
+{
+  color: $color-black;
 }
 
 .dark button.icon-button img {
@@ -1782,48 +873,50 @@ button.dark:active:enabled {
 }
 
 .dark .icon-button.filled .icon {
-  color: #f5f5f5;
+  color: $color-base-1;
 }
 
 .icon-button.filled:disabled,
-.icon-button.filled:disabled .material-icons-round,
+.icon-button.filled:disabled .material-icons-round, /* deprecated */
 .icon-button.filled:disabled .icon {
-  color: #616161;
+  color: $color-base-7;
 }
 
 .dark .icon-button.filled:disabled,
 .dark .icon-button.filled:disabled .icon {
-  color: #616161;
+  color: $color-base-7;
 }
 
 .icon-button .text {
   display: inline-block;
-  height: 1.6rem;
+  height: $line-height;
   vertical-align: middle;
   padding-top: 0.3rem;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
 
-.icon-button .material-icons-round,
-.icon-button > .icon {
+
+
+.icon-button .material-icons-round, /* deprecated */
+.icon-button>.icon {
   vertical-align: top;
-  color: #000000;
+  color: $color-black;
   font-size: 1.8rem;
 }
 
-.dark .icon-button > .icon {
-  color: #f5f5f5;
+.dark .icon-button>.icon {
+  color: $color-base-1;
 }
 
-.icon-button .material-icons-round.custom-icon,
-.icon-button > .icon {
+.icon-button .material-icons-round.custom-icon, /* deprecated */
+.icon-button>.icon {
   font-size: 1rem;
 }
 
 .icon-button.dark .material-icons-round {
   /* deprecated */
-  color: #ffffff;
+  color: $color-white;
 }
 
 @media (max-width: 800px) {
@@ -1831,17 +924,18 @@ button.dark:active:enabled {
     padding: 0.75rem;
   }
 
-  body > .icon-button .material-icons-round,
-.icon-button > .icon {
+  body>.icon-button .material-icons-round, /* deprecated */
+    .icon-button>.icon {
     font-size: 2.5rem;
   }
 
-  .icon-button .material-icons-round.custom-icon img,
-.icon-button > .icon > img {
+  .icon-button .material-icons-round.custom-icon img, /* deprecated */
+    .icon-button>.icon>img {
     height: 2.5rem;
     width: 2.5rem;
   }
 }
+
 .sliding-button {
   display: inline-block;
   margin: auto;
@@ -1854,16 +948,17 @@ button.dark:active:enabled {
   margin-bottom: -0.75rem;
   overflow: hidden;
   display: inline-block;
-  transition: 0.2s;
+  transition: $transition-default;
 }
 
 .sliding-button:hover > .content {
   width: 12rem;
   display: inline-block;
-  transition: 0.2s;
+  transition: $transition-default;
 }
 
 /* Simple button */
+
 button.icon-button.simple,
 .dark button.icon-button.simple {
   background: none;
@@ -1873,11 +968,12 @@ button.icon-button.simple,
 
 @media (hover: hover) {
   button.icon-button.simple:hover,
-.dark button.icon-button.simple:hover {
+  .dark button.icon-button.simple:hover {
     background: none;
     opacity: 1;
   }
 }
+
 button.icon-button.simple:active,
 .dark button.icon-button.simple:active {
   opacity: 0.75;
@@ -1886,6 +982,7 @@ button.icon-button.simple:active,
 /*-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
     Custom Classes
 -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-*/
+
 .center {
   text-align: center;
 }
@@ -1915,6 +1012,7 @@ between lines
     overflow: hidden;
   }
 }
+
 .hidden {
   visibility: hidden;
 }
@@ -1925,7 +1023,7 @@ between lines
 
 .betta_spacer-half {
   display: block;
-  height: 0.8rem;
+  height: $half-line-height;
 }
 
 .click-plane {
@@ -1977,11 +1075,12 @@ between lines
 
 @media (max-width: 600px) {
   .inline-split,
-.inline-ternate {
+  .inline-ternate {
     display: block;
     width: 100%;
   }
 }
+
 /*---------------------------------------
 	Overlapping Text Box
 ---------------------------------------*/
@@ -1990,12 +1089,12 @@ between lines
   margin-top: -5rem;
   z-index: 2;
   padding: 1rem 2rem;
-  background: #f5f5f5;
+  background: $color-base-1;
   max-width: 34rem;
 }
 
 .dark .betta_overlap-top {
-  background: #212121;
+  background: $color-base-9;
 }
 
 @media (max-width: 800px) {
@@ -2008,6 +1107,7 @@ between lines
   }
 }
 /*-------------------------------------*/
+
 /*---------------------------------------
 	Gallery
 ---------------------------------------*/
@@ -2032,27 +1132,27 @@ between lines
 
 .photo > img {
   width: 100%;
-  box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.2);
-  background: #f5f5f5;
-  border-radius: 0.25rem;
+  box-shadow: $shadow-level-1;
+  background: $color-base-1;
+  border-radius: $radius-1;
 }
 
 .dark .photo > img {
-  box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.9);
-  background: #212121;
+  box-shadow: $dark-shadow-level-1;
+  background: $color-base-9;
 }
 
 .gallery-item > .content > .click-plane {
-  border-radius: 0.25rem;
+  border-radius: $radius-1;
 }
 
 .gallery-item > .content > .click-plane.caption {
-  background: #ffffff;
+  background: $color-white;
   opacity: 0.85;
 }
 
 .dark .gallery-item > .content > .click-plane.caption {
-  background: #121212;
+  background: $color-base-10;
 }
 
 .gallery-item > .content > .click-plane.caption > p {
@@ -2061,7 +1161,7 @@ between lines
 
 @media (max-width: 800px) {
   #gallery,
-.gallery {
+  .gallery {
     padding-bottom: 0rem;
   }
 
@@ -2070,9 +1170,10 @@ between lines
     padding: 0 0.5rem 2rem 0.5rem;
   }
 }
+
 @media (max-width: 480px) {
   #gallery,
-.gallery {
+  .gallery {
     padding-bottom: 0.75rem;
   }
 
@@ -2081,6 +1182,7 @@ between lines
   }
 }
 /*-------------------------------------*/
+
 /*---------------------------------------
 	Feed
 ---------------------------------------*/
@@ -2093,30 +1195,31 @@ between lines
   display: block;
   padding: 1rem;
   margin-top: 2rem;
-  transition: 0.2s;
-  border: 2px solid #eeeeee;
+  transition: $transition-default;
+  border: 2px solid $color-base-2;
 }
 
 .dark .feed > article > a {
-  border-color: #424242;
+  border-color: $color-base-8;
 }
 
 @media (hover: hover) {
   .feed > article > a:hover {
-    border-color: #000000;
+    border-color: $color-black;
   }
 
   .dark .feed > article > a:hover {
-    border-color: #f5f5f5;
+    border-color: $color-base-1;
   }
 }
+
 .feed > article > a:active {
-  background: #eeeeee;
-  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2);
+  background: $color-base-2;
+  box-shadow: $shadow-level-0;
 }
 
 .dark .feed > article > a:active {
-  background: #424242;
+  background: $color-base-8;
 }
 
 .feed > article > a > h3 {
@@ -2126,8 +1229,8 @@ between lines
 .feed > article > a > p {
   margin-bottom: 0;
 }
-
 /*-------------------------------------*/
+
 /*---------------------------------------
 	Link Card
 ---------------------------------------*/
@@ -2140,16 +1243,16 @@ a.card {
   padding: 0;
   margin-top: 1rem;
   margin: 1rem;
-  border-color: #e0e0e0;
-  border-radius: 0.25rem;
-  box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.2);
-  transition: 0.2s;
+  border-color: $color-base-3;
+  border-radius: $radius-1;
+  box-shadow: $shadow-level-1;
+  transition: $transition-default;
 }
 
 .dark a.card {
-  box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.9);
-  border-color: #616161;
-  background-color: #212121;
+  box-shadow: $dark-shadow-level-1;
+  border-color: $color-base-7;
+  background-color: $color-base-9;
 }
 
 a.card .betta_image {
@@ -2157,12 +1260,12 @@ a.card .betta_image {
   max-width: 100%;
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
-  background: #f5f5f5;
+  background: $color-base-1;
   overflow: hidden;
 }
 
 .dark a.card .betta_image {
-  background: #212121;
+  background: $color-base-9;
 }
 
 a.card .betta_image img {
@@ -2171,19 +1274,19 @@ a.card .betta_image img {
   border-top-right-radius: 0.25rem;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
-  transition: 0.2s;
+  transition: $transition-default;
   image-orientation: none;
 }
 
 /* Cover card */
 a.card.cover .betta_image img,
 a.card.cover .betta_image {
-  border-radius: 0.25rem;
+  border-radius: $radius-1;
 }
 
 a.card.cover .betta_image img {
-  aspect-ratio: 3/2;
-  object-fit: cover;
+  aspect-ratio: 3 / 2; // Experimental property, not yet fully supported
+  object-fit: cover; // Prevents images from being stretched
 }
 
 a.card.cover .content {
@@ -2192,12 +1295,12 @@ a.card.cover .content {
   left: 1rem;
   bottom: 1rem;
   right: 1rem;
-  border: 2px solid #ffffff;
-  transition: 0.2s;
+  border: 2px solid $color-white;
+  transition: $transition-default;
 }
 
 .dark a.card.cover .content {
-  border-color: #212121;
+  border-color: $color-base-9;
 }
 
 a.card.cover h2,
@@ -2216,18 +1319,18 @@ a.card.cover h4 {
   line-height: 1.75rem;
   letter-spacing: 0.05rem;
   border: none;
-  background: #ffffff;
-  transition: 0.2s;
+  background: $color-white;
+  transition: $transition-default;
 }
 
 .dark a.card.cover h2,
 .dark a.card.cover h3,
 .dark a.card.cover h4 {
-  background: #212121;
+  background: $color-base-9;
 }
 
 a.card:active {
-  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2);
+  box-shadow: $shadow-level-0;
 }
 
 a.card p {
@@ -2257,12 +1360,12 @@ a.card-double h3,
 a.card-double h4 {
   padding: 0 0 1rem 0;
   margin-top: 2.15rem;
-  border-bottom: 3px solid #e0e0e0;
+  border-bottom: 3px solid $color-base-3;
   font-size: 1.6rem;
   line-height: 2.15rem;
   letter-spacing: 0.05rem;
   text-align: center;
-  transition: 0.2s;
+  transition: $transition-default;
 }
 
 .dark a.card h2,
@@ -2271,26 +1374,26 @@ a.card-double h4 {
 .dark a.card-double h2,
 .dark a.card-double h3,
 .dark a.card-double h4 {
-  border-color: #616161;
+  border-color: $color-base-7;
 }
 
 @media (hover: hover) {
   a.card:hover h2,
-a.card:hover h3,
-a.card:hover h4,
-a.card-double:hover h2,
-a.card-double:hover h3,
-a.card-double:hover h4 {
-    border-bottom: 3px solid #000000;
+  a.card:hover h3,
+  a.card:hover h4,
+  a.card-double:hover h2,
+  a.card-double:hover h3,
+  a.card-double:hover h4 {
+    border-bottom: 3px solid $color-black;
   }
 
   .dark a.card:hover h2,
-.dark a.card:hover h3,
-.dark a.card:hover h4,
-.dark a.card-double:hover h2,
-.dark a.card-double:hover h3,
-.dark a.card-double:hover h4 {
-    border-bottom-color: #f5f5f5;
+  .dark a.card:hover h3,
+  .dark a.card:hover h4,
+  .dark a.card-double:hover h2,
+  .dark a.card-double:hover h3,
+  .dark a.card-double:hover h4 {
+    border-bottom-color: $color-base-1;
   }
 
   a.card:hover {
@@ -2305,14 +1408,15 @@ a.card-double:hover h4 {
   }
 
   a.card.cover:hover h2,
-a.card.cover:hover h3,
-a.card.cover:hover h4 {
+  a.card.cover:hover h3,
+  a.card.cover:hover h4 {
     bottom: -1rem;
     left: -1rem;
     right: -1rem;
     border: none;
   }
 }
+
 @media (max-width: 800px) {
   a.card {
     padding: 0;
@@ -2326,32 +1430,34 @@ a.card.cover:hover h4 {
   }
 
   a.card h2,
-a.card h3,
-a.card h4 {
+  a.card h3,
+  a.card h4 {
     margin-left: 1rem;
     margin-right: 1rem;
   }
 
   a.card h2,
-a.card h3,
-a.card h4,
-a.card-double h2,
-a.card-double h3,
-a.card-double h4 {
+  a.card h3,
+  a.card h4,
+  a.card-double h2,
+  a.card-double h3,
+  a.card-double h4 {
     margin-top: 1.25rem;
   }
 
   a.card.cover h2,
-a.card.cover h3,
-a.card.cover h4 {
+  a.card.cover h3,
+  a.card.cover h4 {
     font-size: 1rem;
-    line-height: 1.6rem;
+    line-height: $line-height;
   }
 }
 /*-------------------------------------*/
+
 /*---------------------------------------
 	Link Card Double
 ---------------------------------------*/
+
 a.card-double {
   display: block;
   width: 55rem;
@@ -2359,18 +1465,18 @@ a.card-double {
   height: 27.5rem;
   padding: 0;
   margin-top: 3rem;
-  border-color: #e0e0e0;
-  border-radius: 0.25rem;
-  box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.2);
+  border-color: $color-base-3;
+  border-radius: $radius-1;
+  box-shadow: $shadow-level-1;
   overflow: hidden;
-  transition: 0.2s;
-  background-color: #fafafa;
+  transition: $transition-default;
+  background-color: $color-base-0;
 }
 
 .dark a.card-double {
-  box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.9);
-  border-color: #616161;
-  background-color: #212121;
+  box-shadow: $dark-shadow-level-1;
+  border-color: $color-base-7;
+  background-color: $color-base-9;
 }
 
 a.card-double .betta_image,
@@ -2382,11 +1488,11 @@ a.card-double .content {
 }
 
 a.card-double .betta_image {
-  background: #f5f5f5;
+  background: $color-base-1;
 }
 
 .dark a.card-double .betta_image {
-  background: #212121;
+  background: $color-base-9;
 }
 
 a.card-double .betta_image img {
@@ -2394,7 +1500,7 @@ a.card-double .betta_image img {
   width: 27.5rem;
   margin-bottom: -3px;
   border-radius: 0;
-  transition: 0.2s;
+  transition: $transition-default;
 }
 
 a.card-double .content {
@@ -2407,8 +1513,9 @@ a.card-double .content {
     cursor: pointer;
   }
 }
+
 a.card-double:active {
-  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2);
+  box-shadow: $shadow-level-0;
 }
 
 @media (max-width: 800px) {
@@ -2426,7 +1533,7 @@ a.card-double:active {
   }
 
   a.card-double .betta_image,
-a.card-double .content {
+  a.card-double .content {
     height: auto;
     width: 100%;
     display: block;
@@ -2442,6 +1549,7 @@ a.card-double .content {
   }
 }
 /*-------------------------------------*/
+
 /*---------------------------------------
 	Contact Card
 ---------------------------------------*/
@@ -2465,11 +1573,11 @@ a.card-double .content {
   padding: 1rem 0.5rem;
   margin: -2.75rem auto 1rem auto;
   z-index: 2;
-  background: #f5f5f5;
+  background: $color-base-1;
 }
 
 .dark .card.contact .content {
-  background: #212121;
+  background: $color-base-9;
 }
 
 .card.contact .content p {
@@ -2506,7 +1614,7 @@ a.card-double .content {
   bottom: 0;
   right: 0;
   padding-top: 1.3rem;
-  background: #f5f5f5;
+  background: $color-base-1;
 }
 
 .dark .card.contact .phone-number,
@@ -2518,7 +1626,7 @@ a.card-double .content {
   bottom: 0;
   right: 0;
   padding-top: 1.3rem;
-  background: #212121;
+  background: $color-base-9;
 }
 
 .card.contact .phone-number:hover,
@@ -2528,12 +1636,12 @@ a.card-double .content {
 
 .card.contact .phone-number:hover + .phone,
 .card.contact .email-address:hover + .email {
-  background-color: #ffffff;
+  background-color: $color-white;
 }
 
 .dark .card.contact .phone-number:hover + .phone,
 .dark .card.contact .email-address:hover + .email {
-  background-color: #121212;
+  background-color: $color-base-10;
 }
 
 @media (max-width: 800px) {
@@ -2548,6 +1656,7 @@ a.card-double .content {
   }
 }
 /*-------------------------------------*/
+
 /*---------------------------------------
 	Flip Card
 ---------------------------------------*/
@@ -2564,12 +1673,12 @@ a.card-double .content {
   height: 100%;
   transition: transform 0.6s;
   transform-style: preserve-3d;
-  box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0.25rem;
+  box-shadow: $shadow-level-1;
+  border-radius: $radius-1;
 }
 
 .dark .flip-card > .card {
-  box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.9);
+  box-shadow: $dark-shadow-level-1;
 }
 
 .flip-card:hover > .card,
@@ -2586,7 +1695,7 @@ a.card-double .content {
 .flip-card > .card > .front img {
   width: 100%;
   margin: 0;
-  border-radius: 0.25rem;
+  border-radius: $radius-1;
 }
 
 .flip-card > .card > .back {
@@ -2604,24 +1713,20 @@ a.card-double .content {
   margin: 0;
   padding: 0;
 }
-
 /*-------------------------------------*/
+
 /*---------------------------------------
 	Lightbox
 ---------------------------------------*/
 .lightbox {
   display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background: #ffffff;
+  position: fixed; top: 0; left: 0; bottom: 0; right: 0;
+  background: $color-white;
   z-index: 100;
 }
 
 .dark .lightbox {
-  background: #121212;
+  background: $color-base-10;
 }
 
 .lightbox.open {
@@ -2704,7 +1809,7 @@ a.card-double .content {
 .lightbox .middle .img img {
   max-width: 100%;
   max-height: calc(100vh - 2rem);
-  border-radius: 0.25rem;
+  border-radius: $radius-1;
 }
 
 .lightbox .middle .caption {
@@ -2714,28 +1819,26 @@ a.card-double .content {
   left: 1rem;
   width: auto;
   padding: 0.5rem 1rem;
-  border-radius: 0.25rem;
-  box-shadow: 0 2px 6px 1px rgba(0, 0, 0, 0.2);
-  background: #ffffff;
+  border-radius: $radius-1;
+  box-shadow: $shadow-level-2;
+  background: $color-white;
 }
 
 .dark .lightbox .middle .caption {
-  box-shadow: 0 2px 6px 1px rgba(0, 0, 0, 0.9);
-  background: #616161;
+  box-shadow: $dark-shadow-level-2;
+  background: $color-base-7;
 }
 
 .lightbox .middle .caption.open {
   display: block;
 }
-
 /*-------------------------------------*/
+
 /*---------------------------------------
 	Version
 ---------------------------------------*/
 p.version {
-  position: fixed;
-  bottom: 70vh;
-  right: 0.5rem;
+  position: fixed; bottom: 70vh; right: 0.5rem;
   width: 70vh;
   -webkit-transform: rotate(-90deg);
   -webkit-transform-origin: right bottom;
@@ -2755,16 +1858,13 @@ p.version {
   }
 }
 /*-------------------------------------*/
+
 /*---------------------------------------
 	Notification
 ---------------------------------------*/
 #notification {
   display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
+  position: fixed; top: 0; left: 0; bottom: 0; right: 0;
   z-index: 101;
 }
 
@@ -2793,11 +1893,10 @@ p.version {
   padding: 1rem;
   float: right;
   border: solid 1px;
-  border-color: #81786a;
+  border-color: rgb(129, 120, 106);
   border-radius: 1rem;
   word-wrap: break-word;
-  background-color: #ff3737;
-  /* TEMP */
+  background-color: #ff3737; /* TEMP */
 }
 
 #cancel-notification {
@@ -2808,8 +1907,8 @@ p.version {
 #cancel-notification.show {
   display: block;
 }
-
 /*-------------------------------------*/
+
 /*---------------------------------------
 	Google Maps
 ---------------------------------------*/
@@ -2817,14 +1916,11 @@ p.version {
   width: 100%;
   height: 15rem;
   border: 0;
-  border-radius: 0.25rem;
-  box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.2);
+  border-radius: $radius-1;
+  box-shadow: $shadow-level-1;
 }
 
 .dark .google-maps {
-  box-shadow: 0 2px 6px 1px rgba(0, 0, 0, 0.9);
+  box-shadow: $dark-shadow-level-2;
 }
-
 /*-------------------------------------*/
-
-/*# sourceMappingURL=betta-0.0.4.css.map */

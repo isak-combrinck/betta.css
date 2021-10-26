@@ -1,0 +1,269 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+li,
+textarea,
+option,
+input,
+select,
+button {
+  color: $color-black;
+}
+
+.dark h1,
+.dark h2,
+.dark h3,
+.dark h4,
+.dark h5,
+.dark h6,
+.dark p,
+.dark a,
+.dark li,
+.dark textarea,
+.dark option,
+.dark input,
+.dark select,
+.dark button {
+  color: $color-base-1;
+}
+
+a {
+  text-decoration: none;
+  transition: $transition-default;
+}
+
+em {
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: 0.05rem;
+}
+
+p,
+li,
+textarea,
+option,
+input,
+select,
+button {
+  font-size: 1rem;
+  letter-spacing: 0.025rem;
+}
+
+p,
+li,
+input,
+textarea {
+  line-height: $line-height;
+}
+
+p {
+  margin-top: 1.6rem;
+  margin-bottom: 1.6rem;
+}
+
+p.small {
+  font-size: $font-small;
+}
+
+ul.indent {
+  margin-top: 0;
+  padding-left: 1rem;
+}
+
+ul.plain li {
+  list-style: none;
+}
+
+p > a,
+h1 > a,
+h2 > a,
+h3 > a,
+h4 > a,
+h5 > a,
+h6 > a,
+li.link > a {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-color: $color-base-3;
+}
+
+.dark p > a,
+.dark h1 > a,
+.dark h2 > a,
+.dark h3 > a,
+.dark h4 > a,
+.dark h5 > a,
+.dark h6 > a,
+.dark li.link > a {
+  border-color: $color-base-7;
+}
+
+h1 > a,
+h2 > a,
+h3 > a,
+h4 > a,
+h5 > a,
+h6 > a {
+  border-bottom-width: 4px;
+}
+
+p > a:hover,
+h1 > a:hover,
+h2 > a:hover,
+h3 > a:hover,
+h4 > a:hover,
+h5 > a:hover,
+h6 > a:hover,
+li.link:hover > a {
+  border-color: $color-black;
+}
+
+.dark p > a:hover,
+.dark h1 > a:hover,
+.dark h2 > a:hover,
+.dark h3 > a:hover,
+.dark h4 > a:hover,
+.dark h5 > a:hover,
+.dark h6 > a:hover,
+.dark li.link:hover > a {
+  border-color: $color-base-1;
+}
+
+p > a.icon {
+  border: none;
+}
+
+p > a.icon > img {
+  width: 2rem;
+  transition: $transition-default;
+}
+
+p > a.icon:hover > img {
+  opacity: 0.8;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+  line-height: 3.2rem;
+  letter-spacing: 0.1rem;
+  margin-top: 3.2rem;
+}
+
+h2 {
+  font-size: 2rem;
+  line-height: 2.75rem;
+  letter-spacing: 0.1rem;
+  margin-top: 2.5rem;
+  margin-bottom: 0.8rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+  line-height: 2.15rem;
+  letter-spacing: 0.05rem;
+  margin-top: 2.15rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  letter-spacing: 0.05rem;
+  margin-top: 1.75rem;
+}
+
+h5,
+h6 {
+  font-size: 1rem;
+  line-height: $line-height;
+  letter-spacing: 0.05rem;
+  margin-top: 1.6rem;
+  font-weight: bold;
+}
+
+h5 {
+  font-weight: bold;
+}
+
+h6 {
+  text-transform: uppercase;
+}
+
+hr {
+  border: none;
+  height: 3px;
+  background: $color-base-3;
+}
+
+hr {
+  background: $color-base-7;
+}
+
+/*
+@media(max-width: 800px) {
+  h1 {
+	  font-size: 2.25rem;
+	  line-height: 3rem;
+	  letter-spacing: 0.035rem;
+  }
+}
+
+@media(max-width: 600px) {
+  h1 {
+	  font-size: 1.75rem;
+	  line-height: 2.5rem;
+  }
+}
+*/
+
+form > a {
+  font-size: $font-small;
+}
+
+details > summary {
+  outline: none;
+  cursor: pointer;
+  margin-bottom: -0.75rem;
+}
+
+details > summary > h1,
+details > summary > h2,
+details > summary > h3,
+details > summary > h4,
+details > summary > h5,
+details > summary > h6,
+details > summary > p {
+  display: inline-block;
+}
+
+details > summary > p {
+  margin-bottom: 0;
+}
+
+details {
+  margin-bottom: 1.6rem;
+  border-bottom: 0.7rem solid $color-base-3;
+}
+
+.dark details {
+  border-bottom-color: $color-base-7;
+}
+
+.dark details summary, /* Firefox */
+.dark details summary::-webkit-details-marker, /* Chrome */
+.dark details summary::marker {
+  color: $color-white;
+}
