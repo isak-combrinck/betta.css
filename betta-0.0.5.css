@@ -737,7 +737,33 @@ form textarea {
 	Footer
 ---------------------------------------*/
 footer {
+  box-sizing: border-box;
   text-align: center;
+}
+footer > * {
+  display: inline-block;
+}
+
+footer.rotated {
+  text-align: left;
+  position: fixed;
+  bottom: 100vh;
+  right: 0rem;
+  width: 100vh;
+  padding: 0 1rem;
+  -webkit-transform: rotate(-90deg);
+  -webkit-transform-origin: right bottom;
+  -moz-transform: rotate(-90deg);
+  -moz-transform-origin: right bottom;
+  -ms-transform: rotate(-90deg);
+  -ms-transform-origin: right bottom;
+  -o-transform: rotate(-90deg);
+  -o-transform-origin: right bottom;
+  transform: rotate(-90deg);
+  transform-origin: right bottom;
+}
+footer.rotated p {
+  margin: 0;
 }
 
 footer a,
@@ -1951,6 +1977,10 @@ p.version {
     transform: rotate(360deg);
   }
 }
+body, textarea, option, input, select, button {
+  font-family: "Lato", sans-serif;
+}
+
 h1,
 h2,
 h3,
