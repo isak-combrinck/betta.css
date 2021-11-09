@@ -839,7 +839,10 @@ form textarea {
   font-weight: 700;
 }
 
-#betta_menu ul li a .material-icons-round,
+.dark #betta_menu ul li a img {
+  filter: invert(1);
+}
+
 #betta_menu ul li a .text {
   display: block;
   height: 1.5rem;
@@ -870,7 +873,6 @@ form textarea {
   position: fixed;
   top: 0;
   bottom: 0;
-  width: 12rem;
   padding: 1rem;
   box-shadow: none;
 }
@@ -1079,46 +1081,47 @@ footer {
   box-sizing: border-box;
   text-align: center;
 }
-footer > * {
-  display: inline-block;
+@media (min-width: 800px) {
+  footer > * {
+    display: inline-block;
+  }
 }
-
-footer.rotated {
-  text-align: left;
-  position: fixed;
-  bottom: 100vh;
-  right: 0rem;
-  width: 100vh;
-  padding: 0 1rem;
-  -webkit-transform: rotate(-90deg);
-  -webkit-transform-origin: right bottom;
-  -moz-transform: rotate(-90deg);
-  -moz-transform-origin: right bottom;
-  -ms-transform: rotate(-90deg);
-  -ms-transform-origin: right bottom;
-  -o-transform: rotate(-90deg);
-  -o-transform-origin: right bottom;
-  transform: rotate(-90deg);
-  transform-origin: right bottom;
-}
-footer.rotated p {
-  margin: 0;
-}
-
 footer a,
 footer button {
   vertical-align: middle;
 }
-
 footer p a {
   margin: 0;
 }
-
 footer .logo {
   height: 14rem;
   width: 14rem;
   padding: 2rem;
   margin: 0 auto 2rem auto;
+}
+
+@media (min-width: 800px) {
+  footer.rotated {
+    text-align: left;
+    position: fixed;
+    bottom: 100vh;
+    right: 0rem;
+    width: 100vh;
+    padding: 0 1rem;
+    -webkit-transform: rotate(-90deg);
+    -webkit-transform-origin: right bottom;
+    -moz-transform: rotate(-90deg);
+    -moz-transform-origin: right bottom;
+    -ms-transform: rotate(-90deg);
+    -ms-transform-origin: right bottom;
+    -o-transform: rotate(-90deg);
+    -o-transform-origin: right bottom;
+    transform: rotate(-90deg);
+    transform-origin: right bottom;
+  }
+}
+footer.rotated p {
+  margin: 0;
 }
 
 /*-------------------------------------*/
