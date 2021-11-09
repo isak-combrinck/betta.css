@@ -1564,53 +1564,6 @@ between lines
 }
 /*-------------------------------------*/
 /*---------------------------------------
-	Feed
----------------------------------------*/
-.feed {
-  max-width: 35rem;
-  margin: 0 auto;
-}
-
-.feed > article > a {
-  display: block;
-  padding: 1rem;
-  margin-top: 2rem;
-  transition: 0.2s;
-  border: 2px solid #eeeeee;
-}
-
-.dark .feed > article > a {
-  border-color: #424242;
-}
-
-@media (hover: hover) {
-  .feed > article > a:hover {
-    border-color: #000000;
-  }
-
-  .dark .feed > article > a:hover {
-    border-color: #f5f5f5;
-  }
-}
-.feed > article > a:active {
-  background: #eeeeee;
-  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2);
-}
-
-.dark .feed > article > a:active {
-  background: #424242;
-}
-
-.feed > article > a > h3 {
-  margin: 0;
-}
-
-.feed > article > a > p {
-  margin-bottom: 0;
-}
-
-/*-------------------------------------*/
-/*---------------------------------------
 	Link Card
 ---------------------------------------*/
 a.card {

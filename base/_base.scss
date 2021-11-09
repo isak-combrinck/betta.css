@@ -1210,54 +1210,6 @@ between lines
 /*-------------------------------------*/
 
 /*---------------------------------------
-	Feed
----------------------------------------*/
-.feed {
-  max-width: 35rem;
-  margin: 0 auto;
-}
-
-.feed > article > a {
-  display: block;
-  padding: 1rem;
-  margin-top: 2rem;
-  transition: $transition-default;
-  border: 2px solid $color-base-2;
-}
-
-.dark .feed > article > a {
-  border-color: $color-base-8;
-}
-
-@media (hover: hover) {
-  .feed > article > a:hover {
-    border-color: $color-black;
-  }
-
-  .dark .feed > article > a:hover {
-    border-color: $color-base-1;
-  }
-}
-
-.feed > article > a:active {
-  background: $color-base-2;
-  box-shadow: $shadow-level-0;
-}
-
-.dark .feed > article > a:active {
-  background: $color-base-8;
-}
-
-.feed > article > a > h3 {
-  margin: 0;
-}
-
-.feed > article > a > p {
-  margin-bottom: 0;
-}
-/*-------------------------------------*/
-
-/*---------------------------------------
 	Link Card
 ---------------------------------------*/
 a.card {
