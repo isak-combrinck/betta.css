@@ -6,6 +6,8 @@ A collection of CSS styles.
 A project by Isak Combrinck & Dahman Ramdani.
 ---------------------------------------*/
 
+@import "vendors/normalize.scss";
+
 @import "abstracts/functions";
 @import "abstracts/mixins";
 @import "abstracts/variables";
@@ -19,5 +21,3 @@ A project by Isak Combrinck & Dahman Ramdani.
 
 @import "layout/header";
 @import "layout/loader";
-
-@import "vendors/normalize.scss";
