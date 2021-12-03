@@ -414,6 +414,10 @@ form {
     display: none;
   }
 
+  input[type="checkbox"] {
+    width: 2rem;
+  }
+
   input.hours,
   select.minutes {
     display: inline-block;

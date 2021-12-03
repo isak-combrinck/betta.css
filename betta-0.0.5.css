@@ -778,6 +778,9 @@ form textarea {
 form input[type=file] {
   display: none;
 }
+form input[type=checkbox] {
+  width: 2rem;
+}
 form input.hours,
 form select.minutes {
   display: inline-block;
