@@ -370,6 +370,27 @@ body {
   margin: 0;
   background: #ffffff;
 }
+@media (max-width: 800px) {
+  body {
+    padding-bottom: 7rem;
+  }
+}
+
+main {
+  padding: 3rem 2rem;
+  overflow-x: hidden;
+  max-width: 100%;
+}
+@media (max-width: 800px) {
+  main {
+    padding: 0 2rem 1rem 2rem;
+  }
+}
+@media (max-width: 600px) {
+  main {
+    padding: 0 1rem 1rem 1rem;
+  }
+}
 
 .dark {
   background: #121212;
@@ -379,33 +400,6 @@ body.dark img {
   filter: brightness(0.9);
 }
 
-#page,
-main {
-  padding: 3rem 2rem;
-  overflow-x: hidden;
-}
-
-main {
-  max-width: 100%;
-}
-
-@media (max-width: 800px) {
-  #page,
-main {
-    padding: 0 2rem 1rem 2rem;
-    overflow-x: hidden;
-  }
-
-  body {
-    padding-bottom: 5rem;
-  }
-}
-@media (max-width: 600px) {
-  #page,
-main {
-    padding: 0 1rem 1rem 1rem;
-  }
-}
 body,
 nav,
 main,
@@ -1109,6 +1103,7 @@ footer button {
 }
 footer p a {
   margin: 0;
+  padding-top: 2rem;
 }
 footer .logo {
   height: 14rem;
