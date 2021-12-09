@@ -1,2 +1,5 @@
 # Ignore
 .DS_Store
+
+# Ignore .map files
+*.css.map
