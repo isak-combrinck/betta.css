@@ -1,0 +1,228 @@
+/* All possible form elements
+input,
+label,
+select,
+textarea,
+button,
+fieldset,
+legend,
+datalist,
+output,
+option,
+optgroup
+*/
+
+form {
+  margin: 0;
+  padding-bottom: $line-height;
+
+  input,
+  select,
+  textarea,
+  fieldset,
+  legend,
+  datalist,
+  output,
+  optgroup {
+    box-sizing: border-box;
+    min-height: 2rem;
+    padding: 0 0.25rem;
+    border: none;
+    border-bottom: 2px solid $color-base-5;
+    border-top-left-radius: $radius-1;
+    border-top-right-radius: $radius-1;
+    background: none;
+    outline: none;
+  }
+
+  input:focus,
+  select:focus,
+  textarea:focus,
+  fieldset:focus,
+  legend:focus,
+  datalist:focus,
+  output:focus,
+  optgroup:focus {
+    border-bottom-color: $color-black;
+    background: $color-base-1;
+  }
+
+  h3 {
+    margin-bottom: $line-height;
+  }
+
+  label {
+    line-height: $line-height;
+    color: $color-black;
+  }
+
+  label,
+  button {
+    vertical-align: middle;
+    text-align: left;
+  }
+
+  button[type="submit"] {
+    margin-top: $line-height;
+  }
+
+  .inline-single button[type="submit"] {
+    margin-top: 0.5rem;
+  }
+
+  button.show {
+    display: inline-block;
+  }
+
+  // Make all buttons of type button small on forms
+  button[type="button"] .material-icons-round {
+    font-size: 1rem;
+  }
+
+  input,
+  label,
+  select {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
+  textarea {
+    min-width: 100%;
+    max-width: 100%;
+    height: 5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  // Hide file input fields
+  input[type="file"] {
+    display: none;
+  }
+
+  input[type="checkbox"] {
+    width: 2rem;
+  }
+
+  input.hours,
+  select.minutes {
+    display: inline-block;
+    margin-right: 0.25rem;
+  }
+
+  input.hours {
+    width: 2.2rem;
+  }
+
+  select.minutes {
+    width: 3.5rem;
+    height: 2rem;
+  }
+
+  .form-date {
+    box-sizing: border-box;
+    display: inline-block !important;
+    width: 48%;
+    margin-right: 1.5%;
+  }
+
+  .form-date.day,
+  .form-date.month {
+    width: 2.2rem;
+  }
+
+  .form-date.year {
+    width: 3.4rem;
+  }
+
+  .form-error {
+    margin: 0 auto;
+    padding: 0 2rem;
+    max-width: 20rem;
+    text-align: center;
+    color: #d50000;
+  }
+
+  .form-error p {
+    margin-top: 0.5rem;
+  }
+
+  .form-error .material-icons-round {
+    color: #d50000;
+    font-size: 4rem;
+  }
+
+  .form-notice {
+    padding: 2rem 3rem;
+    text-align: center;
+    color: #43a047;
+  }
+
+  .form-notice .material-icons-round {
+    color: #43a047;
+    font-size: 4rem;
+  }
+
+  .error-message {
+    display: block;
+    color: #d50000;
+  }
+
+  .error-message .material-icons-round {
+    vertical-align: text-bottom;
+    color: #d50000;
+  }
+
+  .red-border {
+    border-color: #d50000 !important;
+  }
+
+  /* Login box */
+  &.login {
+    width: 15rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &.login > button,
+  &.login > input {
+    display: block;
+    margin: 0 auto 1rem auto;
+  }
+
+  &.login > input {
+    width: 100%;
+  }
+
+  .input-aside-button {
+    margin-top: -0.25rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .input-aside-button > input {
+    width: calc(100% - 2.5rem);
+  }
+
+  .input-aside-button > button {
+    vertical-align: bottom;
+  }
+
+  & > button.icon-button {
+    margin-top: 1rem;
+  }
+}
+
+.dark input:focus,
+.dark select:focus,
+.dark textarea:focus,
+.dark button:focus,
+.dark fieldset:focus,
+.dark legend:focus,
+.dark datalist:focus,
+.dark output:focus,
+.dark optgroup:focus {
+  border-bottom-color: $color-white;
+  background: $color-base-9;
+}
+
+.dark form label {
+  color: $color-white;
+}

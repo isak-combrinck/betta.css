@@ -665,137 +665,6 @@ img.round {
 }
 /*-------------------------------------*/
 /*---------------------------------------
-	Forms
----------------------------------------*/
-/* Form elements
-input,
-label,
-select,
-textarea,
-button,
-fieldset,
-legend,
-datalist,
-output,
-option,
-optgroup {
-
-} */
-input,
-select,
-textarea,
-fieldset,
-legend,
-datalist,
-output,
-optgroup {
-  box-sizing: border-box;
-  min-height: 2rem;
-  padding: 0 0.25rem;
-  border: none;
-  border-bottom: 2px solid #9e9e9e;
-  border-top-left-radius: 0.25rem;
-  border-top-right-radius: 0.25rem;
-  background: none;
-  outline: none;
-}
-
-input:focus,
-select:focus,
-textarea:focus,
-fieldset:focus,
-legend:focus,
-datalist:focus,
-output:focus,
-optgroup:focus {
-  border-bottom-color: #000000;
-  background: #f5f5f5;
-}
-
-.dark input:focus,
-.dark select:focus,
-.dark textarea:focus,
-.dark button:focus,
-.dark fieldset:focus,
-.dark legend:focus,
-.dark datalist:focus,
-.dark output:focus,
-.dark optgroup:focus {
-  border-bottom-color: #ffffff;
-  background: #212121;
-}
-
-form h3 {
-  margin-bottom: 1.6rem;
-}
-
-form label {
-  color: #000000;
-}
-
-.dark form label {
-  color: #ffffff;
-}
-
-form label,
-form button {
-  vertical-align: middle;
-  text-align: left;
-}
-
-form button[type=submit] {
-  margin-top: 1.6rem;
-}
-
-form .inline-single button[type=submit] {
-  margin-top: 0.5rem;
-}
-
-form button.show {
-  display: inline-block;
-}
-
-form button[type=button] .material-icons-round {
-  font-size: 1rem;
-}
-
-form {
-  margin: 0;
-  padding-bottom: 1.6rem;
-}
-form input,
-form label,
-form select {
-  display: block;
-  margin-bottom: 0.5rem;
-}
-form textarea {
-  min-width: 100%;
-  max-width: 100%;
-  height: 5rem;
-  margin-bottom: 0.5rem;
-}
-form input[type=file] {
-  display: none;
-}
-form input[type=checkbox] {
-  width: 2rem;
-}
-form input.hours,
-form select.minutes {
-  display: inline-block;
-  margin-right: 0.25rem;
-}
-form input.hours {
-  width: 2.2rem;
-}
-form select.minutes {
-  width: 3.5rem;
-  height: 2.2rem;
-}
-
-/*-------------------------------------*/
-/*---------------------------------------
 	Main Navigation Menu
 	Back Button
 ---------------------------------------*/
@@ -1386,6 +1255,10 @@ button.icon-button.simple:active,
 /*-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
     Custom Classes
 -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-*/
+.normal {
+  font-weight: normal;
+}
+
 .center {
   text-align: center;
 }
@@ -2555,6 +2428,197 @@ details {
 .dark details summary,
 .dark details summary::-webkit-details-marker,
 .dark details summary::marker {
+  color: #ffffff;
+}
+
+/* All possible form elements
+input,
+label,
+select,
+textarea,
+button,
+fieldset,
+legend,
+datalist,
+output,
+option,
+optgroup
+*/
+form {
+  margin: 0;
+  padding-bottom: 1.6rem;
+  /* Login box */
+}
+form input,
+form select,
+form textarea,
+form fieldset,
+form legend,
+form datalist,
+form output,
+form optgroup {
+  box-sizing: border-box;
+  min-height: 2rem;
+  padding: 0 0.25rem;
+  border: none;
+  border-bottom: 2px solid #9e9e9e;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  background: none;
+  outline: none;
+}
+form input:focus,
+form select:focus,
+form textarea:focus,
+form fieldset:focus,
+form legend:focus,
+form datalist:focus,
+form output:focus,
+form optgroup:focus {
+  border-bottom-color: #000000;
+  background: #f5f5f5;
+}
+form h3 {
+  margin-bottom: 1.6rem;
+}
+form label {
+  line-height: 1.6rem;
+  color: #000000;
+}
+form label,
+form button {
+  vertical-align: middle;
+  text-align: left;
+}
+form button[type=submit] {
+  margin-top: 1.6rem;
+}
+form .inline-single button[type=submit] {
+  margin-top: 0.5rem;
+}
+form button.show {
+  display: inline-block;
+}
+form button[type=button] .material-icons-round {
+  font-size: 1rem;
+}
+form input,
+form label,
+form select {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+form textarea {
+  min-width: 100%;
+  max-width: 100%;
+  height: 5rem;
+  margin-bottom: 0.5rem;
+}
+form input[type=file] {
+  display: none;
+}
+form input[type=checkbox] {
+  width: 2rem;
+}
+form input.hours,
+form select.minutes {
+  display: inline-block;
+  margin-right: 0.25rem;
+}
+form input.hours {
+  width: 2.2rem;
+}
+form select.minutes {
+  width: 3.5rem;
+  height: 2rem;
+}
+form .form-date {
+  box-sizing: border-box;
+  display: inline-block !important;
+  width: 48%;
+  margin-right: 1.5%;
+}
+form .form-date.day,
+form .form-date.month {
+  width: 2.2rem;
+}
+form .form-date.year {
+  width: 3.4rem;
+}
+form .form-error {
+  margin: 0 auto;
+  padding: 0 2rem;
+  max-width: 20rem;
+  text-align: center;
+  color: #d50000;
+}
+form .form-error p {
+  margin-top: 0.5rem;
+}
+form .form-error .material-icons-round {
+  color: #d50000;
+  font-size: 4rem;
+}
+form .form-notice {
+  padding: 2rem 3rem;
+  text-align: center;
+  color: #43a047;
+}
+form .form-notice .material-icons-round {
+  color: #43a047;
+  font-size: 4rem;
+}
+form .error-message {
+  display: block;
+  color: #d50000;
+}
+form .error-message .material-icons-round {
+  vertical-align: text-bottom;
+  color: #d50000;
+}
+form .red-border {
+  border-color: #d50000 !important;
+}
+form.login {
+  width: 15rem;
+  margin: 0 auto;
+  text-align: center;
+}
+form.login > button, form.login > input {
+  display: block;
+  margin: 0 auto 1rem auto;
+}
+form.login > input {
+  width: 100%;
+}
+form .input-aside-button {
+  margin-top: -0.25rem;
+  margin-bottom: 0.25rem;
+}
+form .input-aside-button > input {
+  width: calc(100% - 2.5rem);
+}
+form .input-aside-button > button {
+  vertical-align: bottom;
+}
+form > button.icon-button {
+  margin-top: 1rem;
+}
+
+.dark input:focus,
+.dark select:focus,
+.dark textarea:focus,
+.dark button:focus,
+.dark fieldset:focus,
+.dark legend:focus,
+.dark datalist:focus,
+.dark output:focus,
+.dark optgroup:focus {
+  border-bottom-color: #ffffff;
+  background: #212121;
+}
+
+.dark form label {
   color: #ffffff;
 }
 

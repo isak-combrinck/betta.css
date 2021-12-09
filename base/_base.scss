@@ -26,7 +26,7 @@ main {
 }
 
 body.dark img {
-  filter: brightness(.9);
+  filter: brightness(0.9);
 }
 
 body,
@@ -97,7 +97,10 @@ li {
   Banner type stuff
 ---------------------------------------*/
 .betta-banner {
-  position: fixed; top: 0; left: 0; right: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   text-align: center;
   z-index: 10;
   box-shadow: $shadow-level-1;
@@ -114,7 +117,9 @@ li {
 }
 
 .betta-support {
-  position: fixed; left: 1rem; bottom: 1rem;
+  position: fixed;
+  left: 1rem;
+  bottom: 1rem;
 }
 
 .betta-support > button {
@@ -295,147 +300,6 @@ img.round {
 /*-------------------------------------*/
 
 /*---------------------------------------
-	Forms
----------------------------------------*/
-/* Form elements
-input,
-label,
-select,
-textarea,
-button,
-fieldset,
-legend,
-datalist,
-output,
-option,
-optgroup {
-
-} */
-
-input,
-select,
-textarea,
-fieldset,
-legend,
-datalist,
-output,
-optgroup {
-  box-sizing: border-box;
-  min-height: 2rem;
-  padding: 0 0.25rem;
-  border: none;
-  border-bottom: 2px solid $color-base-5;
-  border-top-left-radius: $radius-1;
-  border-top-right-radius: $radius-1;
-  background: none;
-  outline: none;
-}
-
-input:focus,
-select:focus,
-textarea:focus,
-fieldset:focus,
-legend:focus,
-datalist:focus,
-output:focus,
-optgroup:focus {
-  border-bottom-color: $color-black;
-  background: $color-base-1;
-}
-
-.dark input:focus,
-.dark select:focus,
-.dark textarea:focus,
-.dark button:focus,
-.dark fieldset:focus,
-.dark legend:focus,
-.dark datalist:focus,
-.dark output:focus,
-.dark optgroup:focus {
-  border-bottom-color: $color-white;
-  background: $color-base-9;
-}
-
-form h3 {
-  margin-bottom: $line-height;
-}
-
-form label {
-  color: $color-black;
-}
-
-.dark form label {
-  color: $color-white;
-}
-
-form label,
-form button {
-  vertical-align: middle;
-  text-align: left;
-}
-
-form button[type="submit"] {
-  margin-top: $line-height;
-}
-
-form .inline-single button[type="submit"] {
-  margin-top: 0.5rem;
-}
-
-form button.show {
-  display: inline-block;
-}
-
-// Make all buttons of type button small on forms
-form button[type="button"] .material-icons-round {
-  font-size: 1rem;
-}
-
-form {
-  margin: 0;
-  padding-bottom: $line-height;
-  
-  input,
-  label,
-  select {
-    display: block;
-    margin-bottom: 0.5rem;
-  }
-
-  textarea {
-    min-width: 100%;
-    max-width: 100%;
-    height: 5rem;
-    margin-bottom: 0.5rem;
-  }
-
-  // Hide file input fields
-  input[type="file"] {
-    display: none;
-  }
-
-  input[type="checkbox"] {
-    width: 2rem;
-  }
-
-  input.hours,
-  select.minutes {
-    display: inline-block;
-    margin-right: 0.25rem;
-  }
-
-  input.hours {
-    width: 2.2rem;
-  }
-
-  select.minutes {
-    width: 3.5rem;
-    height: 2.2rem;
-  }
-}
-/*-------------------------------------*/
-
-/*---------------------------------------
 	Main Navigation Menu
 	Back Button
 ---------------------------------------*/
@@ -463,7 +327,8 @@ form {
 /* Stick Menu        */
 /*-------------------*/
 #betta_menu.stick {
-  position: fixed; top: 0;
+  position: fixed;
+  top: 0;
   box-shadow: $shadow-level-2;
 }
 
@@ -523,7 +388,9 @@ form {
 /* Sidebar Menu      */
 /*-------------------*/
 #betta_menu.sidebar {
-  position: fixed; top: 0; bottom: 0;
+  position: fixed;
+  top: 0;
+  bottom: 0;
   padding: 1rem;
   box-shadow: none;
 }
@@ -604,7 +471,9 @@ form {
   /* Display menu as toolbar */
   #betta_menu.toolbar {
     display: block;
-    position: fixed; top: auto; bottom: 0;
+    position: fixed;
+    top: auto;
+    bottom: 0;
     padding: 0.25rem 0 0.5rem 0;
     box-shadow: $shadow-level-2-i;
     overflow: hidden;
@@ -643,7 +512,9 @@ form {
 ---------------------------------------*/
 #betta_home-button,
 #betta_back-button {
-  position: fixed; top: 1.25rem; left: 1.25rem;
+  position: fixed;
+  top: 1.25rem;
+  left: 1.25rem;
   width: 3rem;
   height: 3rem;
   z-index: 15;
@@ -759,7 +630,9 @@ footer {
 footer.rotated {
   @media (min-width: 800px) {
     text-align: left;
-    position: fixed; bottom: 100vh; right: 0rem;
+    position: fixed;
+    bottom: 100vh;
+    right: 0rem;
     width: 100vh;
     padding: 0 1rem;
     -webkit-transform: rotate(-90deg);
@@ -912,8 +785,7 @@ button.dark:active:enabled {
   border-radius: 2rem;
 }
 
-.icon-button.filled .material-icons-round /* deprecated */
-{
+.icon-button.filled .material-icons-round /* deprecated */ {
   color: $color-black;
 }
 
@@ -945,8 +817,6 @@ button.dark:active:enabled {
   padding-right: 0.5rem;
 }
 
-
-
 .icon-button .material-icons-round, /* deprecated */
 .icon-button>.icon {
   vertical-align: top;
@@ -954,7 +824,7 @@ button.dark:active:enabled {
   font-size: 1.8rem;
 }
 
-.dark .icon-button>.icon {
+.dark .icon-button > .icon {
   color: $color-base-1;
 }
 
@@ -1031,6 +901,9 @@ button.icon-button.simple:active,
 /*-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
     Custom Classes
 -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-*/
+.normal {
+  font-weight: normal;
+}
 
 .center {
   text-align: center;
@@ -1719,7 +1592,11 @@ a.card-double:active {
 ---------------------------------------*/
 .lightbox {
   display: none;
-  position: fixed; top: 0; left: 0; bottom: 0; right: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
   background: $color-white;
   z-index: 100;
 }
@@ -1837,7 +1714,9 @@ a.card-double:active {
 	Version
 ---------------------------------------*/
 p.version {
-  position: fixed; bottom: 70vh; right: 0.5rem;
+  position: fixed;
+  bottom: 70vh;
+  right: 0.5rem;
   width: 70vh;
   -webkit-transform: rotate(-90deg);
   -webkit-transform-origin: right bottom;
@@ -1863,7 +1742,11 @@ p.version {
 ---------------------------------------*/
 #notification {
   display: none;
-  position: fixed; top: 0; left: 0; bottom: 0; right: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
   z-index: 101;
 }
 
