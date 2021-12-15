@@ -668,208 +668,6 @@ img.round {
 }
 /*-------------------------------------*/
 /*---------------------------------------
-	Main Navigation Menu
-	Back Button
----------------------------------------*/
-#betta_menu {
-  position: absolute;
-  left: 0;
-  right: 0;
-  text-align: center;
-  overflow: show;
-  z-index: 10;
-  background: #ffffff;
-  transition: 0.3s;
-}
-
-.dark #betta_menu {
-  background: #121212;
-}
-
-.menu-spacer {
-  display: block;
-  padding-top: 2.5rem;
-}
-
-/*-------------------*/
-/* Stick Menu        */
-/*-------------------*/
-#betta_menu.stick {
-  position: fixed;
-  top: 0;
-  box-shadow: 0 2px 6px 1px rgba(0, 0, 0, 0.2);
-}
-
-.dark #betta_menu.stick {
-  box-shadow: 0 2px 6px 1px rgba(0, 0, 0, 0.9);
-}
-
-/*-------------------*/
-#betta_menu ul {
-  padding: 0;
-  margin: 0;
-  text-align: center;
-}
-
-#betta_menu ul li {
-  display: inline-block;
-  margin: 0.25rem;
-  list-style: none;
-}
-
-#betta_menu ul li a {
-  display: inline-block;
-  border-radius: 2rem;
-  vertical-align: middle;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-
-.dark #betta_menu ul li a img {
-  filter: invert(1);
-}
-
-#betta_menu ul li a .text {
-  display: block;
-  height: 1.5rem;
-  padding: 0.5rem;
-  line-height: 1.5rem;
-}
-
-#betta_menu ul li a .text {
-  padding: 0.25rem 0.75rem;
-}
-
-#betta_menu ul li a.active {
-  background: #e0e0e0;
-}
-
-.dark #betta_menu ul li a.active {
-  background: #616161;
-}
-
-#betta_menu ul li button {
-  z-index: 99;
-}
-
-/*-------------------*/
-/* Sidebar Menu      */
-/*-------------------*/
-#betta_menu.sidebar {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  padding: 1rem;
-  box-shadow: none;
-}
-
-#betta_menu.sidebar > ul > li {
-  display: block;
-  text-align: left;
-}
-
-@media (min-width: 800px) {
-  #betta_menu.sidebar {
-    width: 5rem;
-  }
-}
-#betta_menu.sidebar + main {
-  margin-left: auto;
-}
-
-/*-------------------*/
-@media (hover: hover) {
-  #betta_menu ul li a:hover {
-    background: #f5f5f5;
-  }
-
-  .dark #betta_menu ul li a:hover {
-    background: #212121;
-  }
-
-  #betta_menu ul li a.active:hover {
-    background: #e0e0e0;
-  }
-
-  .dark #betta_menu ul li a.active:hover {
-    background: #616161;
-  }
-}
-@media (max-width: 800px) {
-  .sidebar + main {
-    margin-left: auto;
-  }
-
-  #betta_menu > ul {
-    position: absolute;
-    bottom: 6rem;
-  }
-
-  #betta_menu,
-.sidebar {
-    display: none;
-    padding: 5rem 3rem;
-    width: auto;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    overflow-y: scroll;
-  }
-
-  #betta_menu.show,
-.sidebar.show {
-    display: block;
-  }
-
-  #betta_menu > ul > li {
-    display: block;
-    text-align: left;
-    margin-bottom: 0.75rem;
-  }
-
-  #betta_menu > ul > li > a {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-    letter-spacing: 0.05rem;
-  }
-
-  /* Display menu as toolbar */
-  #betta_menu.toolbar {
-    display: block;
-    position: fixed;
-    top: auto;
-    bottom: 0;
-    padding: 0.25rem 0 0.5rem 0;
-    box-shadow: 0 -2px 6px 1px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-  }
-
-  .dark #betta_menu.toolbar {
-    box-shadow: 0 -2px 6px 1px rgba(0, 0, 0, 0.9);
-  }
-
-  #betta_menu.toolbar > ul {
-    position: static;
-  }
-
-  #betta_menu.toolbar > ul > li {
-    display: inline-block;
-    text-align: left;
-    margin-bottom: 0rem;
-  }
-}
-#betta_menu ul li a:active {
-  background: #eeeeee;
-  transition: 0.1s;
-}
-
-.dark #betta_menu ul li a:active {
-  background: #424242;
-}
-
-/*-------------------------------------*/
-/*---------------------------------------
   Home Button
 	Menu Button
 	Back Button
@@ -2483,6 +2281,18 @@ Important text, used to give a sense of
 urgency and seriousness.
 */
 /*-------------------------------------*/
+/*---------------------------------------
+	Handwriting
+---------------------------------------*/
+.handwriting {
+  font-family: "Caveat" !important;
+}
+
+/*-------------------------------------*/
+.no-margin {
+  margin: 0;
+}
+
 /* All possible form elements
 input,
 label,
@@ -2692,6 +2502,206 @@ form > button.icon-button {
 
 .dark .google-maps {
   box-shadow: 0 2px 6px 1px rgba(0, 0, 0, 0.9);
+}
+
+/*---------------------------------------
+	Main Navigation Menu
+---------------------------------------*/
+#betta_menu {
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+  overflow: show;
+  z-index: 10;
+  background: #ffffff;
+  transition: 0.3s;
+}
+
+.dark #betta_menu {
+  background: #121212;
+}
+
+.menu-spacer {
+  display: block;
+  padding-top: 2.5rem;
+}
+
+/*-------------------*/
+/* Stick Menu        */
+/*-------------------*/
+#betta_menu.stick {
+  position: fixed;
+  top: 0;
+  box-shadow: 0 2px 6px 1px rgba(0, 0, 0, 0.2);
+}
+
+.dark #betta_menu.stick {
+  box-shadow: 0 2px 6px 1px rgba(0, 0, 0, 0.9);
+}
+
+/*-------------------*/
+#betta_menu ul {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+#betta_menu ul li {
+  display: inline-block;
+  margin: 0.25rem;
+  list-style: none;
+}
+
+#betta_menu ul li a {
+  display: inline-block;
+  border-radius: 2rem;
+  vertical-align: middle;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.dark #betta_menu ul li a img {
+  filter: invert(1);
+}
+
+#betta_menu ul li a .text {
+  display: block;
+  height: 1.5rem;
+  padding: 0.5rem;
+  line-height: 1.5rem;
+}
+
+#betta_menu ul li a .text {
+  padding: 0.25rem 0.75rem;
+}
+
+#betta_menu ul li a.active {
+  background: #e0e0e0;
+}
+
+.dark #betta_menu ul li a.active {
+  background: #616161;
+}
+
+#betta_menu ul li button {
+  z-index: 99;
+}
+
+/*-------------------*/
+/* Sidebar Menu      */
+/*-------------------*/
+#betta_menu.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  padding: 1rem;
+  box-shadow: none;
+}
+
+#betta_menu.sidebar > ul > li {
+  display: block;
+  text-align: left;
+}
+
+@media (min-width: 800px) {
+  #betta_menu.sidebar {
+    width: 5rem;
+  }
+}
+#betta_menu.sidebar + main {
+  margin-left: auto;
+}
+
+/*-------------------*/
+@media (hover: hover) {
+  #betta_menu ul li a:hover {
+    background: #f5f5f5;
+  }
+
+  .dark #betta_menu ul li a:hover {
+    background: #212121;
+  }
+
+  #betta_menu ul li a.active:hover {
+    background: #e0e0e0;
+  }
+
+  .dark #betta_menu ul li a.active:hover {
+    background: #616161;
+  }
+}
+@media (max-width: 800px) {
+  .sidebar + main {
+    margin-left: auto;
+  }
+
+  #betta_menu > ul {
+    position: absolute;
+    bottom: 6rem;
+  }
+
+  #betta_menu,
+.sidebar {
+    display: none;
+    padding: 5rem 3rem;
+    width: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-y: scroll;
+  }
+
+  #betta_menu.show,
+.sidebar.show {
+    display: block;
+  }
+
+  #betta_menu > ul > li {
+    display: block;
+    text-align: left;
+    margin-bottom: 0.75rem;
+  }
+
+  #betta_menu > ul > li > a {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    letter-spacing: 0.05rem;
+  }
+
+  /* Display menu as toolbar */
+  #betta_menu.toolbar {
+    display: block;
+    position: fixed;
+    top: auto;
+    bottom: 0;
+    padding: 0.25rem 0 0.5rem 0;
+    box-shadow: 0 -2px 6px 1px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+  }
+
+  .dark #betta_menu.toolbar {
+    box-shadow: 0 -2px 6px 1px rgba(0, 0, 0, 0.9);
+  }
+
+  #betta_menu.toolbar > ul {
+    position: static;
+  }
+
+  #betta_menu.toolbar > ul > li {
+    display: inline-block;
+    text-align: left;
+    margin-bottom: 0rem;
+  }
+}
+#betta_menu ul li a:active {
+  background: #eeeeee;
+  transition: 0.1s;
+}
+
+.dark #betta_menu ul li a:active {
+  background: #424242;
 }
 
 .tooltip {
