@@ -360,6 +360,9 @@ template {
   Font sizing
 ---------------------------------------*/
 /*---------------------------------------
+  Padding
+---------------------------------------*/
+/*---------------------------------------
   Transitions
 ---------------------------------------*/
 /*---------------------------------------
@@ -2449,6 +2452,27 @@ code {
   white-space: nowrap;
 }
 
+/*---------------------------------------
+	Thin expandable card
+---------------------------------------*/
+.b-card-thin {
+  width: 100%;
+  background: #eeeeee;
+}
+
+.b-card-thin div:first-child {
+  height: 2.6rem;
+  padding: 0.5rem 1rem;
+  line-height: 1.6rem;
+  background: #8d7272;
+}
+
+.b-card-thin div:nth-child(2) {
+  height: 1.6rem;
+  background: #5e5151;
+}
+
+/*-------------------------------------*/
 /* All possible form elements
 input,
 label,

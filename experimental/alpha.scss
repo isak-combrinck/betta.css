@@ -1,0 +1,20 @@
+/*---------------------------------------
+	Thin expandable card
+---------------------------------------*/
+.b-card-thin {
+  width: 100%;
+  background: #eeeeee;
+}
+
+.b-card-thin div:first-child {
+  height: $line-height-padded;
+  padding: $padding-text;
+  line-height: $line-height;
+  background: #8d7272;
+}
+
+.b-card-thin div:nth-child(2) {
+  height: $line-height;
+  background: #5e5151;
+}
+/*-------------------------------------*/
