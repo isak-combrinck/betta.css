@@ -4,7 +4,7 @@ option,
 input,
 select,
 button {
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 h1,
@@ -44,12 +44,6 @@ button {
 a {
   text-decoration: none;
   transition: $transition-default;
-}
-
-em {
-  font-style: normal;
-  font-weight: bold;
-  letter-spacing: 0.05rem;
 }
 
 p,

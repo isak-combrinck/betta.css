@@ -2193,12 +2193,6 @@ a {
   transition: 0.2s;
 }
 
-em {
-  font-style: normal;
-  font-weight: bold;
-  letter-spacing: 0.05rem;
-}
-
 p,
 li,
 textarea,
@@ -2437,27 +2431,6 @@ code {
 }
 
 /*---------------------------------------
-	Thin expandable card
----------------------------------------*/
-.b-card-thin {
-  width: 100%;
-  background: #eeeeee;
-}
-
-.b-card-thin div:first-child {
-  height: 2.6rem;
-  padding: 0.5rem 1rem;
-  line-height: 1.6rem;
-  background: #8d7272;
-}
-
-.b-card-thin div:nth-child(2) {
-  height: 1.6rem;
-  background: #5e5151;
-}
-
-/*-------------------------------------*/
-/*---------------------------------------
 	Typographical elements
 ---------------------------------------*/
 /*
@@ -2493,6 +2466,12 @@ Does not convey a different voice or mood
 neither does it make the text more impor-
 tant.
 */
+em {
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: 0.05rem;
+}
+
 /*
 Important text, used to give a sense of
 urgency and seriousness.
@@ -2533,6 +2512,9 @@ form optgroup {
   border-top-right-radius: 0.25rem;
   background: none;
   outline: none;
+}
+form label {
+  box-sizing: border-box;
 }
 form input:focus,
 form select:focus,

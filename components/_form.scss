@@ -35,6 +35,10 @@ form {
     outline: none;
   }
 
+  label {
+    box-sizing: border-box;
+  }
+
   input:focus,
   select:focus,
   textarea:focus,
@@ -62,11 +66,11 @@ form {
     text-align: left;
   }
 
-  button[type="submit"] {
+  button[type='submit'] {
     margin-top: $line-height;
   }
 
-  .inline-single button[type="submit"] {
+  .inline-single button[type='submit'] {
     margin-top: 0.5rem;
   }
 
@@ -75,7 +79,7 @@ form {
   }
 
   // Make all buttons of type button small on forms
-  button[type="button"] .material-icons-round {
+  button[type='button'] .material-icons-round {
     font-size: 1rem;
   }
 
@@ -94,11 +98,11 @@ form {
   }
 
   // Hide file input fields
-  input[type="file"] {
+  input[type='file'] {
     display: none;
   }
 
-  input[type="checkbox"] {
+  input[type='checkbox'] {
     width: 2rem;
   }
 
