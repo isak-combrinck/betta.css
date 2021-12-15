@@ -18,3 +18,50 @@
   background: #5e5151;
 }
 /*-------------------------------------*/
+
+/*---------------------------------------
+	Typographical elements
+---------------------------------------*/
+/*
+Italic text, used to convey a change
+of in voice or mood.
+*/
+i {
+  font-style: italic;
+}
+
+/*
+Bold text, used to draw attention without
+changing the importance, voice or mood.
+*/
+b {
+  font-weight: bold;
+}
+
+/*
+Small text, used for fine-print or copy-
+right notices, does not make the text
+less important.
+*/
+small {
+  font-size: $font-small;
+}
+
+/*
+Emphasized text, used to stress emphasis.
+Changes the meaning of a sentence, depen-
+ding on what word(s) it's applied to.
+Does not convey a different voice or mood
+neither does it make the text more impor-
+tant.
+*/
+em {
+}
+
+/*
+Important text, used to give a sense of
+urgency and seriousness.
+*/
+strong {
+}
+/*-------------------------------------*/
