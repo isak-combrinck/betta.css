@@ -12,6 +12,11 @@ option,
 optgroup
 */
 
+details form {
+  padding-top: $line-height;
+  padding-bottom: 0;
+}
+
 form {
   margin: 0;
   padding-bottom: $line-height;
