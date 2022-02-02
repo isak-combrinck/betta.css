@@ -62,12 +62,14 @@
 #betta_menu ul li a .text {
   display: block;
   height: 1.5rem;
-  padding: 0.5rem;
+  padding: 0.25rem 0.75rem;
   line-height: 1.5rem;
 }
 
-#betta_menu ul li a .text {
-  padding: 0.25rem 0.75rem;
+@media (max-width: 800px) {
+  #betta_menu ul li a .text {
+    margin-top: 1.5rem;
+  }
 }
 
 #betta_menu ul li a.active {
@@ -132,10 +134,12 @@
     margin-left: auto;
   }
 
-  #betta_menu > ul {
-    position: absolute;
-    bottom: 6rem;
-  }
+  // #betta_menu > ul {
+  //   position: absolute;
+  //   bottom: 8rem;
+  //   left: 0;
+  //   right: 0;
+  // }
 
   #betta_menu,
   .sidebar {
@@ -145,7 +149,13 @@
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
+    /*
+    Fix for mobile browsers that hide
+    the browser bar on top on scroll.
+    */
+    padding-bottom: 10rem;
+    bottom: -5rem;
+    /*---*/
     overflow-y: scroll;
   }
 
@@ -154,13 +164,14 @@
     display: block;
   }
 
-  #betta_menu > ul > li {
+  #betta_menu ul li {
     display: block;
     text-align: left;
     margin-bottom: 0.75rem;
+    text-align: center;
   }
 
-  #betta_menu > ul > li > a {
+  #betta_menu ul li a {
     font-size: 1.25rem;
     line-height: 1.75rem;
     letter-spacing: 0.05rem;
