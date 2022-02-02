@@ -6,18 +6,23 @@ A collection of CSS styles.
 A project by Isak Combrinck & Dahman Ramdani.
 ---------------------------------------*/
 
-@import "vendors/normalize.scss";
+@import 'vendors/normalize.scss';
 
-@import "abstracts/functions";
-@import "abstracts/mixins";
-@import "abstracts/variables";
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
 
-@import "base/base";
-@import "base/animations";
-@import "base/typography";
-@import "base/utilities";
+@import 'base/base';
+@import 'base/animations';
+@import 'base/typography';
+@import 'base/utilities';
 
-@import "components/tooltip";
+@import 'experimental/alpha';
 
-@import "layout/header";
-@import "layout/loader";
+@import 'components/form';
+@import 'components/google-maps';
+@import 'components/menu';
+@import 'components/tooltip';
+
+@import 'layout/header';
+@import 'layout/loader';

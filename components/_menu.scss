@@ -1,0 +1,202 @@
+/*---------------------------------------
+	Main Navigation Menu
+---------------------------------------*/
+#betta_menu {
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+  overflow: show;
+  z-index: 10;
+  background: $color-white;
+  transition: $transition-slow;
+}
+
+.dark #betta_menu {
+  background: $color-base-10;
+}
+
+.menu-spacer {
+  display: block;
+  padding-top: 2.5rem;
+}
+
+/*-------------------*/
+/* Stick Menu        */
+/*-------------------*/
+#betta_menu.stick {
+  position: fixed;
+  top: 0;
+  box-shadow: $shadow-level-2;
+}
+
+.dark #betta_menu.stick {
+  box-shadow: $dark-shadow-level-2;
+}
+/*-------------------*/
+
+#betta_menu ul {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+#betta_menu ul li {
+  display: inline-block;
+  margin: 0.25rem;
+  list-style: none;
+}
+
+#betta_menu ul li a {
+  display: inline-block;
+  border-radius: 2rem;
+  vertical-align: middle;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.dark #betta_menu ul li a img {
+  filter: invert(1);
+}
+
+#betta_menu ul li a .text {
+  display: block;
+  height: 1.5rem;
+  padding: 0.5rem;
+  line-height: 1.5rem;
+}
+
+#betta_menu ul li a .text {
+  padding: 0.25rem 0.75rem;
+}
+
+#betta_menu ul li a.active {
+  background: $color-base-3;
+}
+
+.dark #betta_menu ul li a.active {
+  background: $color-base-7;
+}
+
+#betta_menu ul li button {
+  z-index: 99;
+}
+
+/*-------------------*/
+/* Sidebar Menu      */
+/*-------------------*/
+#betta_menu.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  padding: 1rem;
+  box-shadow: none;
+}
+
+#betta_menu.sidebar > ul > li {
+  display: block;
+  text-align: left;
+}
+
+@media (min-width: 800px) {
+  #betta_menu.sidebar {
+    width: 5rem;
+  }
+}
+
+#betta_menu.sidebar + main {
+  margin-left: auto;
+}
+/*-------------------*/
+
+@media (hover: hover) {
+  #betta_menu ul li a:hover {
+    background: $color-base-1;
+  }
+
+  .dark #betta_menu ul li a:hover {
+    background: $color-base-9;
+  }
+
+  #betta_menu ul li a.active:hover {
+    background: $color-base-3;
+  }
+
+  .dark #betta_menu ul li a.active:hover {
+    background: $color-base-7;
+  }
+}
+
+@media (max-width: 800px) {
+  .sidebar + main {
+    margin-left: auto;
+  }
+
+  #betta_menu > ul {
+    position: absolute;
+    bottom: 6rem;
+  }
+
+  #betta_menu,
+  .sidebar {
+    display: none;
+    padding: 5rem 3rem;
+    width: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-y: scroll;
+  }
+
+  #betta_menu.show,
+  .sidebar.show {
+    display: block;
+  }
+
+  #betta_menu > ul > li {
+    display: block;
+    text-align: left;
+    margin-bottom: 0.75rem;
+  }
+
+  #betta_menu > ul > li > a {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    letter-spacing: 0.05rem;
+  }
+
+  /* Display menu as toolbar */
+  #betta_menu.toolbar {
+    display: block;
+    position: fixed;
+    top: auto;
+    bottom: 0;
+    padding: 0.25rem 0 0.5rem 0;
+    box-shadow: $shadow-level-2-i;
+    overflow: hidden;
+  }
+
+  .dark #betta_menu.toolbar {
+    box-shadow: $dark-shadow-level-2-i;
+  }
+
+  #betta_menu.toolbar > ul {
+    position: static;
+  }
+
+  #betta_menu.toolbar > ul > li {
+    display: inline-block;
+    text-align: left;
+    margin-bottom: 0rem;
+  }
+}
+
+#betta_menu ul li a:active {
+  background: $color-base-2;
+  transition: 0.1s;
+}
+
+.dark #betta_menu ul li a:active {
+  background: $color-base-8;
+}

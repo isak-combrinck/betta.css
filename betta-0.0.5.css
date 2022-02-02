@@ -360,6 +360,9 @@ template {
   Font sizing
 ---------------------------------------*/
 /*---------------------------------------
+  Padding
+---------------------------------------*/
+/*---------------------------------------
   Transitions
 ---------------------------------------*/
 /*---------------------------------------
@@ -665,319 +668,6 @@ img.round {
 }
 /*-------------------------------------*/
 /*---------------------------------------
-	Forms
----------------------------------------*/
-form {
-  margin: 0;
-  padding-bottom: 1.6rem;
-}
-
-/* Form elements
-input,
-label,
-select,
-textarea,
-button,
-fieldset,
-legend,
-datalist,
-output,
-option,
-optgroup {
-
-} */
-input,
-select,
-textarea,
-fieldset,
-legend,
-datalist,
-output,
-optgroup {
-  box-sizing: border-box;
-  min-height: 2rem;
-  padding: 0 0.25rem;
-  border: none;
-  border-bottom: 2px solid #9e9e9e;
-  border-top-left-radius: 0.25rem;
-  border-top-right-radius: 0.25rem;
-  background: none;
-  outline: none;
-}
-
-input:focus,
-select:focus,
-textarea:focus,
-fieldset:focus,
-legend:focus,
-datalist:focus,
-output:focus,
-optgroup:focus {
-  border-bottom-color: #000000;
-  background: #f5f5f5;
-}
-
-.dark input:focus,
-.dark select:focus,
-.dark textarea:focus,
-.dark button:focus,
-.dark fieldset:focus,
-.dark legend:focus,
-.dark datalist:focus,
-.dark output:focus,
-.dark optgroup:focus {
-  border-bottom-color: #ffffff;
-  background: #212121;
-}
-
-form h3 {
-  margin-bottom: 1.6rem;
-}
-
-form label {
-  color: #000000;
-}
-
-.dark form label {
-  color: #ffffff;
-}
-
-form label,
-form button {
-  vertical-align: middle;
-  text-align: left;
-}
-
-form button[type=submit] {
-  margin-top: 1.6rem;
-}
-
-form .inline-single button[type=submit] {
-  margin-top: 0.5rem;
-}
-
-form button.show {
-  display: inline-block;
-}
-
-form button[type=button] .material-icons-round {
-  font-size: 1rem;
-}
-
-form input[type=file] {
-  display: none;
-}
-
-form textarea {
-  min-width: 100%;
-  max-width: 100%;
-  height: 5rem;
-}
-
-/*-------------------------------------*/
-/*---------------------------------------
-	Main Navigation Menu
-	Back Button
----------------------------------------*/
-#betta_menu {
-  position: absolute;
-  left: 0;
-  right: 0;
-  text-align: center;
-  overflow: show;
-  z-index: 10;
-  background: #ffffff;
-  transition: 0.3s;
-}
-
-.dark #betta_menu {
-  background: #121212;
-}
-
-.menu-spacer {
-  display: block;
-  padding-top: 2.5rem;
-}
-
-/*-------------------*/
-/* Stick Menu        */
-/*-------------------*/
-#betta_menu.stick {
-  position: fixed;
-  top: 0;
-  box-shadow: 0 2px 6px 1px rgba(0, 0, 0, 0.2);
-}
-
-.dark #betta_menu.stick {
-  box-shadow: 0 2px 6px 1px rgba(0, 0, 0, 0.9);
-}
-
-/*-------------------*/
-#betta_menu ul {
-  padding: 0;
-  margin: 0;
-  text-align: center;
-}
-
-#betta_menu ul li {
-  display: inline-block;
-  margin: 0.25rem;
-  list-style: none;
-}
-
-#betta_menu ul li a {
-  display: inline-block;
-  border-radius: 2rem;
-  vertical-align: middle;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-
-.dark #betta_menu ul li a img {
-  filter: invert(1);
-}
-
-#betta_menu ul li a .text {
-  display: block;
-  height: 1.5rem;
-  padding: 0.5rem;
-  line-height: 1.5rem;
-}
-
-#betta_menu ul li a .text {
-  padding: 0.25rem 0.75rem;
-}
-
-#betta_menu ul li a.active {
-  background: #e0e0e0;
-}
-
-.dark #betta_menu ul li a.active {
-  background: #616161;
-}
-
-#betta_menu ul li button {
-  z-index: 99;
-}
-
-/*-------------------*/
-/* Sidebar Menu      */
-/*-------------------*/
-#betta_menu.sidebar {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  padding: 1rem;
-  box-shadow: none;
-}
-
-#betta_menu.sidebar > ul > li {
-  display: block;
-  text-align: left;
-}
-
-@media (min-width: 800px) {
-  #betta_menu.sidebar {
-    width: 5rem;
-  }
-}
-#betta_menu.sidebar + main {
-  margin-left: auto;
-}
-
-/*-------------------*/
-@media (hover: hover) {
-  #betta_menu ul li a:hover {
-    background: #f5f5f5;
-  }
-
-  .dark #betta_menu ul li a:hover {
-    background: #212121;
-  }
-
-  #betta_menu ul li a.active:hover {
-    background: #e0e0e0;
-  }
-
-  .dark #betta_menu ul li a.active:hover {
-    background: #616161;
-  }
-}
-@media (max-width: 800px) {
-  .sidebar + main {
-    margin-left: auto;
-  }
-
-  #betta_menu > ul {
-    position: absolute;
-    bottom: 6rem;
-  }
-
-  #betta_menu,
-.sidebar {
-    display: none;
-    padding: 5rem 3rem;
-    width: auto;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    overflow-y: scroll;
-  }
-
-  #betta_menu.show,
-.sidebar.show {
-    display: block;
-  }
-
-  #betta_menu > ul > li {
-    display: block;
-    text-align: left;
-    margin-bottom: 0.75rem;
-  }
-
-  #betta_menu > ul > li > a {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-    letter-spacing: 0.05rem;
-  }
-
-  /* Display menu as toolbar */
-  #betta_menu.toolbar {
-    display: block;
-    position: fixed;
-    top: auto;
-    bottom: 0;
-    padding: 0.25rem 0 0.5rem 0;
-    box-shadow: 0 -2px 6px 1px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-  }
-
-  .dark #betta_menu.toolbar {
-    box-shadow: 0 -2px 6px 1px rgba(0, 0, 0, 0.9);
-  }
-
-  #betta_menu.toolbar > ul {
-    position: static;
-  }
-
-  #betta_menu.toolbar > ul > li {
-    display: inline-block;
-    text-align: left;
-    margin-bottom: 0rem;
-  }
-}
-#betta_menu ul li a:active {
-  background: #eeeeee;
-  transition: 0.1s;
-}
-
-.dark #betta_menu ul li a:active {
-  background: #424242;
-}
-
-/*-------------------------------------*/
-/*---------------------------------------
   Home Button
 	Menu Button
 	Back Button
@@ -1252,6 +942,12 @@ button.dark:active:enabled {
   padding: 0.5rem;
   border-radius: 2rem;
 }
+@media (min-width: 800px) {
+  .icon-button {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
 
 .icon-button.filled .material-icons-round {
   color: #000000;
@@ -1366,6 +1062,10 @@ button.icon-button.simple:active,
 /*-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
     Custom Classes
 -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-*/
+.normal {
+  font-weight: normal;
+}
+
 .center {
   text-align: center;
 }
@@ -1451,8 +1151,6 @@ between lines
 .inline-split input,
 .inline-split select,
 .inline-split label {
-  display: block;
-  margin-bottom: 0.5rem;
   width: 100%;
 }
 
@@ -2254,22 +1952,6 @@ p.version {
 
 /*-------------------------------------*/
 /*---------------------------------------
-	Google Maps
----------------------------------------*/
-.google-maps {
-  width: 100%;
-  height: 15rem;
-  border: 0;
-  border-radius: 0.25rem;
-  box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.2);
-}
-
-.dark .google-maps {
-  box-shadow: 0 2px 6px 1px rgba(0, 0, 0, 0.9);
-}
-
-/*-------------------------------------*/
-/*---------------------------------------
 	Size restraints for text sections on
   large screens
 ---------------------------------------*/
@@ -2288,7 +1970,12 @@ p.version {
     transform: rotate(360deg);
   }
 }
-body, textarea, option, input, select, button {
+body,
+textarea,
+option,
+input,
+select,
+button {
   font-family: "Lato", sans-serif;
 }
 
@@ -2329,12 +2016,6 @@ button {
 a {
   text-decoration: none;
   transition: 0.2s;
-}
-
-em {
-  font-style: normal;
-  font-weight: bold;
-  letter-spacing: 0.05rem;
 }
 
 p,
@@ -2561,6 +2242,489 @@ details {
   color: #ffffff;
 }
 
+code {
+  font-family: monospace;
+  font-size: 1em;
+}
+
+code {
+  padding: 0 0.2rem;
+  background: #f5f5f5;
+  border: solid 1px #cccccc;
+  border-radius: 0.2rem;
+  white-space: nowrap;
+}
+
+/*---------------------------------------
+	Typographical elements
+---------------------------------------*/
+/*
+Italic text, used to convey a change
+of in voice or mood.
+*/
+i {
+  font-style: italic;
+}
+
+/*
+Bold text, used to draw attention without
+changing the importance, voice or mood.
+*/
+b {
+  font-weight: bold;
+}
+
+/*
+Small text, used for fine-print or copy-
+right notices, does not make the text
+less important.
+*/
+small {
+  font-size: 0.8rem;
+}
+
+/*
+Emphasized text, used to stress emphasis.
+Changes the meaning of a sentence, depen-
+ding on what word(s) it's applied to.
+Does not convey a different voice or mood
+neither does it make the text more impor-
+tant.
+*/
+em {
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: 0.05rem;
+}
+
+/*
+Important text, used to give a sense of
+urgency and seriousness.
+*/
+/*-------------------------------------*/
+/*---------------------------------------
+	Handwriting
+---------------------------------------*/
+.handwriting {
+  font-family: "Caveat" !important;
+}
+
+/*-------------------------------------*/
+.no-margin {
+  margin: 0;
+}
+
+/* All possible form elements
+input,
+label,
+select,
+textarea,
+button,
+fieldset,
+legend,
+datalist,
+output,
+option,
+optgroup
+*/
+details form {
+  padding-top: 1.6rem;
+  padding-bottom: 0;
+}
+
+form {
+  margin: 0;
+  padding-bottom: 1.6rem;
+  /* Login box */
+}
+form input,
+form select,
+form textarea,
+form fieldset,
+form legend,
+form datalist,
+form output,
+form optgroup {
+  box-sizing: border-box;
+  min-height: 2rem;
+  padding: 0 0.25rem;
+  border: none;
+  border-bottom: 2px solid #9e9e9e;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  background: none;
+  outline: none;
+}
+form label {
+  box-sizing: border-box;
+}
+form input:focus,
+form select:focus,
+form textarea:focus,
+form fieldset:focus,
+form legend:focus,
+form datalist:focus,
+form output:focus,
+form optgroup:focus {
+  border-bottom-color: #000000;
+  background: #f5f5f5;
+}
+form h3 {
+  margin-bottom: 1.6rem;
+}
+form label {
+  line-height: 1.6rem;
+  color: #000000;
+}
+form label,
+form button {
+  vertical-align: middle;
+  text-align: left;
+}
+form button[type=submit] {
+  margin-top: 1.6rem;
+}
+form .inline-single button[type=submit] {
+  margin-top: 0.5rem;
+}
+form button.show {
+  display: inline-block;
+}
+form button[type=button] .material-icons-round {
+  font-size: 1rem;
+}
+form input,
+form label,
+form select {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+form textarea {
+  min-width: 100%;
+  max-width: 100%;
+  height: 5rem;
+  margin-bottom: 0.5rem;
+}
+form input[type=file] {
+  display: none;
+}
+form input[type=checkbox] {
+  width: 2rem;
+}
+form input.hours,
+form select.minutes {
+  display: inline-block;
+  margin-right: 0.25rem;
+}
+form input.hours {
+  width: 2.2rem;
+}
+form select.minutes {
+  width: 3.5rem;
+  height: 2rem;
+}
+form .form-date {
+  box-sizing: border-box;
+  display: inline-block !important;
+  width: 48%;
+  margin-right: 1.5%;
+}
+form .form-date.day,
+form .form-date.month {
+  width: 2.2rem;
+}
+form .form-date.year {
+  width: 3.4rem;
+}
+form .form-error {
+  margin: 0 auto;
+  padding: 0 2rem;
+  max-width: 20rem;
+  text-align: center;
+  color: #d50000;
+}
+form .form-error p {
+  margin-top: 0.5rem;
+}
+form .form-error .material-icons-round {
+  color: #d50000;
+  font-size: 4rem;
+}
+form .form-notice {
+  padding: 2rem 3rem;
+  text-align: center;
+  color: #43a047;
+}
+form .form-notice .material-icons-round {
+  color: #43a047;
+  font-size: 4rem;
+}
+form .error-message {
+  display: block;
+  color: #d50000;
+}
+form .error-message .material-icons-round {
+  vertical-align: text-bottom;
+  color: #d50000;
+}
+form .red-border {
+  border-color: #d50000 !important;
+}
+form.login {
+  width: 15rem;
+  margin: 0 auto;
+  text-align: center;
+}
+form.login > button, form.login > input {
+  display: block;
+  margin: 0 auto 1rem auto;
+}
+form.login > input {
+  width: 100%;
+}
+form .input-aside-button {
+  margin-top: -0.25rem;
+  margin-bottom: 0.25rem;
+}
+form .input-aside-button > input {
+  width: calc(100% - 2.5rem);
+}
+form .input-aside-button > button {
+  vertical-align: bottom;
+}
+form > button.icon-button {
+  margin-top: 1rem;
+}
+
+.dark input:focus,
+.dark select:focus,
+.dark textarea:focus,
+.dark button:focus,
+.dark fieldset:focus,
+.dark legend:focus,
+.dark datalist:focus,
+.dark output:focus,
+.dark optgroup:focus {
+  border-bottom-color: #ffffff;
+  background: #212121;
+}
+
+.dark form label {
+  color: #ffffff;
+}
+
+.google-maps {
+  width: 100%;
+  height: 15rem;
+  border: 0;
+  border-radius: 0.25rem;
+  box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.2);
+}
+
+.dark .google-maps {
+  box-shadow: 0 2px 6px 1px rgba(0, 0, 0, 0.9);
+}
+
+/*---------------------------------------
+	Main Navigation Menu
+---------------------------------------*/
+#betta_menu {
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+  overflow: show;
+  z-index: 10;
+  background: #ffffff;
+  transition: 0.3s;
+}
+
+.dark #betta_menu {
+  background: #121212;
+}
+
+.menu-spacer {
+  display: block;
+  padding-top: 2.5rem;
+}
+
+/*-------------------*/
+/* Stick Menu        */
+/*-------------------*/
+#betta_menu.stick {
+  position: fixed;
+  top: 0;
+  box-shadow: 0 2px 6px 1px rgba(0, 0, 0, 0.2);
+}
+
+.dark #betta_menu.stick {
+  box-shadow: 0 2px 6px 1px rgba(0, 0, 0, 0.9);
+}
+
+/*-------------------*/
+#betta_menu ul {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+#betta_menu ul li {
+  display: inline-block;
+  margin: 0.25rem;
+  list-style: none;
+}
+
+#betta_menu ul li a {
+  display: inline-block;
+  border-radius: 2rem;
+  vertical-align: middle;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.dark #betta_menu ul li a img {
+  filter: invert(1);
+}
+
+#betta_menu ul li a .text {
+  display: block;
+  height: 1.5rem;
+  padding: 0.5rem;
+  line-height: 1.5rem;
+}
+
+#betta_menu ul li a .text {
+  padding: 0.25rem 0.75rem;
+}
+
+#betta_menu ul li a.active {
+  background: #e0e0e0;
+}
+
+.dark #betta_menu ul li a.active {
+  background: #616161;
+}
+
+#betta_menu ul li button {
+  z-index: 99;
+}
+
+/*-------------------*/
+/* Sidebar Menu      */
+/*-------------------*/
+#betta_menu.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  padding: 1rem;
+  box-shadow: none;
+}
+
+#betta_menu.sidebar > ul > li {
+  display: block;
+  text-align: left;
+}
+
+@media (min-width: 800px) {
+  #betta_menu.sidebar {
+    width: 5rem;
+  }
+}
+#betta_menu.sidebar + main {
+  margin-left: auto;
+}
+
+/*-------------------*/
+@media (hover: hover) {
+  #betta_menu ul li a:hover {
+    background: #f5f5f5;
+  }
+
+  .dark #betta_menu ul li a:hover {
+    background: #212121;
+  }
+
+  #betta_menu ul li a.active:hover {
+    background: #e0e0e0;
+  }
+
+  .dark #betta_menu ul li a.active:hover {
+    background: #616161;
+  }
+}
+@media (max-width: 800px) {
+  .sidebar + main {
+    margin-left: auto;
+  }
+
+  #betta_menu > ul {
+    position: absolute;
+    bottom: 6rem;
+  }
+
+  #betta_menu,
+.sidebar {
+    display: none;
+    padding: 5rem 3rem;
+    width: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-y: scroll;
+  }
+
+  #betta_menu.show,
+.sidebar.show {
+    display: block;
+  }
+
+  #betta_menu > ul > li {
+    display: block;
+    text-align: left;
+    margin-bottom: 0.75rem;
+  }
+
+  #betta_menu > ul > li > a {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    letter-spacing: 0.05rem;
+  }
+
+  /* Display menu as toolbar */
+  #betta_menu.toolbar {
+    display: block;
+    position: fixed;
+    top: auto;
+    bottom: 0;
+    padding: 0.25rem 0 0.5rem 0;
+    box-shadow: 0 -2px 6px 1px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+  }
+
+  .dark #betta_menu.toolbar {
+    box-shadow: 0 -2px 6px 1px rgba(0, 0, 0, 0.9);
+  }
+
+  #betta_menu.toolbar > ul {
+    position: static;
+  }
+
+  #betta_menu.toolbar > ul > li {
+    display: inline-block;
+    text-align: left;
+    margin-bottom: 0rem;
+  }
+}
+#betta_menu ul li a:active {
+  background: #eeeeee;
+  transition: 0.1s;
+}
+
+.dark #betta_menu ul li a:active {
+  background: #424242;
+}
+
 .tooltip {
   display: inline-block;
   position: relative;
@@ -2613,13 +2777,23 @@ details {
   border-color: transparent transparent #f5f5f5 transparent;
 }
 
+.sidebar .tooltip > span.tooltip-text {
+  top: 0.5rem;
+  left: 3rem;
+  right: -9rem;
+}
+
+.sidebar .tooltip > span.tooltip-text::after {
+  display: none;
+}
+
 @media (max-width: 800px) {
   nav .tooltip > span.tooltip-text {
     visibility: visible;
     opacity: 1;
     top: 0;
     bottom: 0;
-    left: 3rem;
+    left: 4rem;
     right: auto;
     padding: 0.5rem 0.5rem;
     text-align: left;
@@ -2627,6 +2801,10 @@ details {
     line-height: 1.6rem;
     background-color: #ffffff;
     color: #000000;
+  }
+
+  .sidebar .tooltip > span.tooltip-text {
+    left: 4rem;
   }
 
   .dark nav .tooltip > span.tooltip-text {
@@ -2642,16 +2820,6 @@ details {
     visibility: hidden;
   }
 }
-.sidebar .tooltip > span.tooltip-text {
-  top: 0.5rem;
-  left: 3rem;
-  right: -9rem;
-}
-
-.sidebar .tooltip > span.tooltip-text::after {
-  display: none;
-}
-
 header {
   width: 100%;
   margin: 0 auto;
