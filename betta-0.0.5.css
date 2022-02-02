@@ -1370,8 +1370,18 @@ button.icon-button.simple:active,
   text-align: center;
 }
 
+@media (max-width: 800px) {
+  .center-mobile {
+    text-align: center;
+  }
+}
 .align-right {
   text-align: right;
+}
+
+/* Creates block texts */
+.justify {
+  text-align: justify;
 }
 
 .italic {
@@ -2258,6 +2268,17 @@ p.version {
   box-shadow: 0 2px 6px 1px rgba(0, 0, 0, 0.9);
 }
 
+/*-------------------------------------*/
+/*---------------------------------------
+	Size restraints for text sections on
+  large screens
+---------------------------------------*/
+@media (min-width: 1200px) {
+  .w-80 {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
 /*-------------------------------------*/
 @keyframes spin {
   0% {

@@ -26,7 +26,7 @@ main {
 }
 
 body.dark img {
-  filter: brightness(.9);
+  filter: brightness(0.9);
 }
 
 body,
@@ -97,7 +97,10 @@ li {
   Banner type stuff
 ---------------------------------------*/
 .betta-banner {
-  position: fixed; top: 0; left: 0; right: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   text-align: center;
   z-index: 10;
   box-shadow: $shadow-level-1;
@@ -114,7 +117,9 @@ li {
 }
 
 .betta-support {
-  position: fixed; left: 1rem; bottom: 1rem;
+  position: fixed;
+  left: 1rem;
+  bottom: 1rem;
 }
 
 .betta-support > button {
@@ -379,11 +384,11 @@ form button {
   text-align: left;
 }
 
-form button[type="submit"] {
+form button[type='submit'] {
   margin-top: $line-height;
 }
 
-form .inline-single button[type="submit"] {
+form .inline-single button[type='submit'] {
   margin-top: 0.5rem;
 }
 
@@ -392,12 +397,12 @@ form button.show {
 }
 
 // Make all buttons of type button small on forms
-form button[type="button"] .material-icons-round {
+form button[type='button'] .material-icons-round {
   font-size: 1rem;
 }
 
 // Hide file input fields
-form input[type="file"] {
+form input[type='file'] {
   display: none;
 }
 
@@ -436,7 +441,8 @@ form textarea {
 /* Stick Menu        */
 /*-------------------*/
 #betta_menu.stick {
-  position: fixed; top: 0;
+  position: fixed;
+  top: 0;
   box-shadow: $shadow-level-2;
 }
 
@@ -496,7 +502,9 @@ form textarea {
 /* Sidebar Menu      */
 /*-------------------*/
 #betta_menu.sidebar {
-  position: fixed; top: 0; bottom: 0;
+  position: fixed;
+  top: 0;
+  bottom: 0;
   padding: 1rem;
   box-shadow: none;
 }
@@ -577,7 +585,9 @@ form textarea {
   /* Display menu as toolbar */
   #betta_menu.toolbar {
     display: block;
-    position: fixed; top: auto; bottom: 0;
+    position: fixed;
+    top: auto;
+    bottom: 0;
     padding: 0.25rem 0 0.5rem 0;
     box-shadow: $shadow-level-2-i;
     overflow: hidden;
@@ -616,7 +626,9 @@ form textarea {
 ---------------------------------------*/
 #betta_home-button,
 #betta_back-button {
-  position: fixed; top: 1.25rem; left: 1.25rem;
+  position: fixed;
+  top: 1.25rem;
+  left: 1.25rem;
   width: 3rem;
   height: 3rem;
   z-index: 15;
@@ -732,7 +744,9 @@ footer {
 footer.rotated {
   @media (min-width: 800px) {
     text-align: left;
-    position: fixed; bottom: 100vh; right: 0rem;
+    position: fixed;
+    bottom: 100vh;
+    right: 0rem;
     width: 100vh;
     padding: 0 1rem;
     -webkit-transform: rotate(-90deg);
@@ -885,8 +899,7 @@ button.dark:active:enabled {
   border-radius: 2rem;
 }
 
-.icon-button.filled .material-icons-round /* deprecated */
-{
+.icon-button.filled .material-icons-round /* deprecated */ {
   color: $color-black;
 }
 
@@ -918,8 +931,6 @@ button.dark:active:enabled {
   padding-right: 0.5rem;
 }
 
-
-
 .icon-button .material-icons-round, /* deprecated */
 .icon-button>.icon {
   vertical-align: top;
@@ -927,7 +938,7 @@ button.dark:active:enabled {
   font-size: 1.8rem;
 }
 
-.dark .icon-button>.icon {
+.dark .icon-button > .icon {
   color: $color-base-1;
 }
 
@@ -1009,8 +1020,19 @@ button.icon-button.simple:active,
   text-align: center;
 }
 
+@media (max-width: 800px) {
+  .center-mobile {
+    text-align: center;
+  }
+}
+
 .align-right {
   text-align: right;
+}
+
+/* Creates block texts */
+.justify {
+  text-align: justify;
 }
 
 .italic {
@@ -1694,7 +1716,11 @@ a.card-double:active {
 ---------------------------------------*/
 .lightbox {
   display: none;
-  position: fixed; top: 0; left: 0; bottom: 0; right: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
   background: $color-white;
   z-index: 100;
 }
@@ -1812,7 +1838,9 @@ a.card-double:active {
 	Version
 ---------------------------------------*/
 p.version {
-  position: fixed; bottom: 70vh; right: 0.5rem;
+  position: fixed;
+  bottom: 70vh;
+  right: 0.5rem;
   width: 70vh;
   -webkit-transform: rotate(-90deg);
   -webkit-transform-origin: right bottom;
@@ -1838,7 +1866,11 @@ p.version {
 ---------------------------------------*/
 #notification {
   display: none;
-  position: fixed; top: 0; left: 0; bottom: 0; right: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
   z-index: 101;
 }
 
@@ -1896,5 +1928,17 @@ p.version {
 
 .dark .google-maps {
   box-shadow: $dark-shadow-level-2;
+}
+/*-------------------------------------*/
+
+/*---------------------------------------
+	Size restraints for text sections on
+  large screens
+---------------------------------------*/
+@media (min-width: 1200px) {
+  .w-80 {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 /*-------------------------------------*/
