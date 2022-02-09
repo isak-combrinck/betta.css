@@ -2314,6 +2314,14 @@ urgency and seriousness.
   margin: 0;
 }
 
+/*---------------------------------------
+	Set element position to relative
+---------------------------------------*/
+.relative {
+  position: relative;
+}
+
+/*-------------------------------------*/
 /* All possible form elements
 input,
 label,
