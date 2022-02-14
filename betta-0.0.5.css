@@ -2322,6 +2322,15 @@ urgency and seriousness.
 }
 
 /*-------------------------------------*/
+/*---------------------------------------
+	Hide on mobile screens
+---------------------------------------*/
+@media (max-width: 800px) {
+  .hide-on-mobile {
+    display: none;
+  }
+}
+/*-------------------------------------*/
 /* All possible form elements
 input,
 label,
