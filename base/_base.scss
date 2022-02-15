@@ -1172,6 +1172,10 @@ a.card-double .content {
 
 a.card-double .betta_image {
   background: $color-base-1;
+
+  img {
+    object-fit: cover;
+  }
 }
 
 .dark a.card-double .betta_image {
