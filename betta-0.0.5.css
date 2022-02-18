@@ -2676,8 +2676,8 @@ form > button.icon-button {
     Fix for mobile browsers that hide
     the browser bar on top on scroll.
     */
-    padding-bottom: 10rem;
-    bottom: -5rem;
+    padding-bottom: 20rem;
+    bottom: -15rem;
     /*---*/
     overflow-y: scroll;
   }
