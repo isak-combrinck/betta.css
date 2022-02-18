@@ -190,9 +190,9 @@ img.round {
 ---------------------------------------*/
 .betta_image-strip {
   overflow-x: hidden;
-  overflow-y: hidden;
   white-space: nowrap;
   scrollbar-width: 0;
+  padding-bottom: 1rem;
 }
 
 .betta_image-strip .back,
