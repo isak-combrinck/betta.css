@@ -1,0 +1,59 @@
+/*---------------------------------------
+	Image Strip
+---------------------------------------*/
+.betta_image-strip {
+  overflow-x: hidden;
+  white-space: nowrap;
+  scrollbar-width: 0;
+  padding-bottom: 1rem;
+
+  .back,
+  .forward {
+    position: absolute;
+    margin-top: 8rem;
+    z-index: 5;
+
+    &.hide,
+    &.hide,
+    &:disabled,
+    &:disabled {
+      display: none;
+    }
+  }
+
+  .back {
+    left: calc(50vw - (55rem / 2) - 1rem);
+  }
+
+  .forward {
+    right: calc(50vw - (55rem / 2) - 1rem);
+  }
+
+  .betta_image {
+    display: inline-block;
+    width: calc(50% - 2rem);
+    margin: 0 1rem;
+  }
+
+  @media (max-width: 1000px) {
+    .back {
+      left: 1rem;
+    }
+  
+    .forward {
+      right: 1rem;
+    }
+  }
+
+  @media (max-width: 800px) {
+    .back,
+    .forward {
+      margin-top: -2rem;
+    }
+  
+    .betta_image {
+      width: calc(100% - 2rem);
+      margin: 0 1rem;
+    }
+  }
+}
