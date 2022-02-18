@@ -751,23 +751,28 @@ between lines
   position: relative;
   margin-top: -5rem;
   z-index: 2;
-  padding: 1rem 2rem;
+
+  /* Using 1px padding because if you use
+  0 then the padding from text in the box
+  is also removed. */
+  padding: 1px 2rem;
+  
   background: $color-base-1;
   max-width: 34rem;
+
+  @media (max-width: 800px) {
+    margin-top: 0;
+    padding: 0 1rem;
+    background: none;
+  }
+
+  h2 {
+    margin-top: 1.75rem;
+  }
 }
 
 .dark .betta_overlap-top {
   background: $color-base-9;
-}
-
-@media (max-width: 800px) {
-  .betta_overlap-top {
-    position: relative;
-    margin-top: 0;
-    z-index: 0;
-    padding: 1rem;
-    background: none !important;
-  }
 }
 /*-------------------------------------*/
 
