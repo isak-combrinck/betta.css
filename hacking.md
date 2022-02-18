@@ -2,7 +2,7 @@
 
 ## Compiling the SCSS
 
-Only compile the `betta.scss` file e.g., `sass --watch betta.scss betta-0.0.5.css`
+Only compile the `betta.scss` file e.g., `sass --watch betta.scss betta-next.css`. The --watch parameter should only be used for development. For building release version compile once, using the version number, e.g. `sass betta.scss betta-0.0.5.css`.
 
 ## General
 - `TEMP` is used to denote values that need to be changed
