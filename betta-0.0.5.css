@@ -1616,12 +1616,12 @@ a.card-double .content {
 
 @media (max-width: 800px) {
   .card.contact .phone {
-    top: -2rem;
+    top: 0.5rem;
     left: -2.25rem;
   }
 
   .card.contact .email {
-    top: -2rem;
+    top: 0.5rem;
     right: -2.25rem;
   }
 }
