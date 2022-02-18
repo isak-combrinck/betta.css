@@ -567,53 +567,34 @@ img.round {
   scrollbar-width: 0;
   padding-bottom: 1rem;
 }
-
 .betta_image-strip .back,
 .betta_image-strip .forward {
-  z-index: 99;
   position: absolute;
-  margin-top: 45vh;
+  margin-top: 8rem;
+  z-index: 5;
 }
-
-.betta_image-strip .back:disabled,
+.betta_image-strip .back.hide, .betta_image-strip .back.hide, .betta_image-strip .back:disabled, .betta_image-strip .back:disabled,
+.betta_image-strip .forward.hide,
+.betta_image-strip .forward.hide,
+.betta_image-strip .forward:disabled,
 .betta_image-strip .forward:disabled {
   display: none;
 }
-
 .betta_image-strip .back {
   left: calc(50vw - 27.5rem - 1rem);
-  margin-top: 8rem;
-  z-index: 5;
 }
-
-.betta_image-strip .back {
-  left: calc(50vw - 27.5rem - 1rem);
-  margin-top: 8rem;
-  z-index: 5;
-}
-
-.betta_image-strip .back.hide,
-.betta_image-strip .forward.hide {
-  display: none;
-}
-
 .betta_image-strip .forward {
   right: calc(50vw - 27.5rem - 1rem);
-  margin-top: 8rem;
-  z-index: 5;
 }
-
 .betta_image-strip .betta_image {
   display: inline-block;
   width: calc(50% - 2rem);
-  margin: 1rem;
+  margin: 0 1rem;
 }
-
 @media (max-width: 1000px) {
   .betta_image-strip .back {
     left: 1rem;
   }
-
   .betta_image-strip .forward {
     right: 1rem;
   }
@@ -621,14 +602,14 @@ img.round {
 @media (max-width: 800px) {
   .betta_image-strip .back,
 .betta_image-strip .forward {
-    margin-top: -1rem;
+    margin-top: -2rem;
   }
-
   .betta_image-strip .betta_image {
     width: calc(100% - 2rem);
     margin: 0 1rem;
   }
 }
+
 /*-------------------------------------*/
 /*---------------------------------------
 	Slideshow
