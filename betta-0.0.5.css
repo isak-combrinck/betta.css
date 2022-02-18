@@ -697,6 +697,7 @@ img.round {
 ---------------------------------------*/
 footer {
   box-sizing: border-box;
+  padding-top: 3rem;
   text-align: center;
 }
 @media (min-width: 800px) {
