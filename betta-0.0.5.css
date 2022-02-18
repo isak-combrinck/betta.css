@@ -424,6 +424,12 @@ i {
   vertical-align: top;
 }
 
+a {
+  /* Remove outline from links
+  breaks tab through content highlighting */
+  outline: none;
+}
+
 i,
 img,
 picture,
