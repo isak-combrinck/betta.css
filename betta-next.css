@@ -652,8 +652,20 @@ img.round {
 }
 
 #betta_theme-button {
+  position: fixed;
+  right: 0.5rem;
+  bottom: 0.5rem;
   width: 3rem;
   height: 3rem;
+  z-index: 9;
+}
+@media (max-width: 800px) {
+  #betta_theme-button {
+    position: relative;
+    top: 1.5rem;
+    right: auto;
+    bottom: auto;
+  }
 }
 
 #betta_theme-light-icon,
