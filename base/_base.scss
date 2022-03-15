@@ -330,6 +330,10 @@ img.round {
     top: auto;
     bottom: 0.75rem;
     left: calc(50vw - 6rem) !important;
+
+    @media (max-width: 800px) {
+      display: none;
+    }
   }
 }
 /*-------------------------------------*/
