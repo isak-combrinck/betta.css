@@ -1938,6 +1938,30 @@ p.version {
   }
 }
 /*-------------------------------------*/
+/*---------------------------------------
+	Switch Picture
+---------------------------------------*/
+.switch-picture {
+  display: block;
+  position: relative;
+  top: 1.25rem;
+  left: -1.25rem;
+  z-index: 9;
+  margin-top: -2rem;
+}
+
+@media (max-width: 800px) {
+  .switch-picture {
+    top: 3rem;
+    left: -1rem;
+  }
+}
+@media (hover: hover) {
+  .switch-picture {
+    display: none;
+  }
+}
+/*-------------------------------------*/
 @keyframes spin {
   0% {
     transform: rotate(0deg);
