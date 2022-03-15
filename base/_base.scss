@@ -7,6 +7,12 @@ body {
   }
 }
 
+/* Fixes horizontal scrolling on Safari */
+body, html {
+  position: relative;
+  overflow-x: hidden;
+}
+
 main {
   padding: 3rem 2rem;
   overflow-x: hidden;
@@ -877,7 +883,6 @@ a.card {
   width: 25.5rem;
   max-width: 100%;
   padding: 0;
-  margin-top: 1rem;
   margin: 1rem;
   border-color: $color-base-3;
   border-radius: $radius-1;
@@ -915,6 +920,9 @@ a.card .betta_image img {
 }
 
 /* Cover card */
+a.card.cover {
+  margin-bottom: 1rem;
+}
 a.card.cover .betta_image img,
 a.card.cover .betta_image {
   border-radius: $radius-1;
@@ -1199,100 +1207,124 @@ a.card-double:active {
   width: 25rem;
   max-width: calc(100% - 1.5rem);
   margin: 1.25rem 0.75rem 0 0.75rem;
-}
 
-.card.contact .picture {
-  width: 25rem;
-  max-width: 100%;
-  overflow: hidden;
-}
-
-.card.contact .content {
-  position: relative;
-  width: 16rem;
-  padding: 1rem 0.5rem;
-  margin: -2.75rem auto 1rem auto;
-  z-index: 2;
-  background: $color-base-1;
-}
-
-.dark .card.contact .content {
-  background: $color-base-9;
-}
-
-.card.contact .content p {
-  margin: 0;
-}
-
-.card.contact .phone {
-  position: absolute;
-  top: 1.25rem;
-  left: -1.25rem;
-  border-bottom: none;
-  z-index: 1;
-}
-
-.card.contact .email {
-  position: absolute;
-  top: 1.25rem;
-  right: -1.25rem;
-  border-bottom: none;
-  z-index: 1;
-}
-
-.card.contact .phone:hover + .phone-number,
-.card.contact .email:hover + .email-address {
-  display: block;
-}
-
-.card.contact .phone-number,
-.card.contact .email-address {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  padding-top: 1.3rem;
-  background: $color-base-1;
-}
-
-.dark .card.contact .phone-number,
-.dark .card.contact .email-address {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  padding-top: 1.3rem;
-  background: $color-base-9;
-}
-
-.card.contact .phone-number:hover,
-.card.contact .email-address:hover {
-  display: block;
-}
-
-.card.contact .phone-number:hover + .phone,
-.card.contact .email-address:hover + .email {
-  background-color: $color-white;
-}
-
-.dark .card.contact .phone-number:hover + .phone,
-.dark .card.contact .email-address:hover + .email {
-  background-color: $color-base-10;
-}
-
-@media (max-width: 800px) {
-  .card.contact .phone {
-    top: 0.5rem;
-    left: -2rem;
+  .picture {
+    width: 25rem;
+    max-width: 100%;
+    overflow: hidden;
   }
 
-  .card.contact .email {
-    top: 0.5rem;
-    right: -2rem;
+  .content {
+    position: relative;
+    width: 16rem;
+    padding: 1rem 0.5rem;
+    margin: -2.75rem auto 1rem auto;
+    z-index: 2;
+    background: $color-base-1;
+
+    p {
+      margin: 0;
+    }
+  }
+
+  .close {
+    display: none;
+    position: absolute;
+    top: -1rem;
+    left: -1rem;
+    height: 2rem;
+    width: 2rem;
+    border-bottom: none;
+    z-index: 2;
+    padding: 0;
+
+    .icon img {
+      width: 2rem;
+      height: 2rem;
+      overflow: visible;
+
+      img {
+        width: 2rem;
+        height: 2rem;
+      }
+    }
+  }
+
+  .phone {
+    position: absolute;
+    top: 1.25rem;
+    left: -1.25rem;
+    border-bottom: none;
+    z-index: 1;
+  }
+
+  .email {
+    position: absolute;
+    top: 1.25rem;
+    right: -1.25rem;
+    border-bottom: none;
+    z-index: 1;
+  }
+
+  .phone-number,
+  .email-address {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding-top: 1.3rem;
+    background: $color-base-1;
+  }
+
+  @media (hover: hover) {
+    .phone:hover + .phone-number,
+    .email:hover + .email-address {
+      display: block;
+    }
+
+    .phone-number:hover,
+    .email-address:hover {
+      display: block;
+    }
+  }
+
+  @media (max-width: 800px) {
+    .phone {
+      top: 0.5rem;
+      left: -2rem;
+    }
+  
+    .email {
+      top: 0.5rem;
+      right: -2rem;
+    }
+  }
+}
+
+.dark .card.contact {
+  .content {
+    background: $color-base-9;
+  }
+
+  .phone-number,
+  .email-address {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding-top: 1.3rem;
+    background: $color-base-9;
+  }
+
+  @media (hover: hover) {
+    .phone-number:hover + .phone,
+    .email-address:hover + .email {
+      background-color: $color-base-10;
+    }
   }
 }
 /*-------------------------------------*/
