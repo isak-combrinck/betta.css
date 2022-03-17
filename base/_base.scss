@@ -1256,6 +1256,9 @@ a.card-double:active {
     left: -1.25rem;
     border-bottom: none;
     z-index: 1;
+     img {
+      transform: scaleX(-1);
+     }
   }
 
   .email {

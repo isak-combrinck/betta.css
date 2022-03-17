@@ -1604,6 +1604,9 @@ a.card-double .content {
   border-bottom: none;
   z-index: 1;
 }
+.card.contact .phone img {
+  transform: scaleX(-1);
+}
 .card.contact .email {
   position: absolute;
   top: 1.25rem;
