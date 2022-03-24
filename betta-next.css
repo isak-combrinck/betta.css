@@ -1625,16 +1625,6 @@ a.card-double .content {
   padding-top: 1.3rem;
   background: #f5f5f5;
 }
-@media (hover: hover) {
-  .card.contact .phone:hover + .phone-number,
-.card.contact .email:hover + .email-address {
-    display: block;
-  }
-  .card.contact .phone-number:hover,
-.card.contact .email-address:hover {
-    display: block;
-  }
-}
 @media (max-width: 800px) {
   .card.contact .phone {
     top: 0.5rem;

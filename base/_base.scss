@@ -1281,18 +1281,6 @@ a.card-double:active {
     background: $color-base-1;
   }
 
-  @media (hover: hover) {
-    .phone:hover + .phone-number,
-    .email:hover + .email-address {
-      display: block;
-    }
-
-    .phone-number:hover,
-    .email-address:hover {
-      display: block;
-    }
-  }
-
   @media (max-width: 800px) {
     .phone {
       top: 0.5rem;
