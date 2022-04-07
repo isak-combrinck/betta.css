@@ -380,7 +380,8 @@ body {
 }
 
 /* Fixes horizontal scrolling on Safari */
-body, html {
+body,
+html {
   position: relative;
   overflow-x: hidden;
 }
@@ -897,6 +898,8 @@ button.dark:active:enabled {
 }
 
 .icon-button {
+  height: auto !important;
+  width: auto !important;
   padding: 0.5rem;
   border-radius: 2rem;
 }

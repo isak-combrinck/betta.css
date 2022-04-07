@@ -8,7 +8,8 @@ body {
 }
 
 /* Fixes horizontal scrolling on Safari */
-body, html {
+body,
+html {
   position: relative;
   overflow-x: hidden;
 }
@@ -66,13 +67,13 @@ i,
 img,
 picture,
 button,
-button > span,
+button>span,
 .click-plane,
-details > summary,
-nav > ul,
-nav > ul > li,
-nav > ul > li > a,
-article > a {
+details>summary,
+nav>ul,
+nav>ul>li,
+nav>ul>li>a,
+article>a {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
@@ -124,7 +125,7 @@ li {
   background: $color-base-10;
 }
 
-.betta-banner > p {
+.betta-banner>p {
   margin: 0.35rem;
 }
 
@@ -134,18 +135,20 @@ li {
   bottom: 1rem;
 }
 
-.betta-support > button {
+.betta-support>button {
   display: block;
   margin-top: 1rem;
 }
+
 /*-------------------------------------*/
 
 /*---------------------------------------
   Pictures 
 ---------------------------------------*/
-picture > img {
+picture>img {
   width: 100%;
 }
+
 /*-------------------------------------*/
 
 /*---------------------------------------
@@ -159,17 +162,17 @@ img.round {
   border-radius: $radius-round;
 }
 
-.betta_image > div {
+.betta_image>div {
   position: relative;
 }
 
-.betta_image > div img {
+.betta_image>div img {
   margin-bottom: -3px;
   border-radius: 0;
   image-orientation: none;
 }
 
-.betta_image > div img.round {
+.betta_image>div img.round {
   border-radius: $radius-round;
 }
 
@@ -189,6 +192,7 @@ img.round {
   transform: rotate(-90deg);
   transform-origin: left bottom;
 }
+
 /*-------------------------------------*/
 
 /*---------------------------------------
@@ -314,6 +318,7 @@ img.round {
 }
 
 @media (max-width: 800px) {
+
   #betta_menu-button,
   #betta_back-button {
     top: auto;
@@ -342,6 +347,7 @@ img.round {
     }
   }
 }
+
 /*-------------------------------------*/
 
 /*---------------------------------------
@@ -353,7 +359,7 @@ footer {
   text-align: center;
 
   @media (min-width: 800px) {
-    & > * {
+    &>* {
       display: inline-block;
     }
   }
@@ -400,13 +406,14 @@ footer.rotated {
     margin: 0;
   }
 }
+
 /*-------------------------------------*/
 
 /*---------------------------------------
 	Custom Icon Replacements for
     Material Icons
 ---------------------------------------*/
-.material-icons-round.custom-icon > img {
+.material-icons-round.custom-icon>img {
   /* deprecated */
   height: 1.5rem;
   color: $color-black;
@@ -418,17 +425,17 @@ span.icon {
   line-height: 0rem;
 }
 
-span.icon > img {
+span.icon>img {
   height: 1.5rem;
   width: 1.5rem;
   line-height: 0;
 }
 
-.dark span.icon > img {
+.dark span.icon>img {
   filter: none;
 }
 
-.dark p span.icon > img {
+.dark p span.icon>img {
   border-radius: $radius-round;
   background-color: $color-base-7;
 }
@@ -439,7 +446,7 @@ span.icon.big {
   line-height: 0rem;
 }
 
-span.icon.big > img {
+span.icon.big>img {
   height: 4rem;
   width: 4rem;
   line-height: 0rem;
@@ -448,13 +455,14 @@ span.icon.big > img {
   padding: 1rem;
 }
 
-.dark span.icon.big > img {
+.dark span.icon.big>img {
   background: $color-base-8;
 }
 
-p > .icon {
+p>.icon {
   vertical-align: bottom;
 }
+
 /*-------------------------------------*/
 
 /*---------------------------------------
@@ -512,7 +520,8 @@ button.dark {
   }
 
   button.dark:hover:enabled {
-    background: #616161; /* TEMP */
+    background: #616161;
+    /* TEMP */
   }
 }
 
@@ -526,10 +535,13 @@ button:active:enabled {
 }
 
 button.dark:active:enabled {
-  background: #424242; /* TEMP */
+  background: #424242;
+  /* TEMP */
 }
 
 .icon-button {
+  height: auto !important;
+  width: auto !important;
   padding: 0.5rem;
   border-radius: 2rem;
 
@@ -539,7 +551,10 @@ button.dark:active:enabled {
   }
 }
 
-.icon-button.filled .material-icons-round /* deprecated */ {
+.icon-button.filled .material-icons-round
+
+/* deprecated */
+  {
   color: $color-black;
 }
 
@@ -552,7 +567,8 @@ button.dark:active:enabled {
 }
 
 .icon-button.filled:disabled,
-.icon-button.filled:disabled .material-icons-round, /* deprecated */
+.icon-button.filled:disabled .material-icons-round,
+/* deprecated */
 .icon-button.filled:disabled .icon {
   color: $color-base-7;
 }
@@ -571,18 +587,20 @@ button.dark:active:enabled {
   padding-right: 0.5rem;
 }
 
-.icon-button .material-icons-round, /* deprecated */
+.icon-button .material-icons-round,
+/* deprecated */
 .icon-button>.icon {
   vertical-align: top;
   color: $color-black;
   font-size: 1.8rem;
 }
 
-.dark .icon-button > .icon {
+.dark .icon-button>.icon {
   color: $color-base-1;
 }
 
-.icon-button .material-icons-round.custom-icon, /* deprecated */
+.icon-button .material-icons-round.custom-icon,
+/* deprecated */
 .icon-button>.icon {
   font-size: 1rem;
 }
@@ -597,13 +615,15 @@ button.dark:active:enabled {
     padding: 0.75rem;
   }
 
-  body>.icon-button .material-icons-round, /* deprecated */
-    .icon-button>.icon {
+  body>.icon-button .material-icons-round,
+  /* deprecated */
+  .icon-button>.icon {
     font-size: 2.5rem;
   }
 
-  .icon-button .material-icons-round.custom-icon img, /* deprecated */
-    .icon-button>.icon>img {
+  .icon-button .material-icons-round.custom-icon img,
+  /* deprecated */
+  .icon-button>.icon>img {
     height: 2.5rem;
     width: 2.5rem;
   }
@@ -615,7 +635,7 @@ button.dark:active:enabled {
   margin-right: 0;
 }
 
-.sliding-button > .content {
+.sliding-button>.content {
   height: 1.5rem;
   width: 0;
   margin-bottom: -0.75rem;
@@ -624,7 +644,7 @@ button.dark:active:enabled {
   transition: $transition-default;
 }
 
-.sliding-button:hover > .content {
+.sliding-button:hover>.content {
   width: 12rem;
   display: inline-block;
   transition: $transition-default;
@@ -640,6 +660,7 @@ button.icon-button.simple,
 }
 
 @media (hover: hover) {
+
   button.icon-button.simple:hover,
   .dark button.icon-button.simple:hover {
     background: none;
@@ -759,6 +780,7 @@ between lines
 }
 
 @media (max-width: 600px) {
+
   .inline-split,
   .inline-ternate {
     display: block;
@@ -778,7 +800,7 @@ between lines
   0 then the padding from text in the box
   is also removed. */
   padding: 1px 2rem;
-  
+
   background: $color-base-1;
   max-width: 34rem;
 
@@ -796,6 +818,7 @@ between lines
 .dark .betta_overlap-top {
   background: $color-base-9;
 }
+
 /*-------------------------------------*/
 
 /*---------------------------------------
@@ -816,40 +839,41 @@ between lines
   padding: 0 0.5rem 1rem 0.5rem;
 }
 
-.gallery-item > .content {
+.gallery-item>.content {
   position: relative;
 }
 
-.photo > img {
+.photo>img {
   width: 100%;
   box-shadow: $shadow-level-1;
   background: $color-base-1;
   border-radius: $radius-1;
 }
 
-.dark .photo > img {
+.dark .photo>img {
   box-shadow: $dark-shadow-level-1;
   background: $color-base-9;
 }
 
-.gallery-item > .content > .click-plane {
+.gallery-item>.content>.click-plane {
   border-radius: $radius-1;
 }
 
-.gallery-item > .content > .click-plane.caption {
+.gallery-item>.content>.click-plane.caption {
   background: $color-white;
   opacity: 0.85;
 }
 
-.dark .gallery-item > .content > .click-plane.caption {
+.dark .gallery-item>.content>.click-plane.caption {
   background: $color-base-10;
 }
 
-.gallery-item > .content > .click-plane.caption > p {
+.gallery-item>.content>.click-plane.caption>p {
   padding: 0 1rem;
 }
 
 @media (max-width: 800px) {
+
   #gallery,
   .gallery {
     padding-bottom: 0rem;
@@ -862,6 +886,7 @@ between lines
 }
 
 @media (max-width: 480px) {
+
   #gallery,
   .gallery {
     padding-bottom: 0.75rem;
@@ -871,6 +896,7 @@ between lines
     padding-bottom: 1.25rem;
   }
 }
+
 /*-------------------------------------*/
 
 /*---------------------------------------
@@ -923,6 +949,7 @@ a.card .betta_image img {
 a.card.cover {
   margin-bottom: 1rem;
 }
+
 a.card.cover .betta_image img,
 a.card.cover .betta_image {
   border-radius: $radius-1;
@@ -1022,6 +1049,7 @@ a.card-double h4 {
 }
 
 @media (hover: hover) {
+
   a.card:hover h2,
   a.card:hover h3,
   a.card:hover h4,
@@ -1096,6 +1124,7 @@ a.card-double h4 {
     line-height: $line-height;
   }
 }
+
 /*-------------------------------------*/
 
 /*---------------------------------------
@@ -1196,6 +1225,7 @@ a.card-double:active {
     padding: 0 1rem;
   }
 }
+
 /*-------------------------------------*/
 
 /*---------------------------------------
@@ -1256,9 +1286,10 @@ a.card-double:active {
     left: -1.25rem;
     border-bottom: none;
     z-index: 1;
-     img {
+
+    img {
       transform: scaleX(-1);
-     }
+    }
   }
 
   .email {
@@ -1286,7 +1317,7 @@ a.card-double:active {
       top: 0.5rem;
       left: -2rem;
     }
-  
+
     .email {
       top: 0.5rem;
       right: -2rem;
@@ -1312,12 +1343,14 @@ a.card-double:active {
   }
 
   @media (hover: hover) {
-    .phone-number:hover + .phone,
-    .email-address:hover + .email {
+
+    .phone-number:hover+.phone,
+    .email-address:hover+.email {
       background-color: $color-base-10;
     }
   }
 }
+
 /*-------------------------------------*/
 
 /*---------------------------------------
@@ -1330,7 +1363,7 @@ a.card-double:active {
   display: inline-block;
 }
 
-.flip-card > .card {
+.flip-card>.card {
   position: relative;
   width: 100%;
   height: 100%;
@@ -1340,28 +1373,28 @@ a.card-double:active {
   border-radius: $radius-1;
 }
 
-.dark .flip-card > .card {
+.dark .flip-card>.card {
   box-shadow: $dark-shadow-level-1;
 }
 
-.flip-card:hover > .card,
-.flip-card > .card.active {
+.flip-card:hover>.card,
+.flip-card>.card.active {
   transform: rotateY(180deg);
 }
 
-.flip-card > .card > .front,
-.flip-card > .card > .back {
+.flip-card>.card>.front,
+.flip-card>.card>.back {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 
-.flip-card > .card > .front img {
+.flip-card>.card>.front img {
   width: 100%;
   margin: 0;
   border-radius: $radius-1;
 }
 
-.flip-card > .card > .back {
+.flip-card>.card>.back {
   position: absolute;
   top: 0;
   left: 0;
@@ -1370,12 +1403,13 @@ a.card-double:active {
   transform: rotateY(180deg);
 }
 
-.flip-card > .card > .back textarea {
+.flip-card>.card>.back textarea {
   height: 100%;
   min-height: 0px;
   margin: 0;
   padding: 0;
 }
+
 /*-------------------------------------*/
 
 /*---------------------------------------
@@ -1499,6 +1533,7 @@ a.card-double:active {
 .lightbox .middle .caption.open {
   display: block;
 }
+
 /*-------------------------------------*/
 
 /*---------------------------------------
@@ -1526,6 +1561,7 @@ p.version {
     display: none;
   }
 }
+
 /*-------------------------------------*/
 
 /*---------------------------------------
@@ -1569,7 +1605,8 @@ p.version {
   border-color: rgb(129, 120, 106);
   border-radius: 1rem;
   word-wrap: break-word;
-  background-color: #ff3737; /* TEMP */
+  background-color: #ff3737;
+  /* TEMP */
 }
 
 #cancel-notification {
@@ -1580,6 +1617,7 @@ p.version {
 #cancel-notification.show {
   display: block;
 }
+
 /*-------------------------------------*/
 
 /*---------------------------------------
@@ -1592,6 +1630,7 @@ p.version {
     margin: 0 auto;
   }
 }
+
 /*-------------------------------------*/
 
 /*---------------------------------------
@@ -1618,4 +1657,5 @@ p.version {
     display: none;
   }
 }
+
 /*-------------------------------------*/
