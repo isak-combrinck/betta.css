@@ -1997,6 +1997,18 @@ p.version {
   }
 }
 /*-------------------------------------*/
+/*---------------------------------------
+	Video
+---------------------------------------*/
+.betta_video {
+  width: 100%;
+}
+.betta_video video {
+  width: 100%;
+  height: auto;
+}
+
+/*-------------------------------------*/
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -2218,7 +2230,7 @@ hr {
   background: #e0e0e0;
 }
 
-hr {
+.dark hr {
   background: #616161;
 }
 
