@@ -1623,7 +1623,7 @@ p.version {
 /*---------------------------------------
 	Size restraints on large screens
 ---------------------------------------*/
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
   .w-100 {
     width: 100%;
   }
