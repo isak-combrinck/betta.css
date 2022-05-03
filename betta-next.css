@@ -1998,6 +1998,18 @@ p.version {
   }
 }
 /*-------------------------------------*/
+/*---------------------------------------
+	Video
+---------------------------------------*/
+.betta_video {
+  width: 100%;
+}
+.betta_video video {
+  width: 100%;
+  height: auto;
+}
+
+/*-------------------------------------*/
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -2219,7 +2231,7 @@ hr {
   background: #e0e0e0;
 }
 
-hr {
+.dark hr {
   background: #616161;
 }
 
@@ -2941,7 +2953,6 @@ header.hero {
 
 header.hero img {
   width: 100%;
-  padding: 0 2rem;
 }
 
 header.hero > h1 {
