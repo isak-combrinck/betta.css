@@ -1969,7 +1969,8 @@ p.version {
   }
 
   .w-100, .w-90, .w-80, .w-70, .w-60, .w-50, .w-40, .w-30, .w-20, .w-10 {
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 /*-------------------------------------*/
