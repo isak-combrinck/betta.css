@@ -902,7 +902,7 @@ between lines
 /*---------------------------------------
 	Link Card
 ---------------------------------------*/
-a.card {
+.card {
   position: relative;
   display: inline-block;
   vertical-align: top;
@@ -916,13 +916,13 @@ a.card {
   transition: $transition-default;
 }
 
-.dark a.card {
+.dark .card {
   box-shadow: $dark-shadow-level-1;
   border-color: $color-base-7;
   background-color: $color-base-9;
 }
 
-a.card .betta_image {
+.card .betta_image {
   width: 25.5rem;
   max-width: 100%;
   border-top-left-radius: 0.25rem;
@@ -931,11 +931,11 @@ a.card .betta_image {
   overflow: hidden;
 }
 
-.dark a.card .betta_image {
+.dark .card .betta_image {
   background: $color-base-9;
 }
 
-a.card .betta_image img {
+.card .betta_image img {
   width: 100%;
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
@@ -946,21 +946,21 @@ a.card .betta_image img {
 }
 
 /* Cover card */
-a.card.cover {
+.card.cover {
   margin-bottom: 1rem;
 }
 
-a.card.cover .betta_image img,
-a.card.cover .betta_image {
+.card.cover .betta_image img,
+.card.cover .betta_image {
   border-radius: $radius-1;
 }
 
-a.card.cover .betta_image img {
+.card.cover .betta_image img {
   aspect-ratio: 3 / 2; // Experimental property, not yet fully supported
   object-fit: cover; // Prevents images from being stretched
 }
 
-a.card.cover .content {
+.card.cover .content {
   position: absolute;
   top: 1rem;
   left: 1rem;
@@ -970,13 +970,13 @@ a.card.cover .content {
   transition: $transition-default;
 }
 
-.dark a.card.cover .content {
+.dark .card.cover .content {
   border-color: $color-base-9;
 }
 
-a.card.cover h2,
-a.card.cover h3,
-a.card.cover h4 {
+.card.cover h2,
+.card.cover h3,
+.card.cover h4 {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -994,9 +994,9 @@ a.card.cover h4 {
   transition: $transition-default;
 }
 
-.dark a.card.cover h2,
-.dark a.card.cover h3,
-.dark a.card.cover h4 {
+.dark .card.cover h2,
+.dark .card.cover h3,
+.dark .card.cover h4 {
   background: $color-base-9;
 }
 
@@ -1004,31 +1004,31 @@ a.card:active {
   box-shadow: $shadow-level-0;
 }
 
-a.card p {
+.card p {
   margin-top: 0.5rem;
   padding: 0 2rem 2rem 2rem;
   text-align: left;
 }
 
-a.card p.small {
+.card p.small {
   margin-top: -2rem;
   padding: 0 2rem;
   text-align: left;
 }
 
-a.card h2,
-a.card h3,
-a.card h4 {
+.card h2,
+.card h3,
+.card h4 {
   margin-left: 2rem;
   margin-right: 2rem;
 }
 
-a.card h2,
-a.card h3,
-a.card h4,
-a.card-double h2,
-a.card-double h3,
-a.card-double h4 {
+.card h2,
+.card h3,
+.card h4,
+.card-double h2,
+.card-double h3,
+.card-double h4 {
   padding: 0 0 1rem 0;
   margin-top: 2.15rem;
   border-bottom: 3px solid $color-base-3;
@@ -1039,12 +1039,12 @@ a.card-double h4 {
   transition: $transition-default;
 }
 
-.dark a.card h2,
-.dark a.card h3,
-.dark a.card h4,
-.dark a.card-double h2,
-.dark a.card-double h3,
-.dark a.card-double h4 {
+.dark .card h2,
+.dark .card h3,
+.dark .card h4,
+.dark .card-double h2,
+.dark .card-double h3,
+.dark .card-double h4 {
   border-color: $color-base-7;
 }
 
@@ -1090,36 +1090,36 @@ a.card-double h4 {
 }
 
 @media (max-width: 800px) {
-  a.card {
+  .card {
     padding: 0;
     margin: 1rem 0 0 0;
   }
 
-  a.card p {
+  .card p {
     margin-top: 0;
     padding: 0 1rem;
     text-align: left;
   }
 
-  a.card h2,
-  a.card h3,
-  a.card h4 {
+  .card h2,
+  .card h3,
+  .card h4 {
     margin-left: 1rem;
     margin-right: 1rem;
   }
 
-  a.card h2,
-  a.card h3,
-  a.card h4,
-  a.card-double h2,
-  a.card-double h3,
-  a.card-double h4 {
+  .card h2,
+  .card h3,
+  .card h4,
+  .card-double h2,
+  .card-double h3,
+  .card-double h4 {
     margin-top: 1.25rem;
   }
 
-  a.card.cover h2,
-  a.card.cover h3,
-  a.card.cover h4 {
+  .card.cover h2,
+  .card.cover h3,
+  .card.cover h4 {
     font-size: 1rem;
     line-height: $line-height;
   }
@@ -1131,7 +1131,7 @@ a.card-double h4 {
 	Link Card Double
 ---------------------------------------*/
 
-a.card-double {
+.card-double {
   display: block;
   width: 55rem;
   max-width: 100%;
@@ -1146,21 +1146,21 @@ a.card-double {
   background-color: $color-base-0;
 }
 
-.dark a.card-double {
+.dark .card-double {
   box-shadow: $dark-shadow-level-1;
   border-color: $color-base-7;
   background-color: $color-base-9;
 }
 
-a.card-double .betta_image,
-a.card-double .content {
+.card-double .betta_image,
+.card-double .content {
   display: inline-block;
   height: 100%;
   width: 50%;
   vertical-align: top;
 }
 
-a.card-double .betta_image {
+.card-double .betta_image {
   background: $color-base-1;
 
   img {
@@ -1168,11 +1168,11 @@ a.card-double .betta_image {
   }
 }
 
-.dark a.card-double .betta_image {
+.dark .card-double .betta_image {
   background: $color-base-9;
 }
 
-a.card-double .betta_image img {
+.card-double .betta_image img {
   height: 27.5rem;
   width: 27.5rem;
   margin-bottom: -3px;
@@ -1180,7 +1180,7 @@ a.card-double .betta_image img {
   transition: $transition-default;
 }
 
-a.card-double .content {
+.card-double .content {
   max-height: 100%;
   padding: 4rem 3rem 0 3rem;
 }
@@ -1196,7 +1196,7 @@ a.card-double:active {
 }
 
 @media (max-width: 800px) {
-  a.card-double {
+  .card-double {
     display: flex;
     flex-direction: column;
     height: auto;
@@ -1204,13 +1204,13 @@ a.card-double:active {
     margin-top: 2rem;
   }
 
-  a.card-double .betta_image img {
+  .card-double .betta_image img {
     height: auto;
     width: 100%;
   }
 
-  a.card-double .betta_image,
-  a.card-double .content {
+  .card-double .betta_image,
+  .card-double .content {
     height: auto;
     width: 100%;
     display: block;
@@ -1220,7 +1220,7 @@ a.card-double:active {
     order: 1;
   }
 
-  a.card-double .content {
+  .card-double .content {
     order: 2;
     padding: 0 1rem;
   }
