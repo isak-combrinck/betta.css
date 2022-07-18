@@ -77,3 +77,78 @@ strong {
   }
 }
 /*-------------------------------------*/
+
+/*---------------------------------------
+	Contact Cards
+---------------------------------------*/
+.contacts-filter-button {
+  margin: 0.5rem;
+}
+
+.contacts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: masonry;
+  grid-gap: 2rem;
+
+  @media (max-width: 400px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .contact-card {
+    border-radius: $radius-3;
+    text-align: center;
+    box-shadow: $shadow-level-3;
+
+    &.hide {
+      display: none;
+    }
+
+    h2 {
+      line-height: 0;
+    }
+
+    .cover {
+      padding: 2rem 2rem 0 2rem;
+    }
+
+    .content {
+      padding: 1rem 0;
+      p {
+        margin: 0;
+      }
+
+      .title {
+        font-weight: bold;
+      }
+
+      .description {
+        font-style: italic;
+      }
+    }
+  }
+
+  @media(hover: hover) {
+    a.contact-card:hover {
+      background: $color-base-0;
+      transition: $transition-default;
+    }
+  }
+}
+/*-------------------------------------*/
+
+/*---------------------------------------
+	Colors
+---------------------------------------*/
+.color-red {
+  color: $red;
+}
+
+.color-orange {
+  color: $orange;
+}
+
+.color-blue {
+  color: $blue;
+}
+/*-------------------------------------*/
