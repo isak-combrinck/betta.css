@@ -2069,6 +2069,7 @@ p {
 
 p.small {
   font-size: 0.8rem;
+  line-height: 1.1rem;
 }
 
 ul.indent {
@@ -2376,6 +2377,7 @@ urgency and seriousness.
   }
 }
 .contacts .contact-card {
+  padding: 0 0.75rem;
   border-radius: 1rem;
   text-align: center;
   box-shadow: 0 3px 8px 1px rgba(0, 0, 0, 0.2);
@@ -2388,6 +2390,9 @@ urgency and seriousness.
 }
 .contacts .contact-card .cover {
   padding: 2rem 2rem 0 2rem;
+}
+.contacts .contact-card .cover img {
+  width: 100%;
 }
 .contacts .contact-card .content {
   padding: 1rem 0;
