@@ -2371,7 +2371,7 @@ urgency and seriousness.
   grid-template-rows: masonry;
   grid-gap: 2rem;
 }
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   .contacts {
     grid-template-columns: repeat(1, 1fr);
   }
