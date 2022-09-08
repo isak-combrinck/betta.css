@@ -91,7 +91,11 @@ strong {
   grid-template-rows: masonry;
   grid-gap: 2rem;
 
-  @media (max-width: 600px) {
+  @media (max-width: 800px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 400px) {
     grid-template-columns: repeat(1, 1fr);
   }
 
@@ -114,6 +118,7 @@ strong {
 
       img {
         width: 100%;
+        max-width: 50vw;
       }
     }
 

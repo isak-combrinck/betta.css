@@ -2371,7 +2371,12 @@ urgency and seriousness.
   grid-template-rows: masonry;
   grid-gap: 2rem;
 }
-@media (max-width: 600px) {
+@media (max-width: 800px) {
+  .contacts {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 400px) {
   .contacts {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -2393,6 +2398,7 @@ urgency and seriousness.
 }
 .contacts .contact-card .cover img {
   width: 100%;
+  max-width: 50vw;
 }
 .contacts .contact-card .content {
   padding: 1rem 0;
@@ -2875,6 +2881,9 @@ form > button.icon-button {
     display: inline-block;
     text-align: left;
     margin-bottom: 0rem;
+  }
+  #betta_menu.toolbar > ul > li a {
+    padding: 0.5rem;
   }
 }
 #betta_menu ul li a:active {
