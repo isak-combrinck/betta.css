@@ -1237,6 +1237,7 @@ a.card-double:active {
   width: 25rem;
   max-width: calc(100% - 1.5rem);
   margin: 1.25rem 0.75rem 0 0.75rem;
+  box-shadow: none;
 
   .picture {
     width: 25rem;
@@ -1254,6 +1255,7 @@ a.card-double:active {
 
     p {
       margin: 0;
+      text-align: center;
     }
   }
 
