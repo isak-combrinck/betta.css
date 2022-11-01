@@ -540,8 +540,6 @@ button.dark:active:enabled {
 }
 
 .icon-button {
-  height: auto !important;
-  width: auto !important;
   padding: 0.5rem;
   border-radius: 2rem;
 
@@ -590,7 +588,6 @@ button.dark:active:enabled {
 .icon-button .material-icons-round,
 /* deprecated */
 .icon-button>.icon {
-  vertical-align: top;
   color: $color-black;
   font-size: 1.8rem;
 }
