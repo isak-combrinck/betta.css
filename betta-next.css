@@ -787,7 +787,8 @@ span.icon.big > img {
 }
 
 p > .icon {
-  vertical-align: bottom;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 /*-------------------------------------*/
