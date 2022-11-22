@@ -781,7 +781,8 @@ span.icon.big > img {
 }
 
 p > .icon {
-  vertical-align: bottom;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 /*-------------------------------------*/
@@ -857,8 +858,6 @@ button.dark:active:enabled {
 }
 
 .icon-button {
-  height: auto !important;
-  width: auto !important;
   padding: 0.5rem;
   border-radius: 2rem;
 }
@@ -903,7 +902,6 @@ button.dark:active:enabled {
 
 .icon-button .material-icons-round,
 .icon-button > .icon {
-  vertical-align: top;
   color: #000000;
   font-size: 1.8rem;
 }
@@ -1506,6 +1504,7 @@ a.card-double:active {
   width: 25rem;
   max-width: calc(100% - 1.5rem);
   margin: 1.25rem 0.75rem 0 0.75rem;
+  box-shadow: none;
 }
 .card.contact .picture {
   width: 25rem;
@@ -1522,6 +1521,7 @@ a.card-double:active {
 }
 .card.contact .content p {
   margin: 0;
+  text-align: center;
 }
 .card.contact .close {
   display: none;
@@ -2063,6 +2063,7 @@ p {
 
 p.small {
   font-size: 0.8rem;
+  line-height: 1.1rem;
 }
 
 ul.indent {
@@ -2350,6 +2351,84 @@ urgency and seriousness.
     display: none;
   }
 }
+/*-------------------------------------*/
+/*---------------------------------------
+	Contact Cards
+---------------------------------------*/
+.contacts-filter-button {
+  margin: 0.5rem;
+}
+
+.contacts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: masonry;
+  grid-gap: 2rem;
+}
+@media (max-width: 800px) {
+  .contacts {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 400px) {
+  .contacts {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.contacts .contact-card {
+  padding: 0 0.75rem;
+  border-radius: 1rem;
+  text-align: center;
+  box-shadow: 0 3px 8px 1px rgba(0, 0, 0, 0.2);
+}
+.contacts .contact-card.hide {
+  display: none;
+}
+.contacts .contact-card h2 {
+  line-height: 0;
+}
+.contacts .contact-card .cover {
+  padding: 2rem 2rem 0 2rem;
+}
+.contacts .contact-card .cover img {
+  width: 100%;
+  max-width: 50vw;
+}
+.contacts .contact-card .content {
+  padding: 1rem 0;
+}
+.contacts .contact-card .content p {
+  margin: 0;
+}
+.contacts .contact-card .content .title {
+  font-weight: bold;
+}
+.contacts .contact-card .content .description {
+  font-style: italic;
+}
+@media (hover: hover) {
+  .contacts a.contact-card:hover {
+    background: #fafafa;
+    transition: 0.2s;
+  }
+}
+
+/*-------------------------------------*/
+/*---------------------------------------
+	Colors
+---------------------------------------*/
+.color-red {
+  color: #B71C1C;
+}
+
+.color-orange {
+  color: #E65100;
+}
+
+.color-blue {
+  color: #0D47A1;
+}
+
 /*-------------------------------------*/
 /* All possible form elements
 input,
@@ -2796,6 +2875,9 @@ form > button.icon-button {
     display: inline-block;
     text-align: left;
     margin-bottom: 0rem;
+  }
+  #betta_menu.toolbar > ul > li a {
+    padding: 0.5rem;
   }
 }
 #betta_menu ul li a:active {

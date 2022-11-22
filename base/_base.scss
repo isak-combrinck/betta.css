@@ -456,7 +456,8 @@ span.icon.big>img {
 }
 
 p>.icon {
-  vertical-align: bottom;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 /*-------------------------------------*/
@@ -536,8 +537,6 @@ button.dark:active:enabled {
 }
 
 .icon-button {
-  height: auto !important;
-  width: auto !important;
   padding: 0.5rem;
   border-radius: 2rem;
 
@@ -586,7 +585,6 @@ button.dark:active:enabled {
 .icon-button .material-icons-round,
 /* deprecated */
 .icon-button>.icon {
-  vertical-align: top;
   color: $color-black;
   font-size: 1.8rem;
 }
@@ -1233,6 +1231,7 @@ a.card-double:active {
   width: 25rem;
   max-width: calc(100% - 1.5rem);
   margin: 1.25rem 0.75rem 0 0.75rem;
+  box-shadow: none;
 
   .picture {
     width: 25rem;
@@ -1250,6 +1249,7 @@ a.card-double:active {
 
     p {
       margin: 0;
+      text-align: center;
     }
   }
 
