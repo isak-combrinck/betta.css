@@ -307,14 +307,10 @@ img.round {
   }
 }
 
-#betta_theme-light-icon,
-.dark #betta_theme-dark-icon {
-  display: none;
-}
-
-#betta_theme-dark-icon,
-.dark #betta_theme-light-icon {
-  display: block;
+.dark #betta_theme-button {
+  img {
+    content:url("/icons/light_mode_white.svg")
+  }
 }
 
 @media (max-width: 800px) {

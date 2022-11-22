@@ -13,10 +13,8 @@ A project by Isak Combrinck & Dahman Ramdani.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 html {
-  line-height: 1.15;
-  /* 1 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
 }
 
 /* Sections
@@ -51,12 +49,9 @@ h1 {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  box-sizing: content-box;
-  /* 1 */
-  height: 0;
-  /* 1 */
-  overflow: visible;
-  /* 2 */
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
 }
 
 /**
@@ -64,10 +59,8 @@ hr {
  * 2. Correct the odd `em` font sizing in all browsers.
  */
 pre {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
 
 /* Text-level semantics
@@ -84,12 +77,9 @@ a {
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
 abbr[title] {
-  border-bottom: none;
-  /* 1 */
-  text-decoration: underline;
-  /* 2 */
-  text-decoration: underline dotted;
-  /* 2 */
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -107,10 +97,8 @@ strong {
 code,
 kbd,
 samp {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
 
 /**
@@ -160,14 +148,10 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: inherit;
-  /* 1 */
-  font-size: 100%;
-  /* 1 */
-  line-height: 1.15;
-  /* 1 */
-  margin: 0;
-  /* 2 */
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
 }
 
 /**
@@ -175,8 +159,7 @@ textarea {
  * 1. Show the overflow in Edge.
  */
 button,
-input {
-  /* 1 */
+input { /* 1 */
   overflow: visible;
 }
 
@@ -185,8 +168,7 @@ input {
  * 1. Remove the inheritance of text transform in Firefox.
  */
 button,
-select {
-  /* 1 */
+select { /* 1 */
   text-transform: none;
 }
 
@@ -235,18 +217,12 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  box-sizing: border-box;
-  /* 1 */
-  color: inherit;
-  /* 2 */
-  display: table;
-  /* 1 */
-  max-width: 100%;
-  /* 1 */
-  padding: 0;
-  /* 3 */
-  white-space: normal;
-  /* 1 */
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
 }
 
 /**
@@ -269,10 +245,8 @@ textarea {
  */
 [type=checkbox],
 [type=radio] {
-  box-sizing: border-box;
-  /* 1 */
-  padding: 0;
-  /* 2 */
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
 }
 
 /**
@@ -288,10 +262,8 @@ textarea {
  * 2. Correct the outline style in Safari.
  */
 [type=search] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  outline-offset: -2px;
-  /* 2 */
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
 }
 
 /**
@@ -306,10 +278,8 @@ textarea {
  * 2. Change font properties to `inherit` in Safari.
  */
 ::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  /* 1 */
-  font: inherit;
-  /* 2 */
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
 }
 
 /* Interactive
@@ -675,35 +645,26 @@ img.round {
   }
 }
 
-#betta_theme-light-icon,
-.dark #betta_theme-dark-icon {
-  display: none;
-}
-
-#betta_theme-dark-icon,
-.dark #betta_theme-light-icon {
-  display: block;
+.dark #betta_theme-button img {
+  content: url("/icons/light_mode_white.svg");
 }
 
 @media (max-width: 800px) {
   #betta_menu-button,
-#betta_back-button {
+  #betta_back-button {
     top: auto;
     bottom: 1rem;
     left: calc(50vw - 2rem);
     width: 4rem;
     height: 4rem;
   }
-
   #betta_theme-button {
     width: 4rem;
     height: 4rem;
   }
-
   #betta_menu-button {
     display: block;
   }
-
   #betta_home-button {
     top: auto;
     bottom: 0.75rem;
@@ -873,11 +834,9 @@ button.dark {
     background: #f5f5f5;
     transition: 0.2s;
   }
-
   .dark button:hover:enabled {
     background: #424242;
   }
-
   button.dark:hover:enabled {
     background: #616161;
     /* TEMP */
@@ -967,14 +926,12 @@ button.dark:active:enabled {
   .icon-button {
     padding: 0.75rem;
   }
-
   body > .icon-button .material-icons-round,
-.icon-button > .icon {
+  .icon-button > .icon {
     font-size: 2.5rem;
   }
-
   .icon-button .material-icons-round.custom-icon img,
-.icon-button > .icon > img {
+  .icon-button > .icon > img {
     height: 2.5rem;
     width: 2.5rem;
   }
@@ -1010,7 +967,7 @@ button.icon-button.simple,
 
 @media (hover: hover) {
   button.icon-button.simple:hover,
-.dark button.icon-button.simple:hover {
+  .dark button.icon-button.simple:hover {
     background: none;
     opacity: 1;
   }
@@ -1126,7 +1083,7 @@ between lines
 
 @media (max-width: 600px) {
   .inline-split,
-.inline-ternate {
+  .inline-ternate {
     display: block;
     width: 100%;
   }
@@ -1214,10 +1171,9 @@ between lines
 
 @media (max-width: 800px) {
   #gallery,
-.gallery {
+  .gallery {
     padding-bottom: 0rem;
   }
-
   .gallery-item {
     width: 100%;
     padding: 0 0.5rem 2rem 0.5rem;
@@ -1225,10 +1181,9 @@ between lines
 }
 @media (max-width: 480px) {
   #gallery,
-.gallery {
+  .gallery {
     padding-bottom: 0.75rem;
   }
-
   .gallery-item {
     padding-bottom: 1.25rem;
   }
@@ -1385,37 +1340,33 @@ a.card:active {
 
 @media (hover: hover) {
   a.card:hover h2,
-a.card:hover h3,
-a.card:hover h4,
-a.card-double:hover h2,
-a.card-double:hover h3,
-a.card-double:hover h4 {
+  a.card:hover h3,
+  a.card:hover h4,
+  a.card-double:hover h2,
+  a.card-double:hover h3,
+  a.card-double:hover h4 {
     border-bottom: 3px solid #000000;
   }
-
   .dark a.card:hover h2,
-.dark a.card:hover h3,
-.dark a.card:hover h4,
-.dark a.card-double:hover h2,
-.dark a.card-double:hover h3,
-.dark a.card-double:hover h4 {
+  .dark a.card:hover h3,
+  .dark a.card:hover h4,
+  .dark a.card-double:hover h2,
+  .dark a.card-double:hover h3,
+  .dark a.card-double:hover h4 {
     border-bottom-color: #f5f5f5;
   }
-
   a.card:hover {
     cursor: pointer;
   }
-
   a.card.cover:hover .content {
     top: 1.5rem;
     left: 1.5rem;
     bottom: 1.5rem;
     right: 1.5rem;
   }
-
   a.card.cover:hover h2,
-a.card.cover:hover h3,
-a.card.cover:hover h4 {
+  a.card.cover:hover h3,
+  a.card.cover:hover h4 {
     bottom: -1rem;
     left: -1rem;
     right: -1rem;
@@ -1427,32 +1378,28 @@ a.card.cover:hover h4 {
     padding: 0;
     margin: 1rem 0 0 0;
   }
-
   .card p {
     margin-top: 0;
     padding: 0 1rem;
     text-align: left;
   }
-
   .card h2,
-.card h3,
-.card h4 {
+  .card h3,
+  .card h4 {
     margin-left: 1rem;
     margin-right: 1rem;
   }
-
   .card h2,
-.card h3,
-.card h4,
-.card-double h2,
-.card-double h3,
-.card-double h4 {
+  .card h3,
+  .card h4,
+  .card-double h2,
+  .card-double h3,
+  .card-double h4 {
     margin-top: 1.25rem;
   }
-
   .card.cover h2,
-.card.cover h3,
-.card.cover h4 {
+  .card.cover h3,
+  .card.cover h4 {
     font-size: 1rem;
     line-height: 1.6rem;
   }
@@ -1531,23 +1478,19 @@ a.card-double:active {
     width: 100%;
     margin-top: 2rem;
   }
-
   .card-double .betta_image img {
     height: auto;
     width: 100%;
   }
-
   .card-double .betta_image,
-.card-double .content {
+  .card-double .content {
     height: auto;
     width: 100%;
     display: block;
   }
-
   .card-double .betta_image {
     order: 1;
   }
-
   .card-double .content {
     order: 2;
     padding: 0 1rem;
@@ -1655,7 +1598,7 @@ a.card-double:active {
 }
 @media (hover: hover) {
   .dark .card.contact .phone-number:hover + .phone,
-.dark .card.contact .email-address:hover + .email {
+  .dark .card.contact .email-address:hover + .email {
     background-color: #121212;
   }
 }
@@ -1930,43 +1873,33 @@ p.version {
   .w-100 {
     width: 100%;
   }
-
   .w-90 {
     width: 90%;
   }
-
   .w-80 {
     width: 80%;
   }
-
   .w-70 {
     width: 70%;
   }
-
   .w-60 {
     width: 60%;
   }
-
   .w-50 {
     width: 50%;
   }
-
   .w-40 {
     width: 40%;
   }
-
   .w-30 {
     width: 30%;
   }
-
   .w-20 {
     width: 20%;
   }
-
   .w-10 {
     width: 10%;
   }
-
   .w-100, .w-90, .w-80, .w-70, .w-60, .w-50, .w-40, .w-30, .w-20, .w-10 {
     margin-left: auto;
     margin-right: auto;
@@ -2673,7 +2606,7 @@ form > button.icon-button {
 }
 @media (max-width: 800px) {
   .betta_image-strip .back,
-.betta_image-strip .forward {
+  .betta_image-strip .forward {
     margin-top: -2rem;
   }
   .betta_image-strip .betta_image {
@@ -2797,15 +2730,12 @@ form > button.icon-button {
   #betta_menu ul li a:hover {
     background: #f5f5f5;
   }
-
   .dark #betta_menu ul li a:hover {
     background: #212121;
   }
-
   #betta_menu ul li a.active:hover {
     background: #e0e0e0;
   }
-
   .dark #betta_menu ul li a.active:hover {
     background: #616161;
   }
@@ -2814,9 +2744,8 @@ form > button.icon-button {
   .sidebar + main {
     margin-left: auto;
   }
-
   #betta_menu,
-.sidebar {
+  .sidebar {
     display: none;
     padding: 5rem 3rem;
     width: auto;
@@ -2832,25 +2761,21 @@ form > button.icon-button {
     /*---*/
     overflow-y: scroll;
   }
-
   #betta_menu.show,
-.sidebar.show {
+  .sidebar.show {
     display: block;
   }
-
   #betta_menu ul li {
     display: block;
     text-align: left;
     margin-bottom: 0.75rem;
     text-align: center;
   }
-
   #betta_menu ul li a {
     font-size: 1.25rem;
     line-height: 1.75rem;
     letter-spacing: 0.05rem;
   }
-
   /* Display menu as toolbar */
   #betta_menu.toolbar {
     display: block;
@@ -2861,15 +2786,12 @@ form > button.icon-button {
     box-shadow: 0 -2px 6px 1px rgba(0, 0, 0, 0.2);
     overflow: hidden;
   }
-
   .dark #betta_menu.toolbar {
     box-shadow: 0 -2px 6px 1px rgba(0, 0, 0, 0.9);
   }
-
   #betta_menu.toolbar > ul {
     position: static;
   }
-
   #betta_menu.toolbar > ul > li {
     display: inline-block;
     text-align: left;
@@ -2962,20 +2884,16 @@ form > button.icon-button {
     background-color: #ffffff;
     color: #000000;
   }
-
   .sidebar .tooltip > span.tooltip-text {
     left: 4rem;
   }
-
   .dark nav .tooltip > span.tooltip-text {
     color: #f5f5f5;
     background-color: #121212;
   }
-
   nav .tooltip > span.tooltip-text::after {
     display: none;
   }
-
   nav.toolbar .tooltip > span.tooltip-text {
     visibility: hidden;
   }
