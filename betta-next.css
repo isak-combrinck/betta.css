@@ -2855,6 +2855,9 @@ form > button.icon-button {
     line-height: 1.75rem;
     letter-spacing: 0.05rem;
   }
+  #betta_menu ul li a.icon-button {
+    line-height: 0;
+  }
   /* Display menu as toolbar */
   #betta_menu.toolbar {
     display: block;

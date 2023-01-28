@@ -175,6 +175,10 @@
     font-size: 1.25rem;
     line-height: 1.75rem;
     letter-spacing: 0.05rem;
+
+    &.icon-button {
+      line-height: 0;
+    }
   }
 
   /* Display menu as toolbar */
