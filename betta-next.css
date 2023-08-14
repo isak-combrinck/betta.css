@@ -1521,6 +1521,7 @@ a.card-double:active {
 }
 .card.contact .content p {
   margin: 0;
+  padding-bottom: 0;
   text-align: center;
 }
 .card.contact .close {
