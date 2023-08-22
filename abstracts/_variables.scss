@@ -73,3 +73,16 @@ $radius-1: 0.25rem;
 $radius-2: 0.5rem;
 $radius-3: 1rem;
 $radius-round: 50%; /* Element must be square for it to work */
+
+/*---------------------------------------
+  Screen Sizes
+---------------------------------------*/
+$sm-min: 640px;
+$sm-max: 767px;
+$md-min: 768px;
+$md-max: 1023px;
+$lg-min: 1024px;
+$lg-max: 1279px;
+$xl-min: 1280px;
+$xl-max: 1535px;
+$xxl-min: 1536px;

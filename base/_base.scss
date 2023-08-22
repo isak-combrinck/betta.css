@@ -105,6 +105,16 @@ article {
 }
 
 div {
+  &.default {
+    width: 50%;
+    max-width: 30rem;
+  }
+
+  &.wide {
+    width: 100%;
+    max-width: 55rem;
+  }
+
   &.full {
     width: 100%;
   }
@@ -112,6 +122,29 @@ div {
   &.cover {
     width: 100vw;
     margin: 0 -2rem;
+  }
+
+  &.spaced {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  &.padded {
+    padding: 3rem 2rem;
+  }
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  &.wide {
+    width: 100%;
+    max-width: 55rem;
+    margin: 0 auto;
   }
 }
 
@@ -182,6 +215,10 @@ img {
 }
 
 .betta_image {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
 
   &>div {
     position: relative;
@@ -220,6 +257,90 @@ img {
   }
   &.full {
     width: 100%;
+  }
+
+  &.aspect-4by3 {
+    aspect-ratio: 4/3;
+    overflow: hidden;
+  }
+
+  &.aspect-3by4 {
+    aspect-ratio: 3/4;
+    overflow: hidden;
+  }
+
+  h1 {
+    position: absolute;
+    margin: 0;
+    max-width: 90%;
+    text-align: center;
+
+    color: $color-white;
+    font-size: 10rem;
+    line-height: 10rem;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    position: absolute;
+    margin: 0;
+    max-width: 90%;
+    text-align: center;
+
+    color: $color-white;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+}
+/*-------------------------------------*/
+
+/*---------------------------------------
+	Image Grid
+---------------------------------------*/
+.betta_image-grid {
+  text-align: center;
+
+  .item {
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+    border: 1rem solid $color-white;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: $sm-min) {
+    .item {
+      width: 50%;
+    }
+  }
+
+  @media (min-width: $lg-min) {
+    .item {
+      width: 33.33%;
+    }
+  }
+
+  @media (min-width: $xl-min) {
+    .item {
+      width: 25%;
+    }
+  }
+
+  .betta_image img {
+    filter: brightness(50%);
+    transition: 0.2s;
+  }
+  .betta_image:hover {
+    cursor: default;
+
+    img {
+      filter: brightness(100%);
+    }
+
+    h3 {
+      opacity: 0;
+    }
   }
 }
 /*-------------------------------------*/
@@ -1427,6 +1548,12 @@ a.card-double:active {
     right: 0;
     padding-top: 1.3rem;
     background: $color-base-9;
+  }
+
+  &.round .content,
+  &.round .phone-number,
+  &.round .email-address {
+    background: $color-base-10;
   }
 
   @media (hover: hover) {

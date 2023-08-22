@@ -74,6 +74,18 @@ p.small {
   line-height: $line-height-small;
 }
 
+// White text
+p.light,
+p.light a,
+h1.light,
+h2.light,
+h3.light,
+h4.light,
+h5.light,
+h6.light {
+  color: $color-white;
+}
+
 ul.indent {
   margin-top: 0;
   padding-left: 1rem;

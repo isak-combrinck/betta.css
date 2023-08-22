@@ -339,6 +339,9 @@ template {
   Border Radius
 ---------------------------------------*/
 /* Element must be square for it to work */
+/*---------------------------------------
+  Screen Sizes
+---------------------------------------*/
 body {
   margin: 0;
   background: #ffffff;
@@ -445,12 +448,39 @@ article.cover {
   margin: 0 -2rem;
 }
 
+div.default {
+  width: 50%;
+  max-width: 30rem;
+}
+div.wide {
+  width: 100%;
+  max-width: 55rem;
+}
 div.full {
   width: 100%;
 }
 div.cover {
   width: 100vw;
   margin: 0 -2rem;
+}
+div.spaced {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+div.padded {
+  padding: 3rem 2rem;
+}
+
+p.wide,
+h1.wide,
+h2.wide,
+h3.wide,
+h4.wide,
+h5.wide,
+h6.wide {
+  width: 100%;
+  max-width: 55rem;
+  margin: 0 auto;
 }
 
 ul {
@@ -516,6 +546,12 @@ img.round {
   border-radius: 50%;
 }
 
+.betta_image {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
 .betta_image > div {
   position: relative;
 }
@@ -548,6 +584,77 @@ img.round {
 }
 .betta_image.full {
   width: 100%;
+}
+.betta_image.aspect-4by3 {
+  aspect-ratio: 4/3;
+  overflow: hidden;
+}
+.betta_image.aspect-3by4 {
+  aspect-ratio: 3/4;
+  overflow: hidden;
+}
+.betta_image h1 {
+  position: absolute;
+  margin: 0;
+  max-width: 90%;
+  text-align: center;
+  color: #ffffff;
+  font-size: 10rem;
+  line-height: 10rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.betta_image h3 {
+  position: absolute;
+  margin: 0;
+  max-width: 90%;
+  text-align: center;
+  color: #ffffff;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+/*-------------------------------------*/
+/*---------------------------------------
+	Image Grid
+---------------------------------------*/
+.betta_image-grid {
+  text-align: center;
+}
+.betta_image-grid .item {
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  border: 1rem solid #ffffff;
+  box-sizing: border-box;
+}
+@media (min-width: 640px) {
+  .betta_image-grid .item {
+    width: 50%;
+  }
+}
+@media (min-width: 1024px) {
+  .betta_image-grid .item {
+    width: 33.33%;
+  }
+}
+@media (min-width: 1280px) {
+  .betta_image-grid .item {
+    width: 25%;
+  }
+}
+.betta_image-grid .betta_image img {
+  filter: brightness(50%);
+  transition: 0.2s;
+}
+.betta_image-grid .betta_image:hover {
+  cursor: default;
+}
+.betta_image-grid .betta_image:hover img {
+  filter: brightness(100%);
+}
+.betta_image-grid .betta_image:hover h3 {
+  opacity: 0;
 }
 
 /*-------------------------------------*/
@@ -1662,6 +1769,9 @@ a.card-double:active {
   padding-top: 1.3rem;
   background: #212121;
 }
+.dark .card.contact.round .content, .dark .card.contact.round .phone-number, .dark .card.contact.round .email-address {
+  background: #121212;
+}
 @media (hover: hover) {
   .dark .card.contact .phone-number:hover + .phone,
   .dark .card.contact .email-address:hover + .email {
@@ -2130,6 +2240,17 @@ p {
 p.small {
   font-size: 0.8rem;
   line-height: 1.1rem;
+}
+
+p.light,
+p.light a,
+h1.light,
+h2.light,
+h3.light,
+h4.light,
+h5.light,
+h6.light {
+  color: #ffffff;
 }
 
 ul.indent {
