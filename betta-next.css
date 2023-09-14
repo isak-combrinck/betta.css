@@ -625,7 +625,7 @@ img.round {
   display: inline-block;
   width: 100%;
   vertical-align: middle;
-  border: 1rem solid #ffffff;
+  border: 1rem solid rgba(0, 0, 0, 0);
   box-sizing: border-box;
 }
 @media (min-width: 640px) {
