@@ -2262,71 +2262,71 @@ ul.plain li {
   list-style: none;
 }
 
-p > a,
-h1 > a,
-h2 > a,
-h3 > a,
-h4 > a,
-h5 > a,
-h6 > a,
-li.link > a {
+p a,
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a,
+li.link a {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-color: #e0e0e0;
 }
 
-.dark p > a,
-.dark h1 > a,
-.dark h2 > a,
-.dark h3 > a,
-.dark h4 > a,
-.dark h5 > a,
-.dark h6 > a,
-.dark li.link > a {
+.dark p a,
+.dark h1 a,
+.dark h2 a,
+.dark h3 a,
+.dark h4 a,
+.dark h5 a,
+.dark h6 a,
+.dark li.link a {
   border-color: #616161;
 }
 
-h1 > a,
-h2 > a,
-h3 > a,
-h4 > a,
-h5 > a,
-h6 > a {
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
   border-bottom-width: 4px;
 }
 
-p > a:hover,
-h1 > a:hover,
-h2 > a:hover,
-h3 > a:hover,
-h4 > a:hover,
-h5 > a:hover,
-h6 > a:hover,
-li.link:hover > a {
+p a:hover,
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover,
+h5 a:hover,
+h6 a:hover,
+li.link:hover a {
   border-color: #000000;
 }
 
-.dark p > a:hover,
-.dark h1 > a:hover,
-.dark h2 > a:hover,
-.dark h3 > a:hover,
-.dark h4 > a:hover,
-.dark h5 > a:hover,
-.dark h6 > a:hover,
-.dark li.link:hover > a {
+.dark p a:hover,
+.dark h1 a:hover,
+.dark h2 a:hover,
+.dark h3 a:hover,
+.dark h4 a:hover,
+.dark h5 a:hover,
+.dark h6 a:hover,
+.dark li.link:hover a {
   border-color: #f5f5f5;
 }
 
-p > a.icon {
+p a.icon {
   border: none;
 }
 
-p > a.icon > img {
+p a.icon > img {
   width: 2rem;
   transition: 0.2s;
 }
 
-p > a.icon:hover > img {
+p a.icon:hover > img {
   opacity: 0.8;
 }
 
@@ -2468,7 +2468,7 @@ code {
 ---------------------------------------*/
 /*
 Italic text, used to convey a change
-of in voice or mood.
+in voice or mood.
 */
 i {
   font-style: italic;
@@ -3173,7 +3173,6 @@ form > button.icon-button {
 header {
   width: 100%;
   margin: 0 auto;
-  padding-top: 3rem;
 }
 
 header.hero {
