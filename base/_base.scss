@@ -259,13 +259,18 @@ img {
     width: 100%;
   }
 
-  &.aspect-4by3 {
+  &.aspect-4to3 {
     aspect-ratio: 4/3;
     overflow: hidden;
   }
 
-  &.aspect-3by4 {
+  &.aspect-3to4 {
     aspect-ratio: 3/4;
+    overflow: hidden;
+  }
+
+  &.aspect-4to1 {
+    aspect-ratio: 4/1;
     overflow: hidden;
   }
 

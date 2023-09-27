@@ -585,12 +585,16 @@ img.round {
 .betta_image.full {
   width: 100%;
 }
-.betta_image.aspect-4by3 {
+.betta_image.aspect-4to3 {
   aspect-ratio: 4/3;
   overflow: hidden;
 }
-.betta_image.aspect-3by4 {
+.betta_image.aspect-3to4 {
   aspect-ratio: 3/4;
+  overflow: hidden;
+}
+.betta_image.aspect-4to1 {
+  aspect-ratio: 4/1;
   overflow: hidden;
 }
 .betta_image h1 {
