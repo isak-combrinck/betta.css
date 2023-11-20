@@ -2241,7 +2241,7 @@ p {
   margin-bottom: 1.6rem;
 }
 
-p.small {
+p.small, span.small {
   font-size: 0.8rem;
   line-height: 1.1rem;
 }
