@@ -2845,6 +2845,12 @@ form > button.icon-button {
   background: #ffffff;
   transition: 0.3s;
 }
+#betta_menu.show {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  overflow: hidden;
+}
 
 .dark #betta_menu {
   background: #121212;
