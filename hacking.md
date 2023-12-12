@@ -1,4 +1,4 @@
-# Read Before Hacking
+# Hacking On Betta
 
 ## Compiling the SCSS
 
